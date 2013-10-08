@@ -6,7 +6,7 @@ category: "preprocessing"
 tags: [CPAC, preprocessing, config]
 ---
 {% include JB/setup %}
-{% assign base_img = '/images/2013-10-08-setup-abide-preprocessing' %}
+{% assign base_img = '/abide/images/2013-10-08-setup-abide-preprocessing' %}
 
 #  Preprocessing
 
@@ -39,7 +39,7 @@ An issue is that I have set the working directory to be removed after completion
 
 I have the SGE turned on and will use about 2 cores per subject.
 
-![Computer Settings]({{base_img}}/computer_settings.png)
+![Computer Settings]({{ base_img }}/computer_settings.png)
 
 ## Output Settings
 
