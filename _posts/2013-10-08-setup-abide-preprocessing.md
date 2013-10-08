@@ -32,6 +32,8 @@ The sections below are labeled according to the section in the CPAC GUI edit win
 * Temporal filtering (0.01-0.1 Hz) was applied and not applied
 * Spatial smoothing of 4mm was applied to the derivatives.
 
+An issue is that I have set the working directory to be removed after completion. However, this would make it difficult to then run derivates in a subsequent step. Will need to investigate this issue.
+
 ## Computer Settings
 
 I have the SGE turned on and will use about 2 cores per subject.
@@ -75,6 +77,7 @@ I did not do median angle correction, but I did set to types of nuisance correct
 
 ![Nuisance]({{base_img}}/nuisance.png)
 
+Please note that in the above image, I didn't select the two correction (checkbox) but I did so later on.
 
 ## Temporal Filtering Options
 
@@ -82,6 +85,7 @@ On the GUI, I set this to just 'On' but later I in the yaml config file I will s
 
 ![Temporal Filtering]({{base_img}}/temporal_filtering.png)
 
+Same thing with the temporal filtering, the box should by checked next to the bandpass thingy.
 
 ## Motion Correction
 
