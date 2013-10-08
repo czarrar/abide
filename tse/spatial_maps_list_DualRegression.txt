@@ -1,0 +1,1 @@
+/home2/data/Projects/ABIDE_Initiative/CPAC/abide/templates/3mm_for_dualreg/PNAS_Smith09_rsn10.nii

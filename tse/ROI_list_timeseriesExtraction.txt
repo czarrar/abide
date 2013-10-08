@@ -1,0 +1,7 @@
+/home2/data/Projects/ABIDE_Initiative/CPAC/abide/templates/3mm/aal_mask_pad.nii
+/home2/data/Projects/ABIDE_Initiative/CPAC/abide/templates/3mm/CC200.nii
+/home2/data/Projects/ABIDE_Initiative/CPAC/abide/templates/3mm/CC400.nii
+/home2/data/Projects/ABIDE_Initiative/CPAC/abide/templates/3mm/ez_mask_pad.nii
+/home2/data/Projects/ABIDE_Initiative/CPAC/abide/templates/3mm/ho_mask_pad.nii
+/home2/data/Projects/ABIDE_Initiative/CPAC/abide/templates/3mm/tt_mask_pad.nii
+/home2/data/Projects/ABIDE_Initiative/CPAC/abide/templates/3mm/rois_3mm.nii.gz

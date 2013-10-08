@@ -1,0 +1,25 @@
+Site,TR (seconds),Reference,Acquisition,FirstTR (start volume index),LastTR (final volume index)
+Caltech,2,17,alt+z2,0,None
+CMU_a,2,14,alt+z2,0,None
+CMU_b,2,14,alt+z2,0,None
+KKI,2.5,24,seq+z,0,None
+Leuven_1,1.67872,16,seq+z,0,None
+Leuven_2,1.67872,16,seq+z,0,None
+MaxMun_a,3,14,alt+z2,0,None
+MaxMun_b,3,14,alt+z2,0,None
+MaxMun_c,3,14,alt+z2,0,None
+MaxMun_d,3,14,alt+z2,0,None
+NYU,2,17,alt+z,0,None
+OHSU,2.5,18,alt+z2,0,None
+Olin,1.5,15,alt+z,0,None
+Pitt,1.5,15,alt+z,0,None
+SBL,2.21172,19,seq-z,0,None
+SDSU,2,21,alt+z,0,None
+Stanford,2,15,alt+z,0,None
+Trinity,2.01172,19,seq+z,0,None
+UCLA_1,3,17,alt+z2,0,None
+UCLA_2,3,17,alt+z2,0,None
+UM_1,2,20,seq+z,0,None
+UM_2,2,20,seq+z,0,None
+USM,2,20,alt+z2,0,None
+Yale,2,17,alt+z2,0,None

@@ -1,0 +1,8 @@
+AltlasName, NumberofROIs,File
+AAL,116,/home2/data/Projects/ABIDE_Initiative/CPAC/abide/templates/3mm/aal_mask_pad.nii
+CC200,200,/home2/data/Projects/ABIDE_Initiative/CPAC/abide/templates/3mm/CC200.nii
+CC400,392,/home2/data/Projects/ABIDE_Initiative/CPAC/abide/templates/3mm/CC400.nii
+Eickhoff-Zilles Atlas,116,/home2/data/Projects/ABIDE_Initiative/CPAC/abide/templates/3mm/ez_mask_pad.nii
+Talairach-TournouxAtlas,111,/home2/data/Projects/ABIDE_Initiative/CPAC/abide/templates/3mm/ho_mask_pad.nii
+Harvard-OxfordAtlas,161,/home2/data/Projects/ABIDE_Initiative/CPAC/abide/templates/3mm/tt_mask_pad.nii
+DosenbachAtlas,97,/home2/data/Projects/ABIDE_Initiative/CPAC/abide/templates/3mm/rois_3mm.nii.gz
