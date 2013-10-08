@@ -34,6 +34,7 @@ The sections below are labeled according to the section in the CPAC GUI edit win
 
 An issue is that I have set the working directory to be removed after completion. However, this would make it difficult to then run derivates in a subsequent step. Will need to investigate this issue.
 
+
 ## Computer Settings
 
 I have the SGE turned on and will use about 2 cores per subject.
