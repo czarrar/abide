@@ -1,9 +1,9 @@
 ---
 layout: post
 title: "Setup ABIDE Preprocessing"
-description: ""
-category: ""
-tags: []
+description: "Setup config files for ABIDE preprocessing"
+category: "preprocessing"
+tags: [CPAC, preprocessing, config]
 ---
 {% include JB/setup %}
 {% assign base_img = '/images/2013-10-08-setup-abide-preprocessing' %}
