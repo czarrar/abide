@@ -1,0 +1,11 @@
+#! /bin/bash
+#$ -cwd
+#$ -S /bin/bash
+#$ -V
+#$ -t 1-1
+#$ -q all.q
+#$ -pe mpi_smp 4
+#$ -e /data/Projects/ABIDE_Initiative/CPAC/abide/config/test_one_subject/cluster_temp_files/c-pac_2013_10_17_14_44_19.err
+#$ -o /data/Projects/ABIDE_Initiative/CPAC/abide/config/test_one_subject/cluster_temp_files/c-pac_2013_10_17_14_44_19.out
+source ~/.bashrc
+python -c "import CPAC; CPAC.pipeline.cpac_pipeline.run(\"config_preprocessing_with_grid.yml\" , \"CPAC_subject_list.yml\", \"$SGE_TASK_ID\" , \"/data/Projects/ABIDE_Initiative/CPAC/abide/config/test_one_subject/cluster_temp_files/strategies.obj\", \"None\" , \"/home2/data/Projects/ABIDE_Initiative/CPAC/abide/tse/ROI_list_timeseriesExtraction.txt\", \"None\", \"None\") " 

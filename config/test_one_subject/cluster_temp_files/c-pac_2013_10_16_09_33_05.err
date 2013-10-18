@@ -1,0 +1,23 @@
+/home2/dlurie/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/nipype/interfaces/base.py:368: UserWarning: Input apply_xfm requires inputs: in_matrix_file
+  warn(msg)
+/home2/dlurie/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/nipype/interfaces/base.py:368: UserWarning: Input apply_xfm requires inputs: in_matrix_file
+  warn(msg)
+/home2/dlurie/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/nipype/interfaces/base.py:368: UserWarning: Input apply_xfm requires inputs: in_matrix_file
+  warn(msg)
+/home2/dlurie/Enthought/Canopy_64bit/System/lib/python2.7/site-packages/scipy/sparse/lil.py:233: SparseEfficiencyWarning: Indexing into a lil_matrix with multiple indices is slow. Pre-converting to CSC or CSR beforehand is more efficient.
+  SparseEfficiencyWarning)
+<string>:87: ComplexWarning: Casting complex values to real discards the imaginary part
+<string>:87: ComplexWarning: Casting complex values to real discards the imaginary part
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "/home2/dlurie/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/CPAC/pipeline/cpac_pipeline.py", line 3662, in run
+    prep_workflow(sub_dict, c, pickle.load(open(strategies, 'r')), p_name)
+  File "/home2/dlurie/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/CPAC/pipeline/cpac_pipeline.py", line 3582, in prep_workflow
+    workflow.run(plugin='MultiProc', plugin_args={'n_procs': c.numCoresPerSubject})
+  File "/home2/dlurie/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/nipype/pipeline/engine.py", line 669, in run
+    runner.run(execgraph, updatehash=updatehash, config=self.config)
+  File "/home2/dlurie/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/nipype/pipeline/plugins/base.py", line 255, in run
+    report_nodes_not_run(notrun)
+  File "/home2/dlurie/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/nipype/pipeline/plugins/base.py", line 89, in report_nodes_not_run
+    raise RuntimeError(('Workflow did not execute cleanly. '
+RuntimeError: Workflow did not execute cleanly. Check log for details

@@ -1,0 +1,2574 @@
+******************** /home2/data/PublicProgram/fsl-4.1.9/data/standard/MNI152_T1_2mm_brain.nii.gz
+find /tmp/resting_preproc_0051095_session_1 -name '*sink*' -exec rm -rf {} \;
+find /tmp/resting_preproc_0051095_session_1 -name '*link*' -exec rm -rf {} \;
+find /tmp/resting_preproc_0051095_session_1 -name '*log*' -exec rm -rf {} \;
+[<CPAC.pipeline.cpac_pipeline.strategy instance at 0x44db638>]
+Warning key movement_parameters already exists in resource pool, replacing with (resting_preproc_0051095_session_1.fristons_parameter_model_0, 'outputspec.movement_file') 
+Warning key mean_functional_in_mni already exists in resource pool, replacing with (resting_preproc_0051095_session_1.mean_func_warp_0, 'out_file') 
+131010-12:32:38,44 workflow INFO:
+	 Creating detailed dot file: /tmp/resting_preproc_0051095_session_1/graph_detailed.dot
+anat_preproc  ~~~  1
+anat_mni_register  ~~~  2
+seg_preproc  ~~~  4
+func_preproc  ~~~  8
+fristons_parameter_model  ~~~  16
+func_to_anat  ~~~  32
+gen_motion_stats  ~~~  64
+nuisance  ~~~  128
+frequency_filter  ~~~  512
+anat_preproc_anat_mni_register_seg_preproc_func_preproc_fristons_parameter_model_func_to_anat_gen_motion_stats_nuisance_frequency_filter_  ~~~~~  767  ~~~~~~  LukachukaiCDP
+Cannot Create the strategy and pipeline graph, dot or/and pygraphviz is not installed
+/home2/data/Projects/ABIDE_Initiative/CPAC/Output_2013-10-08_gelert/pipeline_LukachukaiCDP/0051095_session_1 *
+131010-12:32:50,448 workflow INFO:
+	 ['check', 'execution', 'logging']
+131010-12:32:51,419 workflow INFO:
+	 Running in parallel.
+131010-12:32:51,434 workflow INFO:
+	 Submitting 4 jobs
+131010-12:32:51,436 workflow INFO:
+	 Executing: selectrest.c0 ID: 13
+131010-12:32:51,438 workflow INFO:
+	 Executing: resample_o ID: 37
+131010-12:32:51,440 workflow INFO:
+	 Executing: anat_deoblique ID: 149
+131010-12:32:51,442 workflow INFO:
+	 Executing: scan_params_0.c0 ID: 164
+131010-12:32:51,444 workflow INFO:
+	 Executing node selectrest.c0 in dir: /tmp/resting_preproc_0051095_session_1/func_gather_0/_scan_rest_1_rest/selectrest
+131010-12:32:51,445 workflow INFO:
+	 Executing node resample_o in dir: /tmp/resting_preproc_0051095_session_1/montage_mfi_0/resample_o
+131010-12:32:51,448 workflow INFO:
+	 Executing node anat_deoblique in dir: /tmp/resting_preproc_0051095_session_1/anat_preproc_0/anat_deoblique
+131010-12:32:51,450 workflow INFO:
+	 Executing node scan_params_0.c0 in dir: /tmp/resting_preproc_0051095_session_1/_scan_rest_1_rest/scan_params_0
+131010-12:32:51,595 workflow INFO:
+	 Running: 3drefit -deoblique /tmp/resting_preproc_0051095_session_1/anat_preproc_0/anat_deoblique/mprage.nii.gz
+131010-12:32:51,698 interface INFO:
+	 stderr 2013-10-10T12:32:51.697991:++ 3drefit: AFNI version=AFNI_2011_12_21_1014 (May 21 2012) [64-bit]
+131010-12:32:51,700 interface INFO:
+	 stderr 2013-10-10T12:32:51.697991:++ Authored by: RW Cox
+131010-12:32:51,702 interface INFO:
+	 stderr 2013-10-10T12:32:51.702450:++ Processing AFNI dataset /tmp/resting_preproc_0051095_session_1/anat_preproc_0/anat_deoblique/mprage.nii.gz
+131010-12:32:51,703 interface INFO:
+	 stderr 2013-10-10T12:32:51.703656: + loading and re-writing dataset /tmp/resting_preproc_0051095_session_1/anat_preproc_0/anat_deoblique/mprage.nii.gz (/tmp/resting_preproc_0051095_session_1/anat_preproc_0/anat_deoblique/mprage.nii.gz in NIFTI storage)
+131010-12:32:53,145 interface INFO:
+	 stderr 2013-10-10T12:32:53.145615:++ 3drefit processed 1 datasets
+131010-12:32:53,450 workflow INFO:
+	 [Job finished] jobname: selectrest.c0 jobid: 13
+131010-12:32:53,470 workflow INFO:
+	 [Job finished] jobname: resample_o jobid: 37
+131010-12:32:53,481 workflow INFO:
+	 [Job finished] jobname: anat_deoblique jobid: 149
+131010-12:32:53,490 workflow INFO:
+	 [Job finished] jobname: scan_params_0.c0 jobid: 164
+131010-12:32:53,503 workflow INFO:
+	 Submitting 3 jobs
+131010-12:32:53,504 workflow INFO:
+	 Executing: convert_tr_0.c0 ID: 10
+131010-12:32:53,507 workflow INFO:
+	 Executing: anat_reorient ID: 55
+131010-12:32:53,509 workflow INFO:
+	 Executing: func_get_idx.c0 ID: 191
+131010-12:32:53,518 workflow INFO:
+	 Executing node convert_tr_0.c0 in dir: /tmp/resting_preproc_0051095_session_1/_scan_rest_1_rest/convert_tr_0
+scan_parameters ->  0051095_session_1 rest_1_rest 2.0s alt+z 17 0 None
+131010-12:32:53,520 workflow INFO:
+	 Executing node anat_reorient in dir: /tmp/resting_preproc_0051095_session_1/anat_preproc_0/anat_reorient
+131010-12:32:53,528 workflow INFO:
+	 Running: 3dresample -orient RPI -prefix /tmp/resting_preproc_0051095_session_1/anat_preproc_0/anat_reorient/mprage_RPI.nii.gz -inset /tmp/resting_preproc_0051095_session_1/anat_preproc_0/anat_deoblique/mprage.nii.gz
+ 3dresample -dxyz 1.0 1.0 1.0 -prefix /tmp/resting_preproc_0051095_session_1/montage_mfi_0/resample_o/MNI152_Edge_AllTissues_1mm.nii.gz -inset /home2/dlurie/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/CPAC/resources/templates/MNI152_Edge_AllTissues.nii.gz 
+131010-12:32:53,538 workflow INFO:
+	 Executing node func_get_idx.c0 in dir: /tmp/resting_preproc_0051095_session_1/func_preproc_0/_scan_rest_1_rest/func_get_idx
+131010-12:32:55,516 workflow INFO:
+	 [Job finished] jobname: convert_tr_0.c0 jobid: 10
+131010-12:32:55,526 workflow INFO:
+	 [Job finished] jobname: anat_reorient jobid: 55
+131010-12:32:55,537 workflow INFO:
+	 [Job finished] jobname: func_get_idx.c0 jobid: 191
+131010-12:32:55,551 workflow INFO:
+	 Submitting 4 jobs
+131010-12:32:55,552 workflow INFO:
+	 Executing: sinker_3 ID: 48
+131010-12:32:55,557 workflow INFO:
+	 Executing: skull_edge_0 ID: 128
+131010-12:32:55,559 workflow INFO:
+	 Executing: func_drop_trs.c0 ID: 181
+131010-12:32:55,564 workflow INFO:
+	 Executing: anat_skullstrip ID: 204
+131010-12:32:55,569 workflow INFO:
+	 Executing node sinker_3 in dir: /tmp/resting_preproc_0051095_session_1/sinker_3
+131010-12:32:55,569 workflow INFO:
+	 Executing node skull_edge_0 in dir: /tmp/resting_preproc_0051095_session_1/skull_edge_0
+131010-12:32:55,577 workflow INFO:
+	 Executing node anat_skullstrip in dir: /tmp/resting_preproc_0051095_session_1/anat_preproc_0/anat_skullstrip
+131010-12:32:55,584 workflow INFO:
+	 Running: 3dSkullStrip -input /tmp/resting_preproc_0051095_session_1/anat_preproc_0/anat_reorient/mprage_RPI.nii.gz -o_ply /tmp/resting_preproc_0051095_session_1/anat_preproc_0/anat_skullstrip/mprage_RPI_surf.nii.gz
+131010-12:32:55,588 workflow INFO:
+	 Executing node func_drop_trs.c0 in dir: /tmp/resting_preproc_0051095_session_1/func_preproc_0/_scan_rest_1_rest/func_drop_trs
+131010-12:32:55,636 workflow INFO:
+	 Running: 3dcalc -a /data/Projects/ABIDE_Initiative/CPAC/RawData/NYU/0051095/session_1/rest_1/rest.nii.gz[0..179] -expr 'a' -prefix rest_3dc.nii.gz
+131010-12:32:55,952 interface INFO:
+	 stderr 2013-10-10T12:32:55.951765:++ 3dcalc: AFNI version=AFNI_2011_12_21_1014 (May 21 2012) [64-bit]
+131010-12:32:55,954 interface INFO:
+	 stderr 2013-10-10T12:32:55.951765:++ Authored by: A cast of thousands
+131010-12:32:57,573 workflow INFO:
+	 [Job finished] jobname: sinker_3 jobid: 48
+131010-12:32:57,584 workflow INFO:
+	 Submitting 1 jobs
+131010-12:32:57,586 workflow INFO:
+	 Executing: link_3 ID: 31
+131010-12:32:57,600 workflow INFO:
+	 Executing node link_3 in dir: /tmp/resting_preproc_0051095_session_1/link_3
+131010-12:32:59,593 workflow INFO:
+	 [Job finished] jobname: link_3 jobid: 31
+131010-12:33:03,612 workflow INFO:
+	 [Job finished] jobname: skull_edge_0 jobid: 128
+131010-12:33:03,623 workflow INFO:
+	 Submitting 1 jobs
+131010-12:33:03,624 workflow INFO:
+	 Executing: resample_o ID: 77
+~~~~~~  _compcor_'ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic1.gm0.compcor1.csf0'.'ncomponents_5_selector  ~~~  _compcor_'ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic1.gm0.compcor1.csf0'.'ncomponents_5_selector_pc10.linear1.wm0.global1.motion1.quadratic1.gm0.compcor1.csf0'
+~~~~~~  _csf_threshold  ~~~  _csf_threshold_0.96
+~~~~~~  _gm_threshold  ~~~  _gm_threshold_0.7
+~~~~~~  _target_angle_deg  ~~~  _target_angle_deg_90
+~~~~~~  _threshold  ~~~  _threshold_0.2
+~~~~~~  _wm_threshold  ~~~  _wm_threshold_0.96
+~~~~~~  pipeline  ~~~  pipeline_LukachukaiCDP
+_compcor_'ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic1.gm0.compcor1.csf0'.'ncomponents_5_selector  ---------->  pc10.linear1.wm0.global1.motion1.quadratic1.gm0.compcor1.csf0'
+_csf_threshold  ---------->  0.96
+_gm_threshold  ---------->  0.7
+_wm_threshold  ---------->  0.96
+pipeline  ---------->  LukachukaiCDP
+~~~  ~~~ /mprage_RPI.nii.gz
+ln -s /home2/data/Projects/ABIDE_Initiative/CPAC/Output_2013-10-08_gelert/pipeline_LukachukaiCDP/0051095_session_1/anatomical_reorient/mprage_RPI.nii.gz /home2/data/Projects/ABIDE_Initiative/CPAC/Output_2013-10-08_gelert/sym_links/pipeline_LukachukaiCDP/_compcor_'ncomponents_5_linear1.global1.motion1.quadratic1.compcor1.csf0'_CSF_0.96_GM_0.7_WM_0.96/0051095_session_1/scan/anat/anatomical_reorient.nii.gz
+131010-12:33:03,637 workflow INFO:
+	 Executing node resample_o in dir: /tmp/resting_preproc_0051095_session_1/montage_skull_0/resample_o
+131010-12:33:05,632 workflow INFO:
+	 [Job finished] jobname: resample_o jobid: 77
+131010-12:33:08,991 interface INFO:
+	 stderr 2013-10-10T12:33:08.991321:++ Output dataset ./rest_3dc.nii.gz
+131010-12:33:09,650 workflow INFO:
+	 [Job finished] jobname: func_drop_trs.c0 jobid: 181
+131010-12:33:09,661 workflow INFO:
+	 Submitting 1 jobs
+131010-12:33:09,662 workflow INFO:
+	 Executing: func_slice_timing_correction.c0 ID: 92
+3dedge3 -input /tmp/resting_preproc_0051095_session_1/anat_preproc_0/anat_reorient/mprage_RPI.nii.gz -prefix /tmp/resting_preproc_0051095_session_1/skull_edge_0/mprage_RPI_edge.nii.gz
+++ 3dedge3: AFNI version=AFNI_2011_12_21_1014 (May 21 2012) [64-bit]
+131010-12:33:09,699 workflow INFO:
+	 Executing node func_slice_timing_correction.c0 in dir: /tmp/resting_preproc_0051095_session_1/func_preproc_0/_scan_rest_1_rest/func_slice_timing_correction
+131010-12:33:09,708 workflow INFO:
+	 Running: 3dTshift -prefix /tmp/resting_preproc_0051095_session_1/func_preproc_0/_scan_rest_1_rest/func_slice_timing_correction/rest_3dc_tshift.nii.gz -tpattern alt+z -TR 2.0s -slice 17 /tmp/resting_preproc_0051095_session_1/func_preproc_0/_scan_rest_1_rest/func_drop_trs/rest_3dc.nii.gz
+131010-12:33:09,860 interface INFO:
+	 stderr 2013-10-10T12:33:09.860666:++ 3dTshift: AFNI version=AFNI_2011_12_21_1014 (May 21 2012) [64-bit]
+131010-12:33:09,863 interface INFO:
+	 stderr 2013-10-10T12:33:09.863754:*+ WARNING:   If you are performing spatial transformations on an oblique dset, 
+131010-12:33:09,865 interface INFO:
+	 stderr 2013-10-10T12:33:09.863754:  such as /tmp/resting_preproc_0051095_session_1/func_preproc_0/_scan_rest_1_rest/func_drop_trs/rest_3dc.nii.gz,
+131010-12:33:09,866 interface INFO:
+	 stderr 2013-10-10T12:33:09.863754:  or viewing/combining it with volumes of differing obliquity,
+131010-12:33:09,867 interface INFO:
+	 stderr 2013-10-10T12:33:09.863754:  you should consider running: 
+131010-12:33:09,869 interface INFO:
+	 stderr 2013-10-10T12:33:09.863754:     3dWarp -deoblique 
+131010-12:33:09,870 interface INFO:
+	 stderr 2013-10-10T12:33:09.863754:  on this and  other oblique datasets in the same session.
+131010-12:33:09,872 interface INFO:
+	 stderr 2013-10-10T12:33:09.863754: See 3dWarp -help for details.
+131010-12:33:09,873 interface INFO:
+	 stderr 2013-10-10T12:33:09.863754:++ Oblique dataset:/tmp/resting_preproc_0051095_session_1/func_preproc_0/_scan_rest_1_rest/func_drop_trs/rest_3dc.nii.gz is 23.000015 degrees from plumb.
+131010-12:33:25,704 workflow INFO:
+	 [Job finished] jobname: func_slice_timing_correction.c0 jobid: 92
+131010-12:33:25,717 workflow INFO:
+	 Submitting 2 jobs
+131010-12:33:25,718 workflow INFO:
+	 Executing: func_deoblique.c0 ID: 70
+131010-12:33:25,720 workflow INFO:
+	 Executing: sinker_46.c0 ID: 147
+ 3dresample -dxyz 1.0 1.0 1.0 -prefix /tmp/resting_preproc_0051095_session_1/montage_skull_0/resample_o/mprage_RPI_edge_1mm.nii.gz -inset /tmp/resting_preproc_0051095_session_1/skull_edge_0/mprage_RPI_edge.nii.gz 
+131010-12:33:25,732 workflow INFO:
+	 Executing node func_deoblique.c0 in dir: /tmp/resting_preproc_0051095_session_1/func_preproc_0/_scan_rest_1_rest/func_deoblique
+131010-12:33:25,747 workflow INFO:
+	 Executing node sinker_46.c0 in dir: /tmp/resting_preproc_0051095_session_1/_scan_rest_1_rest/sinker_46
+131010-12:33:26,174 workflow INFO:
+	 Running: 3drefit -deoblique /tmp/resting_preproc_0051095_session_1/func_preproc_0/_scan_rest_1_rest/func_deoblique/rest_3dc_tshift.nii.gz
+131010-12:33:26,241 interface INFO:
+	 stderr 2013-10-10T12:33:26.240710:++ 3drefit: AFNI version=AFNI_2011_12_21_1014 (May 21 2012) [64-bit]
+131010-12:33:26,257 interface INFO:
+	 stderr 2013-10-10T12:33:26.240710:++ Authored by: RW Cox
+131010-12:33:26,316 interface INFO:
+	 stderr 2013-10-10T12:33:26.316710:++ Processing AFNI dataset /tmp/resting_preproc_0051095_session_1/func_preproc_0/_scan_rest_1_rest/func_deoblique/rest_3dc_tshift.nii.gz
+131010-12:33:26,332 interface INFO:
+	 stderr 2013-10-10T12:33:26.332798: + loading and re-writing dataset /tmp/resting_preproc_0051095_session_1/func_preproc_0/_scan_rest_1_rest/func_deoblique/rest_3dc_tshift.nii.gz (/tmp/resting_preproc_0051095_session_1/func_preproc_0/_scan_rest_1_rest/func_deoblique/rest_3dc_tshift.nii.gz in NIFTI storage)
+131010-12:33:27,740 workflow INFO:
+	 [Job finished] jobname: sinker_46.c0 jobid: 147
+131010-12:33:27,752 workflow INFO:
+	 Submitting 1 jobs
+131010-12:33:27,754 workflow INFO:
+	 Executing: link_46.c0 ID: 106
+131010-12:33:27,769 workflow INFO:
+	 Executing node link_46.c0 in dir: /tmp/resting_preproc_0051095_session_1/_scan_rest_1_rest/link_46
+131010-12:33:29,762 workflow INFO:
+	 [Job finished] jobname: link_46.c0 jobid: 106
+131010-12:33:37,181 interface INFO:
+	 stderr 2013-10-10T12:33:37.181778:++ 3drefit processed 1 datasets
+131010-12:33:37,789 workflow INFO:
+	 [Job finished] jobname: func_deoblique.c0 jobid: 70
+131010-12:33:37,800 workflow INFO:
+	 Submitting 1 jobs
+131010-12:33:37,801 workflow INFO:
+	 Executing: func_reorient.c0 ID: 108
+131010-12:33:37,814 workflow INFO:
+	 Executing node func_reorient.c0 in dir: /tmp/resting_preproc_0051095_session_1/func_preproc_0/_scan_rest_1_rest/func_reorient
+131010-12:33:37,821 workflow INFO:
+	 Running: 3dresample -orient RPI -prefix /tmp/resting_preproc_0051095_session_1/func_preproc_0/_scan_rest_1_rest/func_reorient/rest_3dc_tshift_RPI.nii.gz -inset /tmp/resting_preproc_0051095_session_1/func_preproc_0/_scan_rest_1_rest/func_deoblique/rest_3dc_tshift.nii.gz
+131010-12:33:49,835 workflow INFO:
+	 [Job finished] jobname: func_reorient.c0 jobid: 108
+131010-12:33:49,847 workflow INFO:
+	 Submitting 1 jobs
+131010-12:33:49,849 workflow INFO:
+	 Executing: func_get_mean_RPI.c0 ID: 148
+~~~~~~  _compcor_'ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic1.gm0.compcor1.csf0'.'ncomponents_5_selector  ~~~  _compcor_'ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic1.gm0.compcor1.csf0'.'ncomponents_5_selector_pc10.linear1.wm0.global1.motion1.quadratic1.gm0.compcor1.csf0'
+~~~~~~  _csf_threshold  ~~~  _csf_threshold_0.96
+~~~~~~  _gm_threshold  ~~~  _gm_threshold_0.7
+~~~~~~  _target_angle_deg  ~~~  _target_angle_deg_90
+~~~~~~  _threshold  ~~~  _threshold_0.2
+~~~~~~  _wm_threshold  ~~~  _wm_threshold_0.96
+~~~~~~  pipeline  ~~~  pipeline_LukachukaiCDP
+.
+_compcor_'ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic1.gm0.compcor1.csf0'.'ncomponents_5_selector  ---------->  pc10.linear1.wm0.global1.motion1.quadratic1.gm0.compcor1.csf0'
+_csf_threshold  ---------->  0.96
+_gm_threshold  ---------->  0.7
+_wm_threshold  ---------->  0.96
+pipeline  ---------->  LukachukaiCDP
+scan_rest_1_rest  ~~~ /_scan_rest_1_rest/rest_3dc_tshift.nii.gz
+.
+ln -s /home2/data/Projects/ABIDE_Initiative/CPAC/Output_2013-10-08_gelert/pipeline_LukachukaiCDP/0051095_session_1/slice_timing_corrected/_scan_rest_1_rest/rest_3dc_tshift.nii.gz /home2/data/Projects/ABIDE_Initiative/CPAC/Output_2013-10-08_gelert/sym_links/pipeline_LukachukaiCDP/_compcor_'ncomponents_5_linear1.global1.motion1.quadratic1.compcor1.csf0'_CSF_0.96_GM_0.7_WM_0.96/0051095_session_1/scan_rest_1_rest/func/slice_timing_corrected.nii.gz
+131010-12:33:49,862 workflow INFO:
+	 Executing node func_get_mean_RPI.c0 in dir: /tmp/resting_preproc_0051095_session_1/func_preproc_0/_scan_rest_1_rest/func_get_mean_RPI
+131010-12:33:49,893 workflow INFO:
+	 Running: 3dTstat -mean -prefix /tmp/resting_preproc_0051095_session_1/func_preproc_0/_scan_rest_1_rest/func_get_mean_RPI/rest_3dc_tshift_RPI_3dT.nii.gz /tmp/resting_preproc_0051095_session_1/func_preproc_0/_scan_rest_1_rest/func_reorient/rest_3dc_tshift_RPI.nii.gz
+131010-12:33:50,16 interface INFO:
+	 stderr 2013-10-10T12:33:50.015824:++ 3dTstat: AFNI version=AFNI_2011_12_21_1014 (May 21 2012) [64-bit]
+131010-12:33:50,18 interface INFO:
+	 stderr 2013-10-10T12:33:50.015824:++ Authored by: KR Hammett & RW Cox
+131010-12:33:52,118 interface INFO:
+	 stderr 2013-10-10T12:33:52.118654:++ Output dataset /tmp/resting_preproc_0051095_session_1/func_preproc_0/_scan_rest_1_rest/func_get_mean_RPI/rest_3dc_tshift_RPI_3dT.nii.gz
+131010-12:33:53,860 workflow INFO:
+	 [Job finished] jobname: func_get_mean_RPI.c0 jobid: 148
+131010-12:33:53,872 workflow INFO:
+	 Submitting 1 jobs
+131010-12:33:53,873 workflow INFO:
+	 Executing: func_motion_correct.c0 ID: 62
+131010-12:33:53,893 workflow INFO:
+	 Executing node func_motion_correct.c0 in dir: /tmp/resting_preproc_0051095_session_1/func_preproc_0/_scan_rest_1_rest/func_motion_correct
+131010-12:33:53,902 workflow INFO:
+	 Running: 3dvolreg -Fourier -twopass -1Dmatrix_save ./rest_3dc_tshift_RPI_3dmat1D.1D -base /tmp/resting_preproc_0051095_session_1/func_preproc_0/_scan_rest_1_rest/func_get_mean_RPI/rest_3dc_tshift_RPI_3dT.nii.gz -zpad 4 -maxdisp1D ./rest_3dc_tshift_RPI_3dvmd1D.1D -1Dfile ./rest_3dc_tshift_RPI_3dv1D.1D -prefix ./rest_3dc_tshift_RPI_3dv.nii.gz /tmp/resting_preproc_0051095_session_1/func_preproc_0/_scan_rest_1_rest/func_reorient/rest_3dc_tshift_RPI.nii.gz
+131010-12:33:54,42 interface INFO:
+	 stderr 2013-10-10T12:33:54.042300:++ 3dvolreg: AFNI version=AFNI_2011_12_21_1014 (May 21 2012) [64-bit]
+131010-12:33:54,44 interface INFO:
+	 stderr 2013-10-10T12:33:54.042300:++ Authored by: RW Cox
+131010-12:33:54,59 interface INFO:
+	 stderr 2013-10-10T12:33:54.059262:++ Coarse del was 10, replaced with 3
+131010-12:34:58,917 interface INFO:
+	 stderr 2013-10-10T12:34:58.917166:The intensity in the output dataset is a modified version
+131010-12:34:58,920 interface INFO:
+	 stderr 2013-10-10T12:34:58.917166:of the intensity in the input volume.
+131010-12:34:58,922 interface INFO:
+	 stderr 2013-10-10T12:34:58.917166:To obtain a masked version of the input with identical values inside
+131010-12:34:58,923 interface INFO:
+	 stderr 2013-10-10T12:34:58.917166:the brain, you can either use 3dSkullStrip's -orig_vol option
+131010-12:34:58,924 interface INFO:
+	 stderr 2013-10-10T12:34:58.917166:or run the following command:
+131010-12:34:58,925 interface INFO:
+	 stderr 2013-10-10T12:34:58.917166:  3dcalc -a /tmp/resting_preproc_0051095_session_1/anat_preproc_0/anat_reorient/mprage_RPI.nii.gz -b /tmp/resting_preproc_0051095_session_1/anat_preproc_0/anat_skullstrip/mprage_RPI_surf.nii.gz+orig -expr 'a*step(b)' \
+131010-12:34:58,926 interface INFO:
+	 stderr 2013-10-10T12:34:58.917166:         -prefix /tmp/resting_preproc_0051095_session_1/anat_preproc_0/anat_skullstrip/mprage_RPI_surf.nii.gz_orig_vol
+131010-12:34:58,927 interface INFO:
+	 stderr 2013-10-10T12:34:58.917166:to generate a new masked version of the input.
+131010-12:35:00,42 workflow INFO:
+	 [Job finished] jobname: anat_skullstrip jobid: 204
+131010-12:35:00,55 workflow INFO:
+	 Submitting 1 jobs
+131010-12:35:00,56 workflow INFO:
+	 Executing: anat_brain_only ID: 117
+131010-12:35:00,79 workflow INFO:
+	 Executing node anat_brain_only in dir: /tmp/resting_preproc_0051095_session_1/anat_preproc_0/anat_brain_only
+131010-12:35:00,89 workflow INFO:
+	 Running: 3dcalc -a /tmp/resting_preproc_0051095_session_1/anat_preproc_0/anat_reorient/mprage_RPI.nii.gz  -b /tmp/resting_preproc_0051095_session_1/anat_preproc_0/anat_skullstrip/mprage_RPI_surf.nii.gz -expr 'a*step(b)' -prefix mprage_RPI_3dc.nii.gz
+131010-12:35:00,114 interface INFO:
+	 stderr 2013-10-10T12:35:00.113790:++ 3dcalc: AFNI version=AFNI_2011_12_21_1014 (May 21 2012) [64-bit]
+131010-12:35:00,116 interface INFO:
+	 stderr 2013-10-10T12:35:00.113790:++ Authored by: A cast of thousands
+131010-12:35:02,121 interface INFO:
+	 stderr 2013-10-10T12:35:02.121611:++ Output dataset ./mprage_RPI_3dc.nii.gz
+131010-12:35:04,69 workflow INFO:
+	 [Job finished] jobname: anat_brain_only jobid: 117
+131010-12:35:04,88 workflow INFO:
+	 Submitting 8 jobs
+131010-12:35:04,89 workflow INFO:
+	 Executing: sinker_0 ID: 20
+131010-12:35:04,93 workflow INFO:
+	 Executing: resample_u ID: 28
+131010-12:35:04,97 workflow INFO:
+	 Executing: segment ID: 78
+131010-12:35:04,100 workflow INFO:
+	 Executing: resample_u ID: 102
+131010-12:35:04,102 workflow INFO:
+	 Executing: write_log ID: 122
+131010-12:35:04,105 workflow INFO:
+	 Executing: anat_edge_0 ID: 124
+131010-12:35:04,106 workflow INFO:
+	 Executing node sinker_0 in dir: /tmp/resting_preproc_0051095_session_1/sinker_0
+131010-12:35:04,107 workflow INFO:
+	 Executing: linear_reg_0 ID: 159
+131010-12:35:04,107 workflow INFO:
+	 Executing node resample_u in dir: /tmp/resting_preproc_0051095_session_1/montage_skull_0/resample_u
+131010-12:35:04,111 workflow INFO:
+	 Executing node segment in dir: /tmp/resting_preproc_0051095_session_1/seg_preproc_0/segment
+131010-12:35:04,111 workflow INFO:
+	 Executing: resample_u ID: 201
+131010-12:35:04,121 workflow INFO:
+	 Running: fast -t 1 -o segment -p -g -S 1 /tmp/resting_preproc_0051095_session_1/seg_preproc_0/segment/mprage_RPI_3dc.nii.gz
+131010-12:35:04,284 workflow INFO:
+	 Executing node resample_u in dir: /tmp/resting_preproc_0051095_session_1/montage_snr_0/resample_u
+ 3dresample -dxyz 1.0 1.0 1.0 -prefix /tmp/resting_preproc_0051095_session_1/montage_skull_0/resample_u/mprage_RPI_3dc_1mm.nii.gz -inset /tmp/resting_preproc_0051095_session_1/anat_preproc_0/anat_brain_only/mprage_RPI_3dc.nii.gz 
+131010-12:35:05,55 workflow INFO:
+	 Executing node write_log in dir: /tmp/resting_preproc_0051095_session_1/log_anat_preproc_0/write_log
+ 3dresample -dxyz 1.0 1.0 1.0 -prefix /tmp/resting_preproc_0051095_session_1/montage_snr_0/resample_u/mprage_RPI_3dc_1mm.nii.gz -inset /tmp/resting_preproc_0051095_session_1/anat_preproc_0/anat_brain_only/mprage_RPI_3dc.nii.gz 
+131010-12:35:05,202 workflow INFO:
+	 Executing node anat_edge_0 in dir: /tmp/resting_preproc_0051095_session_1/anat_edge_0
+131010-12:35:05,217 interface INFO:
+	 CPAC custom log :
+131010-12:35:05,219 interface INFO:
+	  version - 0.3.1, timestamp -2013-10-10 12:35:05, subject_id -0051095_session_1, scan_id - scan_anat, strategy -, workflow - anat_preproc_0, status -COMPLETED
+131010-12:35:05,857 workflow INFO:
+	 Executing node linear_reg_0 in dir: /tmp/resting_preproc_0051095_session_1/anat_mni_register_0/linear_reg_0
+131010-12:35:05,869 workflow INFO:
+	 Running: flirt -in /tmp/resting_preproc_0051095_session_1/anat_preproc_0/anat_brain_only/mprage_RPI_3dc.nii.gz -ref /home2/data/PublicProgram/fsl-4.1.9/data/standard/MNI152_T1_1mm_brain.nii.gz -out /tmp/resting_preproc_0051095_session_1/anat_mni_register_0/linear_reg_0/mprage_RPI_3dc_flirt.nii.gz -omat /tmp/resting_preproc_0051095_session_1/anat_mni_register_0/linear_reg_0/mprage_RPI_3dc_flirt.mat -cost corratio
+131010-12:35:06,120 workflow INFO:
+	 [Job finished] jobname: sinker_0 jobid: 20
+131010-12:35:06,129 workflow INFO:
+	 [Job finished] jobname: resample_u jobid: 28
+131010-12:35:06,137 workflow INFO:
+	 [Job finished] jobname: resample_u jobid: 102
+131010-12:35:06,147 workflow INFO:
+	 [Job finished] jobname: write_log jobid: 122
+131010-12:35:06,158 workflow INFO:
+	 Submitting 3 jobs
+131010-12:35:06,159 workflow INFO:
+	 Executing: link_0 ID: 110
+131010-12:35:06,162 workflow INFO:
+	 Executing: montage_a ID: 113
+131010-12:35:06,164 workflow INFO:
+	 Executing: montage_s ID: 134
+3dedge3 -input /tmp/resting_preproc_0051095_session_1/anat_preproc_0/anat_brain_only/mprage_RPI_3dc.nii.gz -prefix /tmp/resting_preproc_0051095_session_1/anat_edge_0/mprage_RPI_3dc_edge.nii.gz
+++ 3dedge3: AFNI version=AFNI_2011_12_21_1014 (May 21 2012) [64-bit]
+131010-12:35:13,494 workflow INFO:
+	 Executing node resample_u in dir: /tmp/resting_preproc_0051095_session_1/montage_csf_gm_wm_0/resample_u
+131010-12:35:14,187 workflow INFO:
+	 [Job finished] jobname: anat_edge_0 jobid: 124
+131010-12:35:14,200 workflow INFO:
+	 Submitting 1 jobs
+131010-12:35:14,201 workflow INFO:
+	 Executing: resample_o ID: 88
+ 3dresample -dxyz 1.0 1.0 1.0 -prefix /tmp/resting_preproc_0051095_session_1/montage_csf_gm_wm_0/resample_u/mprage_RPI_3dc_1mm.nii.gz -inset /tmp/resting_preproc_0051095_session_1/anat_preproc_0/anat_brain_only/mprage_RPI_3dc.nii.gz 
+131010-12:35:14,412 workflow INFO:
+	 Executing node link_0 in dir: /tmp/resting_preproc_0051095_session_1/link_0
+~~~~~~  _compcor_'ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic1.gm0.compcor1.csf0'.'ncomponents_5_selector  ~~~  _compcor_'ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic1.gm0.compcor1.csf0'.'ncomponents_5_selector_pc10.linear1.wm0.global1.motion1.quadratic1.gm0.compcor1.csf0'
+~~~~~~  _csf_threshold  ~~~  _csf_threshold_0.96
+~~~~~~  _gm_threshold  ~~~  _gm_threshold_0.7
+~~~~~~  _target_angle_deg  ~~~  _target_angle_deg_90
+~~~~~~  _threshold  ~~~  _threshold_0.2
+~~~~~~  _wm_threshold  ~~~  _wm_threshold_0.96
+~~~~~~  pipeline  ~~~  pipeline_LukachukaiCDP
+.
+_compcor_'ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic1.gm0.compcor1.csf0'.'ncomponents_5_selector  ---------->  pc10.linear1.wm0.global1.motion1.quadratic1.gm0.compcor1.csf0'
+_csf_threshold  ---------->  0.96
+_gm_threshold  ---------->  0.7
+_wm_threshold  ---------->  0.96
+pipeline  ---------->  LukachukaiCDP
+~~~  ~~~ /mprage_RPI_3dc.nii.gz
+.
+.
+ln -s /home2/data/Projects/ABIDE_Initiative/CPAC/Output_2013-10-08_gelert/pipeline_LukachukaiCDP/0051095_session_1/anatomical_brain/mprage_RPI_3dc.nii.gz /home2/data/Projects/ABIDE_Initiative/CPAC/Output_2013-10-08_gelert/sym_links/pipeline_LukachukaiCDP/_compcor_'ncomponents_5_linear1.global1.motion1.quadratic1.compcor1.csf0'_CSF_0.96_GM_0.7_WM_0.96/0051095_session_1/scan/anat/anatomical_brain.nii.gz
+131010-12:35:14,471 workflow INFO:
+	 Executing node montage_a in dir: /tmp/resting_preproc_0051095_session_1/montage_skull_0/montage_a
+131010-12:35:16,207 workflow INFO:
+	 [Job finished] jobname: resample_u jobid: 201
+131010-12:35:16,217 workflow INFO:
+	 [Job finished] jobname: link_0 jobid: 110
+^^ [   0.  232.]
+~~ 232.0
+~~~ 51   189
+131010-12:35:31,988 workflow INFO:
+	 Executing node montage_s in dir: /tmp/resting_preproc_0051095_session_1/montage_skull_0/montage_s
+131010-12:35:32,266 workflow INFO:
+	 [Job finished] jobname: montage_a jobid: 113
+131010-12:35:32,278 workflow INFO:
+	 Submitting 1 jobs
+131010-12:35:32,279 workflow INFO:
+	 Executing: sinker_35 ID: 186
+^^ [   0.  232.]
+~~ 232.0
+131010-12:35:46,576 workflow INFO:
+	 Executing node resample_o in dir: /tmp/resting_preproc_0051095_session_1/montage_anat_0/resample_o
+ 3dresample -dxyz 1.0 1.0 1.0 -prefix /tmp/resting_preproc_0051095_session_1/montage_anat_0/resample_o/mprage_RPI_3dc_edge_1mm.nii.gz -inset /tmp/resting_preproc_0051095_session_1/anat_edge_0/mprage_RPI_3dc_edge.nii.gz 
+131010-12:35:47,318 workflow INFO:
+	 Executing node sinker_35 in dir: /tmp/resting_preproc_0051095_session_1/sinker_35
+131010-12:35:47,332 interface INFO:
+	 sub: /home2/data/Projects/ABIDE_Initiative/CPAC/Output_2013-10-08_gelert/pipeline_LukachukaiCDP/0051095_session_1/qc___skullstrip_vis_a/skull_vis_a.png -> /home2/data/Projects/ABIDE_Initiative/CPAC/Output_2013-10-08_gelert/pipeline_LukachukaiCDP/0051095_session_1/qc/skullstrip_vis_a/skull_vis_a.png
+131010-12:35:48,322 workflow INFO:
+	 [Job finished] jobname: montage_s jobid: 134
+131010-12:35:48,331 workflow INFO:
+	 [Job finished] jobname: resample_o jobid: 88
+131010-12:35:48,340 workflow INFO:
+	 [Job finished] jobname: sinker_35 jobid: 186
+131010-12:35:48,352 workflow INFO:
+	 Submitting 2 jobs
+131010-12:35:48,353 workflow INFO:
+	 Executing: sinker_36 ID: 93
+131010-12:35:48,357 workflow INFO:
+	 Executing: link_35 ID: 95
+131010-12:35:48,368 workflow INFO:
+	 Executing node sinker_36 in dir: /tmp/resting_preproc_0051095_session_1/sinker_36
+131010-12:35:48,379 interface INFO:
+	 sub: /home2/data/Projects/ABIDE_Initiative/CPAC/Output_2013-10-08_gelert/pipeline_LukachukaiCDP/0051095_session_1/qc___skullstrip_vis_s/skull_vis_s.png -> /home2/data/Projects/ABIDE_Initiative/CPAC/Output_2013-10-08_gelert/pipeline_LukachukaiCDP/0051095_session_1/qc/skullstrip_vis_s/skull_vis_s.png
+131010-12:35:48,409 workflow INFO:
+	 Executing node link_35 in dir: /tmp/resting_preproc_0051095_session_1/link_35
+131010-12:35:50,366 workflow INFO:
+	 [Job finished] jobname: sinker_36 jobid: 93
+131010-12:35:50,375 workflow INFO:
+	 [Job finished] jobname: link_35 jobid: 95
+131010-12:35:50,386 workflow INFO:
+	 Submitting 1 jobs
+131010-12:35:50,387 workflow INFO:
+	 Executing: link_36 ID: 66
+~~~~~~  _compcor_'ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic1.gm0.compcor1.csf0'.'ncomponents_5_selector  ~~~  _compcor_'ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic1.gm0.compcor1.csf0'.'ncomponents_5_selector_pc10.linear1.wm0.global1.motion1.quadratic1.gm0.compcor1.csf0'
+~~~~~~  _csf_threshold  ~~~  _csf_threshold_0.96
+~~~~~~  _gm_threshold  ~~~  _gm_threshold_0.7
+~~~~~~  _target_angle_deg  ~~~  _target_angle_deg_90
+~~~~~~  _threshold  ~~~  _threshold_0.2
+~~~~~~  _wm_threshold  ~~~  _wm_threshold_0.96
+~~~~~~  pipeline  ~~~  pipeline_LukachukaiCDP
+.
+_compcor_'ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic1.gm0.compcor1.csf0'.'ncomponents_5_selector  ---------->  pc10.linear1.wm0.global1.motion1.quadratic1.gm0.compcor1.csf0'
+_csf_threshold  ---------->  0.96
+_gm_threshold  ---------->  0.7
+_wm_threshold  ---------->  0.96
+pipeline  ---------->  LukachukaiCDP
+~~~  ~~~ /skullstrip_vis_a/skull_vis_a.png
+ln -s /home2/data/Projects/ABIDE_Initiative/CPAC/Output_2013-10-08_gelert/pipeline_LukachukaiCDP/0051095_session_1/qc/skullstrip_vis_a/skull_vis_a.png /home2/data/Projects/ABIDE_Initiative/CPAC/Output_2013-10-08_gelert/sym_links/pipeline_LukachukaiCDP/_compcor_'ncomponents_5_linear1.global1.motion1.quadratic1.compcor1.csf0'_CSF_0.96_GM_0.7_WM_0.96/0051095_session_1/scan/qc/skull_vis_a.png
+131010-12:35:50,403 workflow INFO:
+	 Executing node link_36 in dir: /tmp/resting_preproc_0051095_session_1/link_36
+131010-12:35:52,395 workflow INFO:
+	 [Job finished] jobname: link_36 jobid: 66
+131010-12:36:41,175 interface INFO:
+	 stderr 2013-10-10T12:36:41.175145:++ Max displacement in automask = 4.04 (mm) at sub-brick 0
+131010-12:36:52,539 workflow INFO:
+	 [Job finished] jobname: func_motion_correct.c0 jobid: 62
+131010-12:36:52,551 workflow INFO:
+	 Submitting 1 jobs
+131010-12:36:52,552 workflow INFO:
+	 Executing: func_get_mean_motion.c0 ID: 8
+~~~~~~  _compcor_'ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic1.gm0.compcor1.csf0'.'ncomponents_5_selector  ~~~  _compcor_'ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic1.gm0.compcor1.csf0'.'ncomponents_5_selector_pc10.linear1.wm0.global1.motion1.quadratic1.gm0.compcor1.csf0'
+~~~~~~  _csf_threshold  ~~~  _csf_threshold_0.96
+~~~~~~  _gm_threshold  ~~~  _gm_threshold_0.7
+~~~~~~  _target_angle_deg  ~~~  _target_angle_deg_90
+~~~~~~  _threshold  ~~~  _threshold_0.2
+~~~~~~  _wm_threshold  ~~~  _wm_threshold_0.96
+~~~~~~  pipeline  ~~~  pipeline_LukachukaiCDP
+.
+_compcor_'ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic1.gm0.compcor1.csf0'.'ncomponents_5_selector  ---------->  pc10.linear1.wm0.global1.motion1.quadratic1.gm0.compcor1.csf0'
+_csf_threshold  ---------->  0.96
+_gm_threshold  ---------->  0.7
+_wm_threshold  ---------->  0.96
+pipeline  ---------->  LukachukaiCDP
+~~~  ~~~ /skullstrip_vis_s/skull_vis_s.png
+.
+.
+ln -s /home2/data/Projects/ABIDE_Initiative/CPAC/Output_2013-10-08_gelert/pipeline_LukachukaiCDP/0051095_session_1/qc/skullstrip_vis_s/skull_vis_s.png /home2/data/Projects/ABIDE_Initiative/CPAC/Output_2013-10-08_gelert/sym_links/pipeline_LukachukaiCDP/_compcor_'ncomponents_5_linear1.global1.motion1.quadratic1.compcor1.csf0'_CSF_0.96_GM_0.7_WM_0.96/0051095_session_1/scan/qc/skull_vis_s.png
+131010-12:36:52,566 workflow INFO:
+	 Executing node func_get_mean_motion.c0 in dir: /tmp/resting_preproc_0051095_session_1/func_preproc_0/_scan_rest_1_rest/func_get_mean_motion
+131010-12:36:52,574 workflow INFO:
+	 Running: 3dTstat -mean -prefix /tmp/resting_preproc_0051095_session_1/func_preproc_0/_scan_rest_1_rest/func_get_mean_motion/rest_3dc_tshift_RPI_3dv_3dT.nii.gz /tmp/resting_preproc_0051095_session_1/func_preproc_0/_scan_rest_1_rest/func_motion_correct/rest_3dc_tshift_RPI_3dv.nii.gz
+131010-12:36:52,615 interface INFO:
+	 stderr 2013-10-10T12:36:52.615509:++ 3dTstat: AFNI version=AFNI_2011_12_21_1014 (May 21 2012) [64-bit]
+131010-12:36:52,617 interface INFO:
+	 stderr 2013-10-10T12:36:52.615509:++ Authored by: KR Hammett & RW Cox
+131010-12:36:54,793 interface INFO:
+	 stderr 2013-10-10T12:36:54.793499:++ Output dataset /tmp/resting_preproc_0051095_session_1/func_preproc_0/_scan_rest_1_rest/func_get_mean_motion/rest_3dc_tshift_RPI_3dv_3dT.nii.gz
+131010-12:36:56,563 workflow INFO:
+	 [Job finished] jobname: func_get_mean_motion.c0 jobid: 8
+131010-12:36:56,575 workflow INFO:
+	 Submitting 1 jobs
+131010-12:36:56,576 workflow INFO:
+	 Executing: func_motion_correct_A.c0 ID: 91
+131010-12:36:56,599 workflow INFO:
+	 Executing node func_motion_correct_A.c0 in dir: /tmp/resting_preproc_0051095_session_1/func_preproc_0/_scan_rest_1_rest/func_motion_correct_A
+131010-12:36:56,608 workflow INFO:
+	 Running: 3dvolreg -Fourier -twopass -1Dmatrix_save ./rest_3dc_tshift_RPI_3dmat1D.1D -base /tmp/resting_preproc_0051095_session_1/func_preproc_0/_scan_rest_1_rest/func_get_mean_motion/rest_3dc_tshift_RPI_3dv_3dT.nii.gz -zpad 4 -maxdisp1D ./rest_3dc_tshift_RPI_3dvmd1D.1D -1Dfile ./rest_3dc_tshift_RPI_3dv1D.1D -prefix ./rest_3dc_tshift_RPI_3dv.nii.gz /tmp/resting_preproc_0051095_session_1/func_preproc_0/_scan_rest_1_rest/func_reorient/rest_3dc_tshift_RPI.nii.gz
+131010-12:36:56,633 interface INFO:
+	 stderr 2013-10-10T12:36:56.633312:++ 3dvolreg: AFNI version=AFNI_2011_12_21_1014 (May 21 2012) [64-bit]
+131010-12:36:56,635 interface INFO:
+	 stderr 2013-10-10T12:36:56.633312:++ Authored by: RW Cox
+131010-12:36:56,650 interface INFO:
+	 stderr 2013-10-10T12:36:56.650397:++ Coarse del was 10, replaced with 3
+131010-12:38:18,775 workflow INFO:
+	 [Job finished] jobname: linear_reg_0 jobid: 159
+131010-12:38:18,789 workflow INFO:
+	 Submitting 3 jobs
+131010-12:38:18,790 workflow INFO:
+	 Executing: nonlinear_reg_1 ID: 16
+131010-12:38:18,793 workflow INFO:
+	 Executing: inv_linear_reg0_xfm ID: 18
+131010-12:38:18,796 workflow INFO:
+	 Executing: sinker_4 ID: 36
+131010-12:38:18,807 workflow INFO:
+	 Executing node inv_linear_reg0_xfm in dir: /tmp/resting_preproc_0051095_session_1/anat_mni_register_0/inv_linear_reg0_xfm
+131010-12:38:18,812 workflow INFO:
+	 Executing node nonlinear_reg_1 in dir: /tmp/resting_preproc_0051095_session_1/anat_mni_register_0/nonlinear_reg_1
+131010-12:38:18,815 workflow INFO:
+	 Running: convert_xfm -omat /tmp/resting_preproc_0051095_session_1/anat_mni_register_0/inv_linear_reg0_xfm/mprage_RPI_3dc_flirt_inv.mat -inverse /tmp/resting_preproc_0051095_session_1/anat_mni_register_0/linear_reg_0/mprage_RPI_3dc_flirt.mat
+131010-12:38:18,826 workflow INFO:
+	 Running: fnirt --aff=/tmp/resting_preproc_0051095_session_1/anat_mni_register_0/linear_reg_0/mprage_RPI_3dc_flirt.mat --config=T1_2_MNI152_2mm --cout=/tmp/resting_preproc_0051095_session_1/anat_mni_register_0/nonlinear_reg_1/mprage_RPI_fieldwarp.nii.gz --in=/tmp/resting_preproc_0051095_session_1/anat_preproc_0/anat_reorient/mprage_RPI.nii.gz --jout=/tmp/resting_preproc_0051095_session_1/anat_mni_register_0/nonlinear_reg_1/mprage_RPI_field_jacobian.nii.gz --logout=/tmp/resting_preproc_0051095_session_1/anat_mni_register_0/nonlinear_reg_1/mprage_RPI_log.txt --ref=/home2/data/PublicProgram/fsl-4.1.9/data/standard/MNI152_T1_1mm.nii.gz --iout=/tmp/resting_preproc_0051095_session_1/anat_mni_register_0/nonlinear_reg_1/mprage_RPI_warped.nii.gz
+131010-12:38:19,28 workflow INFO:
+	 Executing node sinker_4 in dir: /tmp/resting_preproc_0051095_session_1/sinker_4
+131010-12:38:19,229 interface INFO:
+	 stderr 2013-10-10T12:38:19.229284:
+131010-12:38:19,232 interface INFO:
+	 stderr 2013-10-10T12:38:19.232300:Part of FSL (build 419)
+131010-12:38:19,233 interface INFO:
+	 stderr 2013-10-10T12:38:19.232300:fnirt
+131010-12:38:19,234 interface INFO:
+	 stderr 2013-10-10T12:38:19.232300:
+131010-12:38:19,235 interface INFO:
+	 stderr 2013-10-10T12:38:19.232300:Usage: 
+131010-12:38:19,236 interface INFO:
+	 stderr 2013-10-10T12:38:19.232300:fnirt --ref=<some template> --in=<some image>
+131010-12:38:19,237 interface INFO:
+	 stderr 2013-10-10T12:38:19.232300:fnirt --ref=<some template> --in=<some image> --infwhm=8,4,2 --subsamp=4,2,1 --warpres=8,8,8
+131010-12:38:19,238 interface INFO:
+	 stderr 2013-10-10T12:38:19.232300:
+131010-12:38:19,239 interface INFO:
+	 stderr 2013-10-10T12:38:19.232300:Compulsory arguments (You MUST set one or more of):
+131010-12:38:19,241 interface INFO:
+	 stderr 2013-10-10T12:38:19.241080:	--ref		name of reference image
+131010-12:38:19,242 interface INFO:
+	 stderr 2013-10-10T12:38:19.241080:	--in		name of input image
+131010-12:38:19,243 interface INFO:
+	 stderr 2013-10-10T12:38:19.241080:
+131010-12:38:19,244 interface INFO:
+	 stderr 2013-10-10T12:38:19.241080:Optional arguments (You may optionally specify one or more of):
+131010-12:38:19,245 interface INFO:
+	 stderr 2013-10-10T12:38:19.241080:	--aff		name of file containing affine transform
+131010-12:38:19,246 interface INFO:
+	 stderr 2013-10-10T12:38:19.241080:	--inwarp	name of file containing initial non-linear warps
+131010-12:38:19,247 interface INFO:
+	 stderr 2013-10-10T12:38:19.241080:	--intin		name of file/files containing initial intensity maping
+131010-12:38:19,248 interface INFO:
+	 stderr 2013-10-10T12:38:19.241080:	--cout		name of output file with field coefficients
+131010-12:38:19,249 interface INFO:
+	 stderr 2013-10-10T12:38:19.241080:	--iout		name of output image
+131010-12:38:19,250 interface INFO:
+	 stderr 2013-10-10T12:38:19.241080:	--fout		name of output file with field
+131010-12:38:19,251 interface INFO:
+	 stderr 2013-10-10T12:38:19.241080:	--jout		name of file for writing out the Jacobian of the field (for diagnostic or VBM purposes)
+131010-12:38:19,252 interface INFO:
+	 stderr 2013-10-10T12:38:19.241080:	--refout	name of file for writing out intensity modulated --ref (for diagnostic purposes)
+131010-12:38:19,253 interface INFO:
+	 stderr 2013-10-10T12:38:19.241080:	--intout	name of files for writing information pertaining to intensity mapping
+131010-12:38:19,254 interface INFO:
+	 stderr 2013-10-10T12:38:19.241080:	--logout	Name of log-file
+131010-12:38:19,255 interface INFO:
+	 stderr 2013-10-10T12:38:19.241080:	--config	Name of config file specifying command line arguments
+131010-12:38:19,256 interface INFO:
+	 stderr 2013-10-10T12:38:19.241080:	--refmask	name of file with mask in reference space
+131010-12:38:19,257 interface INFO:
+	 stderr 2013-10-10T12:38:19.241080:	--inmask	name of file with mask in input image space
+131010-12:38:19,258 interface INFO:
+	 stderr 2013-10-10T12:38:19.241080:	--applyrefmask	Use specified refmask if set, deafult 1 (true)
+131010-12:38:19,259 interface INFO:
+	 stderr 2013-10-10T12:38:19.241080:	--applyinmask	Use specified inmask if set, deafult 1 (true)
+131010-12:38:19,260 interface INFO:
+	 stderr 2013-10-10T12:38:19.241080:	--imprefm	If =1, use implicit masking based on value in --ref image. Default =1
+131010-12:38:19,261 interface INFO:
+	 stderr 2013-10-10T12:38:19.241080:	--impinm	If =1, use implicit masking based on value in --in image, Default =1
+131010-12:38:19,262 interface INFO:
+	 stderr 2013-10-10T12:38:19.241080:	--imprefval	Value to mask out in --ref image. Default =0.0
+131010-12:38:19,263 interface INFO:
+	 stderr 2013-10-10T12:38:19.241080:	--impinval	Value to mask out in --in image. Default =0.0
+131010-12:38:19,264 interface INFO:
+	 stderr 2013-10-10T12:38:19.241080:	--miter		Max # of non-linear iterations, default 5,5,5,5
+131010-12:38:19,266 interface INFO:
+	 stderr 2013-10-10T12:38:19.241080:	--subsamp	sub-sampling scheme, default 4,2,1,1
+131010-12:38:19,267 interface INFO:
+	 stderr 2013-10-10T12:38:19.241080:	--warpres	(approximate) resolution (in mm) of warp basis in x-, y- and z-direction, default 10,10,10
+131010-12:38:19,268 interface INFO:
+	 stderr 2013-10-10T12:38:19.241080:	--splineorder	Order of spline, 2->Qadratic spline, 3->Cubic spline. Default=3
+131010-12:38:19,269 interface INFO:
+	 stderr 2013-10-10T12:38:19.241080:	--infwhm	FWHM (in mm) of gaussian smoothing kernel for input volume, default 6,4,2,2
+131010-12:38:19,270 interface INFO:
+	 stderr 2013-10-10T12:38:19.241080:	--reffwhm	FWHM (in mm) of gaussian smoothing kernel for ref volume, default 4,2,0,0
+131010-12:38:19,271 interface INFO:
+	 stderr 2013-10-10T12:38:19.241080:	--regmod	Model for regularisation of warp-field [membrane_energy bending_energy], default bending_energy
+131010-12:38:19,272 interface INFO:
+	 stderr 2013-10-10T12:38:19.241080:	--lambda	Weight of regularisation, default depending on --ssqlambda and --regmod switches. See user documetation.
+131010-12:38:19,273 interface INFO:
+	 stderr 2013-10-10T12:38:19.241080:	--ssqlambda	If set (=1), lambda is weighted by current ssq, default 1
+131010-12:38:19,274 interface INFO:
+	 stderr 2013-10-10T12:38:19.241080:	--jacrange	Allowed range of Jacobian determinants, default 0.01,100.0
+131010-12:38:19,275 interface INFO:
+	 stderr 2013-10-10T12:38:19.241080:	--refderiv	If =1, ref image is used to calculate derivatives. Default =0
+131010-12:38:19,276 interface INFO:
+	 stderr 2013-10-10T12:38:19.241080:	--intmod	Model for intensity-mapping [none global_linear global_non_linear local_linear global_non_linear_with_bias local_non_linear]
+131010-12:38:19,277 interface INFO:
+	 stderr 2013-10-10T12:38:19.241080:	--intorder	Order of poynomial for mapping intensities, default 5
+131010-12:38:19,278 interface INFO:
+	 stderr 2013-10-10T12:38:19.241080:	--biasres	Resolution (in mm) of bias-field modelling local intensities, default 50,50,50
+131010-12:38:19,279 interface INFO:
+	 stderr 2013-10-10T12:38:19.241080:	--biaslambda	Weight of regularisation for bias-field, default 10000
+131010-12:38:19,280 interface INFO:
+	 stderr 2013-10-10T12:38:19.241080:	--estint	Estimate intensity-mapping if set, deafult 1 (true)
+131010-12:38:19,281 interface INFO:
+	 stderr 2013-10-10T12:38:19.241080:	--numprec	Precision for representing Hessian, double or float. Default double
+131010-12:38:19,282 interface INFO:
+	 stderr 2013-10-10T12:38:19.241080:	-v,--verbose	Print diagonostic information while running
+131010-12:38:19,283 interface INFO:
+	 stderr 2013-10-10T12:38:19.241080:	-h,--help	display help info
+131010-12:38:19,284 interface INFO:
+	 stderr 2013-10-10T12:38:19.241080:
+131010-12:38:19,285 interface INFO:
+	 stderr 2013-10-10T12:38:19.241080:
+131010-12:38:19,286 interface INFO:
+	 stderr 2013-10-10T12:38:19.241080:
+131010-12:38:19,287 interface INFO:
+	 stderr 2013-10-10T12:38:19.241080:fnirt::fnirt_clp: --ref=/home2/data/PublicProgram/fsl-4.1.9/data/standard/MNI152_T1_1mm.nii.gz and --refmask=/home2/data/PublicProgram/fsl-4.1.9/data/standard/MNI152_T1_2mm_brain_mask_dil have different dimensions.
+131010-12:38:20,806 workflow ERROR:
+	 ['Node nonlinear_reg_1 failed to run on host node10.']
+131010-12:38:20,814 workflow INFO:
+	 Saving crash info to /home2/data/Projects/ABIDE_Initiative/CPAC/crash/crash-20131010-123820-qli-nonlinear_reg_1.npz
+131010-12:38:20,815 workflow INFO:
+	 Traceback (most recent call last):
+  File "/home2/dlurie/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/nipype/pipeline/plugins/multiproc.py", line 18, in run_node
+    result['result'] = node.run(updatehash=updatehash)
+  File "/home2/dlurie/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/nipype/pipeline/engine.py", line 1282, in run
+    self._run_interface()
+  File "/home2/dlurie/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/nipype/pipeline/engine.py", line 1380, in _run_interface
+    self._result = self._run_command(execute)
+  File "/home2/dlurie/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/nipype/pipeline/engine.py", line 1504, in _run_command
+    result = self._interface.run()
+  File "/home2/dlurie/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/nipype/interfaces/base.py", line 895, in run
+    runtime = self._run_interface(runtime)
+  File "/home2/dlurie/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/nipype/interfaces/base.py", line 1272, in _run_interface
+    self.raise_exception(runtime)
+  File "/home2/dlurie/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/nipype/interfaces/base.py", line 1210, in raise_exception
+    raise RuntimeError(message)
+RuntimeError: Command:
+fnirt --aff=/tmp/resting_preproc_0051095_session_1/anat_mni_register_0/linear_reg_0/mprage_RPI_3dc_flirt.mat --config=T1_2_MNI152_2mm --cout=/tmp/resting_preproc_0051095_session_1/anat_mni_register_0/nonlinear_reg_1/mprage_RPI_fieldwarp.nii.gz --in=/tmp/resting_preproc_0051095_session_1/anat_preproc_0/anat_reorient/mprage_RPI.nii.gz --jout=/tmp/resting_preproc_0051095_session_1/anat_mni_register_0/nonlinear_reg_1/mprage_RPI_field_jacobian.nii.gz --logout=/tmp/resting_preproc_0051095_session_1/anat_mni_register_0/nonlinear_reg_1/mprage_RPI_log.txt --ref=/home2/data/PublicProgram/fsl-4.1.9/data/standard/MNI152_T1_1mm.nii.gz --iout=/tmp/resting_preproc_0051095_session_1/anat_mni_register_0/nonlinear_reg_1/mprage_RPI_warped.nii.gz
+Standard output:
+
+Standard error:
+
+Part of FSL (build 419)
+fnirt
+
+Usage: 
+fnirt --ref=<some template> --in=<some image>
+fnirt --ref=<some template> --in=<some image> --infwhm=8,4,2 --subsamp=4,2,1 --warpres=8,8,8
+
+Compulsory arguments (You MUST set one or more of):
+	--ref		name of reference image
+	--in		name of input image
+
+Optional arguments (You may optionally specify one or more of):
+	--aff		name of file containing affine transform
+	--inwarp	name of file containing initial non-linear warps
+	--intin		name of file/files containing initial intensity maping
+	--cout		name of output file with field coefficients
+	--iout		name of output image
+	--fout		name of output file with field
+	--jout		name of file for writing out the Jacobian of the field (for diagnostic or VBM purposes)
+	--refout	name of file for writing out intensity modulated --ref (for diagnostic purposes)
+	--intout	name of files for writing information pertaining to intensity mapping
+	--logout	Name of log-file
+	--config	Name of config file specifying command line arguments
+	--refmask	name of file with mask in reference space
+	--inmask	name of file with mask in input image space
+	--applyrefmask	Use specified refmask if set, deafult 1 (true)
+	--applyinmask	Use specified inmask if set, deafult 1 (true)
+	--imprefm	If =1, use implicit masking based on value in --ref image. Default =1
+	--impinm	If =1, use implicit masking based on value in --in image, Default =1
+	--imprefval	Value to mask out in --ref image. Default =0.0
+	--impinval	Value to mask out in --in image. Default =0.0
+	--miter		Max # of non-linear iterations, default 5,5,5,5
+	--subsamp	sub-sampling scheme, default 4,2,1,1
+	--warpres	(approximate) resolution (in mm) of warp basis in x-, y- and z-direction, default 10,10,10
+	--splineorder	Order of spline, 2->Qadratic spline, 3->Cubic spline. Default=3
+	--infwhm	FWHM (in mm) of gaussian smoothing kernel for input volume, default 6,4,2,2
+	--reffwhm	FWHM (in mm) of gaussian smoothing kernel for ref volume, default 4,2,0,0
+	--regmod	Model for regularisation of warp-field [membrane_energy bending_energy], default bending_energy
+	--lambda	Weight of regularisation, default depending on --ssqlambda and --regmod switches. See user documetation.
+	--ssqlambda	If set (=1), lambda is weighted by current ssq, default 1
+	--jacrange	Allowed range of Jacobian determinants, default 0.01,100.0
+	--refderiv	If =1, ref image is used to calculate derivatives. Default =0
+	--intmod	Model for intensity-mapping [none global_linear global_non_linear local_linear global_non_linear_with_bias local_non_linear]
+	--intorder	Order of poynomial for mapping intensities, default 5
+	--biasres	Resolution (in mm) of bias-field modelling local intensities, default 50,50,50
+	--biaslambda	Weight of regularisation for bias-field, default 10000
+	--estint	Estimate intensity-mapping if set, deafult 1 (true)
+	--numprec	Precision for representing Hessian, double or float. Default double
+	-v,--verbose	Print diagonostic information while running
+	-h,--help	display help info
+
+
+
+fnirt::fnirt_clp: --ref=/home2/data/PublicProgram/fsl-4.1.9/data/standard/MNI152_T1_1mm.nii.gz and --refmask=/home2/data/PublicProgram/fsl-4.1.9/data/standard/MNI152_T1_2mm_brain_mask_dil have different dimensions.
+Return code: 1
+Interface FNIRT failed to run. 
+
+131010-12:38:20,872 workflow INFO:
+	 [Job finished] jobname: inv_linear_reg0_xfm jobid: 18
+131010-12:38:20,883 workflow INFO:
+	 [Job finished] jobname: sinker_4 jobid: 36
+131010-12:38:20,895 workflow INFO:
+	 Submitting 5 jobs
+131010-12:38:20,897 workflow INFO:
+	 Executing: link_4 ID: 32
+131010-12:38:20,899 workflow INFO:
+	 Executing: GM_prior_mni_to_t1 ID: 47
+131010-12:38:20,903 workflow INFO:
+	 Executing: WM_prior_mni_to_t1 ID: 123
+131010-12:38:20,907 workflow INFO:
+	 Executing: sinker_20 ID: 173
+131010-12:38:20,910 workflow INFO:
+	 Executing node link_4 in dir: /tmp/resting_preproc_0051095_session_1/link_4
+131010-12:38:20,911 workflow INFO:
+	 Executing: CSF_prior_mni_to_t1 ID: 195
+131010-12:38:20,923 workflow INFO:
+	 Executing node GM_prior_mni_to_t1 in dir: /tmp/resting_preproc_0051095_session_1/seg_preproc_0/GM/GM_prior_mni_to_t1
+131010-12:38:20,935 workflow INFO:
+	 Running: flirt -in /home2/data/PublicProgram/fsl-4.1.9/data/standard/tissuepriors/2mm/avg152T1_gray_bin.nii.gz -ref /tmp/resting_preproc_0051095_session_1/anat_preproc_0/anat_brain_only/mprage_RPI_3dc.nii.gz -out /tmp/resting_preproc_0051095_session_1/seg_preproc_0/GM/GM_prior_mni_to_t1/avg152T1_gray_bin_flirt.nii.gz -omat /tmp/resting_preproc_0051095_session_1/seg_preproc_0/GM/GM_prior_mni_to_t1/avg152T1_gray_bin_flirt.mat -applyxfm -init /tmp/resting_preproc_0051095_session_1/anat_mni_register_0/inv_linear_reg0_xfm/mprage_RPI_3dc_flirt_inv.mat -interp nearestneighbour
+~~~~~~  _compcor_'ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic1.gm0.compcor1.csf0'.'ncomponents_5_selector  ~~~  _compcor_'ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic1.gm0.compcor1.csf0'.'ncomponents_5_selector_pc10.linear1.wm0.global1.motion1.quadratic1.gm0.compcor1.csf0'
+~~~~~~  _csf_threshold  ~~~  _csf_threshold_0.96
+~~~~~~  _gm_threshold  ~~~  _gm_threshold_0.7
+~~~~~~  _target_angle_deg  ~~~  _target_angle_deg_90
+~~~~~~  _threshold  ~~~  _threshold_0.2
+~~~~~~  _wm_threshold  ~~~  _wm_threshold_0.96
+~~~~~~  pipeline  ~~~  pipeline_LukachukaiCDP
+.
+_compcor_'ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic1.gm0.compcor1.csf0'.'ncomponents_5_selector  ---------->  pc10.linear1.wm0.global1.motion1.quadratic1.gm0.compcor1.csf0'
+_csf_threshold  ---------->  0.96
+_gm_threshold  ---------->  0.7
+_wm_threshold  ---------->  0.96
+pipeline  ---------->  LukachukaiCDP
+~~~  ~~~ /mprage_RPI_3dc_flirt.mat
+.
+.
+ln -s /home2/data/Projects/ABIDE_Initiative/CPAC/Output_2013-10-08_gelert/pipeline_LukachukaiCDP/0051095_session_1/anatomical_to_mni_linear_xfm/mprage_RPI_3dc_flirt.mat /home2/data/Projects/ABIDE_Initiative/CPAC/Output_2013-10-08_gelert/sym_links/pipeline_LukachukaiCDP/_compcor_'ncomponents_5_linear1.global1.motion1.quadratic1.compcor1.csf0'_CSF_0.96_GM_0.7_WM_0.96/0051095_session_1/scan/anat/anatomical_to_mni_linear_xfm.mat
+131010-12:38:20,971 workflow INFO:
+	 Executing node WM_prior_mni_to_t1 in dir: /tmp/resting_preproc_0051095_session_1/seg_preproc_0/WM/WM_prior_mni_to_t1
+131010-12:38:20,982 workflow INFO:
+	 Running: flirt -in /home2/data/PublicProgram/fsl-4.1.9/data/standard/tissuepriors/2mm/avg152T1_white_bin.nii.gz -ref /tmp/resting_preproc_0051095_session_1/anat_preproc_0/anat_brain_only/mprage_RPI_3dc.nii.gz -out /tmp/resting_preproc_0051095_session_1/seg_preproc_0/WM/WM_prior_mni_to_t1/avg152T1_white_bin_flirt.nii.gz -omat /tmp/resting_preproc_0051095_session_1/seg_preproc_0/WM/WM_prior_mni_to_t1/avg152T1_white_bin_flirt.mat -applyxfm -init /tmp/resting_preproc_0051095_session_1/anat_mni_register_0/inv_linear_reg0_xfm/mprage_RPI_3dc_flirt_inv.mat -interp nearestneighbour
+131010-12:38:22,366 workflow INFO:
+	 Executing node sinker_20 in dir: /tmp/resting_preproc_0051095_session_1/sinker_20
+131010-12:38:22,405 workflow INFO:
+	 Executing node CSF_prior_mni_to_t1 in dir: /tmp/resting_preproc_0051095_session_1/seg_preproc_0/CSF/CSF_prior_mni_to_t1
+131010-12:38:22,416 workflow INFO:
+	 Running: flirt -in /home2/data/PublicProgram/fsl-4.1.9/data/standard/tissuepriors/2mm/avg152T1_csf_bin.nii.gz -ref /tmp/resting_preproc_0051095_session_1/anat_preproc_0/anat_brain_only/mprage_RPI_3dc.nii.gz -out /tmp/resting_preproc_0051095_session_1/seg_preproc_0/CSF/CSF_prior_mni_to_t1/avg152T1_csf_bin_flirt.nii.gz -omat /tmp/resting_preproc_0051095_session_1/seg_preproc_0/CSF/CSF_prior_mni_to_t1/avg152T1_csf_bin_flirt.mat -applyxfm -init /tmp/resting_preproc_0051095_session_1/anat_mni_register_0/inv_linear_reg0_xfm/mprage_RPI_3dc_flirt_inv.mat -interp nearestneighbour
+131010-12:38:22,920 workflow INFO:
+	 [Job finished] jobname: link_4 jobid: 32
+131010-12:38:22,929 workflow INFO:
+	 [Job finished] jobname: GM_prior_mni_to_t1 jobid: 47
+131010-12:38:22,938 workflow INFO:
+	 [Job finished] jobname: WM_prior_mni_to_t1 jobid: 123
+131010-12:38:22,947 workflow INFO:
+	 [Job finished] jobname: sinker_20 jobid: 173
+131010-12:38:22,958 workflow INFO:
+	 Submitting 1 jobs
+131010-12:38:22,960 workflow INFO:
+	 Executing: link_20 ID: 30
+131010-12:38:22,974 workflow INFO:
+	 Executing node link_20 in dir: /tmp/resting_preproc_0051095_session_1/link_20
+131010-12:38:24,968 workflow INFO:
+	 [Job finished] jobname: CSF_prior_mni_to_t1 jobid: 195
+131010-12:38:24,978 workflow INFO:
+	 [Job finished] jobname: link_20 jobid: 30
+131010-12:39:45,474 interface INFO:
+	 stderr 2013-10-10T12:39:45.474416:++ Max displacement in automask = 3.85 (mm) at sub-brick 178
+131010-12:39:57,215 workflow INFO:
+	 [Job finished] jobname: func_motion_correct_A.c0 jobid: 91
+131010-12:39:57,229 workflow INFO:
+	 Submitting 4 jobs
+131010-12:39:57,230 workflow INFO:
+	 Executing: sinker_21.c0 ID: 21
+131010-12:39:57,234 workflow INFO:
+	 Executing: sinker_15.c0 ID: 53
+131010-12:39:57,238 workflow INFO:
+	 Executing: func_get_brain_mask.c0 ID: 82
+131010-12:39:57,240 workflow INFO:
+	 Executing: calc_friston.c0 ID: 170
+~~~~~~  _compcor_'ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic1.gm0.compcor1.csf0'.'ncomponents_5_selector  ~~~  _compcor_'ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic1.gm0.compcor1.csf0'.'ncomponents_5_selector_pc10.linear1.wm0.global1.motion1.quadratic1.gm0.compcor1.csf0'
+~~~~~~  _csf_threshold  ~~~  _csf_threshold_0.96
+~~~~~~  _gm_threshold  ~~~  _gm_threshold_0.7
+~~~~~~  _target_angle_deg  ~~~  _target_angle_deg_90
+~~~~~~  _threshold  ~~~  _threshold_0.2
+~~~~~~  _wm_threshold  ~~~  _wm_threshold_0.96
+~~~~~~  pipeline  ~~~  pipeline_LukachukaiCDP
+.
+_compcor_'ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic1.gm0.compcor1.csf0'.'ncomponents_5_selector  ---------->  pc10.linear1.wm0.global1.motion1.quadratic1.gm0.compcor1.csf0'
+_csf_threshold  ---------->  0.96
+_gm_threshold  ---------->  0.7
+_wm_threshold  ---------->  0.96
+pipeline  ---------->  LukachukaiCDP
+~~~  ~~~ /mprage_RPI_3dc_flirt_inv.mat
+.
+.
+ln -s /home2/data/Projects/ABIDE_Initiative/CPAC/Output_2013-10-08_gelert/pipeline_LukachukaiCDP/0051095_session_1/mni_to_anatomical_linear_xfm/mprage_RPI_3dc_flirt_inv.mat /home2/data/Projects/ABIDE_Initiative/CPAC/Output_2013-10-08_gelert/sym_links/pipeline_LukachukaiCDP/_compcor_'ncomponents_5_linear1.global1.motion1.quadratic1.compcor1.csf0'_CSF_0.96_GM_0.7_WM_0.96/0051095_session_1/scan/anat/mni_to_anatomical_linear_xfm.mat
+131010-12:39:57,246 workflow INFO:
+	 Executing node sinker_21.c0 in dir: /tmp/resting_preproc_0051095_session_1/_scan_rest_1_rest/sinker_21
+131010-12:39:57,250 workflow INFO:
+	 Executing node sinker_15.c0 in dir: /tmp/resting_preproc_0051095_session_1/_scan_rest_1_rest/sinker_15
+131010-12:39:57,252 workflow INFO:
+	 Executing node func_get_brain_mask.c0 in dir: /tmp/resting_preproc_0051095_session_1/func_preproc_0/_scan_rest_1_rest/func_get_brain_mask
+131010-12:39:57,279 workflow INFO:
+	 Running: 3dAutomask -prefix /tmp/resting_preproc_0051095_session_1/func_preproc_0/_scan_rest_1_rest/func_get_brain_mask/rest_3dc_tshift_RPI_3dv_automask.nii.gz /tmp/resting_preproc_0051095_session_1/func_preproc_0/_scan_rest_1_rest/func_motion_correct_A/rest_3dc_tshift_RPI_3dv.nii.gz
+131010-12:39:57,306 workflow INFO:
+	 Executing node calc_friston.c0 in dir: /tmp/resting_preproc_0051095_session_1/fristons_parameter_model_0/_scan_rest_1_rest/calc_friston
+131010-12:39:57,413 interface INFO:
+	 stderr 2013-10-10T12:39:57.412946:++ 3dAutomask: AFNI version=AFNI_2011_12_21_1014 (May 21 2012) [64-bit]
+131010-12:39:57,414 interface INFO:
+	 stderr 2013-10-10T12:39:57.412946:++ Authored by: Emperor Zhark
+131010-12:39:57,436 interface INFO:
+	 stderr 2013-10-10T12:39:57.436454:++ Loading dataset /tmp/resting_preproc_0051095_session_1/func_preproc_0/_scan_rest_1_rest/func_motion_correct_A/rest_3dc_tshift_RPI_3dv.nii.gz
+131010-12:39:59,106 interface INFO:
+	 stderr 2013-10-10T12:39:59.106658:++ Forming automask
+131010-12:39:59,250 workflow INFO:
+	 [Job finished] jobname: sinker_21.c0 jobid: 21
+131010-12:39:59,260 workflow INFO:
+	 [Job finished] jobname: sinker_15.c0 jobid: 53
+131010-12:39:59,269 workflow INFO:
+	 [Job finished] jobname: calc_friston.c0 jobid: 170
+131010-12:39:59,282 workflow INFO:
+	 Submitting 8 jobs
+131010-12:39:59,283 workflow INFO:
+	 Executing: link_21.c0 ID: 3
+131010-12:39:59,286 workflow INFO:
+	 Executing: sinker_23.c0 ID: 22
+131010-12:39:59,290 workflow INFO:
+	 Executing: calc_motion_parameters.c0 ID: 79
+131010-12:39:59,292 workflow INFO:
+	 Executing: calculate_FDJ.c0 ID: 80
+131010-12:39:59,294 workflow INFO:
+	 Executing: link_15.c0 ID: 81
+131010-12:39:59,296 workflow INFO:
+	 Executing node link_21.c0 in dir: /tmp/resting_preproc_0051095_session_1/_scan_rest_1_rest/link_21
+131010-12:39:59,297 workflow INFO:
+	 Executing: motion_plt_0.c0 ID: 83
+131010-12:39:59,298 workflow INFO:
+	 Executing: write_log.c0 ID: 121
+131010-12:39:59,300 workflow INFO:
+	 Executing node sinker_23.c0 in dir: /tmp/resting_preproc_0051095_session_1/_scan_rest_1_rest/sinker_23
+131010-12:39:59,301 workflow INFO:
+	 Executing: calculate_FD.c0 ID: 154
+131010-12:39:59,342 workflow INFO:
+	 Executing node calc_motion_parameters.c0 in dir: /tmp/resting_preproc_0051095_session_1/gen_motion_stats_0/_scan_rest_1_rest/calc_motion_parameters
+~~~~~~  _compcor_'ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic1.gm0.compcor1.csf0'.'ncomponents_5_selector  ~~~  _compcor_'ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic1.gm0.compcor1.csf0'.'ncomponents_5_selector_pc10.linear1.wm0.global1.motion1.quadratic1.gm0.compcor1.csf0'
+~~~~~~  _csf_threshold  ~~~  _csf_threshold_0.96
+~~~~~~  _gm_threshold  ~~~  _gm_threshold_0.7
+~~~~~~  _target_angle_deg  ~~~  _target_angle_deg_90
+~~~~~~  _threshold  ~~~  _threshold_0.2
+~~~~~~  _wm_threshold  ~~~  _wm_threshold_0.96
+~~~~~~  pipeline  ~~~  pipeline_LukachukaiCDP
+.
+_compcor_'ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic1.gm0.compcor1.csf0'.'ncomponents_5_selector  ---------->  pc10.linear1.wm0.global1.motion1.quadratic1.gm0.compcor1.csf0'
+_csf_threshold  ---------->  0.96
+_gm_threshold  ---------->  0.7
+_wm_threshold  ---------->  0.96
+pipeline  ---------->  LukachukaiCDP
+scan_rest_1_rest  ~~~ /_scan_rest_1_rest/rest_3dc_tshift_RPI_3dv.nii.gz
+.
+.
+ln -s /home2/data/Projects/ABIDE_Initiative/CPAC/Output_2013-10-08_gelert/pipeline_LukachukaiCDP/0051095_session_1/motion_correct/_scan_rest_1_rest/rest_3dc_tshift_RPI_3dv.nii.gz /home2/data/Projects/ABIDE_Initiative/CPAC/Output_2013-10-08_gelert/sym_links/pipeline_LukachukaiCDP/_compcor_'ncomponents_5_linear1.global1.motion1.quadratic1.compcor1.csf0'_CSF_0.96_GM_0.7_WM_0.96/0051095_session_1/scan_rest_1_rest/func/motion_correct.nii.gz
+131010-12:39:59,352 workflow INFO:
+	 Executing node calculate_FDJ.c0 in dir: /tmp/resting_preproc_0051095_session_1/gen_motion_stats_0/_scan_rest_1_rest/calculate_FDJ
+131010-12:39:59,396 workflow INFO:
+	 Executing node link_15.c0 in dir: /tmp/resting_preproc_0051095_session_1/_scan_rest_1_rest/link_15
+~~~~~~  _compcor_'ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic1.gm0.compcor1.csf0'.'ncomponents_5_selector  ~~~  _compcor_'ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic1.gm0.compcor1.csf0'.'ncomponents_5_selector_pc10.linear1.wm0.global1.motion1.quadratic1.gm0.compcor1.csf0'
+~~~~~~  _csf_threshold  ~~~  _csf_threshold_0.96
+~~~~~~  _gm_threshold  ~~~  _gm_threshold_0.7
+~~~~~~  _target_angle_deg  ~~~  _target_angle_deg_90
+~~~~~~  _threshold  ~~~  _threshold_0.2
+~~~~~~  _wm_threshold  ~~~  _wm_threshold_0.96
+~~~~~~  pipeline  ~~~  pipeline_LukachukaiCDP
+.
+_compcor_'ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic1.gm0.compcor1.csf0'.'ncomponents_5_selector  ---------->  pc10.linear1.wm0.global1.motion1.quadratic1.gm0.compcor1.csf0'
+_csf_threshold  ---------->  0.96
+_gm_threshold  ---------->  0.7
+_wm_threshold  ---------->  0.96
+pipeline  ---------->  LukachukaiCDP
+scan_rest_1_rest  ~~~ /_scan_rest_1_rest/rest_3dc_tshift_RPI_3dvmd1D.1D
+.
+ln -s /home2/data/Projects/ABIDE_Initiative/CPAC/Output_2013-10-08_gelert/pipeline_LukachukaiCDP/0051095_session_1/max_displacement/_scan_rest_1_rest/rest_3dc_tshift_RPI_3dvmd1D.1D /home2/data/Projects/ABIDE_Initiative/CPAC/Output_2013-10-08_gelert/sym_links/pipeline_LukachukaiCDP/_compcor_'ncomponents_5_linear1.global1.motion1.quadratic1.compcor1.csf0'_CSF_0.96_GM_0.7_WM_0.96/0051095_session_1/scan_rest_1_rest/parameters/max_displacement.1D
+131010-12:39:59,550 workflow INFO:
+	 Executing node motion_plt_0.c0 in dir: /tmp/resting_preproc_0051095_session_1/_scan_rest_1_rest/motion_plt_0
+131010-12:39:59,611 workflow INFO:
+	 Executing node write_log.c0 in dir: /tmp/resting_preproc_0051095_session_1/log_fristons_parameter_model_0/_scan_rest_1_rest/write_log
+131010-12:39:59,626 interface INFO:
+	 CPAC custom log :
+131010-12:39:59,627 interface INFO:
+	  version - 0.3.1, timestamp -2013-10-10 12:39:59, subject_id -0051095_session_1, scan_id - scan_rest_1_rest, strategy -, workflow - fristons_parameter_model_0, status -COMPLETED
+131010-12:39:59,977 workflow INFO:
+	 Executing node calculate_FD.c0 in dir: /tmp/resting_preproc_0051095_session_1/gen_motion_stats_0/_scan_rest_1_rest/calculate_FD
+131010-12:40:00,41 interface INFO:
+	 stderr 2013-10-10T12:40:00.041604: + Fixed clip level = 35.366737
+131010-12:40:00,56 interface INFO:
+	 stderr 2013-10-10T12:40:00.056440: + Used gradual clip level = 30.661530 .. 38.471539
+131010-12:40:00,57 interface INFO:
+	 stderr 2013-10-10T12:40:00.057811: + Number voxels above clip level = 39334
+131010-12:40:00,59 interface INFO:
+	 stderr 2013-10-10T12:40:00.057811: + Clustering voxels ...
+131010-12:40:00,60 interface INFO:
+	 stderr 2013-10-10T12:40:00.060526: + Largest cluster has 39277 voxels
+131010-12:40:00,62 interface INFO:
+	 stderr 2013-10-10T12:40:00.062536: + Clustering voxels ...
+131010-12:40:00,65 interface INFO:
+	 stderr 2013-10-10T12:40:00.065359: + Largest cluster has 39066 voxels
+131010-12:40:00,72 interface INFO:
+	 stderr 2013-10-10T12:40:00.072296: + Filled   269 voxels in small holes; now have 39335 voxels
+131010-12:40:00,77 interface INFO:
+	 stderr 2013-10-10T12:40:00.076968: + Clustering voxels ...
+131010-12:40:00,79 interface INFO:
+	 stderr 2013-10-10T12:40:00.079855: + Largest cluster has 39335 voxels
+131010-12:40:00,81 interface INFO:
+	 stderr 2013-10-10T12:40:00.081021: + Clustering non-brain voxels ...
+131010-12:40:00,82 interface INFO:
+	 stderr 2013-10-10T12:40:00.081021: + Clustering voxels ...
+131010-12:40:00,89 interface INFO:
+	 stderr 2013-10-10T12:40:00.089314: + Largest cluster has 129625 voxels
+131010-12:40:00,90 interface INFO:
+	 stderr 2013-10-10T12:40:00.090474: + Mask now has 39335 voxels
+131010-12:40:00,91 interface INFO:
+	 stderr 2013-10-10T12:40:00.091890:++ 39335 voxels in the mask [out of 168960: 23.28%]
+131010-12:40:00,93 interface INFO:
+	 stderr 2013-10-10T12:40:00.091890:++ first  12 x-planes are zero [from R]
+131010-12:40:00,94 interface INFO:
+	 stderr 2013-10-10T12:40:00.091890:++ last    7 x-planes are zero [from L]
+131010-12:40:00,95 interface INFO:
+	 stderr 2013-10-10T12:40:00.091890:++ first   9 y-planes are zero [from P]
+131010-12:40:00,97 interface INFO:
+	 stderr 2013-10-10T12:40:00.091890:++ last   11 y-planes are zero [from A]
+131010-12:40:00,98 interface INFO:
+	 stderr 2013-10-10T12:40:00.091890:++ first   0 z-planes are zero [from I]
+131010-12:40:00,99 interface INFO:
+	 stderr 2013-10-10T12:40:00.091890:++ last    4 z-planes are zero [from S]
+131010-12:40:00,105 interface INFO:
+	 stderr 2013-10-10T12:40:00.104995:++ Output dataset /tmp/resting_preproc_0051095_session_1/func_preproc_0/_scan_rest_1_rest/func_get_brain_mask/rest_3dc_tshift_RPI_3dv_automask.nii.gz
+131010-12:40:00,106 interface INFO:
+	 stderr 2013-10-10T12:40:00.106296:++ CPU time = 0.000000 sec
+131010-12:40:01,307 workflow INFO:
+	 [Job finished] jobname: func_get_brain_mask.c0 jobid: 82
+131010-12:40:01,317 workflow INFO:
+	 [Job finished] jobname: link_21.c0 jobid: 3
+131010-12:40:01,326 workflow INFO:
+	 [Job finished] jobname: sinker_23.c0 jobid: 22
+131010-12:40:01,336 workflow INFO:
+	 [Job finished] jobname: calc_motion_parameters.c0 jobid: 79
+131010-12:40:01,345 workflow INFO:
+	 [Job finished] jobname: calculate_FDJ.c0 jobid: 80
+131010-12:40:01,354 workflow INFO:
+	 [Job finished] jobname: link_15.c0 jobid: 81
+131010-12:40:01,363 workflow INFO:
+	 [Job finished] jobname: motion_plt_0.c0 jobid: 83
+131010-12:40:01,372 workflow INFO:
+	 [Job finished] jobname: write_log.c0 jobid: 121
+131010-12:40:01,381 workflow INFO:
+	 [Job finished] jobname: calculate_FD.c0 jobid: 154
+131010-12:40:01,394 workflow INFO:
+	 Submitting 10 jobs
+131010-12:40:01,395 workflow INFO:
+	 Executing: sinker_22.c0 ID: 19
+131010-12:40:01,400 workflow INFO:
+	 Executing: sinker_34.c0 ID: 64
+131010-12:40:01,404 workflow INFO:
+	 Executing: cal_DVARS.c0 ID: 94
+131010-12:40:01,406 workflow INFO:
+	 Executing: func_edge_detect.c0 ID: 96
+131010-12:40:01,408 workflow INFO:
+	 Executing: exclude_frames.c0.a0 ID: 99
+131010-12:40:01,410 workflow INFO:
+	 Executing: sinker_7.c0 ID: 104
+131010-12:40:01,411 workflow INFO:
+	 Executing node sinker_22.c0 in dir: /tmp/resting_preproc_0051095_session_1/_scan_rest_1_rest/sinker_22
+131010-12:40:01,414 workflow INFO:
+	 Executing: sinker_33.c0 ID: 105
+131010-12:40:01,415 workflow INFO:
+	 Executing node sinker_34.c0 in dir: /tmp/resting_preproc_0051095_session_1/_scan_rest_1_rest/sinker_34
+131010-12:40:01,418 workflow INFO:
+	 Executing: link_23.c0 ID: 111
+131010-12:40:01,420 workflow INFO:
+	 Executing: sinker_8.c0 ID: 140
+131010-12:40:01,424 workflow INFO:
+	 Executing: write_log.c0 ID: 182
+131010-12:40:01,424 workflow INFO:
+	 Executing node cal_DVARS.c0 in dir: /tmp/resting_preproc_0051095_session_1/gen_motion_stats_0/_scan_rest_1_rest/cal_DVARS
+131010-12:40:01,428 interface INFO:
+	 sub: /home2/data/Projects/ABIDE_Initiative/CPAC/Output_2013-10-08_gelert/pipeline_LukachukaiCDP/0051095_session_1/qc___movement_trans_plot/_scan_rest_1_rest/motion_trans_plot.png -> /home2/data/Projects/ABIDE_Initiative/CPAC/Output_2013-10-08_gelert/pipeline_LukachukaiCDP/0051095_session_1/qc/movement_trans_plot/_scan_rest_1_rest/motion_trans_plot.png
+131010-12:40:01,453 workflow INFO:
+	 Executing node exclude_frames.c0.a0 in dir: /tmp/resting_preproc_0051095_session_1/gen_motion_stats_0/_scan_rest_1_rest/_threshold_0.2/exclude_frames
+131010-12:40:01,456 workflow INFO:
+	 Executing node func_edge_detect.c0 in dir: /tmp/resting_preproc_0051095_session_1/func_preproc_0/_scan_rest_1_rest/func_edge_detect
+131010-12:40:01,464 workflow INFO:
+	 Running: 3dcalc -a /tmp/resting_preproc_0051095_session_1/func_preproc_0/_scan_rest_1_rest/func_motion_correct_A/rest_3dc_tshift_RPI_3dv.nii.gz  -b /tmp/resting_preproc_0051095_session_1/func_preproc_0/_scan_rest_1_rest/func_get_brain_mask/rest_3dc_tshift_RPI_3dv_automask.nii.gz -expr 'a*b' -prefix rest_3dc_tshift_RPI_3dv_3dc.nii.gz
+131010-12:40:01,481 workflow INFO:
+	 Executing node sinker_7.c0 in dir: /tmp/resting_preproc_0051095_session_1/_scan_rest_1_rest/sinker_7
+131010-12:40:01,487 interface INFO:
+	 stderr 2013-10-10T12:40:01.487602:++ 3dcalc: AFNI version=AFNI_2011_12_21_1014 (May 21 2012) [64-bit]
+131010-12:40:01,489 interface INFO:
+	 stderr 2013-10-10T12:40:01.487602:++ Authored by: A cast of thousands
+131010-12:40:01,514 workflow INFO:
+	 Executing node sinker_33.c0 in dir: /tmp/resting_preproc_0051095_session_1/_scan_rest_1_rest/sinker_33
+131010-12:40:01,525 interface INFO:
+	 sub: /home2/data/Projects/ABIDE_Initiative/CPAC/Output_2013-10-08_gelert/pipeline_LukachukaiCDP/0051095_session_1/qc___movement_rot_plot/_scan_rest_1_rest/motion_rot_plot.png -> /home2/data/Projects/ABIDE_Initiative/CPAC/Output_2013-10-08_gelert/pipeline_LukachukaiCDP/0051095_session_1/qc/movement_rot_plot/_scan_rest_1_rest/motion_rot_plot.png
+131010-12:40:01,549 workflow INFO:
+	 Executing node link_23.c0 in dir: /tmp/resting_preproc_0051095_session_1/_scan_rest_1_rest/link_23
+~~~~~~  _compcor_'ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic1.gm0.compcor1.csf0'.'ncomponents_5_selector  ~~~  _compcor_'ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic1.gm0.compcor1.csf0'.'ncomponents_5_selector_pc10.linear1.wm0.global1.motion1.quadratic1.gm0.compcor1.csf0'
+~~~~~~  _csf_threshold  ~~~  _csf_threshold_0.96
+~~~~~~  _gm_threshold  ~~~  _gm_threshold_0.7
+~~~~~~  _target_angle_deg  ~~~  _target_angle_deg_90
+~~~~~~  _threshold  ~~~  _threshold_0.2
+~~~~~~  _wm_threshold  ~~~  _wm_threshold_0.96
+~~~~~~  pipeline  ~~~  pipeline_LukachukaiCDP
+.
+_compcor_'ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic1.gm0.compcor1.csf0'.'ncomponents_5_selector  ---------->  pc10.linear1.wm0.global1.motion1.quadratic1.gm0.compcor1.csf0'
+_csf_threshold  ---------->  0.96
+_gm_threshold  ---------->  0.7
+_wm_threshold  ---------->  0.96
+pipeline  ---------->  LukachukaiCDP
+scan_rest_1_rest  ~~~ /_scan_rest_1_rest/fristons_twenty_four.1D
+.
+.
+ln -s /home2/data/Projects/ABIDE_Initiative/CPAC/Output_2013-10-08_gelert/pipeline_LukachukaiCDP/0051095_session_1/movement_parameters/_scan_rest_1_rest/fristons_twenty_four.1D /home2/data/Projects/ABIDE_Initiative/CPAC/Output_2013-10-08_gelert/sym_links/pipeline_LukachukaiCDP/_compcor_'ncomponents_5_linear1.global1.motion1.quadratic1.compcor1.csf0'_CSF_0.96_GM_0.7_WM_0.96/0051095_session_1/scan_rest_1_rest/parameters/movement_parameters.1D
+131010-12:40:01,598 workflow INFO:
+	 Executing node sinker_8.c0 in dir: /tmp/resting_preproc_0051095_session_1/_scan_rest_1_rest/sinker_8
+131010-12:40:01,631 workflow INFO:
+	 Executing node write_log.c0 in dir: /tmp/resting_preproc_0051095_session_1/log_gen_motion_stats_0/_scan_rest_1_rest/write_log
+131010-12:40:01,645 interface INFO:
+	 CPAC custom log :
+131010-12:40:01,647 interface INFO:
+	  version - 0.3.1, timestamp -2013-10-10 12:40:01, subject_id -0051095_session_1, scan_id - scan_rest_1_rest, strategy -, workflow - gen_motion_stats_0, status -COMPLETED
+131010-12:40:03,432 workflow INFO:
+	 [Job finished] jobname: sinker_22.c0 jobid: 19
+131010-12:40:03,441 workflow INFO:
+	 [Job finished] jobname: sinker_34.c0 jobid: 64
+131010-12:40:03,449 workflow INFO:
+	 [Job finished] jobname: exclude_frames.c0.a0 jobid: 99
+131010-12:40:03,458 workflow INFO:
+	 [Job finished] jobname: sinker_7.c0 jobid: 104
+131010-12:40:03,467 workflow INFO:
+	 [Job finished] jobname: sinker_33.c0 jobid: 105
+131010-12:40:03,475 workflow INFO:
+	 [Job finished] jobname: link_23.c0 jobid: 111
+131010-12:40:03,484 workflow INFO:
+	 [Job finished] jobname: sinker_8.c0 jobid: 140
+131010-12:40:03,493 workflow INFO:
+	 [Job finished] jobname: write_log.c0 jobid: 182
+131010-12:40:03,503 workflow INFO:
+	 Submitting 8 jobs
+131010-12:40:03,505 workflow INFO:
+	 Executing: include_frames.c0.a0 ID: 84
+131010-12:40:03,507 workflow INFO:
+	 Executing: sinker_40.c0.a0 ID: 101
+131010-12:40:03,511 workflow INFO:
+	 Executing: link_7.c0 ID: 160
+131010-12:40:03,514 workflow INFO:
+	 Executing: link_22.c0 ID: 163
+131010-12:40:03,516 workflow INFO:
+	 Executing: link_33.c0 ID: 168
+131010-12:40:03,519 workflow INFO:
+	 Executing: link_8.c0 ID: 179
+131010-12:40:03,521 workflow INFO:
+	 Executing: fd_plot_0.c0.a0 ID: 194
+131010-12:40:03,523 workflow INFO:
+	 Executing: link_34.c0 ID: 202
+131010-12:40:03,524 workflow INFO:
+	 Executing node include_frames.c0.a0 in dir: /tmp/resting_preproc_0051095_session_1/gen_motion_stats_0/_scan_rest_1_rest/_threshold_0.2/include_frames
+[0, 1, 2, 3, 4, 5, 17, 18, 19, 20, 21, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 86, 87, 88, 89, 90, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141, 142, 143, 144, 145, 151, 152, 153, 154, 158, 159, 160, 161, 162, 163, 164, 165, 166, 167, 177, 178, 179, 180, 181]
+131010-12:40:03,552 workflow INFO:
+	 Executing node sinker_40.c0.a0 in dir: /tmp/resting_preproc_0051095_session_1/_scan_rest_1_rest/_threshold_0.2/sinker_40
+131010-12:40:03,587 workflow INFO:
+	 Executing node link_7.c0 in dir: /tmp/resting_preproc_0051095_session_1/_scan_rest_1_rest/link_7
+~~~~~~  _compcor_'ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic1.gm0.compcor1.csf0'.'ncomponents_5_selector  ~~~  _compcor_'ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic1.gm0.compcor1.csf0'.'ncomponents_5_selector_pc10.linear1.wm0.global1.motion1.quadratic1.gm0.compcor1.csf0'
+~~~~~~  _csf_threshold  ~~~  _csf_threshold_0.96
+~~~~~~  _gm_threshold  ~~~  _gm_threshold_0.7
+~~~~~~  _target_angle_deg  ~~~  _target_angle_deg_90
+~~~~~~  _threshold  ~~~  _threshold_0.2
+~~~~~~  _wm_threshold  ~~~  _wm_threshold_0.96
+~~~~~~  pipeline  ~~~  pipeline_LukachukaiCDP
+.
+_compcor_'ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic1.gm0.compcor1.csf0'.'ncomponents_5_selector  ---------->  pc10.linear1.wm0.global1.motion1.quadratic1.gm0.compcor1.csf0'
+_csf_threshold  ---------->  0.96
+_gm_threshold  ---------->  0.7
+_wm_threshold  ---------->  0.96
+pipeline  ---------->  LukachukaiCDP
+scan_rest_1_rest  ~~~ /_scan_rest_1_rest/FD.1D
+.
+.
+ln -s /home2/data/Projects/ABIDE_Initiative/CPAC/Output_2013-10-08_gelert/pipeline_LukachukaiCDP/0051095_session_1/frame_wise_displacement/_scan_rest_1_rest/FD.1D /home2/data/Projects/ABIDE_Initiative/CPAC/Output_2013-10-08_gelert/sym_links/pipeline_LukachukaiCDP/_compcor_'ncomponents_5_linear1.global1.motion1.quadratic1.compcor1.csf0'_CSF_0.96_GM_0.7_WM_0.96/0051095_session_1/scan_rest_1_rest/parameters/frame_wise_displacement.1D
+131010-12:40:03,634 workflow INFO:
+	 Executing node link_22.c0 in dir: /tmp/resting_preproc_0051095_session_1/_scan_rest_1_rest/link_22
+~~~~~~  _compcor_'ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic1.gm0.compcor1.csf0'.'ncomponents_5_selector  ~~~  _compcor_'ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic1.gm0.compcor1.csf0'.'ncomponents_5_selector_pc10.linear1.wm0.global1.motion1.quadratic1.gm0.compcor1.csf0'
+~~~~~~  _csf_threshold  ~~~  _csf_threshold_0.96
+~~~~~~  _gm_threshold  ~~~  _gm_threshold_0.7
+~~~~~~  _target_angle_deg  ~~~  _target_angle_deg_90
+~~~~~~  _threshold  ~~~  _threshold_0.2
+~~~~~~  _wm_threshold  ~~~  _wm_threshold_0.96
+~~~~~~  pipeline  ~~~  pipeline_LukachukaiCDP
+.
+_compcor_'ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic1.gm0.compcor1.csf0'.'ncomponents_5_selector  ---------->  pc10.linear1.wm0.global1.motion1.quadratic1.gm0.compcor1.csf0'
+_csf_threshold  ---------->  0.96
+_gm_threshold  ---------->  0.7
+_wm_threshold  ---------->  0.96
+pipeline  ---------->  LukachukaiCDP
+scan_rest_1_rest  ~~~ /_scan_rest_1_rest/motion_parameters.txt
+.
+.
+ln -s /home2/data/Projects/ABIDE_Initiative/CPAC/Output_2013-10-08_gelert/pipeline_LukachukaiCDP/0051095_session_1/motion_params/_scan_rest_1_rest/motion_parameters.txt /home2/data/Projects/ABIDE_Initiative/CPAC/Output_2013-10-08_gelert/sym_links/pipeline_LukachukaiCDP/_compcor_'ncomponents_5_linear1.global1.motion1.quadratic1.compcor1.csf0'_CSF_0.96_GM_0.7_WM_0.96/0051095_session_1/scan_rest_1_rest/parameters/motion_params.txt
+131010-12:40:03,680 workflow INFO:
+	 Executing node link_33.c0 in dir: /tmp/resting_preproc_0051095_session_1/_scan_rest_1_rest/link_33
+~~~~~~  _compcor_'ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic1.gm0.compcor1.csf0'.'ncomponents_5_selector  ~~~  _compcor_'ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic1.gm0.compcor1.csf0'.'ncomponents_5_selector_pc10.linear1.wm0.global1.motion1.quadratic1.gm0.compcor1.csf0'
+~~~~~~  _csf_threshold  ~~~  _csf_threshold_0.96
+~~~~~~  _gm_threshold  ~~~  _gm_threshold_0.7
+~~~~~~  _target_angle_deg  ~~~  _target_angle_deg_90
+~~~~~~  _threshold  ~~~  _threshold_0.2
+~~~~~~  _wm_threshold  ~~~  _wm_threshold_0.96
+~~~~~~  pipeline  ~~~  pipeline_LukachukaiCDP
+.
+_compcor_'ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic1.gm0.compcor1.csf0'.'ncomponents_5_selector  ---------->  pc10.linear1.wm0.global1.motion1.quadratic1.gm0.compcor1.csf0'
+_csf_threshold  ---------->  0.96
+_gm_threshold  ---------->  0.7
+_wm_threshold  ---------->  0.96
+pipeline  ---------->  LukachukaiCDP
+scan_rest_1_rest  ~~~ /movement_rot_plot/_scan_rest_1_rest/motion_rot_plot.png
+.
+ln -s /home2/data/Projects/ABIDE_Initiative/CPAC/Output_2013-10-08_gelert/pipeline_LukachukaiCDP/0051095_session_1/qc/movement_rot_plot/_scan_rest_1_rest/motion_rot_plot.png /home2/data/Projects/ABIDE_Initiative/CPAC/Output_2013-10-08_gelert/sym_links/pipeline_LukachukaiCDP/_compcor_'ncomponents_5_linear1.global1.motion1.quadratic1.compcor1.csf0'_CSF_0.96_GM_0.7_WM_0.96/0051095_session_1/scan_rest_1_rest/qc/motion_rot_plot.png
+131010-12:40:03,728 workflow INFO:
+	 Executing node link_8.c0 in dir: /tmp/resting_preproc_0051095_session_1/_scan_rest_1_rest/link_8
+~~~~~~  _compcor_'ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic1.gm0.compcor1.csf0'.'ncomponents_5_selector  ~~~  _compcor_'ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic1.gm0.compcor1.csf0'.'ncomponents_5_selector_pc10.linear1.wm0.global1.motion1.quadratic1.gm0.compcor1.csf0'
+~~~~~~  _csf_threshold  ~~~  _csf_threshold_0.96
+~~~~~~  _gm_threshold  ~~~  _gm_threshold_0.7
+~~~~~~  _target_angle_deg  ~~~  _target_angle_deg_90
+~~~~~~  _threshold  ~~~  _threshold_0.2
+~~~~~~  _wm_threshold  ~~~  _wm_threshold_0.96
+~~~~~~  pipeline  ~~~  pipeline_LukachukaiCDP
+.
+_compcor_'ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic1.gm0.compcor1.csf0'.'ncomponents_5_selector  ---------->  pc10.linear1.wm0.global1.motion1.quadratic1.gm0.compcor1.csf0'
+_csf_threshold  ---------->  0.96
+_gm_threshold  ---------->  0.7
+_wm_threshold  ---------->  0.96
+pipeline  ---------->  LukachukaiCDP
+scan_rest_1_rest  ~~~ /_scan_rest_1_rest/rest_3dc_tshift_RPI_3dv_automask.nii.gz
+.
+.
+ln -s /home2/data/Projects/ABIDE_Initiative/CPAC/Output_2013-10-08_gelert/pipeline_LukachukaiCDP/0051095_session_1/functional_brain_mask/_scan_rest_1_rest/rest_3dc_tshift_RPI_3dv_automask.nii.gz /home2/data/Projects/ABIDE_Initiative/CPAC/Output_2013-10-08_gelert/sym_links/pipeline_LukachukaiCDP/_compcor_'ncomponents_5_linear1.global1.motion1.quadratic1.compcor1.csf0'_CSF_0.96_GM_0.7_WM_0.96/0051095_session_1/scan_rest_1_rest/func/functional_brain_mask.nii.gz
+131010-12:40:03,782 workflow INFO:
+	 Executing node fd_plot_0.c0.a0 in dir: /tmp/resting_preproc_0051095_session_1/_scan_rest_1_rest/_threshold_0.2/fd_plot_0
+131010-12:40:05,31 workflow INFO:
+	 Executing node link_34.c0 in dir: /tmp/resting_preproc_0051095_session_1/_scan_rest_1_rest/link_34
+131010-12:40:05,531 workflow INFO:
+	 [Job finished] jobname: include_frames.c0.a0 jobid: 84
+131010-12:40:05,540 workflow INFO:
+	 [Job finished] jobname: sinker_40.c0.a0 jobid: 101
+131010-12:40:05,548 workflow INFO:
+	 [Job finished] jobname: link_7.c0 jobid: 160
+131010-12:40:05,557 workflow INFO:
+	 [Job finished] jobname: link_22.c0 jobid: 163
+131010-12:40:05,565 workflow INFO:
+	 [Job finished] jobname: link_33.c0 jobid: 168
+131010-12:40:05,573 workflow INFO:
+	 [Job finished] jobname: link_8.c0 jobid: 179
+131010-12:40:05,582 workflow INFO:
+	 [Job finished] jobname: fd_plot_0.c0.a0 jobid: 194
+131010-12:40:05,591 workflow INFO:
+	 [Job finished] jobname: link_34.c0 jobid: 202
+131010-12:40:05,601 workflow INFO:
+	 Submitting 3 jobs
+131010-12:40:05,603 workflow INFO:
+	 Executing: sinker_28.c0.a0 ID: 26
+131010-12:40:05,607 workflow INFO:
+	 Executing: link_40.c0.a0 ID: 76
+131010-12:40:05,609 workflow INFO:
+	 Executing: sinker_41.c0.a0 ID: 157
+~~~~~~  _compcor_'ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic1.gm0.compcor1.csf0'.'ncomponents_5_selector  ~~~  _compcor_'ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic1.gm0.compcor1.csf0'.'ncomponents_5_selector_pc10.linear1.wm0.global1.motion1.quadratic1.gm0.compcor1.csf0'
+~~~~~~  _csf_threshold  ~~~  _csf_threshold_0.96
+~~~~~~  _gm_threshold  ~~~  _gm_threshold_0.7
+~~~~~~  _target_angle_deg  ~~~  _target_angle_deg_90
+~~~~~~  _threshold  ~~~  _threshold_0.2
+~~~~~~  _wm_threshold  ~~~  _wm_threshold_0.96
+~~~~~~  pipeline  ~~~  pipeline_LukachukaiCDP
+.
+_compcor_'ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic1.gm0.compcor1.csf0'.'ncomponents_5_selector  ---------->  pc10.linear1.wm0.global1.motion1.quadratic1.gm0.compcor1.csf0'
+_csf_threshold  ---------->  0.96
+_gm_threshold  ---------->  0.7
+_wm_threshold  ---------->  0.96
+pipeline  ---------->  LukachukaiCDP
+scan_rest_1_rest  ~~~ /movement_trans_plot/_scan_rest_1_rest/motion_trans_plot.png
+.
+.
+ln -s /home2/data/Projects/ABIDE_Initiative/CPAC/Output_2013-10-08_gelert/pipeline_LukachukaiCDP/0051095_session_1/qc/movement_trans_plot/_scan_rest_1_rest/motion_trans_plot.png /home2/data/Projects/ABIDE_Initiative/CPAC/Output_2013-10-08_gelert/sym_links/pipeline_LukachukaiCDP/_compcor_'ncomponents_5_linear1.global1.motion1.quadratic1.compcor1.csf0'_CSF_0.96_GM_0.7_WM_0.96/0051095_session_1/scan_rest_1_rest/qc/motion_trans_plot.png
+131010-12:40:05,619 workflow INFO:
+	 Executing node sinker_28.c0.a0 in dir: /tmp/resting_preproc_0051095_session_1/_scan_rest_1_rest/_threshold_0.2/sinker_28
+131010-12:40:05,633 interface INFO:
+	 sub: /home2/data/Projects/ABIDE_Initiative/CPAC/Output_2013-10-08_gelert/pipeline_LukachukaiCDP/0051095_session_1/qc___fd_plot/_scan_rest_1_rest/_threshold_0.2/FD_plot.png -> /home2/data/Projects/ABIDE_Initiative/CPAC/Output_2013-10-08_gelert/pipeline_LukachukaiCDP/0051095_session_1/qc/fd_plot/_scan_rest_1_rest/_threshold_0.2/FD_plot.png
+131010-12:40:05,660 workflow INFO:
+	 Executing node link_40.c0.a0 in dir: /tmp/resting_preproc_0051095_session_1/_scan_rest_1_rest/_threshold_0.2/link_40
+~~~~~~  _compcor_'ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic1.gm0.compcor1.csf0'.'ncomponents_5_selector  ~~~  _compcor_'ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic1.gm0.compcor1.csf0'.'ncomponents_5_selector_pc10.linear1.wm0.global1.motion1.quadratic1.gm0.compcor1.csf0'
+~~~~~~  _csf_threshold  ~~~  _csf_threshold_0.96
+~~~~~~  _gm_threshold  ~~~  _gm_threshold_0.7
+~~~~~~  _target_angle_deg  ~~~  _target_angle_deg_90
+~~~~~~  _threshold  ~~~  _threshold_0.2
+~~~~~~  _wm_threshold  ~~~  _wm_threshold_0.96
+~~~~~~  pipeline  ~~~  pipeline_LukachukaiCDP
+.
+_compcor_'ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic1.gm0.compcor1.csf0'.'ncomponents_5_selector  ---------->  pc10.linear1.wm0.global1.motion1.quadratic1.gm0.compcor1.csf0'
+_csf_threshold  ---------->  0.96
+_gm_threshold  ---------->  0.7
+_wm_threshold  ---------->  0.96
+pipeline  ---------->  LukachukaiCDP
+scan_rest_1_rest  ~~~ /_scan_rest_1_rest/_threshold_0.2/frames_ex.1D
+.
+.
+ln -s /home2/data/Projects/ABIDE_Initiative/CPAC/Output_2013-10-08_gelert/pipeline_LukachukaiCDP/0051095_session_1/scrubbing_frames_excluded/_scan_rest_1_rest/_threshold_0.2/frames_ex.1D /home2/data/Projects/ABIDE_Initiative/CPAC/Output_2013-10-08_gelert/sym_links/pipeline_LukachukaiCDP/_compcor_'ncomponents_5_linear1.global1.motion1.quadratic1.compcor1.csf0'_CSF_0.96_GM_0.7_WM_0.96/0051095_session_1/scan_rest_1_rest/parameters/scrubbing_frames_excluded.1D
+131010-12:40:05,709 workflow INFO:
+	 Executing node sinker_41.c0.a0 in dir: /tmp/resting_preproc_0051095_session_1/_scan_rest_1_rest/_threshold_0.2/sinker_41
+131010-12:40:07,619 workflow INFO:
+	 [Job finished] jobname: sinker_28.c0.a0 jobid: 26
+131010-12:40:07,628 workflow INFO:
+	 [Job finished] jobname: link_40.c0.a0 jobid: 76
+131010-12:40:07,637 workflow INFO:
+	 [Job finished] jobname: sinker_41.c0.a0 jobid: 157
+131010-12:40:07,648 workflow INFO:
+	 Submitting 2 jobs
+131010-12:40:07,649 workflow INFO:
+	 Executing: link_28.c0.a0 ID: 4
+131010-12:40:07,652 workflow INFO:
+	 Executing: link_41.c0.a0 ID: 158
+131010-12:40:07,662 workflow INFO:
+	 Executing node link_28.c0.a0 in dir: /tmp/resting_preproc_0051095_session_1/_scan_rest_1_rest/_threshold_0.2/link_28
+~~~~~~  _compcor_'ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic1.gm0.compcor1.csf0'.'ncomponents_5_selector  ~~~  _compcor_'ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic1.gm0.compcor1.csf0'.'ncomponents_5_selector_pc10.linear1.wm0.global1.motion1.quadratic1.gm0.compcor1.csf0'
+~~~~~~  _csf_threshold  ~~~  _csf_threshold_0.96
+~~~~~~  _gm_threshold  ~~~  _gm_threshold_0.7
+~~~~~~  _target_angle_deg  ~~~  _target_angle_deg_90
+~~~~~~  _threshold  ~~~  _threshold_0.2
+~~~~~~  _wm_threshold  ~~~  _wm_threshold_0.96
+~~~~~~  pipeline  ~~~  pipeline_LukachukaiCDP
+.
+_compcor_'ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic1.gm0.compcor1.csf0'.'ncomponents_5_selector  ---------->  pc10.linear1.wm0.global1.motion1.quadratic1.gm0.compcor1.csf0'
+_csf_threshold  ---------->  0.96
+_gm_threshold  ---------->  0.7
+_wm_threshold  ---------->  0.96
+pipeline  ---------->  LukachukaiCDP
+scan_rest_1_rest  ~~~ /fd_plot/_scan_rest_1_rest/_threshold_0.2/FD_plot.png
+.
+.
+ln -s /home2/data/Projects/ABIDE_Initiative/CPAC/Output_2013-10-08_gelert/pipeline_LukachukaiCDP/0051095_session_1/qc/fd_plot/_scan_rest_1_rest/_threshold_0.2/FD_plot.png /home2/data/Projects/ABIDE_Initiative/CPAC/Output_2013-10-08_gelert/sym_links/pipeline_LukachukaiCDP/_compcor_'ncomponents_5_linear1.global1.motion1.quadratic1.compcor1.csf0'_CSF_0.96_GM_0.7_WM_0.96/0051095_session_1/scan_rest_1_rest/qc/FD_plot.png
+131010-12:40:07,711 workflow INFO:
+	 Executing node link_41.c0.a0 in dir: /tmp/resting_preproc_0051095_session_1/_scan_rest_1_rest/_threshold_0.2/link_41
+131010-12:40:08,728 interface INFO:
+	 stderr 2013-10-10T12:40:08.728280:++ Output dataset ./rest_3dc_tshift_RPI_3dv_3dc.nii.gz
+131010-12:40:09,660 workflow INFO:
+	 [Job finished] jobname: cal_DVARS.c0 jobid: 94
+131010-12:40:09,670 workflow INFO:
+	 [Job finished] jobname: func_edge_detect.c0 jobid: 96
+131010-12:40:09,679 workflow INFO:
+	 [Job finished] jobname: link_28.c0.a0 jobid: 4
+131010-12:40:09,688 workflow INFO:
+	 [Job finished] jobname: link_41.c0.a0 jobid: 158
+131010-12:40:09,699 workflow INFO:
+	 Submitting 3 jobs
+131010-12:40:09,701 workflow INFO:
+	 Executing: func_mean_skullstrip.c0 ID: 45
+131010-12:40:09,703 workflow INFO:
+	 Executing: calc_power_parameters.c0.a0 ID: 100
+131010-12:40:09,706 workflow INFO:
+	 Executing: func_normalize.c0 ID: 125
+~~~~~~  _compcor_'ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic1.gm0.compcor1.csf0'.'ncomponents_5_selector  ~~~  _compcor_'ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic1.gm0.compcor1.csf0'.'ncomponents_5_selector_pc10.linear1.wm0.global1.motion1.quadratic1.gm0.compcor1.csf0'
+~~~~~~  _csf_threshold  ~~~  _csf_threshold_0.96
+~~~~~~  _gm_threshold  ~~~  _gm_threshold_0.7
+~~~~~~  _target_angle_deg  ~~~  _target_angle_deg_90
+~~~~~~  _threshold  ~~~  _threshold_0.2
+~~~~~~  _wm_threshold  ~~~  _wm_threshold_0.96
+~~~~~~  pipeline  ~~~  pipeline_LukachukaiCDP
+.
+_compcor_'ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic1.gm0.compcor1.csf0'.'ncomponents_5_selector  ---------->  pc10.linear1.wm0.global1.motion1.quadratic1.gm0.compcor1.csf0'
+_csf_threshold  ---------->  0.96
+_gm_threshold  ---------->  0.7
+_wm_threshold  ---------->  0.96
+pipeline  ---------->  LukachukaiCDP
+scan_rest_1_rest  ~~~ /_scan_rest_1_rest/_threshold_0.2/frames_in.1D
+.
+.
+ln -s /home2/data/Projects/ABIDE_Initiative/CPAC/Output_2013-10-08_gelert/pipeline_LukachukaiCDP/0051095_session_1/scrubbing_frames_included/_scan_rest_1_rest/_threshold_0.2/frames_in.1D /home2/data/Projects/ABIDE_Initiative/CPAC/Output_2013-10-08_gelert/sym_links/pipeline_LukachukaiCDP/_compcor_'ncomponents_5_linear1.global1.motion1.quadratic1.compcor1.csf0'_CSF_0.96_GM_0.7_WM_0.96/0051095_session_1/scan_rest_1_rest/parameters/scrubbing_frames_included.1D
+131010-12:40:09,714 workflow INFO:
+	 Executing node func_mean_skullstrip.c0 in dir: /tmp/resting_preproc_0051095_session_1/func_preproc_0/_scan_rest_1_rest/func_mean_skullstrip
+131010-12:40:09,719 workflow INFO:
+	 Executing node func_normalize.c0 in dir: /tmp/resting_preproc_0051095_session_1/func_preproc_0/_scan_rest_1_rest/func_normalize
+131010-12:40:09,722 workflow INFO:
+	 Running: 3dTstat -mean -prefix /tmp/resting_preproc_0051095_session_1/func_preproc_0/_scan_rest_1_rest/func_mean_skullstrip/rest_3dc_tshift_RPI_3dv_3dc_3dT.nii.gz /tmp/resting_preproc_0051095_session_1/func_preproc_0/_scan_rest_1_rest/func_edge_detect/rest_3dc_tshift_RPI_3dv_3dc.nii.gz
+131010-12:40:09,727 workflow INFO:
+	 Running: fslmaths /tmp/resting_preproc_0051095_session_1/func_preproc_0/_scan_rest_1_rest/func_edge_detect/rest_3dc_tshift_RPI_3dv_3dc.nii.gz -ing 10000 /tmp/resting_preproc_0051095_session_1/func_preproc_0/_scan_rest_1_rest/func_normalize/rest_3dc_tshift_RPI_3dv_3dc_maths.nii.gz -odt float
+PRINT TO CHECK IF THIS IN LOG FILE ****************
+131010-12:40:09,729 workflow INFO:
+	 Executing node calc_power_parameters.c0.a0 in dir: /tmp/resting_preproc_0051095_session_1/gen_motion_stats_0/_scan_rest_1_rest/_threshold_0.2/calc_power_parameters
+131010-12:40:09,751 interface INFO:
+	 stderr 2013-10-10T12:40:09.751511:++ 3dTstat: AFNI version=AFNI_2011_12_21_1014 (May 21 2012) [64-bit]
+131010-12:40:09,753 interface INFO:
+	 stderr 2013-10-10T12:40:09.751511:++ Authored by: KR Hammett & RW Cox
+131010-12:40:11,405 interface INFO:
+	 stderr 2013-10-10T12:40:11.405420:++ Output dataset /tmp/resting_preproc_0051095_session_1/func_preproc_0/_scan_rest_1_rest/func_mean_skullstrip/rest_3dc_tshift_RPI_3dv_3dc_3dT.nii.gz
+131010-12:40:11,713 workflow INFO:
+	 [Job finished] jobname: func_mean_skullstrip.c0 jobid: 45
+131010-12:40:11,723 workflow INFO:
+	 [Job finished] jobname: calc_power_parameters.c0.a0 jobid: 100
+131010-12:40:11,734 workflow INFO:
+	 Submitting 3 jobs
+131010-12:40:11,736 workflow INFO:
+	 Executing: sinker_24.c0.a0 ID: 63
+131010-12:40:11,740 workflow INFO:
+	 Executing: sinker_16.c0 ID: 139
+131010-12:40:11,745 workflow INFO:
+	 Executing: linear_func_to_anat.c0 ID: 185
+131010-12:40:11,750 workflow INFO:
+	 Executing node sinker_24.c0.a0 in dir: /tmp/resting_preproc_0051095_session_1/_scan_rest_1_rest/_threshold_0.2/sinker_24
+131010-12:40:11,757 workflow INFO:
+	 Executing node sinker_16.c0 in dir: /tmp/resting_preproc_0051095_session_1/_scan_rest_1_rest/sinker_16
+131010-12:40:11,791 workflow INFO:
+	 Executing node linear_func_to_anat.c0 in dir: /tmp/resting_preproc_0051095_session_1/func_to_anat_0/_scan_rest_1_rest/linear_func_to_anat
+131010-12:40:11,802 workflow INFO:
+	 Running: flirt -in /tmp/resting_preproc_0051095_session_1/func_preproc_0/_scan_rest_1_rest/func_mean_skullstrip/rest_3dc_tshift_RPI_3dv_3dc_3dT.nii.gz -ref /tmp/resting_preproc_0051095_session_1/anat_preproc_0/anat_brain_only/mprage_RPI_3dc.nii.gz -out /tmp/resting_preproc_0051095_session_1/func_to_anat_0/_scan_rest_1_rest/linear_func_to_anat/rest_3dc_tshift_RPI_3dv_3dc_3dT_flirt.nii.gz -omat /tmp/resting_preproc_0051095_session_1/func_to_anat_0/_scan_rest_1_rest/linear_func_to_anat/rest_3dc_tshift_RPI_3dv_3dc_3dT_flirt.mat -cost corratio -dof 6 -interp trilinear
+131010-12:40:13,755 workflow INFO:
+	 [Job finished] jobname: sinker_24.c0.a0 jobid: 63
+131010-12:40:13,764 workflow INFO:
+	 [Job finished] jobname: sinker_16.c0 jobid: 139
+131010-12:40:13,775 workflow INFO:
+	 Submitting 2 jobs
+131010-12:40:13,776 workflow INFO:
+	 Executing: link_16.c0 ID: 130
+131010-12:40:13,779 workflow INFO:
+	 Executing: link_24.c0.a0 ID: 155
+131010-12:40:13,788 workflow INFO:
+	 Executing node link_16.c0 in dir: /tmp/resting_preproc_0051095_session_1/_scan_rest_1_rest/link_16
+~~~~~~  _compcor_'ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic1.gm0.compcor1.csf0'.'ncomponents_5_selector  ~~~  _compcor_'ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic1.gm0.compcor1.csf0'.'ncomponents_5_selector_pc10.linear1.wm0.global1.motion1.quadratic1.gm0.compcor1.csf0'
+~~~~~~  _csf_threshold  ~~~  _csf_threshold_0.96
+~~~~~~  _gm_threshold  ~~~  _gm_threshold_0.7
+~~~~~~  _target_angle_deg  ~~~  _target_angle_deg_90
+~~~~~~  _threshold  ~~~  _threshold_0.2
+~~~~~~  _wm_threshold  ~~~  _wm_threshold_0.96
+~~~~~~  pipeline  ~~~  pipeline_LukachukaiCDP
+.
+_compcor_'ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic1.gm0.compcor1.csf0'.'ncomponents_5_selector  ---------->  pc10.linear1.wm0.global1.motion1.quadratic1.gm0.compcor1.csf0'
+_csf_threshold  ---------->  0.96
+_gm_threshold  ---------->  0.7
+_wm_threshold  ---------->  0.96
+pipeline  ---------->  LukachukaiCDP
+scan_rest_1_rest  ~~~ /_scan_rest_1_rest/rest_3dc_tshift_RPI_3dv_3dc_3dT.nii.gz
+.
+.
+ln -s /home2/data/Projects/ABIDE_Initiative/CPAC/Output_2013-10-08_gelert/pipeline_LukachukaiCDP/0051095_session_1/mean_functional/_scan_rest_1_rest/rest_3dc_tshift_RPI_3dv_3dc_3dT.nii.gz /home2/data/Projects/ABIDE_Initiative/CPAC/Output_2013-10-08_gelert/sym_links/pipeline_LukachukaiCDP/_compcor_'ncomponents_5_linear1.global1.motion1.quadratic1.compcor1.csf0'_CSF_0.96_GM_0.7_WM_0.96/0051095_session_1/scan_rest_1_rest/func/mean_functional.nii.gz
+131010-12:40:13,838 workflow INFO:
+	 Executing node link_24.c0.a0 in dir: /tmp/resting_preproc_0051095_session_1/_scan_rest_1_rest/_threshold_0.2/link_24
+131010-12:40:15,786 workflow INFO:
+	 [Job finished] jobname: link_16.c0 jobid: 130
+131010-12:40:15,795 workflow INFO:
+	 [Job finished] jobname: link_24.c0.a0 jobid: 155
+131010-12:40:29,838 workflow INFO:
+	 [Job finished] jobname: func_normalize.c0 jobid: 125
+131010-12:40:29,849 workflow INFO:
+	 [Job finished] jobname: linear_func_to_anat.c0 jobid: 185
+131010-12:40:29,861 workflow INFO:
+	 Submitting 4 jobs
+131010-12:40:29,863 workflow INFO:
+	 Executing: sinker_25.c0 ID: 65
+131010-12:40:29,867 workflow INFO:
+	 Executing: write_log.c0 ID: 72
+131010-12:40:29,871 workflow INFO:
+	 Executing: func_mask_normalize.c0 ID: 75
+131010-12:40:29,873 workflow INFO:
+	 Executing: std_dev_0.c0 ID: 188
+~~~~~~  _compcor_'ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic1.gm0.compcor1.csf0'.'ncomponents_5_selector  ~~~  _compcor_'ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic1.gm0.compcor1.csf0'.'ncomponents_5_selector_pc10.linear1.wm0.global1.motion1.quadratic1.gm0.compcor1.csf0'
+~~~~~~  _csf_threshold  ~~~  _csf_threshold_0.96
+~~~~~~  _gm_threshold  ~~~  _gm_threshold_0.7
+~~~~~~  _target_angle_deg  ~~~  _target_angle_deg_90
+~~~~~~  _threshold  ~~~  _threshold_0.2
+~~~~~~  _wm_threshold  ~~~  _wm_threshold_0.96
+~~~~~~  pipeline  ~~~  pipeline_LukachukaiCDP
+.
+_compcor_'ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic1.gm0.compcor1.csf0'.'ncomponents_5_selector  ---------->  pc10.linear1.wm0.global1.motion1.quadratic1.gm0.compcor1.csf0'
+_csf_threshold  ---------->  0.96
+_gm_threshold  ---------->  0.7
+_wm_threshold  ---------->  0.96
+pipeline  ---------->  LukachukaiCDP
+scan_rest_1_rest  ~~~ /_scan_rest_1_rest/_threshold_0.2/pow_params.txt
+.
+.
+ln -s /home2/data/Projects/ABIDE_Initiative/CPAC/Output_2013-10-08_gelert/pipeline_LukachukaiCDP/0051095_session_1/power_params/_scan_rest_1_rest/_threshold_0.2/pow_params.txt /home2/data/Projects/ABIDE_Initiative/CPAC/Output_2013-10-08_gelert/sym_links/pipeline_LukachukaiCDP/_compcor_'ncomponents_5_linear1.global1.motion1.quadratic1.compcor1.csf0'_CSF_0.96_GM_0.7_WM_0.96/0051095_session_1/scan_rest_1_rest/parameters/power_params.txt
+131010-12:40:29,879 workflow INFO:
+	 Executing node sinker_25.c0 in dir: /tmp/resting_preproc_0051095_session_1/_scan_rest_1_rest/sinker_25
+131010-12:40:29,881 workflow INFO:
+	 Executing node write_log.c0 in dir: /tmp/resting_preproc_0051095_session_1/log_func_preproc_0/_scan_rest_1_rest/write_log
+131010-12:40:29,884 workflow INFO:
+	 Executing node func_mask_normalize.c0 in dir: /tmp/resting_preproc_0051095_session_1/func_preproc_0/_scan_rest_1_rest/func_mask_normalize
+131010-12:40:29,906 workflow INFO:
+	 Running: fslmaths /tmp/resting_preproc_0051095_session_1/func_preproc_0/_scan_rest_1_rest/func_normalize/rest_3dc_tshift_RPI_3dv_3dc_maths.nii.gz -Tmin -bin /tmp/resting_preproc_0051095_session_1/func_preproc_0/_scan_rest_1_rest/func_mask_normalize/rest_3dc_tshift_RPI_3dv_3dc_maths_maths.nii.gz -odt char
+131010-12:40:29,922 interface INFO:
+	 CPAC custom log :
+131010-12:40:29,924 interface INFO:
+	  version - 0.3.1, timestamp -2013-10-10 12:40:29, subject_id -0051095_session_1, scan_id - scan_rest_1_rest, strategy -, workflow - func_preproc_0, status -COMPLETED
+131010-12:40:30,235 workflow INFO:
+	 Executing node std_dev_0.c0 in dir: /tmp/resting_preproc_0051095_session_1/_scan_rest_1_rest/std_dev_0
+131010-12:40:31,880 workflow INFO:
+	 [Job finished] jobname: sinker_25.c0 jobid: 65
+131010-12:40:31,889 workflow INFO:
+	 [Job finished] jobname: write_log.c0 jobid: 72
+131010-12:40:31,897 workflow INFO:
+	 [Job finished] jobname: std_dev_0.c0 jobid: 188
+131010-12:40:31,909 workflow INFO:
+	 Submitting 1 jobs
+131010-12:40:31,910 workflow INFO:
+	 Executing: link_25.c0 ID: 175
+131010-12:40:31,924 workflow INFO:
+	 Executing node link_25.c0 in dir: /tmp/resting_preproc_0051095_session_1/_scan_rest_1_rest/link_25
+131010-12:40:33,918 workflow INFO:
+	 [Job finished] jobname: func_mask_normalize.c0 jobid: 75
+131010-12:40:33,927 workflow INFO:
+	 [Job finished] jobname: link_25.c0 jobid: 175
+131010-12:40:33,938 workflow INFO:
+	 Submitting 1 jobs
+131010-12:40:33,940 workflow INFO:
+	 Executing: sinker_13.c0 ID: 68
+++ 3dTstat: AFNI version=AFNI_2011_12_21_1014 (May 21 2012) [64-bit]
+++ Authored by: KR Hammett & RW Cox
+++ Output dataset /tmp/resting_preproc_0051095_session_1/_scan_rest_1_rest/std_dev_0/std_dev.nii.gz
+131010-12:40:33,957 workflow INFO:
+	 Executing node sinker_13.c0 in dir: /tmp/resting_preproc_0051095_session_1/_scan_rest_1_rest/sinker_13
+131010-12:40:35,950 workflow INFO:
+	 [Job finished] jobname: sinker_13.c0 jobid: 68
+131010-12:40:35,962 workflow INFO:
+	 Submitting 1 jobs
+131010-12:40:35,963 workflow INFO:
+	 Executing: link_13.c0 ID: 2
+~~~~~~  _compcor_'ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic1.gm0.compcor1.csf0'.'ncomponents_5_selector  ~~~  _compcor_'ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic1.gm0.compcor1.csf0'.'ncomponents_5_selector_pc10.linear1.wm0.global1.motion1.quadratic1.gm0.compcor1.csf0'
+~~~~~~  _csf_threshold  ~~~  _csf_threshold_0.96
+~~~~~~  _gm_threshold  ~~~  _gm_threshold_0.7
+~~~~~~  _target_angle_deg  ~~~  _target_angle_deg_90
+~~~~~~  _threshold  ~~~  _threshold_0.2
+~~~~~~  _wm_threshold  ~~~  _wm_threshold_0.96
+~~~~~~  pipeline  ~~~  pipeline_LukachukaiCDP
+.
+_compcor_'ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic1.gm0.compcor1.csf0'.'ncomponents_5_selector  ---------->  pc10.linear1.wm0.global1.motion1.quadratic1.gm0.compcor1.csf0'
+_csf_threshold  ---------->  0.96
+_gm_threshold  ---------->  0.7
+_wm_threshold  ---------->  0.96
+pipeline  ---------->  LukachukaiCDP
+scan_rest_1_rest  ~~~ /_scan_rest_1_rest/rest_3dc_tshift_RPI_3dv_3dc_maths.nii.gz
+.
+.
+ln -s /home2/data/Projects/ABIDE_Initiative/CPAC/Output_2013-10-08_gelert/pipeline_LukachukaiCDP/0051095_session_1/preprocessed/_scan_rest_1_rest/rest_3dc_tshift_RPI_3dv_3dc_maths.nii.gz /home2/data/Projects/ABIDE_Initiative/CPAC/Output_2013-10-08_gelert/sym_links/pipeline_LukachukaiCDP/_compcor_'ncomponents_5_linear1.global1.motion1.quadratic1.compcor1.csf0'_CSF_0.96_GM_0.7_WM_0.96/0051095_session_1/scan_rest_1_rest/func/preprocessed.nii.gz
+131010-12:40:35,978 workflow INFO:
+	 Executing node link_13.c0 in dir: /tmp/resting_preproc_0051095_session_1/_scan_rest_1_rest/link_13
+131010-12:40:37,971 workflow INFO:
+	 [Job finished] jobname: link_13.c0 jobid: 2
+131010-12:48:13,65 workflow INFO:
+	 [Job finished] jobname: segment jobid: 78
+131010-12:48:13,121 workflow INFO:
+	 Submitting 9 jobs
+131010-12:48:13,122 workflow INFO:
+	 Executing: overlap_WM_map_with_prior ID: 25
+131010-12:48:13,124 workflow INFO:
+	 Executing: write_log ID: 43
+131010-12:48:13,126 workflow INFO:
+	 Executing: sinker_42 ID: 44
+131010-12:48:13,137 workflow INFO:
+	 Executing: sinker_45 ID: 51
+131010-12:48:13,138 workflow INFO:
+	 Executing node write_log in dir: /tmp/resting_preproc_0051095_session_1/log_seg_preproc_0/write_log
+131010-12:48:13,141 workflow INFO:
+	 Executing: sinker_44 ID: 59
+/tmp/resting_preproc_0051095_session_1/seg_preproc_0/segment/segment_prob_0.nii.gz
+/tmp/resting_preproc_0051095_session_1/seg_preproc_0/segment/segment_prob_1.nii.gz
+/tmp/resting_preproc_0051095_session_1/seg_preproc_0/segment/segment_prob_2.nii.gz
+131010-12:48:13,145 workflow INFO:
+	 Executing node overlap_WM_map_with_prior in dir: /tmp/resting_preproc_0051095_session_1/seg_preproc_0/WM/overlap_WM_map_with_prior
+131010-12:48:13,145 workflow INFO:
+	 Executing: wm_bb_mask ID: 118
+131010-12:48:13,148 workflow INFO:
+	 Executing: sinker_43 ID: 161
+~~~~~~  _compcor_'ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic1.gm0.compcor1.csf0'.'ncomponents_5_selector  ~~~  _compcor_'ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic1.gm0.compcor1.csf0'.'ncomponents_5_selector_pc10.linear1.wm0.global1.motion1.quadratic1.gm0.compcor1.csf0'
+~~~~~~  _csf_threshold  ~~~  _csf_threshold_0.96
+~~~~~~  _gm_threshold  ~~~  _gm_threshold_0.7
+~~~~~~  _target_angle_deg  ~~~  _target_angle_deg_90
+~~~~~~  _threshold  ~~~  _threshold_0.2
+~~~~~~  _wm_threshold  ~~~  _wm_threshold_0.96
+~~~~~~  pipeline  ~~~  pipeline_LukachukaiCDP
+.
+_compcor_'ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic1.gm0.compcor1.csf0'.'ncomponents_5_selector  ---------->  pc10.linear1.wm0.global1.motion1.quadratic1.gm0.compcor1.csf0'
+_csf_threshold  ---------->  0.96
+_gm_threshold  ---------->  0.7
+_wm_threshold  ---------->  0.96
+pipeline  ---------->  LukachukaiCDP
+scan_rest_1_rest  ~~~ /_scan_rest_1_rest/rest_3dc_tshift_RPI_3dv_3dc_maths_maths.nii.gz
+.
+.
+ln -s /home2/data/Projects/ABIDE_Initiative/CPAC/Output_2013-10-08_gelert/pipeline_LukachukaiCDP/0051095_session_1/functional_preprocessed_mask/_scan_rest_1_rest/rest_3dc_tshift_RPI_3dv_3dc_maths_maths.nii.gz /home2/data/Projects/ABIDE_Initiative/CPAC/Output_2013-10-08_gelert/sym_links/pipeline_LukachukaiCDP/_compcor_'ncomponents_5_linear1.global1.motion1.quadratic1.compcor1.csf0'_CSF_0.96_GM_0.7_WM_0.96/0051095_session_1/scan_rest_1_rest/func/functional_preprocessed_mask.nii.gz
+131010-12:48:13,149 workflow INFO:
+	 Executing node sinker_42 in dir: /tmp/resting_preproc_0051095_session_1/sinker_42
+131010-12:48:13,152 workflow INFO:
+	 Executing: overlap_CSF_map_with_prior ID: 192
+131010-12:48:13,153 workflow INFO:
+	 Executing node sinker_45 in dir: /tmp/resting_preproc_0051095_session_1/sinker_45
+131010-12:48:13,154 workflow INFO:
+	 Running: fslmaths /tmp/resting_preproc_0051095_session_1/seg_preproc_0/segment/segment_prob_2.nii.gz -mas /tmp/resting_preproc_0051095_session_1/seg_preproc_0/WM/WM_prior_mni_to_t1/avg152T1_white_bin_flirt.nii.gz  /tmp/resting_preproc_0051095_session_1/seg_preproc_0/WM/overlap_WM_map_with_prior/segment_prob_2_maths.nii.gz
+131010-12:48:13,154 workflow INFO:
+	 Executing: overlap_GM_map_with_prior ID: 199
+131010-12:48:13,162 interface INFO:
+	 CPAC custom log :
+131010-12:48:13,163 interface INFO:
+	  version - 0.3.1, timestamp -2013-10-10 12:48:13, subject_id -0051095_session_1, scan_id - scan_anat, strategy -, workflow - seg_preproc_0, status -COMPLETED
+131010-12:48:13,197 workflow INFO:
+	 Executing node sinker_44 in dir: /tmp/resting_preproc_0051095_session_1/sinker_44
+131010-12:48:13,304 workflow INFO:
+	 Executing node wm_bb_mask in dir: /tmp/resting_preproc_0051095_session_1/func_to_anat_0/wm_bb_mask
+131010-12:48:13,311 workflow INFO:
+	 Running: fslmaths /tmp/resting_preproc_0051095_session_1/seg_preproc_0/segment/segment_prob_2.nii.gz -thr 0.5 -bin /tmp/resting_preproc_0051095_session_1/func_to_anat_0/wm_bb_mask/segment_prob_2_maths.nii.gz
+131010-12:48:13,386 workflow INFO:
+	 Executing node sinker_43 in dir: /tmp/resting_preproc_0051095_session_1/sinker_43
+/tmp/resting_preproc_0051095_session_1/seg_preproc_0/segment/segment_prob_0.nii.gz
+131010-12:48:13,542 workflow INFO:
+	 Executing node overlap_CSF_map_with_prior in dir: /tmp/resting_preproc_0051095_session_1/seg_preproc_0/CSF/overlap_CSF_map_with_prior
+131010-12:48:13,551 workflow INFO:
+	 Running: fslmaths /tmp/resting_preproc_0051095_session_1/seg_preproc_0/segment/segment_prob_0.nii.gz -mas /tmp/resting_preproc_0051095_session_1/seg_preproc_0/CSF/CSF_prior_mni_to_t1/avg152T1_csf_bin_flirt.nii.gz  /tmp/resting_preproc_0051095_session_1/seg_preproc_0/CSF/overlap_CSF_map_with_prior/segment_prob_0_maths.nii.gz
+/tmp/resting_preproc_0051095_session_1/seg_preproc_0/segment/segment_prob_0.nii.gz
+/tmp/resting_preproc_0051095_session_1/seg_preproc_0/segment/segment_prob_1.nii.gz
+131010-12:48:13,715 workflow INFO:
+	 Executing node overlap_GM_map_with_prior in dir: /tmp/resting_preproc_0051095_session_1/seg_preproc_0/GM/overlap_GM_map_with_prior
+131010-12:48:13,723 workflow INFO:
+	 Running: fslmaths /tmp/resting_preproc_0051095_session_1/seg_preproc_0/segment/segment_prob_1.nii.gz -mas /tmp/resting_preproc_0051095_session_1/seg_preproc_0/GM/GM_prior_mni_to_t1/avg152T1_gray_bin_flirt.nii.gz  /tmp/resting_preproc_0051095_session_1/seg_preproc_0/GM/overlap_GM_map_with_prior/segment_prob_1_maths.nii.gz
+131010-12:48:15,162 workflow INFO:
+	 [Job finished] jobname: write_log jobid: 43
+131010-12:48:15,171 workflow INFO:
+	 [Job finished] jobname: sinker_42 jobid: 44
+131010-12:48:15,181 workflow INFO:
+	 [Job finished] jobname: sinker_45 jobid: 51
+131010-12:48:15,190 workflow INFO:
+	 [Job finished] jobname: sinker_44 jobid: 59
+131010-12:48:15,199 workflow INFO:
+	 [Job finished] jobname: sinker_43 jobid: 161
+131010-12:48:15,211 workflow INFO:
+	 Submitting 4 jobs
+131010-12:48:15,212 workflow INFO:
+	 Executing: link_42 ID: 29
+131010-12:48:15,215 workflow INFO:
+	 Executing: link_44 ID: 34
+131010-12:48:15,217 workflow INFO:
+	 Executing: link_45 ID: 58
+131010-12:48:15,220 workflow INFO:
+	 Executing: link_43 ID: 90
+131010-12:48:16,886 workflow INFO:
+	 Executing node link_42 in dir: /tmp/resting_preproc_0051095_session_1/link_42
+~~~~~~  _compcor_'ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic1.gm0.compcor1.csf0'.'ncomponents_5_selector  ~~~  _compcor_'ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic1.gm0.compcor1.csf0'.'ncomponents_5_selector_pc10.linear1.wm0.global1.motion1.quadratic1.gm0.compcor1.csf0'
+~~~~~~  _csf_threshold  ~~~  _csf_threshold_0.96
+~~~~~~  _gm_threshold  ~~~  _gm_threshold_0.7
+~~~~~~  _target_angle_deg  ~~~  _target_angle_deg_90
+~~~~~~  _threshold  ~~~  _threshold_0.2
+~~~~~~  _wm_threshold  ~~~  _wm_threshold_0.96
+~~~~~~  pipeline  ~~~  pipeline_LukachukaiCDP
+.
+_compcor_'ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic1.gm0.compcor1.csf0'.'ncomponents_5_selector  ---------->  pc10.linear1.wm0.global1.motion1.quadratic1.gm0.compcor1.csf0'
+_csf_threshold  ---------->  0.96
+_gm_threshold  ---------->  0.7
+_wm_threshold  ---------->  0.96
+pipeline  ---------->  LukachukaiCDP
+~~~  ~~~ /segment_mixeltype.nii.gz
+.
+.
+ln -s /home2/data/Projects/ABIDE_Initiative/CPAC/Output_2013-10-08_gelert/pipeline_LukachukaiCDP/0051095_session_1/seg_mixeltype/segment_mixeltype.nii.gz /home2/data/Projects/ABIDE_Initiative/CPAC/Output_2013-10-08_gelert/sym_links/pipeline_LukachukaiCDP/_compcor_'ncomponents_5_linear1.global1.motion1.quadratic1.compcor1.csf0'_CSF_0.96_GM_0.7_WM_0.96/0051095_session_1/scan/anat/segment_mixeltype.nii.gz
+131010-12:48:16,951 workflow INFO:
+	 Executing node link_44 in dir: /tmp/resting_preproc_0051095_session_1/link_44
+~~~~~~  _compcor_'ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic1.gm0.compcor1.csf0'.'ncomponents_5_selector  ~~~  _compcor_'ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic1.gm0.compcor1.csf0'.'ncomponents_5_selector_pc10.linear1.wm0.global1.motion1.quadratic1.gm0.compcor1.csf0'
+~~~~~~  _csf_threshold  ~~~  _csf_threshold_0.96
+~~~~~~  _gm_threshold  ~~~  _gm_threshold_0.7
+~~~~~~  _target_angle_deg  ~~~  _target_angle_deg_90
+~~~~~~  _threshold  ~~~  _threshold_0.2
+~~~~~~  _wm_threshold  ~~~  _wm_threshold_0.96
+~~~~~~  pipeline  ~~~  pipeline_LukachukaiCDP
+.
+_compcor_'ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic1.gm0.compcor1.csf0'.'ncomponents_5_selector  ---------->  pc10.linear1.wm0.global1.motion1.quadratic1.gm0.compcor1.csf0'
+_csf_threshold  ---------->  0.96
+_gm_threshold  ---------->  0.7
+_wm_threshold  ---------->  0.96
+pipeline  ---------->  LukachukaiCDP
+~~~  ~~~ /segment_pveseg.nii.gz
+.
+.
+ln -s /home2/data/Projects/ABIDE_Initiative/CPAC/Output_2013-10-08_gelert/pipeline_LukachukaiCDP/0051095_session_1/seg_partial_volume_map/segment_pveseg.nii.gz /home2/data/Projects/ABIDE_Initiative/CPAC/Output_2013-10-08_gelert/sym_links/pipeline_LukachukaiCDP/_compcor_'ncomponents_5_linear1.global1.motion1.quadratic1.compcor1.csf0'_CSF_0.96_GM_0.7_WM_0.96/0051095_session_1/scan/anat/segment_pveseg.nii.gz
+131010-12:48:17,8 workflow INFO:
+	 Executing node link_45 in dir: /tmp/resting_preproc_0051095_session_1/link_45
+~~~~~~  _compcor_'ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic1.gm0.compcor1.csf0'.'ncomponents_5_selector  ~~~  _compcor_'ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic1.gm0.compcor1.csf0'.'ncomponents_5_selector_pc10.linear1.wm0.global1.motion1.quadratic1.gm0.compcor1.csf0'
+~~~~~~  _csf_threshold  ~~~  _csf_threshold_0.96
+~~~~~~  _gm_threshold  ~~~  _gm_threshold_0.7
+~~~~~~  _target_angle_deg  ~~~  _target_angle_deg_90
+~~~~~~  _threshold  ~~~  _threshold_0.2
+~~~~~~  _wm_threshold  ~~~  _wm_threshold_0.96
+~~~~~~  pipeline  ~~~  pipeline_LukachukaiCDP
+.
+_compcor_'ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic1.gm0.compcor1.csf0'.'ncomponents_5_selector  ---------->  pc10.linear1.wm0.global1.motion1.quadratic1.gm0.compcor1.csf0'
+_csf_threshold  ---------->  0.96
+_gm_threshold  ---------->  0.7
+_wm_threshold  ---------->  0.96
+pipeline  ---------->  LukachukaiCDP
+~~~  ~~~ /segment_prob_0.nii.gz
+.
+.
+ln -s /home2/data/Projects/ABIDE_Initiative/CPAC/Output_2013-10-08_gelert/pipeline_LukachukaiCDP/0051095_session_1/seg_probability_maps/segment_prob_0.nii.gz /home2/data/Projects/ABIDE_Initiative/CPAC/Output_2013-10-08_gelert/sym_links/pipeline_LukachukaiCDP/_compcor_'ncomponents_5_linear1.global1.motion1.quadratic1.compcor1.csf0'_CSF_0.96_GM_0.7_WM_0.96/0051095_session_1/scan/anat/segment_prob_0.nii.gz
+~~~~~~  _compcor_'ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic1.gm0.compcor1.csf0'.'ncomponents_5_selector  ~~~  _compcor_'ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic1.gm0.compcor1.csf0'.'ncomponents_5_selector_pc10.linear1.wm0.global1.motion1.quadratic1.gm0.compcor1.csf0'
+~~~~~~  _csf_threshold  ~~~  _csf_threshold_0.96
+~~~~~~  _gm_threshold  ~~~  _gm_threshold_0.7
+~~~~~~  _target_angle_deg  ~~~  _target_angle_deg_90
+~~~~~~  _threshold  ~~~  _threshold_0.2
+~~~~~~  _wm_threshold  ~~~  _wm_threshold_0.96
+~~~~~~  pipeline  ~~~  pipeline_LukachukaiCDP
+~~~~~~  pipeline  ~~~  pipeline_LukachukaiCDP
+.
+_compcor_'ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic1.gm0.compcor1.csf0'.'ncomponents_5_selector  ---------->  pc10.linear1.wm0.global1.motion1.quadratic1.gm0.compcor1.csf0'
+_csf_threshold  ---------->  0.96
+_gm_threshold  ---------->  0.7
+_wm_threshold  ---------->  0.96
+pipeline  ---------->  LukachukaiCDP
+pipeline  ---------->  LukachukaiCDP
+~~~  ~~~ /segment_prob_1.nii.gz
+.
+.
+ln -s /home2/data/Projects/ABIDE_Initiative/CPAC/Output_2013-10-08_gelert/pipeline_LukachukaiCDP/0051095_session_1/seg_probability_maps/segment_prob_1.nii.gz /home2/data/Projects/ABIDE_Initiative/CPAC/Output_2013-10-08_gelert/sym_links/pipeline_LukachukaiCDP/_compcor_'ncomponents_5_linear1.global1.motion1.quadratic1.compcor1.csf0'_CSF_0.96_GM_0.7_WM_0.96/0051095_session_1/scan/anat/segment_prob_1.nii.gz
+~~~~~~  _compcor_'ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic1.gm0.compcor1.csf0'.'ncomponents_5_selector  ~~~  _compcor_'ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic1.gm0.compcor1.csf0'.'ncomponents_5_selector_pc10.linear1.wm0.global1.motion1.quadratic1.gm0.compcor1.csf0'
+~~~~~~  _csf_threshold  ~~~  _csf_threshold_0.96
+~~~~~~  _gm_threshold  ~~~  _gm_threshold_0.7
+~~~~~~  _target_angle_deg  ~~~  _target_angle_deg_90
+~~~~~~  _threshold  ~~~  _threshold_0.2
+~~~~~~  _wm_threshold  ~~~  _wm_threshold_0.96
+~~~~~~  pipeline  ~~~  pipeline_LukachukaiCDP
+~~~~~~  pipeline  ~~~  pipeline_LukachukaiCDP
+~~~~~~  pipeline  ~~~  pipeline_LukachukaiCDP
+.
+_compcor_'ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic1.gm0.compcor1.csf0'.'ncomponents_5_selector  ---------->  pc10.linear1.wm0.global1.motion1.quadratic1.gm0.compcor1.csf0'
+_csf_threshold  ---------->  0.96
+_gm_threshold  ---------->  0.7
+_wm_threshold  ---------->  0.96
+pipeline  ---------->  LukachukaiCDP
+pipeline  ---------->  LukachukaiCDP
+pipeline  ---------->  LukachukaiCDP
+~~~  ~~~ /segment_prob_2.nii.gz
+.
+.
+ln -s /home2/data/Projects/ABIDE_Initiative/CPAC/Output_2013-10-08_gelert/pipeline_LukachukaiCDP/0051095_session_1/seg_probability_maps/segment_prob_2.nii.gz /home2/data/Projects/ABIDE_Initiative/CPAC/Output_2013-10-08_gelert/sym_links/pipeline_LukachukaiCDP/_compcor_'ncomponents_5_linear1.global1.motion1.quadratic1.compcor1.csf0'_CSF_0.96_GM_0.7_WM_0.96/0051095_session_1/scan/anat/segment_prob_2.nii.gz
+131010-12:48:17,123 workflow INFO:
+	 Executing node link_43 in dir: /tmp/resting_preproc_0051095_session_1/link_43
+131010-12:48:17,228 workflow INFO:
+	 [Job finished] jobname: overlap_WM_map_with_prior jobid: 25
+131010-12:48:17,237 workflow INFO:
+	 [Job finished] jobname: wm_bb_mask jobid: 118
+131010-12:48:17,248 workflow INFO:
+	 [Job finished] jobname: overlap_CSF_map_with_prior jobid: 192
+131010-12:48:17,257 workflow INFO:
+	 [Job finished] jobname: link_42 jobid: 29
+131010-12:48:17,267 workflow INFO:
+	 [Job finished] jobname: link_44 jobid: 34
+131010-12:48:17,276 workflow INFO:
+	 [Job finished] jobname: link_45 jobid: 58
+131010-12:48:17,285 workflow INFO:
+	 [Job finished] jobname: link_43 jobid: 90
+131010-12:48:17,298 workflow INFO:
+	 Submitting 3 jobs
+131010-12:48:17,299 workflow INFO:
+	 Executing: binarize_threshold_CSF.c0 ID: 54
+131010-12:48:17,301 workflow INFO:
+	 Executing: bbreg_func_to_anat.c0 ID: 71
+131010-12:48:17,305 workflow INFO:
+	 Executing: binarize_threshold_WM.c0 ID: 85
+131010-12:48:17,312 workflow INFO:
+	 Executing node binarize_threshold_CSF.c0 in dir: /tmp/resting_preproc_0051095_session_1/seg_preproc_0/CSF/_csf_threshold_0.96/binarize_threshold_CSF
+131010-12:48:17,320 workflow INFO:
+	 Running: fslmaths /tmp/resting_preproc_0051095_session_1/seg_preproc_0/CSF/overlap_CSF_map_with_prior/segment_prob_0_maths.nii.gz -thr 0.960000 -bin  /tmp/resting_preproc_0051095_session_1/seg_preproc_0/CSF/_csf_threshold_0.96/binarize_threshold_CSF/segment_prob_0_maths_maths.nii.gz
+~~~~~~  _compcor_'ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic1.gm0.compcor1.csf0'.'ncomponents_5_selector  ~~~  _compcor_'ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic1.gm0.compcor1.csf0'.'ncomponents_5_selector_pc10.linear1.wm0.global1.motion1.quadratic1.gm0.compcor1.csf0'
+~~~~~~  _csf_threshold  ~~~  _csf_threshold_0.96
+~~~~~~  _gm_threshold  ~~~  _gm_threshold_0.7
+~~~~~~  _target_angle_deg  ~~~  _target_angle_deg_90
+~~~~~~  _threshold  ~~~  _threshold_0.2
+~~~~~~  _wm_threshold  ~~~  _wm_threshold_0.96
+~~~~~~  pipeline  ~~~  pipeline_LukachukaiCDP
+.
+_compcor_'ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic1.gm0.compcor1.csf0'.'ncomponents_5_selector  ---------->  pc10.linear1.wm0.global1.motion1.quadratic1.gm0.compcor1.csf0'
+_csf_threshold  ---------->  0.96
+_gm_threshold  ---------->  0.7
+_wm_threshold  ---------->  0.96
+pipeline  ---------->  LukachukaiCDP
+~~~  ~~~ /segment_pve_0.nii.gz
+.
+.
+ln -s /home2/data/Projects/ABIDE_Initiative/CPAC/Output_2013-10-08_gelert/pipeline_LukachukaiCDP/0051095_session_1/seg_partial_volume_files/segment_pve_0.nii.gz /home2/data/Projects/ABIDE_Initiative/CPAC/Output_2013-10-08_gelert/sym_links/pipeline_LukachukaiCDP/_compcor_'ncomponents_5_linear1.global1.motion1.quadratic1.compcor1.csf0'_CSF_0.96_GM_0.7_WM_0.96/0051095_session_1/scan/anat/segment_pve_0.nii.gz
+~~~~~~  _compcor_'ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic1.gm0.compcor1.csf0'.'ncomponents_5_selector  ~~~  _compcor_'ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic1.gm0.compcor1.csf0'.'ncomponents_5_selector_pc10.linear1.wm0.global1.motion1.quadratic1.gm0.compcor1.csf0'
+~~~~~~  _csf_threshold  ~~~  _csf_threshold_0.96
+~~~~~~  _gm_threshold  ~~~  _gm_threshold_0.7
+~~~~~~  _target_angle_deg  ~~~  _target_angle_deg_90
+~~~~~~  _threshold  ~~~  _threshold_0.2
+~~~~~~  _wm_threshold  ~~~  _wm_threshold_0.96
+~~~~~~  pipeline  ~~~  pipeline_LukachukaiCDP
+~~~~~~  pipeline  ~~~  pipeline_LukachukaiCDP
+.
+_compcor_'ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic1.gm0.compcor1.csf0'.'ncomponents_5_selector  ---------->  pc10.linear1.wm0.global1.motion1.quadratic1.gm0.compcor1.csf0'
+_csf_threshold  ---------->  0.96
+_gm_threshold  ---------->  0.7
+_wm_threshold  ---------->  0.96
+pipeline  ---------->  LukachukaiCDP
+pipeline  ---------->  LukachukaiCDP
+~~~  ~~~ /segment_pve_1.nii.gz
+.
+.
+ln -s /home2/data/Projects/ABIDE_Initiative/CPAC/Output_2013-10-08_gelert/pipeline_LukachukaiCDP/0051095_session_1/seg_partial_volume_files/segment_pve_1.nii.gz /home2/data/Projects/ABIDE_Initiative/CPAC/Output_2013-10-08_gelert/sym_links/pipeline_LukachukaiCDP/_compcor_'ncomponents_5_linear1.global1.motion1.quadratic1.compcor1.csf0'_CSF_0.96_GM_0.7_WM_0.96/0051095_session_1/scan/anat/segment_pve_1.nii.gz
+~~~~~~  _compcor_'ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic1.gm0.compcor1.csf0'.'ncomponents_5_selector  ~~~  _compcor_'ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic1.gm0.compcor1.csf0'.'ncomponents_5_selector_pc10.linear1.wm0.global1.motion1.quadratic1.gm0.compcor1.csf0'
+~~~~~~  _csf_threshold  ~~~  _csf_threshold_0.96
+~~~~~~  _gm_threshold  ~~~  _gm_threshold_0.7
+~~~~~~  _target_angle_deg  ~~~  _target_angle_deg_90
+~~~~~~  _threshold  ~~~  _threshold_0.2
+~~~~~~  _wm_threshold  ~~~  _wm_threshold_0.96
+~~~~~~  pipeline  ~~~  pipeline_LukachukaiCDP
+~~~~~~  pipeline  ~~~  pipeline_LukachukaiCDP
+~~~~~~  pipeline  ~~~  pipeline_LukachukaiCDP
+.
+_compcor_'ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic1.gm0.compcor1.csf0'.'ncomponents_5_selector  ---------->  pc10.linear1.wm0.global1.motion1.quadratic1.gm0.compcor1.csf0'
+_csf_threshold  ---------->  0.96
+_gm_threshold  ---------->  0.7
+_wm_threshold  ---------->  0.96
+pipeline  ---------->  LukachukaiCDP
+pipeline  ---------->  LukachukaiCDP
+pipeline  ---------->  LukachukaiCDP
+~~~  ~~~ /segment_pve_2.nii.gz
+.
+.
+ln -s /home2/data/Projects/ABIDE_Initiative/CPAC/Output_2013-10-08_gelert/pipeline_LukachukaiCDP/0051095_session_1/seg_partial_volume_files/segment_pve_2.nii.gz /home2/data/Projects/ABIDE_Initiative/CPAC/Output_2013-10-08_gelert/sym_links/pipeline_LukachukaiCDP/_compcor_'ncomponents_5_linear1.global1.motion1.quadratic1.compcor1.csf0'_CSF_0.96_GM_0.7_WM_0.96/0051095_session_1/scan/anat/segment_pve_2.nii.gz
+131010-12:48:17,322 workflow INFO:
+	 Executing node binarize_threshold_WM.c0 in dir: /tmp/resting_preproc_0051095_session_1/seg_preproc_0/WM/_wm_threshold_0.96/binarize_threshold_WM
+131010-12:48:17,330 workflow INFO:
+	 Running: fslmaths /tmp/resting_preproc_0051095_session_1/seg_preproc_0/WM/overlap_WM_map_with_prior/segment_prob_2_maths.nii.gz -thr 0.960000 -bin  /tmp/resting_preproc_0051095_session_1/seg_preproc_0/WM/_wm_threshold_0.96/binarize_threshold_WM/segment_prob_2_maths_maths.nii.gz
+131010-12:48:17,341 workflow INFO:
+	 Executing node bbreg_func_to_anat.c0 in dir: /tmp/resting_preproc_0051095_session_1/func_to_anat_0/_scan_rest_1_rest/bbreg_func_to_anat
+131010-12:48:17,354 workflow INFO:
+	 Running: flirt -in /tmp/resting_preproc_0051095_session_1/func_preproc_0/_scan_rest_1_rest/func_mean_skullstrip/rest_3dc_tshift_RPI_3dv_3dc_3dT.nii.gz -ref /tmp/resting_preproc_0051095_session_1/anat_preproc_0/anat_reorient/mprage_RPI.nii.gz -out /tmp/resting_preproc_0051095_session_1/func_to_anat_0/_scan_rest_1_rest/bbreg_func_to_anat/rest_3dc_tshift_RPI_3dv_3dc_3dT_flirt.nii.gz -omat /tmp/resting_preproc_0051095_session_1/func_to_anat_0/_scan_rest_1_rest/bbreg_func_to_anat/rest_3dc_tshift_RPI_3dv_3dc_3dT_flirt.mat -cost bbr -wmseg /tmp/resting_preproc_0051095_session_1/func_to_anat_0/wm_bb_mask/segment_prob_2_maths.nii.gz -dof 6 -init /tmp/resting_preproc_0051095_session_1/func_to_anat_0/_scan_rest_1_rest/linear_func_to_anat/rest_3dc_tshift_RPI_3dv_3dc_3dT_flirt.mat -schedule /home2/data/PublicProgram/fsl-4.1.9/etc/flirtsch/bbr.sch
+131010-12:48:19,313 workflow INFO:
+	 [Job finished] jobname: overlap_GM_map_with_prior jobid: 199
+131010-12:48:19,324 workflow INFO:
+	 Submitting 1 jobs
+131010-12:48:19,325 workflow INFO:
+	 Executing: binarize_threshold_GM.c0 ID: 11
+131010-12:48:19,338 workflow INFO:
+	 Executing node binarize_threshold_GM.c0 in dir: /tmp/resting_preproc_0051095_session_1/seg_preproc_0/GM/_gm_threshold_0.7/binarize_threshold_GM
+131010-12:48:19,347 workflow INFO:
+	 Running: fslmaths /tmp/resting_preproc_0051095_session_1/seg_preproc_0/GM/overlap_GM_map_with_prior/segment_prob_1_maths.nii.gz -thr 0.700000 -bin  /tmp/resting_preproc_0051095_session_1/seg_preproc_0/GM/_gm_threshold_0.7/binarize_threshold_GM/segment_prob_1_maths_maths.nii.gz
+131010-12:48:21,331 workflow INFO:
+	 [Job finished] jobname: binarize_threshold_CSF.c0 jobid: 54
+131010-12:48:21,340 workflow INFO:
+	 [Job finished] jobname: binarize_threshold_WM.c0 jobid: 85
+131010-12:48:21,350 workflow INFO:
+	 Submitting 2 jobs
+131010-12:48:21,352 workflow INFO:
+	 Executing: CSF_mask.c0 ID: 178
+131010-12:48:21,354 workflow INFO:
+	 Executing: WM_mask.c0 ID: 190
+131010-12:48:21,372 workflow INFO:
+	 Executing node CSF_mask.c0 in dir: /tmp/resting_preproc_0051095_session_1/seg_preproc_0/CSF/_csf_threshold_0.96/CSF_mask
+131010-12:48:21,378 workflow INFO:
+	 Executing node WM_mask.c0 in dir: /tmp/resting_preproc_0051095_session_1/seg_preproc_0/WM/_wm_threshold_0.96/WM_mask
+131010-12:48:21,381 workflow INFO:
+	 Running: fslmaths /tmp/resting_preproc_0051095_session_1/seg_preproc_0/CSF/_csf_threshold_0.96/binarize_threshold_CSF/segment_prob_0_maths_maths.nii.gz -mas /tmp/resting_preproc_0051095_session_1/seg_preproc_0/CSF/CSF_prior_mni_to_t1/avg152T1_csf_bin_flirt.nii.gz  /tmp/resting_preproc_0051095_session_1/seg_preproc_0/CSF/_csf_threshold_0.96/CSF_mask/segment_prob_0_maths_maths_maths.nii.gz
+131010-12:48:21,387 workflow INFO:
+	 Running: fslmaths /tmp/resting_preproc_0051095_session_1/seg_preproc_0/WM/_wm_threshold_0.96/binarize_threshold_WM/segment_prob_2_maths_maths.nii.gz -mas /tmp/resting_preproc_0051095_session_1/seg_preproc_0/WM/WM_prior_mni_to_t1/avg152T1_white_bin_flirt.nii.gz  /tmp/resting_preproc_0051095_session_1/seg_preproc_0/WM/_wm_threshold_0.96/WM_mask/segment_prob_2_maths_maths_maths.nii.gz
+131010-12:48:23,362 workflow INFO:
+	 [Job finished] jobname: binarize_threshold_GM.c0 jobid: 11
+131010-12:48:23,373 workflow INFO:
+	 Submitting 1 jobs
+131010-12:48:23,374 workflow INFO:
+	 Executing: GM_mask.c0 ID: 42
+131010-12:48:23,395 workflow INFO:
+	 Executing node GM_mask.c0 in dir: /tmp/resting_preproc_0051095_session_1/seg_preproc_0/GM/_gm_threshold_0.7/GM_mask
+131010-12:48:23,403 workflow INFO:
+	 Running: fslmaths /tmp/resting_preproc_0051095_session_1/seg_preproc_0/GM/_gm_threshold_0.7/binarize_threshold_GM/segment_prob_1_maths_maths.nii.gz -mas /tmp/resting_preproc_0051095_session_1/seg_preproc_0/GM/GM_prior_mni_to_t1/avg152T1_gray_bin_flirt.nii.gz  /tmp/resting_preproc_0051095_session_1/seg_preproc_0/GM/_gm_threshold_0.7/GM_mask/segment_prob_1_maths_maths_maths.nii.gz
+131010-12:48:25,382 workflow INFO:
+	 [Job finished] jobname: CSF_mask.c0 jobid: 178
+131010-12:48:25,391 workflow INFO:
+	 [Job finished] jobname: WM_mask.c0 jobid: 190
+131010-12:48:25,402 workflow INFO:
+	 Submitting 7 jobs
+131010-12:48:25,403 workflow INFO:
+	 Executing: resample_o_csf.c0 ID: 15
+131010-12:48:25,405 workflow INFO:
+	 Executing: wm_anat_to_2mm.c0 ID: 46
+131010-12:48:25,415 workflow INFO:
+	 Executing node resample_o_csf.c0 in dir: /tmp/resting_preproc_0051095_session_1/montage_csf_gm_wm_0/_csf_threshold_0.96/resample_o_csf
+131010-12:48:25,407 workflow INFO:
+	 Executing: sinker_6.c0 ID: 60
+131010-12:48:25,419 workflow INFO:
+	 Executing: csf_anat_to_2mm.c0 ID: 138
+131010-12:48:25,421 workflow INFO:
+	 Executing: ho_mni_to_2mm.c0 ID: 150
+131010-12:48:25,426 workflow INFO:
+	 Executing node wm_anat_to_2mm.c0 in dir: /tmp/resting_preproc_0051095_session_1/nuisance_0/_wm_threshold_0.96/wm_anat_to_2mm
+131010-12:48:25,425 workflow INFO:
+	 Executing: sinker_1.c0 ID: 151
+131010-12:48:25,430 workflow INFO:
+	 Executing: resample_o_wm.c0 ID: 180
+131010-12:48:25,437 workflow INFO:
+	 Running: flirt -in /tmp/resting_preproc_0051095_session_1/seg_preproc_0/WM/_wm_threshold_0.96/WM_mask/segment_prob_2_maths_maths_maths.nii.gz -ref /tmp/resting_preproc_0051095_session_1/seg_preproc_0/WM/_wm_threshold_0.96/WM_mask/segment_prob_2_maths_maths_maths.nii.gz -out /tmp/resting_preproc_0051095_session_1/nuisance_0/_wm_threshold_0.96/wm_anat_to_2mm/segment_prob_2_maths_maths_maths_flirt.nii.gz -omat /tmp/resting_preproc_0051095_session_1/nuisance_0/_wm_threshold_0.96/wm_anat_to_2mm/segment_prob_2_maths_maths_maths_flirt.mat -applyisoxfm 2 -interp nearestneighbour
+ 3dresample -dxyz 1.0 1.0 1.0 -prefix /tmp/resting_preproc_0051095_session_1/montage_csf_gm_wm_0/_csf_threshold_0.96/resample_o_csf/segment_prob_0_maths_maths_maths_1mm.nii.gz -inset /tmp/resting_preproc_0051095_session_1/seg_preproc_0/CSF/_csf_threshold_0.96/CSF_mask/segment_prob_0_maths_maths_maths.nii.gz 
+131010-12:48:26,553 workflow INFO:
+	 Executing node sinker_6.c0 in dir: /tmp/resting_preproc_0051095_session_1/_wm_threshold_0.96/sinker_6
+131010-12:48:26,597 workflow INFO:
+	 Executing node csf_anat_to_2mm.c0 in dir: /tmp/resting_preproc_0051095_session_1/nuisance_0/_csf_threshold_0.96/csf_anat_to_2mm
+131010-12:48:26,609 workflow INFO:
+	 Running: flirt -in /tmp/resting_preproc_0051095_session_1/seg_preproc_0/CSF/_csf_threshold_0.96/CSF_mask/segment_prob_0_maths_maths_maths.nii.gz -ref /tmp/resting_preproc_0051095_session_1/seg_preproc_0/CSF/_csf_threshold_0.96/CSF_mask/segment_prob_0_maths_maths_maths.nii.gz -out /tmp/resting_preproc_0051095_session_1/nuisance_0/_csf_threshold_0.96/csf_anat_to_2mm/segment_prob_0_maths_maths_maths_flirt.nii.gz -omat /tmp/resting_preproc_0051095_session_1/nuisance_0/_csf_threshold_0.96/csf_anat_to_2mm/segment_prob_0_maths_maths_maths_flirt.mat -applyisoxfm 2 -interp nearestneighbour
+131010-12:48:27,437 workflow INFO:
+	 [Job finished] jobname: GM_mask.c0 jobid: 42
+131010-12:48:27,441 workflow INFO:
+	 Executing node ho_mni_to_2mm.c0 in dir: /tmp/resting_preproc_0051095_session_1/nuisance_0/_csf_threshold_0.96/ho_mni_to_2mm
+131010-12:48:27,447 workflow INFO:
+	 [Job finished] jobname: resample_o_csf.c0 jobid: 15
+131010-12:48:27,454 workflow INFO:
+	 Running: flirt -in /home2/data/PublicProgram/fsl-4.1.9/data/atlases/HarvardOxford/HarvardOxford-sub-maxprob-thr25-2mm.nii.gz -ref /tmp/resting_preproc_0051095_session_1/seg_preproc_0/CSF/_csf_threshold_0.96/CSF_mask/segment_prob_0_maths_maths_maths.nii.gz -out /tmp/resting_preproc_0051095_session_1/nuisance_0/_csf_threshold_0.96/ho_mni_to_2mm/HarvardOxford-sub-maxprob-thr25-2mm_flirt.nii.gz -omat /tmp/resting_preproc_0051095_session_1/nuisance_0/_csf_threshold_0.96/ho_mni_to_2mm/HarvardOxford-sub-maxprob-thr25-2mm_flirt.mat -applyisoxfm 2 -init /tmp/resting_preproc_0051095_session_1/anat_mni_register_0/inv_linear_reg0_xfm/mprage_RPI_3dc_flirt_inv.mat -interp nearestneighbour
+131010-12:48:27,457 workflow INFO:
+	 [Job finished] jobname: sinker_6.c0 jobid: 60
+131010-12:48:27,469 workflow INFO:
+	 Submitting 4 jobs
+131010-12:48:27,471 workflow INFO:
+	 Executing: sinker_2.c0 ID: 103
+131010-12:48:27,475 workflow INFO:
+	 Executing: resample_o_gm.c0 ID: 143
+131010-12:48:27,477 workflow INFO:
+	 Executing: link_6.c0 ID: 203
+131010-12:48:27,480 workflow INFO:
+	 Executing: gm_anat_to_2mm.c0 ID: 205
+131010-12:48:28,959 workflow INFO:
+	 Executing node sinker_1.c0 in dir: /tmp/resting_preproc_0051095_session_1/_csf_threshold_0.96/sinker_1
+131010-12:48:28,994 workflow INFO:
+	 Executing node resample_o_wm.c0 in dir: /tmp/resting_preproc_0051095_session_1/montage_csf_gm_wm_0/_wm_threshold_0.96/resample_o_wm
+131010-12:48:29,488 workflow INFO:
+	 [Job finished] jobname: wm_anat_to_2mm.c0 jobid: 46
+131010-12:48:29,497 workflow INFO:
+	 [Job finished] jobname: sinker_1.c0 jobid: 151
+131010-12:48:29,508 workflow INFO:
+	 Submitting 1 jobs
+131010-12:48:29,509 workflow INFO:
+	 Executing: link_1.c0 ID: 57
+131010-12:48:30,108 workflow INFO:
+	 Executing node sinker_2.c0 in dir: /tmp/resting_preproc_0051095_session_1/_gm_threshold_0.7/sinker_2
+131010-12:48:30,147 workflow INFO:
+	 Executing node resample_o_gm.c0 in dir: /tmp/resting_preproc_0051095_session_1/montage_csf_gm_wm_0/_gm_threshold_0.7/resample_o_gm
+ 3dresample -dxyz 1.0 1.0 1.0 -prefix /tmp/resting_preproc_0051095_session_1/montage_csf_gm_wm_0/_wm_threshold_0.96/resample_o_wm/segment_prob_2_maths_maths_maths_1mm.nii.gz -inset /tmp/resting_preproc_0051095_session_1/seg_preproc_0/WM/_wm_threshold_0.96/WM_mask/segment_prob_2_maths_maths_maths.nii.gz 
+131010-12:48:30,157 workflow INFO:
+	 Executing node link_6.c0 in dir: /tmp/resting_preproc_0051095_session_1/_wm_threshold_0.96/link_6
+~~~~~~  _compcor_'ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic1.gm0.compcor1.csf0'.'ncomponents_5_selector  ~~~  _compcor_'ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic1.gm0.compcor1.csf0'.'ncomponents_5_selector_pc10.linear1.wm0.global1.motion1.quadratic1.gm0.compcor1.csf0'
+~~~~~~  _csf_threshold  ~~~  _csf_threshold_0.96
+~~~~~~  _gm_threshold  ~~~  _gm_threshold_0.7
+~~~~~~  _target_angle_deg  ~~~  _target_angle_deg_90
+~~~~~~  _threshold  ~~~  _threshold_0.2
+~~~~~~  _wm_threshold  ~~~  _wm_threshold_0.96
+~~~~~~  pipeline  ~~~  pipeline_LukachukaiCDP
+.
+_compcor_'ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic1.gm0.compcor1.csf0'.'ncomponents_5_selector  ---------->  pc10.linear1.wm0.global1.motion1.quadratic1.gm0.compcor1.csf0'
+_csf_threshold  ---------->  0.96
+_gm_threshold  ---------->  0.7
+_wm_threshold  ---------->  0.96
+pipeline  ---------->  LukachukaiCDP
+~~~  ~~~ /_wm_threshold_0.96/segment_prob_2_maths_maths_maths.nii.gz
+.
+.
+ln -s /home2/data/Projects/ABIDE_Initiative/CPAC/Output_2013-10-08_gelert/pipeline_LukachukaiCDP/0051095_session_1/anatomical_wm_mask/_wm_threshold_0.96/segment_prob_2_maths_maths_maths.nii.gz /home2/data/Projects/ABIDE_Initiative/CPAC/Output_2013-10-08_gelert/sym_links/pipeline_LukachukaiCDP/_compcor_'ncomponents_5_linear1.global1.motion1.quadratic1.compcor1.csf0'_CSF_0.96_GM_0.7_WM_0.96/0051095_session_1/scan/anat/anatomical_wm_mask.nii.gz
+131010-12:48:30,226 workflow INFO:
+	 Executing node gm_anat_to_2mm.c0 in dir: /tmp/resting_preproc_0051095_session_1/nuisance_0/_gm_threshold_0.7/gm_anat_to_2mm
+131010-12:48:30,238 workflow INFO:
+	 Running: flirt -in /tmp/resting_preproc_0051095_session_1/seg_preproc_0/GM/_gm_threshold_0.7/GM_mask/segment_prob_1_maths_maths_maths.nii.gz -ref /tmp/resting_preproc_0051095_session_1/seg_preproc_0/GM/_gm_threshold_0.7/GM_mask/segment_prob_1_maths_maths_maths.nii.gz -out /tmp/resting_preproc_0051095_session_1/nuisance_0/_gm_threshold_0.7/gm_anat_to_2mm/segment_prob_1_maths_maths_maths_flirt.nii.gz -omat /tmp/resting_preproc_0051095_session_1/nuisance_0/_gm_threshold_0.7/gm_anat_to_2mm/segment_prob_1_maths_maths_maths_flirt.mat -applyisoxfm 2 -interp nearestneighbour
+131010-12:48:30,726 workflow INFO:
+	 Executing node link_1.c0 in dir: /tmp/resting_preproc_0051095_session_1/_csf_threshold_0.96/link_1
+131010-12:48:31,516 workflow INFO:
+	 [Job finished] jobname: csf_anat_to_2mm.c0 jobid: 138
+131010-12:48:31,524 workflow INFO:
+	 [Job finished] jobname: ho_mni_to_2mm.c0 jobid: 150
+131010-12:48:31,533 workflow INFO:
+	 [Job finished] jobname: resample_o_wm.c0 jobid: 180
+131010-12:48:31,541 workflow INFO:
+	 [Job finished] jobname: sinker_2.c0 jobid: 103
+131010-12:48:31,549 workflow INFO:
+	 [Job finished] jobname: resample_o_gm.c0 jobid: 143
+131010-12:48:31,558 workflow INFO:
+	 [Job finished] jobname: link_6.c0 jobid: 203
+131010-12:48:31,566 workflow INFO:
+	 [Job finished] jobname: link_1.c0 jobid: 57
+131010-12:48:31,577 workflow INFO:
+	 Submitting 3 jobs
+131010-12:48:31,578 workflow INFO:
+	 Executing: link_2.c0 ID: 120
+131010-12:48:31,580 workflow INFO:
+	 Executing: montage_a.c0.c0.c0 ID: 166
+131010-12:48:31,583 workflow INFO:
+	 Executing: montage_s.c0.c0.c0 ID: 174
+~~~~~~  _compcor_'ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic1.gm0.compcor1.csf0'.'ncomponents_5_selector  ~~~  _compcor_'ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic1.gm0.compcor1.csf0'.'ncomponents_5_selector_pc10.linear1.wm0.global1.motion1.quadratic1.gm0.compcor1.csf0'
+~~~~~~  _csf_threshold  ~~~  _csf_threshold_0.96
+~~~~~~  _gm_threshold  ~~~  _gm_threshold_0.7
+~~~~~~  _target_angle_deg  ~~~  _target_angle_deg_90
+~~~~~~  _threshold  ~~~  _threshold_0.2
+~~~~~~  _wm_threshold  ~~~  _wm_threshold_0.96
+~~~~~~  pipeline  ~~~  pipeline_LukachukaiCDP
+.
+_compcor_'ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic1.gm0.compcor1.csf0'.'ncomponents_5_selector  ---------->  pc10.linear1.wm0.global1.motion1.quadratic1.gm0.compcor1.csf0'
+_csf_threshold  ---------->  0.96
+_gm_threshold  ---------->  0.7
+_wm_threshold  ---------->  0.96
+pipeline  ---------->  LukachukaiCDP
+~~~  ~~~ /_csf_threshold_0.96/segment_prob_0_maths_maths_maths.nii.gz
+.
+.
+ln -s /home2/data/Projects/ABIDE_Initiative/CPAC/Output_2013-10-08_gelert/pipeline_LukachukaiCDP/0051095_session_1/anatomical_csf_mask/_csf_threshold_0.96/segment_prob_0_maths_maths_maths.nii.gz /home2/data/Projects/ABIDE_Initiative/CPAC/Output_2013-10-08_gelert/sym_links/pipeline_LukachukaiCDP/_compcor_'ncomponents_5_linear1.global1.motion1.quadratic1.compcor1.csf0'_CSF_0.96_GM_0.7_WM_0.96/0051095_session_1/scan/anat/anatomical_csf_mask.nii.gz
+131010-12:48:31,591 workflow INFO:
+	 Executing node link_2.c0 in dir: /tmp/resting_preproc_0051095_session_1/_gm_threshold_0.7/link_2
+ 3dresample -dxyz 1.0 1.0 1.0 -prefix /tmp/resting_preproc_0051095_session_1/montage_csf_gm_wm_0/_gm_threshold_0.7/resample_o_gm/segment_prob_1_maths_maths_maths_1mm.nii.gz -inset /tmp/resting_preproc_0051095_session_1/seg_preproc_0/GM/_gm_threshold_0.7/GM_mask/segment_prob_1_maths_maths_maths.nii.gz 
+131010-12:48:31,614 workflow INFO:
+	 Executing node montage_a.c0.c0.c0 in dir: /tmp/resting_preproc_0051095_session_1/montage_csf_gm_wm_0/_csf_threshold_0.96/_gm_threshold_0.7/_wm_threshold_0.96/montage_a
+~~~~~~  _compcor_'ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic1.gm0.compcor1.csf0'.'ncomponents_5_selector  ~~~  _compcor_'ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic1.gm0.compcor1.csf0'.'ncomponents_5_selector_pc10.linear1.wm0.global1.motion1.quadratic1.gm0.compcor1.csf0'
+~~~~~~  _csf_threshold  ~~~  _csf_threshold_0.96
+~~~~~~  _gm_threshold  ~~~  _gm_threshold_0.7
+~~~~~~  _target_angle_deg  ~~~  _target_angle_deg_90
+~~~~~~  _threshold  ~~~  _threshold_0.2
+~~~~~~  _wm_threshold  ~~~  _wm_threshold_0.96
+~~~~~~  pipeline  ~~~  pipeline_LukachukaiCDP
+.
+_compcor_'ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic1.gm0.compcor1.csf0'.'ncomponents_5_selector  ---------->  pc10.linear1.wm0.global1.motion1.quadratic1.gm0.compcor1.csf0'
+_csf_threshold  ---------->  0.96
+_gm_threshold  ---------->  0.7
+_wm_threshold  ---------->  0.96
+pipeline  ---------->  LukachukaiCDP
+~~~  ~~~ /_gm_threshold_0.7/segment_prob_1_maths_maths_maths.nii.gz
+.
+.
+ln -s /home2/data/Projects/ABIDE_Initiative/CPAC/Output_2013-10-08_gelert/pipeline_LukachukaiCDP/0051095_session_1/anatomical_gm_mask/_gm_threshold_0.7/segment_prob_1_maths_maths_maths.nii.gz /home2/data/Projects/ABIDE_Initiative/CPAC/Output_2013-10-08_gelert/sym_links/pipeline_LukachukaiCDP/_compcor_'ncomponents_5_linear1.global1.motion1.quadratic1.compcor1.csf0'_CSF_0.96_GM_0.7_WM_0.96/0051095_session_1/scan/anat/anatomical_gm_mask.nii.gz
+131010-12:48:31,663 workflow INFO:
+	 Executing node montage_s.c0.c0.c0 in dir: /tmp/resting_preproc_0051095_session_1/montage_csf_gm_wm_0/_csf_threshold_0.96/_gm_threshold_0.7/_wm_threshold_0.96/montage_s
+131010-12:48:33,591 workflow INFO:
+	 [Job finished] jobname: link_2.c0 jobid: 120
+131010-12:48:35,604 workflow INFO:
+	 [Job finished] jobname: gm_anat_to_2mm.c0 jobid: 205
+131010-12:48:51,647 workflow INFO:
+	 [Job finished] jobname: montage_s.c0.c0.c0 jobid: 174
+131010-12:48:51,658 workflow INFO:
+	 Submitting 1 jobs
+131010-12:48:51,660 workflow INFO:
+	 Executing: sinker_27.c0.c0.c0 ID: 49
+131010-12:48:51,675 workflow INFO:
+	 Executing node sinker_27.c0.c0.c0 in dir: /tmp/resting_preproc_0051095_session_1/_csf_threshold_0.96/_gm_threshold_0.7/_wm_threshold_0.96/sinker_27
+131010-12:48:51,688 interface INFO:
+	 sub: /home2/data/Projects/ABIDE_Initiative/CPAC/Output_2013-10-08_gelert/pipeline_LukachukaiCDP/0051095_session_1/qc___csf_gm_wm_s/_csf_threshold_0.96/_gm_threshold_0.7/_wm_threshold_0.96/montage_csf_gm_wm_s.png -> /home2/data/Projects/ABIDE_Initiative/CPAC/Output_2013-10-08_gelert/pipeline_LukachukaiCDP/0051095_session_1/qc/csf_gm_wm_s/_csf_threshold_0.96/_gm_threshold_0.7/_wm_threshold_0.96/montage_csf_gm_wm_s.png
+131010-12:48:53,670 workflow INFO:
+	 [Job finished] jobname: montage_a.c0.c0.c0 jobid: 166
+131010-12:48:53,680 workflow INFO:
+	 [Job finished] jobname: sinker_27.c0.c0.c0 jobid: 49
+131010-12:48:53,691 workflow INFO:
+	 Submitting 2 jobs
+131010-12:48:53,692 workflow INFO:
+	 Executing: link_27.c0.c0.c0 ID: 35
+131010-12:48:53,694 workflow INFO:
+	 Executing: sinker_26.c0.c0.c0 ID: 156
+~~ 624.0
+131010-12:48:53,704 workflow INFO:
+	 Executing node link_27.c0.c0.c0 in dir: /tmp/resting_preproc_0051095_session_1/_csf_threshold_0.96/_gm_threshold_0.7/_wm_threshold_0.96/link_27
+131010-12:48:53,709 workflow INFO:
+	 Executing node sinker_26.c0.c0.c0 in dir: /tmp/resting_preproc_0051095_session_1/_csf_threshold_0.96/_gm_threshold_0.7/_wm_threshold_0.96/sinker_26
+131010-12:48:53,720 interface INFO:
+	 sub: /home2/data/Projects/ABIDE_Initiative/CPAC/Output_2013-10-08_gelert/pipeline_LukachukaiCDP/0051095_session_1/qc___csf_gm_wm_a/_csf_threshold_0.96/_gm_threshold_0.7/_wm_threshold_0.96/montage_csf_gm_wm_a.png -> /home2/data/Projects/ABIDE_Initiative/CPAC/Output_2013-10-08_gelert/pipeline_LukachukaiCDP/0051095_session_1/qc/csf_gm_wm_a/_csf_threshold_0.96/_gm_threshold_0.7/_wm_threshold_0.96/montage_csf_gm_wm_a.png
+131010-12:48:55,704 workflow INFO:
+	 [Job finished] jobname: link_27.c0.c0.c0 jobid: 35
+131010-12:48:58,170 workflow INFO:
+	 [Job finished] jobname: sinker_26.c0.c0.c0 jobid: 156
+131010-12:49:03,867 workflow INFO:
+	 Submitting 1 jobs
+131010-12:49:03,868 workflow INFO:
+	 Executing: link_26.c0.c0.c0 ID: 87
+~~ 624.0
+131010-12:49:03,882 workflow INFO:
+	 Executing node link_26.c0.c0.c0 in dir: /tmp/resting_preproc_0051095_session_1/_csf_threshold_0.96/_gm_threshold_0.7/_wm_threshold_0.96/link_26
+131010-12:49:05,876 workflow INFO:
+	 [Job finished] jobname: link_26.c0.c0.c0 jobid: 87
+131010-12:54:14,656 interface INFO:
+	 stdout 2013-10-10T12:54:14.656304:0.478735 0.998659 0.051323 0.006848 0.000000 -0.051381 0.998642 0.008587 0.000000 -0.006398 -0.008928 0.999940 0.000000 5.879813 -3.104526 1.339124 1.000000 
+131010-12:54:18,604 workflow INFO:
+	 [Job finished] jobname: bbreg_func_to_anat.c0 jobid: 71
+131010-12:54:18,620 workflow INFO:
+	 Submitting 5 jobs
+131010-12:54:18,621 workflow INFO:
+	 Executing: func_to_2mm.c0.c0 ID: 98
+131010-12:54:18,624 workflow INFO:
+	 Executing: sinker_14.c0 ID: 116
+131010-12:54:18,629 workflow INFO:
+	 Executing: std_dev_anat_0.c0 ID: 169
+131010-12:54:18,632 workflow INFO:
+	 Executing: resample_u.c0 ID: 183
+131010-12:54:18,634 workflow INFO:
+	 Executing: sinker_17.c0 ID: 184
+~~~~~~  _compcor_'ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic1.gm0.compcor1.csf0'.'ncomponents_5_selector  ~~~  _compcor_'ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic1.gm0.compcor1.csf0'.'ncomponents_5_selector_pc10.linear1.wm0.global1.motion1.quadratic1.gm0.compcor1.csf0'
+~~~~~~  _csf_threshold  ~~~  _csf_threshold_0.96
+~~~~~~  _gm_threshold  ~~~  _gm_threshold_0.7
+~~~~~~  _target_angle_deg  ~~~  _target_angle_deg_90
+~~~~~~  _threshold  ~~~  _threshold_0.2
+~~~~~~  _wm_threshold  ~~~  _wm_threshold_0.96
+~~~~~~  pipeline  ~~~  pipeline_LukachukaiCDP
+.
+_compcor_'ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic1.gm0.compcor1.csf0'.'ncomponents_5_selector  ---------->  pc10.linear1.wm0.global1.motion1.quadratic1.gm0.compcor1.csf0'
+_csf_threshold  ---------->  0.96
+_gm_threshold  ---------->  0.7
+_wm_threshold  ---------->  0.96
+pipeline  ---------->  LukachukaiCDP
+~~~  ~~~ /csf_gm_wm_s/_csf_threshold_0.96/_gm_threshold_0.7/_wm_threshold_0.96/montage_csf_gm_wm_s.png
+.
+.
+ln -s /home2/data/Projects/ABIDE_Initiative/CPAC/Output_2013-10-08_gelert/pipeline_LukachukaiCDP/0051095_session_1/qc/csf_gm_wm_s/_csf_threshold_0.96/_gm_threshold_0.7/_wm_threshold_0.96/montage_csf_gm_wm_s.png /home2/data/Projects/ABIDE_Initiative/CPAC/Output_2013-10-08_gelert/sym_links/pipeline_LukachukaiCDP/_compcor_'ncomponents_5_linear1.global1.motion1.quadratic1.compcor1.csf0'_CSF_0.96_GM_0.7_WM_0.96/0051095_session_1/scan/qc/montage_csf_gm_wm_s.png
+131010-12:54:18,641 workflow INFO:
+	 Executing node sinker_14.c0 in dir: /tmp/resting_preproc_0051095_session_1/_scan_rest_1_rest/sinker_14
+131010-12:54:18,645 workflow INFO:
+	 Executing node resample_u.c0 in dir: /tmp/resting_preproc_0051095_session_1/montage_anat_0/_scan_rest_1_rest/resample_u
+131010-12:54:18,650 workflow INFO:
+	 Executing node func_to_2mm.c0.c0 in dir: /tmp/resting_preproc_0051095_session_1/nuisance_0/_scan_rest_1_rest/_csf_threshold_0.96/func_to_2mm
+~~~~~~  _compcor_'ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic1.gm0.compcor1.csf0'.'ncomponents_5_selector  ~~~  _compcor_'ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic1.gm0.compcor1.csf0'.'ncomponents_5_selector_pc10.linear1.wm0.global1.motion1.quadratic1.gm0.compcor1.csf0'
+~~~~~~  _csf_threshold  ~~~  _csf_threshold_0.96
+~~~~~~  _gm_threshold  ~~~  _gm_threshold_0.7
+~~~~~~  _target_angle_deg  ~~~  _target_angle_deg_90
+~~~~~~  _threshold  ~~~  _threshold_0.2
+~~~~~~  _wm_threshold  ~~~  _wm_threshold_0.96
+~~~~~~  pipeline  ~~~  pipeline_LukachukaiCDP
+.
+_compcor_'ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic1.gm0.compcor1.csf0'.'ncomponents_5_selector  ---------->  pc10.linear1.wm0.global1.motion1.quadratic1.gm0.compcor1.csf0'
+_csf_threshold  ---------->  0.96
+_gm_threshold  ---------->  0.7
+_wm_threshold  ---------->  0.96
+pipeline  ---------->  LukachukaiCDP
+~~~  ~~~ /csf_gm_wm_a/_csf_threshold_0.96/_gm_threshold_0.7/_wm_threshold_0.96/montage_csf_gm_wm_a.png
+.
+.
+ln -s /home2/data/Projects/ABIDE_Initiative/CPAC/Output_2013-10-08_gelert/pipeline_LukachukaiCDP/0051095_session_1/qc/csf_gm_wm_a/_csf_threshold_0.96/_gm_threshold_0.7/_wm_threshold_0.96/montage_csf_gm_wm_a.png /home2/data/Projects/ABIDE_Initiative/CPAC/Output_2013-10-08_gelert/sym_links/pipeline_LukachukaiCDP/_compcor_'ncomponents_5_linear1.global1.motion1.quadratic1.compcor1.csf0'_CSF_0.96_GM_0.7_WM_0.96/0051095_session_1/scan/qc/montage_csf_gm_wm_a.png
+131010-12:54:18,657 workflow INFO:
+	 Executing node std_dev_anat_0.c0 in dir: /tmp/resting_preproc_0051095_session_1/_scan_rest_1_rest/std_dev_anat_0
+131010-12:54:18,661 workflow INFO:
+	 Running: flirt -in /tmp/resting_preproc_0051095_session_1/func_preproc_0/_scan_rest_1_rest/func_normalize/rest_3dc_tshift_RPI_3dv_3dc_maths.nii.gz -ref /tmp/resting_preproc_0051095_session_1/seg_preproc_0/CSF/_csf_threshold_0.96/CSF_mask/segment_prob_0_maths_maths_maths.nii.gz -out /tmp/resting_preproc_0051095_session_1/nuisance_0/_scan_rest_1_rest/_csf_threshold_0.96/func_to_2mm/rest_3dc_tshift_RPI_3dv_3dc_maths_flirt.nii.gz -omat /tmp/resting_preproc_0051095_session_1/nuisance_0/_scan_rest_1_rest/_csf_threshold_0.96/func_to_2mm/rest_3dc_tshift_RPI_3dv_3dc_maths_flirt.mat -applyisoxfm 2 -init /tmp/resting_preproc_0051095_session_1/func_to_anat_0/_scan_rest_1_rest/bbreg_func_to_anat/rest_3dc_tshift_RPI_3dv_3dc_3dT_flirt.mat
+131010-12:54:18,713 workflow INFO:
+	 Executing node sinker_17.c0 in dir: /tmp/resting_preproc_0051095_session_1/_scan_rest_1_rest/sinker_17
+131010-12:54:20,642 workflow INFO:
+	 [Job finished] jobname: sinker_14.c0 jobid: 116
+131010-12:54:20,652 workflow INFO:
+	 [Job finished] jobname: resample_u.c0 jobid: 183
+131010-12:54:20,660 workflow INFO:
+	 [Job finished] jobname: sinker_17.c0 jobid: 184
+131010-12:54:20,670 workflow INFO:
+	 Submitting 4 jobs
+131010-12:54:20,671 workflow INFO:
+	 Executing: link_14.c0 ID: 1
+131010-12:54:20,673 workflow INFO:
+	 Executing: montage_s.c0 ID: 14
+131010-12:54:20,675 workflow INFO:
+	 Executing: montage_a.c0 ID: 97
+131010-12:54:20,677 workflow INFO:
+	 Executing: link_17.c0 ID: 112
+131010-12:54:20,683 workflow INFO:
+	 Executing node link_14.c0 in dir: /tmp/resting_preproc_0051095_session_1/_scan_rest_1_rest/link_14
+ 3dresample -dxyz 1.0 1.0 1.0 -prefix /tmp/resting_preproc_0051095_session_1/montage_anat_0/_scan_rest_1_rest/resample_u/rest_3dc_tshift_RPI_3dv_3dc_3dT_flirt_1mm.nii.gz -inset /tmp/resting_preproc_0051095_session_1/func_to_anat_0/_scan_rest_1_rest/bbreg_func_to_anat/rest_3dc_tshift_RPI_3dv_3dc_3dT_flirt.nii.gz 
+131010-12:54:20,692 workflow INFO:
+	 Executing node montage_s.c0 in dir: /tmp/resting_preproc_0051095_session_1/montage_anat_0/_scan_rest_1_rest/montage_s
+~~~~~~  _compcor_'ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic1.gm0.compcor1.csf0'.'ncomponents_5_selector  ~~~  _compcor_'ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic1.gm0.compcor1.csf0'.'ncomponents_5_selector_pc10.linear1.wm0.global1.motion1.quadratic1.gm0.compcor1.csf0'
+~~~~~~  _csf_threshold  ~~~  _csf_threshold_0.96
+~~~~~~  _gm_threshold  ~~~  _gm_threshold_0.7
+~~~~~~  _target_angle_deg  ~~~  _target_angle_deg_90
+~~~~~~  _threshold  ~~~  _threshold_0.2
+~~~~~~  _wm_threshold  ~~~  _wm_threshold_0.96
+~~~~~~  pipeline  ~~~  pipeline_LukachukaiCDP
+.
+_compcor_'ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic1.gm0.compcor1.csf0'.'ncomponents_5_selector  ---------->  pc10.linear1.wm0.global1.motion1.quadratic1.gm0.compcor1.csf0'
+_csf_threshold  ---------->  0.96
+_gm_threshold  ---------->  0.7
+_wm_threshold  ---------->  0.96
+pipeline  ---------->  LukachukaiCDP
+scan_rest_1_rest  ~~~ /_scan_rest_1_rest/rest_3dc_tshift_RPI_3dv_3dc_3dT_flirt.mat
+.
+ln -s /home2/data/Projects/ABIDE_Initiative/CPAC/Output_2013-10-08_gelert/pipeline_LukachukaiCDP/0051095_session_1/functional_to_anat_linear_xfm/_scan_rest_1_rest/rest_3dc_tshift_RPI_3dv_3dc_3dT_flirt.mat /home2/data/Projects/ABIDE_Initiative/CPAC/Output_2013-10-08_gelert/sym_links/pipeline_LukachukaiCDP/_compcor_'ncomponents_5_linear1.global1.motion1.quadratic1.compcor1.csf0'_CSF_0.96_GM_0.7_WM_0.96/0051095_session_1/scan_rest_1_rest/registration/functional_to_anat_linear_xfm.mat
+131010-12:54:20,798 workflow INFO:
+	 Executing node montage_a.c0 in dir: /tmp/resting_preproc_0051095_session_1/montage_anat_0/_scan_rest_1_rest/montage_a
+131010-12:54:22,683 workflow INFO:
+	 [Job finished] jobname: link_14.c0 jobid: 1
+applywarp --ref=/tmp/resting_preproc_0051095_session_1/anat_preproc_0/anat_brain_only/mprage_RPI_3dc.nii.gz --in=/tmp/resting_preproc_0051095_session_1/_scan_rest_1_rest/std_dev_0/std_dev.nii.gz --out=/tmp/resting_preproc_0051095_session_1/_scan_rest_1_rest/std_dev_anat_0/std_dev_anat.nii.gz --premat=/tmp/resting_preproc_0051095_session_1/func_to_anat_0/_scan_rest_1_rest/bbreg_func_to_anat/rest_3dc_tshift_RPI_3dv_3dc_3dT_flirt.mat --interp=trilinear
+
+131010-12:54:24,586 workflow INFO:
+	 Executing node link_17.c0 in dir: /tmp/resting_preproc_0051095_session_1/_scan_rest_1_rest/link_17
+131010-12:54:24,697 workflow INFO:
+	 [Job finished] jobname: std_dev_anat_0.c0 jobid: 169
+131010-12:54:24,705 workflow INFO:
+	 [Job finished] jobname: link_17.c0 jobid: 112
+131010-12:54:24,715 workflow INFO:
+	 Submitting 1 jobs
+131010-12:54:24,716 workflow INFO:
+	 Executing: snr_0.c0 ID: 165
+~~~~~~  _compcor_'ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic1.gm0.compcor1.csf0'.'ncomponents_5_selector  ~~~  _compcor_'ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic1.gm0.compcor1.csf0'.'ncomponents_5_selector_pc10.linear1.wm0.global1.motion1.quadratic1.gm0.compcor1.csf0'
+~~~~~~  _csf_threshold  ~~~  _csf_threshold_0.96
+~~~~~~  _gm_threshold  ~~~  _gm_threshold_0.7
+~~~~~~  _target_angle_deg  ~~~  _target_angle_deg_90
+~~~~~~  _threshold  ~~~  _threshold_0.2
+~~~~~~  _wm_threshold  ~~~  _wm_threshold_0.96
+~~~~~~  pipeline  ~~~  pipeline_LukachukaiCDP
+.
+_compcor_'ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic1.gm0.compcor1.csf0'.'ncomponents_5_selector  ---------->  pc10.linear1.wm0.global1.motion1.quadratic1.gm0.compcor1.csf0'
+_csf_threshold  ---------->  0.96
+_gm_threshold  ---------->  0.7
+_wm_threshold  ---------->  0.96
+pipeline  ---------->  LukachukaiCDP
+scan_rest_1_rest  ~~~ /_scan_rest_1_rest/rest_3dc_tshift_RPI_3dv_3dc_3dT_flirt.nii.gz
+.
+.
+ln -s /home2/data/Projects/ABIDE_Initiative/CPAC/Output_2013-10-08_gelert/pipeline_LukachukaiCDP/0051095_session_1/mean_functional_in_anat/_scan_rest_1_rest/rest_3dc_tshift_RPI_3dv_3dc_3dT_flirt.nii.gz /home2/data/Projects/ABIDE_Initiative/CPAC/Output_2013-10-08_gelert/sym_links/pipeline_LukachukaiCDP/_compcor_'ncomponents_5_linear1.global1.motion1.quadratic1.compcor1.csf0'_CSF_0.96_GM_0.7_WM_0.96/0051095_session_1/scan_rest_1_rest/func/mean_functional_in_anat.nii.gz
+131010-12:54:24,736 workflow INFO:
+	 Executing node snr_0.c0 in dir: /tmp/resting_preproc_0051095_session_1/_scan_rest_1_rest/snr_0
+131010-12:54:28,728 workflow INFO:
+	 [Job finished] jobname: snr_0.c0 jobid: 165
+131010-12:54:28,740 workflow INFO:
+	 Submitting 2 jobs
+131010-12:54:28,741 workflow INFO:
+	 Executing: hist_snr_0.c0 ID: 114
+131010-12:54:28,743 workflow INFO:
+	 Executing: dp_snr_0.c0 ID: 129
+3dcalc -a /tmp/resting_preproc_0051095_session_1/_scan_rest_1_rest/std_dev_anat_0/std_dev_anat.nii.gz -b /tmp/resting_preproc_0051095_session_1/func_to_anat_0/_scan_rest_1_rest/bbreg_func_to_anat/rest_3dc_tshift_RPI_3dv_3dc_3dT_flirt.nii.gz -expr "b/a" -prefix /tmp/resting_preproc_0051095_session_1/_scan_rest_1_rest/snr_0/snr.nii.gz
+++ 3dcalc: AFNI version=AFNI_2011_12_21_1014 (May 21 2012) [64-bit]
+++ Authored by: A cast of thousands
+++ Output dataset /tmp/resting_preproc_0051095_session_1/_scan_rest_1_rest/snr_0/snr.nii.gz
+131010-12:54:28,753 workflow INFO:
+	 Executing node hist_snr_0.c0 in dir: /tmp/resting_preproc_0051095_session_1/_scan_rest_1_rest/hist_snr_0
+131010-12:54:30,386 workflow INFO:
+	 Executing node dp_snr_0.c0 in dir: /tmp/resting_preproc_0051095_session_1/_scan_rest_1_rest/dp_snr_0
+131010-12:54:30,751 workflow INFO:
+	 [Job finished] jobname: hist_snr_0.c0 jobid: 114
+131010-12:54:30,763 workflow INFO:
+	 Submitting 1 jobs
+131010-12:54:30,764 workflow INFO:
+	 Executing: sinker_38.c0 ID: 0
+^^ [   0.  218.]
+~~ 218.0
+131010-12:54:34,402 workflow INFO:
+	 Executing node sinker_38.c0 in dir: /tmp/resting_preproc_0051095_session_1/_scan_rest_1_rest/sinker_38
+131010-12:54:34,414 interface INFO:
+	 sub: /home2/data/Projects/ABIDE_Initiative/CPAC/Output_2013-10-08_gelert/pipeline_LukachukaiCDP/0051095_session_1/qc___snr_hist/_scan_rest_1_rest/snr_hist_plot.png -> /home2/data/Projects/ABIDE_Initiative/CPAC/Output_2013-10-08_gelert/pipeline_LukachukaiCDP/0051095_session_1/qc/snr_hist/_scan_rest_1_rest/snr_hist_plot.png
+131010-12:54:34,779 workflow INFO:
+	 [Job finished] jobname: montage_s.c0 jobid: 14
+131010-12:54:34,788 workflow INFO:
+	 [Job finished] jobname: montage_a.c0 jobid: 97
+131010-12:54:34,797 workflow INFO:
+	 [Job finished] jobname: sinker_38.c0 jobid: 0
+131010-12:54:34,807 workflow INFO:
+	 Submitting 3 jobs
+131010-12:54:34,809 workflow INFO:
+	 Executing: sinker_31.c0 ID: 127
+131010-12:54:34,813 workflow INFO:
+	 Executing: link_38.c0 ID: 133
+131010-12:54:34,816 workflow INFO:
+	 Executing: sinker_32.c0 ID: 137
+131010-12:54:34,823 workflow INFO:
+	 Executing node sinker_31.c0 in dir: /tmp/resting_preproc_0051095_session_1/_scan_rest_1_rest/sinker_31
+^^ [   0.  218.]
+~~ 218.0
+~~~ 65   190
+131010-12:54:34,825 workflow INFO:
+	 Executing node link_38.c0 in dir: /tmp/resting_preproc_0051095_session_1/_scan_rest_1_rest/link_38
+131010-12:54:34,833 interface INFO:
+	 sub: /home2/data/Projects/ABIDE_Initiative/CPAC/Output_2013-10-08_gelert/pipeline_LukachukaiCDP/0051095_session_1/qc___mean_func_with_t1_edge_a/_scan_rest_1_rest/t1_edge_on_mean_func_in_t1_a.png -> /home2/data/Projects/ABIDE_Initiative/CPAC/Output_2013-10-08_gelert/pipeline_LukachukaiCDP/0051095_session_1/qc/mean_func_with_t1_edge_a/_scan_rest_1_rest/t1_edge_on_mean_func_in_t1_a.png
+131010-12:54:34,867 workflow INFO:
+	 Executing node sinker_32.c0 in dir: /tmp/resting_preproc_0051095_session_1/_scan_rest_1_rest/sinker_32
+131010-12:54:34,878 interface INFO:
+	 sub: /home2/data/Projects/ABIDE_Initiative/CPAC/Output_2013-10-08_gelert/pipeline_LukachukaiCDP/0051095_session_1/qc___mean_func_with_t1_edge_s/_scan_rest_1_rest/t1_edge_on_mean_func_in_t1_s.png -> /home2/data/Projects/ABIDE_Initiative/CPAC/Output_2013-10-08_gelert/pipeline_LukachukaiCDP/0051095_session_1/qc/mean_func_with_t1_edge_s/_scan_rest_1_rest/t1_edge_on_mean_func_in_t1_s.png
+131010-12:54:36,828 workflow INFO:
+	 [Job finished] jobname: sinker_31.c0 jobid: 127
+131010-12:54:36,837 workflow INFO:
+	 [Job finished] jobname: link_38.c0 jobid: 133
+131010-12:54:36,845 workflow INFO:
+	 [Job finished] jobname: sinker_32.c0 jobid: 137
+131010-12:54:36,856 workflow INFO:
+	 Submitting 2 jobs
+131010-12:54:36,857 workflow INFO:
+	 Executing: link_32.c0 ID: 5
+131010-12:54:36,859 workflow INFO:
+	 Executing: link_31.c0 ID: 69
+~~~~~~  _compcor_'ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic1.gm0.compcor1.csf0'.'ncomponents_5_selector  ~~~  _compcor_'ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic1.gm0.compcor1.csf0'.'ncomponents_5_selector_pc10.linear1.wm0.global1.motion1.quadratic1.gm0.compcor1.csf0'
+~~~~~~  _csf_threshold  ~~~  _csf_threshold_0.96
+~~~~~~  _gm_threshold  ~~~  _gm_threshold_0.7
+~~~~~~  _target_angle_deg  ~~~  _target_angle_deg_90
+~~~~~~  _threshold  ~~~  _threshold_0.2
+~~~~~~  _wm_threshold  ~~~  _wm_threshold_0.96
+~~~~~~  pipeline  ~~~  pipeline_LukachukaiCDP
+.
+_compcor_'ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic1.gm0.compcor1.csf0'.'ncomponents_5_selector  ---------->  pc10.linear1.wm0.global1.motion1.quadratic1.gm0.compcor1.csf0'
+_csf_threshold  ---------->  0.96
+_gm_threshold  ---------->  0.7
+_wm_threshold  ---------->  0.96
+pipeline  ---------->  LukachukaiCDP
+scan_rest_1_rest  ~~~ /snr_hist/_scan_rest_1_rest/snr_hist_plot.png
+.
+.
+ln -s /home2/data/Projects/ABIDE_Initiative/CPAC/Output_2013-10-08_gelert/pipeline_LukachukaiCDP/0051095_session_1/qc/snr_hist/_scan_rest_1_rest/snr_hist_plot.png /home2/data/Projects/ABIDE_Initiative/CPAC/Output_2013-10-08_gelert/sym_links/pipeline_LukachukaiCDP/_compcor_'ncomponents_5_linear1.global1.motion1.quadratic1.compcor1.csf0'_CSF_0.96_GM_0.7_WM_0.96/0051095_session_1/scan_rest_1_rest/qc/snr_hist_plot.png
+131010-12:54:36,870 workflow INFO:
+	 Executing node link_32.c0 in dir: /tmp/resting_preproc_0051095_session_1/_scan_rest_1_rest/link_32
+131010-12:54:36,872 workflow INFO:
+	 Executing node link_31.c0 in dir: /tmp/resting_preproc_0051095_session_1/_scan_rest_1_rest/link_31
+131010-12:54:38,867 workflow INFO:
+	 [Job finished] jobname: link_32.c0 jobid: 5
+131010-12:54:38,876 workflow INFO:
+	 [Job finished] jobname: link_31.c0 jobid: 69
+131010-12:55:41,20 workflow INFO:
+	 [Job finished] jobname: func_to_2mm.c0.c0 jobid: 98
+131010-12:55:41,33 workflow INFO:
+	 Submitting 1 jobs
+131010-12:55:41,34 workflow INFO:
+	 Executing: tissue_masks.c0.c0.c0.c0 ID: 109
+~~~~~~  _compcor_'ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic1.gm0.compcor1.csf0'.'ncomponents_5_selector  ~~~  _compcor_'ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic1.gm0.compcor1.csf0'.'ncomponents_5_selector_pc10.linear1.wm0.global1.motion1.quadratic1.gm0.compcor1.csf0'
+~~~~~~  _csf_threshold  ~~~  _csf_threshold_0.96
+~~~~~~  _gm_threshold  ~~~  _gm_threshold_0.7
+~~~~~~  _target_angle_deg  ~~~  _target_angle_deg_90
+~~~~~~  _threshold  ~~~  _threshold_0.2
+~~~~~~  _wm_threshold  ~~~  _wm_threshold_0.96
+~~~~~~  pipeline  ~~~  pipeline_LukachukaiCDP
+.
+_compcor_'ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic1.gm0.compcor1.csf0'.'ncomponents_5_selector  ---------->  pc10.linear1.wm0.global1.motion1.quadratic1.gm0.compcor1.csf0'
+_csf_threshold  ---------->  0.96
+_gm_threshold  ---------->  0.7
+_wm_threshold  ---------->  0.96
+pipeline  ---------->  LukachukaiCDP
+scan_rest_1_rest  ~~~ /mean_func_with_t1_edge_a/_scan_rest_1_rest/t1_edge_on_mean_func_in_t1_a.png
+.
+.
+ln -s /home2/data/Projects/ABIDE_Initiative/CPAC/Output_2013-10-08_gelert/pipeline_LukachukaiCDP/0051095_session_1/qc/mean_func_with_t1_edge_a/_scan_rest_1_rest/t1_edge_on_mean_func_in_t1_a.png /home2/data/Projects/ABIDE_Initiative/CPAC/Output_2013-10-08_gelert/sym_links/pipeline_LukachukaiCDP/_compcor_'ncomponents_5_linear1.global1.motion1.quadratic1.compcor1.csf0'_CSF_0.96_GM_0.7_WM_0.96/0051095_session_1/scan_rest_1_rest/qc/t1_edge_on_mean_func_in_t1_a.png
+131010-12:55:41,79 workflow INFO:
+	 Executing node tissue_masks.c0.c0.c0.c0 in dir: /tmp/resting_preproc_0051095_session_1/nuisance_0/_scan_rest_1_rest/_csf_threshold_0.96/_gm_threshold_0.7/_wm_threshold_0.96/tissue_masks
+131010-12:56:05,91 workflow INFO:
+	 [Job finished] jobname: dp_snr_0.c0 jobid: 129
+131010-12:56:05,103 workflow INFO:
+	 Submitting 1 jobs
+131010-12:56:05,105 workflow INFO:
+	 Executing: resample_o.c0 ID: 141
+~~~~~~  _compcor_'ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic1.gm0.compcor1.csf0'.'ncomponents_5_selector  ~~~  _compcor_'ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic1.gm0.compcor1.csf0'.'ncomponents_5_selector_pc10.linear1.wm0.global1.motion1.quadratic1.gm0.compcor1.csf0'
+~~~~~~  _csf_threshold  ~~~  _csf_threshold_0.96
+~~~~~~  _gm_threshold  ~~~  _gm_threshold_0.7
+~~~~~~  _target_angle_deg  ~~~  _target_angle_deg_90
+~~~~~~  _threshold  ~~~  _threshold_0.2
+~~~~~~  _wm_threshold  ~~~  _wm_threshold_0.96
+~~~~~~  pipeline  ~~~  pipeline_LukachukaiCDP
+.
+_compcor_'ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic1.gm0.compcor1.csf0'.'ncomponents_5_selector  ---------->  pc10.linear1.wm0.global1.motion1.quadratic1.gm0.compcor1.csf0'
+_csf_threshold  ---------->  0.96
+_gm_threshold  ---------->  0.7
+_wm_threshold  ---------->  0.96
+pipeline  ---------->  LukachukaiCDP
+scan_rest_1_rest  ~~~ /mean_func_with_t1_edge_s/_scan_rest_1_rest/t1_edge_on_mean_func_in_t1_s.png
+.
+.
+ln -s /home2/data/Projects/ABIDE_Initiative/CPAC/Output_2013-10-08_gelert/pipeline_LukachukaiCDP/0051095_session_1/qc/mean_func_with_t1_edge_s/_scan_rest_1_rest/t1_edge_on_mean_func_in_t1_s.png /home2/data/Projects/ABIDE_Initiative/CPAC/Output_2013-10-08_gelert/sym_links/pipeline_LukachukaiCDP/_compcor_'ncomponents_5_linear1.global1.motion1.quadratic1.compcor1.csf0'_CSF_0.96_GM_0.7_WM_0.96/0051095_session_1/scan_rest_1_rest/qc/t1_edge_on_mean_func_in_t1_s.png
+131010-12:56:05,118 workflow INFO:
+	 Executing node resample_o.c0 in dir: /tmp/resting_preproc_0051095_session_1/montage_snr_0/_scan_rest_1_rest/resample_o
+131010-12:56:07,111 workflow INFO:
+	 [Job finished] jobname: resample_o.c0 jobid: 141
+131010-12:56:07,122 workflow INFO:
+	 Submitting 2 jobs
+131010-12:56:07,124 workflow INFO:
+	 Executing: montage_s.c0 ID: 56
+131010-12:56:07,126 workflow INFO:
+	 Executing: montage_a.c0 ID: 146
+131010-12:56:07,143 workflow INFO:
+	 Executing node montage_s.c0 in dir: /tmp/resting_preproc_0051095_session_1/montage_snr_0/_scan_rest_1_rest/montage_s
+131010-12:56:07,146 workflow INFO:
+	 Executing node montage_a.c0 in dir: /tmp/resting_preproc_0051095_session_1/montage_snr_0/_scan_rest_1_rest/montage_a
+131010-12:56:15,147 workflow INFO:
+	 [Job finished] jobname: tissue_masks.c0.c0.c0.c0 jobid: 109
+131010-12:56:15,159 workflow INFO:
+	 Submitting 2 jobs
+131010-12:56:15,160 workflow INFO:
+	 Executing: residuals.bI.b0.c0.c0.c0.c0 ID: 193
+131010-12:56:15,163 workflow INFO:
+	 Executing: residuals.bI.b1.c0.c0.c0.c0 ID: 196
+ 3dresample -dxyz 1.0 1.0 1.0 -prefix /tmp/resting_preproc_0051095_session_1/montage_snr_0/_scan_rest_1_rest/resample_o/snr_99_1mm.nii.gz -inset /tmp/resting_preproc_0051095_session_1/_scan_rest_1_rest/dp_snr_0/snr_99.nii.gz 
+131010-12:56:15,204 workflow INFO:
+	 Executing node residuals.bI.b0.c0.c0.c0.c0 in dir: /tmp/resting_preproc_0051095_session_1/nuisance_0/_scan_rest_1_rest/_csf_threshold_0.96/_gm_threshold_0.7/_wm_threshold_0.96/_compcor_ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic1.gm0.compcor1.csf0/residuals
+Tissues extraction thresholds wm 0, csf 0, gm 0
+131010-12:56:15,206 workflow INFO:
+	 Executing node residuals.bI.b1.c0.c0.c0.c0 in dir: /tmp/resting_preproc_0051095_session_1/nuisance_0/_scan_rest_1_rest/_csf_threshold_0.96/_gm_threshold_0.7/_wm_threshold_0.96/_compcor_ncomponents_5_selector_pc10.linear1.wm0.global1.motion1.quadratic1.gm0.compcor1.csf0/residuals
+131010-12:56:19,177 workflow INFO:
+	 [Job finished] jobname: montage_s.c0 jobid: 56
+131010-12:56:19,186 workflow INFO:
+	 [Job finished] jobname: montage_a.c0 jobid: 146
+131010-12:56:19,196 workflow INFO:
+	 Submitting 2 jobs
+131010-12:56:19,197 workflow INFO:
+	 Executing: sinker_37.c0 ID: 6
+131010-12:56:19,201 workflow INFO:
+	 Executing: sinker_39.c0 ID: 12
+~~ 0.34302
+131010-12:56:19,211 workflow INFO:
+	 Executing node sinker_37.c0 in dir: /tmp/resting_preproc_0051095_session_1/_scan_rest_1_rest/sinker_37
+~~ 0.34302
+~~~ 51   189
+131010-12:56:19,217 workflow INFO:
+	 Executing node sinker_39.c0 in dir: /tmp/resting_preproc_0051095_session_1/_scan_rest_1_rest/sinker_39
+131010-12:56:19,224 interface INFO:
+	 sub: /home2/data/Projects/ABIDE_Initiative/CPAC/Output_2013-10-08_gelert/pipeline_LukachukaiCDP/0051095_session_1/qc___snr_a/_scan_rest_1_rest/snr_a.png -> /home2/data/Projects/ABIDE_Initiative/CPAC/Output_2013-10-08_gelert/pipeline_LukachukaiCDP/0051095_session_1/qc/snr_a/_scan_rest_1_rest/snr_a.png
+131010-12:56:19,230 interface INFO:
+	 sub: /home2/data/Projects/ABIDE_Initiative/CPAC/Output_2013-10-08_gelert/pipeline_LukachukaiCDP/0051095_session_1/qc___snr_s/_scan_rest_1_rest/snr_s.png -> /home2/data/Projects/ABIDE_Initiative/CPAC/Output_2013-10-08_gelert/pipeline_LukachukaiCDP/0051095_session_1/qc/snr_s/_scan_rest_1_rest/snr_s.png
+131010-12:56:21,211 workflow INFO:
+	 [Job finished] jobname: sinker_37.c0 jobid: 6
+131010-12:56:21,220 workflow INFO:
+	 [Job finished] jobname: sinker_39.c0 jobid: 12
+131010-12:56:21,230 workflow INFO:
+	 Submitting 2 jobs
+131010-12:56:21,231 workflow INFO:
+	 Executing: link_37.c0 ID: 39
+131010-12:56:21,233 workflow INFO:
+	 Executing: link_39.c0 ID: 52
+131010-12:56:21,243 workflow INFO:
+	 Executing node link_37.c0 in dir: /tmp/resting_preproc_0051095_session_1/_scan_rest_1_rest/link_37
+131010-12:56:21,246 workflow INFO:
+	 Executing node link_39.c0 in dir: /tmp/resting_preproc_0051095_session_1/_scan_rest_1_rest/link_39
+131010-12:56:23,241 workflow INFO:
+	 [Job finished] jobname: link_37.c0 jobid: 39
+131010-12:56:23,249 workflow INFO:
+	 [Job finished] jobname: link_39.c0 jobid: 52
+131010-12:56:31,276 workflow INFO:
+	 [Job finished] jobname: residuals.bI.b0.c0.c0.c0.c0 jobid: 193
+131010-12:56:31,289 workflow INFO:
+	 Submitting 3 jobs
+131010-12:56:31,290 workflow INFO:
+	 Executing: frequency_filter_0.aI.a0.b0.c0.c0.c0.c0 ID: 126
+131010-12:56:31,292 workflow INFO:
+	 Executing: sinker_12.b0.c0.c0.c0.c0 ID: 145
+131010-12:56:31,296 workflow INFO:
+	 Executing: write_log.b0.c0.c0.c0.c0 ID: 177
+~~~~~~  _compcor_'ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic1.gm0.compcor1.csf0'.'ncomponents_5_selector  ~~~  _compcor_'ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic1.gm0.compcor1.csf0'.'ncomponents_5_selector_pc10.linear1.wm0.global1.motion1.quadratic1.gm0.compcor1.csf0'
+~~~~~~  _csf_threshold  ~~~  _csf_threshold_0.96
+~~~~~~  _gm_threshold  ~~~  _gm_threshold_0.7
+~~~~~~  _target_angle_deg  ~~~  _target_angle_deg_90
+~~~~~~  _threshold  ~~~  _threshold_0.2
+~~~~~~  _wm_threshold  ~~~  _wm_threshold_0.96
+~~~~~~  pipeline  ~~~  pipeline_LukachukaiCDP
+.
+_compcor_'ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic1.gm0.compcor1.csf0'.'ncomponents_5_selector  ---------->  pc10.linear1.wm0.global1.motion1.quadratic1.gm0.compcor1.csf0'
+_csf_threshold  ---------->  0.96
+_gm_threshold  ---------->  0.7
+_wm_threshold  ---------->  0.96
+pipeline  ---------->  LukachukaiCDP
+scan_rest_1_rest  ~~~ /snr_a/_scan_rest_1_rest/snr_a.png
+.
+.
+ln -s /home2/data/Projects/ABIDE_Initiative/CPAC/Output_2013-10-08_gelert/pipeline_LukachukaiCDP/0051095_session_1/qc/snr_a/_scan_rest_1_rest/snr_a.png /home2/data/Projects/ABIDE_Initiative/CPAC/Output_2013-10-08_gelert/sym_links/pipeline_LukachukaiCDP/_compcor_'ncomponents_5_linear1.global1.motion1.quadratic1.compcor1.csf0'_CSF_0.96_GM_0.7_WM_0.96/0051095_session_1/scan_rest_1_rest/qc/snr_a.png
+131010-12:56:31,304 workflow INFO:
+	 Executing node frequency_filter_0.aI.a0.b0.c0.c0.c0.c0 in dir: /tmp/resting_preproc_0051095_session_1/_scan_rest_1_rest/_csf_threshold_0.96/_gm_threshold_0.7/_wm_threshold_0.96/_compcor_ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic1.gm0.compcor1.csf0/_bandpass_freqs_0.01.0.1/frequency_filter_0
+~~~~~~  _compcor_'ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic1.gm0.compcor1.csf0'.'ncomponents_5_selector  ~~~  _compcor_'ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic1.gm0.compcor1.csf0'.'ncomponents_5_selector_pc10.linear1.wm0.global1.motion1.quadratic1.gm0.compcor1.csf0'
+~~~~~~  _csf_threshold  ~~~  _csf_threshold_0.96
+~~~~~~  _gm_threshold  ~~~  _gm_threshold_0.7
+~~~~~~  _target_angle_deg  ~~~  _target_angle_deg_90
+~~~~~~  _threshold  ~~~  _threshold_0.2
+~~~~~~  _wm_threshold  ~~~  _wm_threshold_0.96
+~~~~~~  pipeline  ~~~  pipeline_LukachukaiCDP
+.
+_compcor_'ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic1.gm0.compcor1.csf0'.'ncomponents_5_selector  ---------->  pc10.linear1.wm0.global1.motion1.quadratic1.gm0.compcor1.csf0'
+_csf_threshold  ---------->  0.96
+_gm_threshold  ---------->  0.7
+_wm_threshold  ---------->  0.96
+pipeline  ---------->  LukachukaiCDP
+scan_rest_1_rest  ~~~ /snr_s/_scan_rest_1_rest/snr_s.png
+.
+.
+ln -s /home2/data/Projects/ABIDE_Initiative/CPAC/Output_2013-10-08_gelert/pipeline_LukachukaiCDP/0051095_session_1/qc/snr_s/_scan_rest_1_rest/snr_s.png /home2/data/Projects/ABIDE_Initiative/CPAC/Output_2013-10-08_gelert/sym_links/pipeline_LukachukaiCDP/_compcor_'ncomponents_5_linear1.global1.motion1.quadratic1.compcor1.csf0'_CSF_0.96_GM_0.7_WM_0.96/0051095_session_1/scan_rest_1_rest/qc/snr_s.png
+131010-12:56:31,309 workflow INFO:
+	 Executing node sinker_12.b0.c0.c0.c0.c0 in dir: /tmp/resting_preproc_0051095_session_1/_scan_rest_1_rest/_csf_threshold_0.96/_gm_threshold_0.7/_wm_threshold_0.96/_compcor_ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic1.gm0.compcor1.csf0/sinker_12
+compcor_ncomponents 5
+Detrending and centering data
+Calculating SVD decomposition of Y*Y'
+Regressors include ['motion', 'compcor', 'quadratic', 'constant', 'linear']
+Regressors dim (180, 32) starting regression
+Writing residual and regressors
+131010-12:56:31,312 workflow INFO:
+	 Executing node write_log.b0.c0.c0.c0.c0 in dir: /tmp/resting_preproc_0051095_session_1/log_nuisance_0/_scan_rest_1_rest/_csf_threshold_0.96/_gm_threshold_0.7/_wm_threshold_0.96/_compcor_ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic1.gm0.compcor1.csf0/write_log
+131010-12:56:33,304 workflow INFO:
+	 [Job finished] jobname: residuals.bI.b1.c0.c0.c0.c0 jobid: 196
+131010-12:56:33,316 workflow INFO:
+	 Submitting 3 jobs
+131010-12:56:33,317 workflow INFO:
+	 Executing: sinker_12.b1.c0.c0.c0.c0 ID: 115
+131010-12:56:33,320 workflow INFO:
+	 Executing: frequency_filter_0.aI.a0.b1.c0.c0.c0.c0 ID: 189
+131010-12:56:33,322 workflow INFO:
+	 Executing: write_log.b1.c0.c0.c0.c0 ID: 200
+compcor_ncomponents 5
+Detrending and centering data
+Calculating SVD decomposition of Y*Y'
+Regressors include ['constant', 'linear', 'global', 'motion', 'quadratic', 'compcor']
+Regressors dim (180, 33) starting regression
+Writing residual and regressors
+131010-12:56:33,331 workflow INFO:
+	 Executing node sinker_12.b1.c0.c0.c0.c0 in dir: /tmp/resting_preproc_0051095_session_1/_scan_rest_1_rest/_csf_threshold_0.96/_gm_threshold_0.7/_wm_threshold_0.96/_compcor_ncomponents_5_selector_pc10.linear1.wm0.global1.motion1.quadratic1.gm0.compcor1.csf0/sinker_12
+131010-12:56:45,129 interface INFO:
+	 CPAC custom log :
+131010-12:56:45,130 interface INFO:
+	  version - 0.3.1, timestamp -2013-10-10 12:56:31, subject_id -0051095_session_1, scan_id - scan_rest_1_rest, strategy -_csf_threshold_0.96_gm_threshold_0.7_wm_threshold_0.96_compcor_ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic1.gm0.compcor1.csf0, workflow - nuisance_0, status -COMPLETED
+131010-12:56:45,764 workflow INFO:
+	 Executing node frequency_filter_0.aI.a0.b1.c0.c0.c0.c0 in dir: /tmp/resting_preproc_0051095_session_1/_scan_rest_1_rest/_csf_threshold_0.96/_gm_threshold_0.7/_wm_threshold_0.96/_compcor_ncomponents_5_selector_pc10.linear1.wm0.global1.motion1.quadratic1.gm0.compcor1.csf0/_bandpass_freqs_0.01.0.1/frequency_filter_0
+131010-12:56:45,772 workflow INFO:
+	 Executing node write_log.b1.c0.c0.c0.c0 in dir: /tmp/resting_preproc_0051095_session_1/log_nuisance_0/_scan_rest_1_rest/_csf_threshold_0.96/_gm_threshold_0.7/_wm_threshold_0.96/_compcor_ncomponents_5_selector_pc10.linear1.wm0.global1.motion1.quadratic1.gm0.compcor1.csf0/write_log
+131010-12:56:45,783 interface INFO:
+	 filepath already exist, filepath- /home2/data/Projects/ABIDE_Initiative/CPAC/Output_2013-10-08_gelert/logs/0051095_session_1/scan_rest_1_rest/nuisance_0, curr_dir - /tmp/resting_preproc_0051095_session_1/log_nuisance_0/_scan_rest_1_rest/_csf_threshold_0.96/_gm_threshold_0.7/_wm_threshold_0.96/_compcor_ncomponents_5_selector_pc10.linear1.wm0.global1.motion1.quadratic1.gm0.compcor1.csf0/write_log
+131010-12:56:45,787 interface INFO:
+	 CPAC custom log :
+131010-12:56:45,788 interface INFO:
+	  version - 0.3.1, timestamp -2013-10-10 12:56:45, subject_id -0051095_session_1, scan_id - scan_rest_1_rest, strategy -_csf_threshold_0.96_gm_threshold_0.7_wm_threshold_0.96_compcor_ncomponents_5_selector_pc10.linear1.wm0.global1.motion1.quadratic1.gm0.compcor1.csf0, workflow - nuisance_0, status -COMPLETED
+131010-12:56:47,360 workflow INFO:
+	 [Job finished] jobname: sinker_12.b0.c0.c0.c0.c0 jobid: 145
+131010-12:56:47,368 workflow INFO:
+	 [Job finished] jobname: write_log.b0.c0.c0.c0.c0 jobid: 177
+131010-12:56:47,375 workflow INFO:
+	 [Job finished] jobname: sinker_12.b1.c0.c0.c0.c0 jobid: 115
+131010-12:56:47,384 workflow INFO:
+	 [Job finished] jobname: write_log.b1.c0.c0.c0.c0 jobid: 200
+131010-12:56:47,394 workflow INFO:
+	 Submitting 2 jobs
+131010-12:56:47,395 workflow INFO:
+	 Executing: link_12.b0.c0.c0.c0.c0 ID: 107
+131010-12:56:47,397 workflow INFO:
+	 Executing: link_12.b1.c0.c0.c0.c0 ID: 187
+131010-12:56:47,409 workflow INFO:
+	 Executing node link_12.b0.c0.c0.c0.c0 in dir: /tmp/resting_preproc_0051095_session_1/_scan_rest_1_rest/_csf_threshold_0.96/_gm_threshold_0.7/_wm_threshold_0.96/_compcor_ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic1.gm0.compcor1.csf0/link_12
+131010-12:56:47,411 workflow INFO:
+	 Executing node link_12.b1.c0.c0.c0.c0 in dir: /tmp/resting_preproc_0051095_session_1/_scan_rest_1_rest/_csf_threshold_0.96/_gm_threshold_0.7/_wm_threshold_0.96/_compcor_ncomponents_5_selector_pc10.linear1.wm0.global1.motion1.quadratic1.gm0.compcor1.csf0/link_12
+131010-12:56:49,406 workflow INFO:
+	 [Job finished] jobname: link_12.b0.c0.c0.c0.c0 jobid: 107
+131010-12:56:49,414 workflow INFO:
+	 [Job finished] jobname: link_12.b1.c0.c0.c0.c0 jobid: 187
+131010-12:56:59,446 workflow INFO:
+	 [Job finished] jobname: frequency_filter_0.aI.a0.b0.c0.c0.c0.c0 jobid: 126
+131010-12:56:59,459 workflow INFO:
+	 Submitting 2 jobs
+131010-12:56:59,460 workflow INFO:
+	 Executing: sinker_10.a0.b0.c0.c0.c0.c0 ID: 17
+131010-12:56:59,464 workflow INFO:
+	 Executing: write_log.a0.b0.c0.c0.c0.c0 ID: 162
+~~~~~~  _compcor_'ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic1.gm0.compcor1.csf0'.'ncomponents_5_selector  ~~~  _compcor_'ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic1.gm0.compcor1.csf0'.'ncomponents_5_selector_pc10.linear1.wm0.global1.motion1.quadratic1.gm0.compcor1.csf0'
+~~~~~~  _csf_threshold  ~~~  _csf_threshold_0.96
+~~~~~~  _gm_threshold  ~~~  _gm_threshold_0.7
+~~~~~~  _target_angle_deg  ~~~  _target_angle_deg_90
+~~~~~~  _threshold  ~~~  _threshold_0.2
+~~~~~~  _wm_threshold  ~~~  _wm_threshold_0.96
+~~~~~~  pipeline  ~~~  pipeline_LukachukaiCDP
+.
+_compcor_'ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic1.gm0.compcor1.csf0'.'ncomponents_5_selector  ---------->  pc10.linear1.wm0.global1.motion1.quadratic1.gm0.compcor1.csf0'
+_csf_threshold  ---------->  0.96
+_gm_threshold  ---------->  0.7
+_wm_threshold  ---------->  0.96
+pipeline  ---------->  LukachukaiCDP
+scan_rest_1_rest  ~~~ /_scan_rest_1_rest/_csf_threshold_0.96/_gm_threshold_0.7/_wm_threshold_0.96/_compcor_ncomponents_5_selector_pc10.linear1.wm0.global1.motion1.quadratic1.gm0.compcor1.csf0/residual.nii.gz
+.
+.
+ln -s /home2/data/Projects/ABIDE_Initiative/CPAC/Output_2013-10-08_gelert/pipeline_LukachukaiCDP/0051095_session_1/functional_nuisance_residuals/_scan_rest_1_rest/_csf_threshold_0.96/_gm_threshold_0.7/_wm_threshold_0.96/_compcor_ncomponents_5_selector_pc10.linear1.wm0.global1.motion1.quadratic1.gm0.compcor1.csf0/residual.nii.gz /home2/data/Projects/ABIDE_Initiative/CPAC/Output_2013-10-08_gelert/sym_links/pipeline_LukachukaiCDP/_compcor_'ncomponents_5_linear1.global1.motion1.quadratic1.compcor1.csf0'_CSF_0.96_GM_0.7_WM_0.96/0051095_session_1/scan_rest_1_rest/func/functional_nuisance_residuals.nii.gz
+131010-12:56:59,476 workflow INFO:
+	 Executing node sinker_10.a0.b0.c0.c0.c0.c0 in dir: /tmp/resting_preproc_0051095_session_1/_scan_rest_1_rest/_csf_threshold_0.96/_gm_threshold_0.7/_wm_threshold_0.96/_compcor_ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic1.gm0.compcor1.csf0/_bandpass_freqs_0.01.0.1/sinker_10
+~~~~~~  _compcor_'ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic1.gm0.compcor1.csf0'.'ncomponents_5_selector  ~~~  _compcor_'ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic1.gm0.compcor1.csf0'.'ncomponents_5_selector_pc10.linear1.wm0.global1.motion1.quadratic1.gm0.compcor1.csf0'
+~~~~~~  _csf_threshold  ~~~  _csf_threshold_0.96
+~~~~~~  _gm_threshold  ~~~  _gm_threshold_0.7
+~~~~~~  _target_angle_deg  ~~~  _target_angle_deg_90
+~~~~~~  _threshold  ~~~  _threshold_0.2
+~~~~~~  _wm_threshold  ~~~  _wm_threshold_0.96
+~~~~~~  pipeline  ~~~  pipeline_LukachukaiCDP
+.
+_compcor_'ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic1.gm0.compcor1.csf0'.'ncomponents_5_selector  ---------->  pc10.linear1.wm0.global1.motion1.quadratic1.gm0.compcor1.csf0'
+_csf_threshold  ---------->  0.96
+_gm_threshold  ---------->  0.7
+_wm_threshold  ---------->  0.96
+pipeline  ---------->  LukachukaiCDP
+scan_rest_1_rest  ~~~ /_scan_rest_1_rest/_csf_threshold_0.96/_gm_threshold_0.7/_wm_threshold_0.96/_compcor_ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic1.gm0.compcor1.csf0/residual.nii.gz
+.
+.
+ln -s /home2/data/Projects/ABIDE_Initiative/CPAC/Output_2013-10-08_gelert/pipeline_LukachukaiCDP/0051095_session_1/functional_nuisance_residuals/_scan_rest_1_rest/_csf_threshold_0.96/_gm_threshold_0.7/_wm_threshold_0.96/_compcor_ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic1.gm0.compcor1.csf0/residual.nii.gz /home2/data/Projects/ABIDE_Initiative/CPAC/Output_2013-10-08_gelert/sym_links/pipeline_LukachukaiCDP/_compcor_'ncomponents_5_linear1.global1.motion1.quadratic1.compcor1.csf0'_CSF_0.96_GM_0.7_WM_0.96/0051095_session_1/scan_rest_1_rest/func/functional_nuisance_residuals.nii.gz
+131010-12:56:59,478 workflow INFO:
+	 Executing node write_log.a0.b0.c0.c0.c0.c0 in dir: /tmp/resting_preproc_0051095_session_1/log_frequency_filter_0/_scan_rest_1_rest/_csf_threshold_0.96/_gm_threshold_0.7/_wm_threshold_0.96/_compcor_ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic1.gm0.compcor1.csf0/_bandpass_freqs_0.01.0.1/write_log
+131010-12:56:59,608 interface INFO:
+	 CPAC custom log :
+131010-12:56:59,610 interface INFO:
+	  version - 0.3.1, timestamp -2013-10-10 12:56:59, subject_id -0051095_session_1, scan_id - scan_rest_1_rest, strategy -_csf_threshold_0.96_gm_threshold_0.7_wm_threshold_0.96_compcor_ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic1.gm0.compcor1.csf0_bandpass_freqs_0.01.0.1, workflow - frequency_filter_0, status -COMPLETED
+131010-12:57:01,471 workflow INFO:
+	 [Job finished] jobname: sinker_10.a0.b0.c0.c0.c0.c0 jobid: 17
+131010-12:57:01,480 workflow INFO:
+	 [Job finished] jobname: write_log.a0.b0.c0.c0.c0.c0 jobid: 162
+131010-12:57:01,492 workflow INFO:
+	 Submitting 1 jobs
+131010-12:57:01,492 workflow INFO:
+	 Executing: link_10.a0.b0.c0.c0.c0.c0 ID: 74
+Frequency filtering using sample period: 2.0 sec
+131010-12:57:01,507 workflow INFO:
+	 Executing node link_10.a0.b0.c0.c0.c0.c0 in dir: /tmp/resting_preproc_0051095_session_1/_scan_rest_1_rest/_csf_threshold_0.96/_gm_threshold_0.7/_wm_threshold_0.96/_compcor_ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic1.gm0.compcor1.csf0/_bandpass_freqs_0.01.0.1/link_10
+131010-12:57:03,500 workflow INFO:
+	 [Job finished] jobname: link_10.a0.b0.c0.c0.c0.c0 jobid: 74
+131010-12:57:13,532 workflow INFO:
+	 [Job finished] jobname: frequency_filter_0.aI.a0.b1.c0.c0.c0.c0 jobid: 189
+131010-12:57:13,544 workflow INFO:
+	 Submitting 2 jobs
+131010-12:57:13,545 workflow INFO:
+	 Executing: sinker_10.a0.b1.c0.c0.c0.c0 ID: 33
+131010-12:57:13,550 workflow INFO:
+	 Executing: write_log.a0.b1.c0.c0.c0.c0 ID: 136
+131010-12:57:13,561 workflow INFO:
+	 Executing node sinker_10.a0.b1.c0.c0.c0.c0 in dir: /tmp/resting_preproc_0051095_session_1/_scan_rest_1_rest/_csf_threshold_0.96/_gm_threshold_0.7/_wm_threshold_0.96/_compcor_ncomponents_5_selector_pc10.linear1.wm0.global1.motion1.quadratic1.gm0.compcor1.csf0/_bandpass_freqs_0.01.0.1/sinker_10
+131010-12:57:13,563 workflow INFO:
+	 Executing node write_log.a0.b1.c0.c0.c0.c0 in dir: /tmp/resting_preproc_0051095_session_1/log_frequency_filter_0/_scan_rest_1_rest/_csf_threshold_0.96/_gm_threshold_0.7/_wm_threshold_0.96/_compcor_ncomponents_5_selector_pc10.linear1.wm0.global1.motion1.quadratic1.gm0.compcor1.csf0/_bandpass_freqs_0.01.0.1/write_log
+131010-12:57:13,581 interface INFO:
+	 filepath already exist, filepath- /home2/data/Projects/ABIDE_Initiative/CPAC/Output_2013-10-08_gelert/logs/0051095_session_1/scan_rest_1_rest/frequency_filter_0, curr_dir - /tmp/resting_preproc_0051095_session_1/log_frequency_filter_0/_scan_rest_1_rest/_csf_threshold_0.96/_gm_threshold_0.7/_wm_threshold_0.96/_compcor_ncomponents_5_selector_pc10.linear1.wm0.global1.motion1.quadratic1.gm0.compcor1.csf0/_bandpass_freqs_0.01.0.1/write_log
+131010-12:57:13,595 interface INFO:
+	 CPAC custom log :
+131010-12:57:13,596 interface INFO:
+	  version - 0.3.1, timestamp -2013-10-10 12:57:13, subject_id -0051095_session_1, scan_id - scan_rest_1_rest, strategy -_csf_threshold_0.96_gm_threshold_0.7_wm_threshold_0.96_compcor_ncomponents_5_selector_pc10.linear1.wm0.global1.motion1.quadratic1.gm0.compcor1.csf0_bandpass_freqs_0.01.0.1, workflow - frequency_filter_0, status -COMPLETED
+131010-12:57:15,557 workflow INFO:
+	 [Job finished] jobname: sinker_10.a0.b1.c0.c0.c0.c0 jobid: 33
+131010-12:57:15,566 workflow INFO:
+	 [Job finished] jobname: write_log.a0.b1.c0.c0.c0.c0 jobid: 136
+131010-12:57:15,578 workflow INFO:
+	 Submitting 1 jobs
+131010-12:57:15,579 workflow INFO:
+	 Executing: link_10.a0.b1.c0.c0.c0.c0 ID: 27
+~~~~~~  _compcor_'ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic1.gm0.compcor1.csf0'.'ncomponents_5_selector  ~~~  _compcor_'ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic1.gm0.compcor1.csf0'.'ncomponents_5_selector_pc10.linear1.wm0.global1.motion1.quadratic1.gm0.compcor1.csf0'
+~~~~~~  _csf_threshold  ~~~  _csf_threshold_0.96
+~~~~~~  _gm_threshold  ~~~  _gm_threshold_0.7
+~~~~~~  _target_angle_deg  ~~~  _target_angle_deg_90
+~~~~~~  _threshold  ~~~  _threshold_0.2
+~~~~~~  _wm_threshold  ~~~  _wm_threshold_0.96
+~~~~~~  pipeline  ~~~  pipeline_LukachukaiCDP
+.
+_compcor_'ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic1.gm0.compcor1.csf0'.'ncomponents_5_selector  ---------->  pc10.linear1.wm0.global1.motion1.quadratic1.gm0.compcor1.csf0'
+_csf_threshold  ---------->  0.96
+_gm_threshold  ---------->  0.7
+_wm_threshold  ---------->  0.96
+pipeline  ---------->  LukachukaiCDP
+scan_rest_1_rest  ~~~ /_scan_rest_1_rest/_csf_threshold_0.96/_gm_threshold_0.7/_wm_threshold_0.96/_compcor_ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic1.gm0.compcor1.csf0/_bandpass_freqs_0.01.0.1/bandpassed_demeaned_filtered.nii.gz
+.
+ln -s /home2/data/Projects/ABIDE_Initiative/CPAC/Output_2013-10-08_gelert/pipeline_LukachukaiCDP/0051095_session_1/functional_freq_filtered/_scan_rest_1_rest/_csf_threshold_0.96/_gm_threshold_0.7/_wm_threshold_0.96/_compcor_ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic1.gm0.compcor1.csf0/_bandpass_freqs_0.01.0.1/bandpassed_demeaned_filtered.nii.gz /home2/data/Projects/ABIDE_Initiative/CPAC/Output_2013-10-08_gelert/sym_links/pipeline_LukachukaiCDP/_compcor_'ncomponents_5_linear1.global1.motion1.quadratic1.compcor1.csf0'_CSF_0.96_GM_0.7_WM_0.96/0051095_session_1/scan_rest_1_rest/func/bandpass_freqs_0.01.0.1/functional_freq_filtered.nii.gz
+131010-12:57:15,593 workflow INFO:
+	 Executing node link_10.a0.b1.c0.c0.c0.c0 in dir: /tmp/resting_preproc_0051095_session_1/_scan_rest_1_rest/_csf_threshold_0.96/_gm_threshold_0.7/_wm_threshold_0.96/_compcor_ncomponents_5_selector_pc10.linear1.wm0.global1.motion1.quadratic1.gm0.compcor1.csf0/_bandpass_freqs_0.01.0.1/link_10
+131010-12:57:17,584 workflow INFO:
+	 [Job finished] jobname: link_10.a0.b1.c0.c0.c0.c0 jobid: 27
+131010-12:57:19,595 workflow INFO:
+	 ***********************************
+131010-12:57:19,597 workflow ERROR:
+	 could not run node: resting_preproc_0051095_session_1.anat_mni_register_0.nonlinear_reg_1
+131010-12:57:19,598 workflow INFO:
+	 crashfile: /home2/data/Projects/ABIDE_Initiative/CPAC/crash/crash-20131010-123820-qli-nonlinear_reg_1.npz
+131010-12:57:19,599 workflow INFO:
+	 ***********************************
+Frequency filtering using sample period: 2.0 sec

@@ -311,7 +311,7 @@ useSeedInAnalysis :  []
 
 
 # Extract the average time series of one or more ROIs/seeds. Must be enabled if you wish to run Seed-based Correlation Analysis.
-runROITimeseries :  [1]
+runROITimeseries :  [0]
 
 
 # Full path to a text file containing a list ROI files.
@@ -362,7 +362,7 @@ verticesTSOutputs :  [False, False]
 
 # Extract the time series from one or more existing spatial maps (such as an ICA map).
 # Required if you wish to run Dual Regression.
-runSpatialRegression :  [1]
+runSpatialRegression :  [0]
 
 
 # Full path to a text file containing a list spatial maps.
@@ -459,7 +459,7 @@ templateSpecificationFile :
 
 
 # Calculating Eigenvector Centrality will take significantly longer and require significantly more computing power to calculate than Degree Centrality.
-centralityMethodOptions :  [False, False]
+centralityMethodOptions :  [True, True]
 
 
 # Specify how connections are represented during graph construction.

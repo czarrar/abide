@@ -1,0 +1,4 @@
+/home2/dlurie/Enthought/Canopy_64bit/System/lib/python2.7/site-packages/scipy/sparse/lil.py:233: SparseEfficiencyWarning: Indexing into a lil_matrix with multiple indices is slow. Pre-converting to CSC or CSR beforehand is more efficient.
+  SparseEfficiencyWarning)
+<string>:87: ComplexWarning: Casting complex values to real discards the imaginary part
+<string>:87: ComplexWarning: Casting complex values to real discards the imaginary part

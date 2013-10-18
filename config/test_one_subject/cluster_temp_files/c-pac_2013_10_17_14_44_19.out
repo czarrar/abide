@@ -1,0 +1,2207 @@
+******************** /home2/data/PublicProgram/fsl-4.1.9/data/standard/MNI152_T1_2mm_brain.nii.gz
+find /home2/data/Projects/ABIDE_Initiative/CPAC/Working_2013-10-11_gelert/resting_preproc_0051095_session_1 -name '*sink*' -exec rm -rf {} \;
+find /home2/data/Projects/ABIDE_Initiative/CPAC/Working_2013-10-11_gelert/resting_preproc_0051095_session_1 -name '*link*' -exec rm -rf {} \;
+find /home2/data/Projects/ABIDE_Initiative/CPAC/Working_2013-10-11_gelert/resting_preproc_0051095_session_1 -name '*log*' -exec rm -rf {} \;
+[<CPAC.pipeline.cpac_pipeline.strategy instance at 0x5474248>]
+Warning key movement_parameters already exists in resource pool, replacing with (resting_preproc_0051095_session_1.fristons_parameter_model_0, 'outputspec.movement_file') 
+Warning key mean_functional_in_anat already exists in resource pool, replacing with (resting_preproc_0051095_session_1.func_to_anat_bbreg_0, 'outputspec.anat_func') 
+Warning key functional_to_anat_linear_xfm already exists in resource pool, replacing with (resting_preproc_0051095_session_1.func_to_anat_bbreg_0, 'outputspec.func_to_anat_linear_xfm') 
+131017-14:44:38,729 workflow INFO:
+	 Creating detailed dot file: /home2/data/Projects/ABIDE_Initiative/CPAC/Working_2013-10-11_gelert/resting_preproc_0051095_session_1/graph_detailed.dot
+anat_preproc  ~~~  1
+seg_preproc  ~~~  4
+func_preproc  ~~~  8
+fristons_parameter_model  ~~~  16
+gen_motion_stats  ~~~  128
+nuisance  ~~~  256
+frequency_filter  ~~~  1024
+strat_tag,  ~~~~~ , hash_val,  ~~~~~~ , pipeline_id:  anat_preproc_seg_preproc_func_preproc_fristons_parameter_model_gen_motion_stats_nuisance_frequency_filter_  ~~~~~  1437  ~~~~~~  RameyBorough
+node, out_file, key:  resting_preproc_0051095_session_1.anat_preproc_0 outputspec.brain anatomical_brain
+sink index:  1
+node, out_file, key:  resting_preproc_0051095_session_1.seg_preproc_0 outputspec.csf_mask anatomical_csf_mask
+sink index:  2
+node, out_file, key:  resting_preproc_0051095_session_1.seg_preproc_0 outputspec.gm_mask anatomical_gm_mask
+sink index:  3
+node, out_file, key:  resting_preproc_0051095_session_1.anat_preproc_0 outputspec.reorient anatomical_reorient
+sink index:  4
+node, out_file, key:  resting_preproc_0051095_session_1.anat_mni_ants_register_0 outputspec.warp_field anatomical_to_mni_nonlinear_xfm
+sink index:  5
+node, out_file, key:  resting_preproc_0051095_session_1.seg_preproc_0 outputspec.wm_mask anatomical_wm_mask
+sink index:  6
+node, out_file, key:  resting_preproc_0051095_session_1.anat_mni_ants_register_0 outputspec.affine_transformation ants_affine_xfm
+sink index:  7
+node, out_file, key:  resting_preproc_0051095_session_1.gen_motion_stats_0 outputspec.FD_1D frame_wise_displacement
+sink index:  8
+node, out_file, key:  resting_preproc_0051095_session_1.func_preproc_0 outputspec.mask functional_brain_mask
+sink index:  9
+node, out_file, key:  resting_preproc_0051095_session_1.func_mni_ants_warp_images_mask_0 output_image functional_brain_mask_to_standard
+sink index:  10
+node, out_file, key:  resting_preproc_0051095_session_1.frequency_filter_0 bandpassed_file functional_freq_filtered
+sink index:  11
+node, out_file, key:  resting_preproc_0051095_session_1.func_mni_ants_warp_images_0 output_image functional_mni
+sink index:  12
+node, out_file, key:  resting_preproc_0051095_session_1.nuisance_0 outputspec.subject functional_nuisance_residuals
+sink index:  13
+node, out_file, key:  resting_preproc_0051095_session_1.func_preproc_0 outputspec.preprocessed_mask functional_preprocessed_mask
+sink index:  14
+node, out_file, key:  resting_preproc_0051095_session_1.func_to_anat_bbreg_0 outputspec.func_to_anat_linear_xfm functional_to_anat_linear_xfm
+sink index:  15
+node, out_file, key:  resting_preproc_0051095_session_1.func_preproc_0 outputspec.max_displacement max_displacement
+sink index:  16
+node, out_file, key:  resting_preproc_0051095_session_1.func_preproc_0 outputspec.example_func mean_functional
+sink index:  17
+node, out_file, key:  resting_preproc_0051095_session_1.func_to_anat_bbreg_0 outputspec.anat_func mean_functional_in_anat
+sink index:  18
+node, out_file, key:  resting_preproc_0051095_session_1.mean_func_ants_warp_0 output_image mean_functional_in_mni
+sink index:  19
+node, out_file, key:  resting_preproc_0051095_session_1.anat_mni_ants_register_0 outputspec.output_brain mni_normalized_anatomical
+sink index:  20
+node, out_file, key:  resting_preproc_0051095_session_1.anat_mni_ants_register_0 outputspec.inverse_warp mni_to_anatomical_linear_xfm
+sink index:  21
+node, out_file, key:  resting_preproc_0051095_session_1.func_preproc_0 outputspec.motion_correct motion_correct
+sink index:  22
+node, out_file, key:  resting_preproc_0051095_session_1.gen_motion_stats_0 outputspec.motion_params motion_params
+sink index:  23
+node, out_file, key:  resting_preproc_0051095_session_1.fristons_parameter_model_0 outputspec.movement_file movement_parameters
+sink index:  24
+node, out_file, key:  resting_preproc_0051095_session_1.gen_motion_stats_0 outputspec.power_params power_params
+sink index:  25
+node, out_file, key:  resting_preproc_0051095_session_1.func_preproc_0 outputspec.preprocessed preprocessed
+sink index:  26
+node, out_file, key:  resting_preproc_0051095_session_1.montage_csf_gm_wm_0 outputspec.axial_png qc___csf_gm_wm_a
+sink index:  27
+node, out_file, key:  resting_preproc_0051095_session_1.montage_csf_gm_wm_0 outputspec.sagittal_png qc___csf_gm_wm_s
+sink index:  28
+node, out_file, key:  resting_preproc_0051095_session_1.fd_plot_0 hist_path qc___fd_plot
+sink index:  29
+node, out_file, key:  resting_preproc_0051095_session_1.montage_mfi_0 outputspec.axial_png qc___mean_func_with_mni_edge_a
+sink index:  30
+node, out_file, key:  resting_preproc_0051095_session_1.montage_mfi_0 outputspec.sagittal_png qc___mean_func_with_mni_edge_s
+sink index:  31
+node, out_file, key:  resting_preproc_0051095_session_1.montage_anat_0 outputspec.axial_png qc___mean_func_with_t1_edge_a
+sink index:  32
+node, out_file, key:  resting_preproc_0051095_session_1.montage_anat_0 outputspec.sagittal_png qc___mean_func_with_t1_edge_s
+sink index:  33
+node, out_file, key:  resting_preproc_0051095_session_1.montage_mni_anat_0 outputspec.axial_png qc___mni_normalized_anatomical_a
+sink index:  34
+node, out_file, key:  resting_preproc_0051095_session_1.montage_mni_anat_0 outputspec.sagittal_png qc___mni_normalized_anatomical_s
+sink index:  35
+node, out_file, key:  resting_preproc_0051095_session_1.motion_plt_0 rotation_plot qc___movement_rot_plot
+sink index:  36
+node, out_file, key:  resting_preproc_0051095_session_1.motion_plt_0 translation_plot qc___movement_trans_plot
+sink index:  37
+node, out_file, key:  resting_preproc_0051095_session_1.montage_skull_0 outputspec.axial_png qc___skullstrip_vis_a
+sink index:  38
+node, out_file, key:  resting_preproc_0051095_session_1.montage_skull_0 outputspec.sagittal_png qc___skullstrip_vis_s
+sink index:  39
+node, out_file, key:  resting_preproc_0051095_session_1.montage_snr_0 outputspec.axial_png qc___snr_a
+sink index:  40
+node, out_file, key:  resting_preproc_0051095_session_1.hist_snr_0 hist_path qc___snr_hist
+sink index:  41
+node, out_file, key:  resting_preproc_0051095_session_1.montage_snr_0 outputspec.sagittal_png qc___snr_s
+sink index:  42
+node, out_file, key:  resting_preproc_0051095_session_1.snr_val0 snr_storefl qc___snr_val
+sink index:  43
+node, out_file, key:  resting_preproc_0051095_session_1.gen_motion_stats_0 outputspec.frames_ex_1D scrubbing_frames_excluded
+sink index:  44
+node, out_file, key:  resting_preproc_0051095_session_1.gen_motion_stats_0 outputspec.frames_in_1D scrubbing_frames_included
+sink index:  45
+node, out_file, key:  resting_preproc_0051095_session_1.seg_preproc_0 outputspec.mixeltype seg_mixeltype
+sink index:  46
+node, out_file, key:  resting_preproc_0051095_session_1.seg_preproc_0 outputspec.partial_volume_files seg_partial_volume_files
+sink index:  47
+node, out_file, key:  resting_preproc_0051095_session_1.seg_preproc_0 outputspec.partial_volume_map seg_partial_volume_map
+sink index:  48
+node, out_file, key:  resting_preproc_0051095_session_1.seg_preproc_0 outputspec.probability_maps seg_probability_maps
+sink index:  49
+node, out_file, key:  resting_preproc_0051095_session_1.func_preproc_0 outputspec.slice_time_corrected slice_timing_corrected
+sink index:  50
+Cannot Create the strategy and pipeline graph, dot or/and pygraphviz is not installed
+/home2/data/Projects/ABIDE_Initiative/CPAC/Output_2013-10-11_gelert/pipeline_RameyBorough/0051095_session_1 *
+131017-14:44:52,729 workflow INFO:
+	 ['check', 'execution', 'logging']
+131017-14:44:53,991 workflow INFO:
+	 Running in parallel.
+131017-14:44:54,8 workflow INFO:
+	 Submitting 5 jobs
+131017-14:44:54,10 workflow INFO:
+	 Executing: resample_o ID: 45
+131017-14:44:54,13 workflow INFO:
+	 Executing: scan_params_0.c0 ID: 56
+131017-14:44:54,17 workflow INFO:
+	 Executing: resample_o ID: 79
+131017-14:44:54,21 workflow INFO:
+	 Executing: anat_deoblique ID: 102
+131017-14:44:54,24 workflow INFO:
+	 Executing: selectrest.c0 ID: 105
+131017-14:44:54,24 workflow INFO:
+	 Executing node resample_o in dir: /home2/data/Projects/ABIDE_Initiative/CPAC/Working_2013-10-11_gelert/resting_preproc_0051095_session_1/montage_mni_anat_0/resample_o
+131017-14:44:54,28 workflow INFO:
+	 Executing node scan_params_0.c0 in dir: /home2/data/Projects/ABIDE_Initiative/CPAC/Working_2013-10-11_gelert/resting_preproc_0051095_session_1/_scan_rest_1_rest/scan_params_0
+131017-14:44:54,29 workflow INFO:
+	 Executing node resample_o in dir: /home2/data/Projects/ABIDE_Initiative/CPAC/Working_2013-10-11_gelert/resting_preproc_0051095_session_1/montage_mfi_0/resample_o
+131017-14:44:54,33 workflow INFO:
+	 Executing node anat_deoblique in dir: /home2/data/Projects/ABIDE_Initiative/CPAC/Working_2013-10-11_gelert/resting_preproc_0051095_session_1/anat_preproc_0/anat_deoblique
+131017-14:44:54,455 workflow INFO:
+	 Running: 3drefit -deoblique /data/Projects/ABIDE_Initiative/CPAC/Working_2013-10-11_gelert/resting_preproc_0051095_session_1/anat_preproc_0/anat_deoblique/mprage.nii.gz
+args:  {'subject_map': {'scan_parameters': {'last_tr': 'None', 'tr': '2', 'reference': '17', 'acquisition': 'alt+z', 'first_tr': '0'}, 'subject_id': '0051095', 'anat': '/data/Projects/ABIDE_Initiative/CPAC/RawData/NYU/0051095/session_1/anat_1/mprage.nii.gz', 'unique_id': 'session_1', 'rest': {'rest_1_rest': '/data/Projects/ABIDE_Initiative/CPAC/RawData/NYU/0051095/session_1/rest_1/rest.nii.gz'}}, 'start_indx': 0, 'scan': 'rest_1_rest', 'stop_indx': None, 'subject': '0051095_session_1'}
+scan_parameters ->  0051095_session_1 rest_1_rest 2.0s alt+z 17 0 None
+131017-14:44:54,488 workflow INFO:
+	 Executing node selectrest.c0 in dir: /home2/data/Projects/ABIDE_Initiative/CPAC/Working_2013-10-11_gelert/resting_preproc_0051095_session_1/func_gather_0/_scan_rest_1_rest/selectrest
+131017-14:44:54,543 interface INFO:
+	 stderr 2013-10-17T14:44:54.542808:++ 3drefit: AFNI version=AFNI_2011_12_21_1014 (May 21 2012) [64-bit]
+131017-14:44:54,546 interface INFO:
+	 stderr 2013-10-17T14:44:54.542808:++ Authored by: RW Cox
+131017-14:44:54,548 interface INFO:
+	 stderr 2013-10-17T14:44:54.548791:++ WARNING: file /home2/qli/.afni.log is now 103599955 (104 million) bytes long!
+131017-14:44:54,553 interface INFO:
+	 stderr 2013-10-17T14:44:54.553805:++ Processing AFNI dataset /data/Projects/ABIDE_Initiative/CPAC/Working_2013-10-11_gelert/resting_preproc_0051095_session_1/anat_preproc_0/anat_deoblique/mprage.nii.gz
+131017-14:44:54,556 interface INFO:
+	 stderr 2013-10-17T14:44:54.555919: + loading and re-writing dataset /data/Projects/ABIDE_Initiative/CPAC/Working_2013-10-11_gelert/resting_preproc_0051095_session_1/anat_preproc_0/anat_deoblique/mprage.nii.gz (/data/Projects/ABIDE_Initiative/CPAC/Working_2013-10-11_gelert/resting_preproc_0051095_session_1/anat_preproc_0/anat_deoblique/mprage.nii.gz in NIFTI storage)
+131017-14:44:56,36 workflow INFO:
+	 [Job finished] jobname: resample_o jobid: 45
+131017-14:44:56,37 interface INFO:
+	 stderr 2013-10-17T14:44:56.037166:++ 3drefit processed 1 datasets
+131017-14:44:56,59 workflow INFO:
+	 [Job finished] jobname: scan_params_0.c0 jobid: 56
+131017-14:44:56,78 workflow INFO:
+	 [Job finished] jobname: resample_o jobid: 79
+131017-14:44:56,97 workflow INFO:
+	 [Job finished] jobname: anat_deoblique jobid: 102
+131017-14:44:56,117 workflow INFO:
+	 [Job finished] jobname: selectrest.c0 jobid: 105
+131017-14:44:56,142 workflow INFO:
+	 Submitting 3 jobs
+131017-14:44:56,144 workflow INFO:
+	 Executing: convert_tr_0.c0 ID: 29
+131017-14:44:56,147 workflow INFO:
+	 Executing: anat_reorient ID: 145
+131017-14:44:56,151 workflow INFO:
+	 Executing: func_get_idx.c0 ID: 154
+args:  {'rest_dict': {'rest_1_rest': '/data/Projects/ABIDE_Initiative/CPAC/RawData/NYU/0051095/session_1/rest_1/rest.nii.gz'}, 'scan': 'rest_1_rest'}
+131017-14:44:56,170 workflow INFO:
+	 Executing node convert_tr_0.c0 in dir: /home2/data/Projects/ABIDE_Initiative/CPAC/Working_2013-10-11_gelert/resting_preproc_0051095_session_1/_scan_rest_1_rest/convert_tr_0
+args:  {'file_': '/home2/data/Projects/CPAC_Regression_Test/2013-10-04_v0-3-2/run/lib/python2.7/site-packages/CPAC/resources/templates/MNI152_Edge_AllTissues.nii.gz'}
+ 3dresample -dxyz 1.0 1.0 1.0 -prefix /data/Projects/ABIDE_Initiative/CPAC/Working_2013-10-11_gelert/resting_preproc_0051095_session_1/montage_mfi_0/resample_o/MNI152_Edge_AllTissues_1mm.nii.gz -inset /home2/data/Projects/CPAC_Regression_Test/2013-10-04_v0-3-2/run/lib/python2.7/site-packages/CPAC/resources/templates/MNI152_Edge_AllTissues.nii.gz 
+131017-14:44:56,174 workflow INFO:
+	 Executing node anat_reorient in dir: /home2/data/Projects/ABIDE_Initiative/CPAC/Working_2013-10-11_gelert/resting_preproc_0051095_session_1/anat_preproc_0/anat_reorient
+args:  {'file_': '/home2/data/Projects/CPAC_Regression_Test/2013-10-04_v0-3-2/run/lib/python2.7/site-packages/CPAC/resources/templates/MNI152_Edge_AllTissues.nii.gz'}
+ 3dresample -dxyz 1.0 1.0 1.0 -prefix /data/Projects/ABIDE_Initiative/CPAC/Working_2013-10-11_gelert/resting_preproc_0051095_session_1/montage_mni_anat_0/resample_o/MNI152_Edge_AllTissues_1mm.nii.gz -inset /home2/data/Projects/CPAC_Regression_Test/2013-10-04_v0-3-2/run/lib/python2.7/site-packages/CPAC/resources/templates/MNI152_Edge_AllTissues.nii.gz 
+131017-14:44:56,218 workflow INFO:
+	 Executing node func_get_idx.c0 in dir: /home2/data/Projects/ABIDE_Initiative/CPAC/Working_2013-10-11_gelert/resting_preproc_0051095_session_1/func_preproc_0/_scan_rest_1_rest/func_get_idx
+131017-14:44:56,258 workflow INFO:
+	 Running: 3dresample -orient RPI -prefix /data/Projects/ABIDE_Initiative/CPAC/Working_2013-10-11_gelert/resting_preproc_0051095_session_1/anat_preproc_0/anat_reorient/mprage_RPI.nii.gz -inset /data/Projects/ABIDE_Initiative/CPAC/Working_2013-10-11_gelert/resting_preproc_0051095_session_1/anat_preproc_0/anat_deoblique/mprage.nii.gz
+131017-14:44:56,298 interface INFO:
+	 stderr 2013-10-17T14:44:56.297148:++ WARNING: file /home2/qli/.afni.log is now 103600142 (104 million) bytes long!
+131017-14:44:58,163 workflow INFO:
+	 [Job finished] jobname: convert_tr_0.c0 jobid: 29
+131017-14:44:58,184 workflow INFO:
+	 [Job finished] jobname: anat_reorient jobid: 145
+131017-14:44:58,205 workflow INFO:
+	 [Job finished] jobname: func_get_idx.c0 jobid: 154
+131017-14:44:58,230 workflow INFO:
+	 Submitting 4 jobs
+131017-14:44:58,232 workflow INFO:
+	 Executing: func_drop_trs.c0 ID: 14
+131017-14:44:58,235 workflow INFO:
+	 Executing: sinker_3 ID: 25
+131017-14:44:58,243 workflow INFO:
+	 Executing: skull_edge_0 ID: 108
+131017-14:44:58,247 workflow INFO:
+	 Executing: anat_skullstrip ID: 152
+args:  {'tr': '2.0s'}
+131017-14:44:58,266 workflow INFO:
+	 Executing node sinker_3 in dir: /home2/data/Projects/ABIDE_Initiative/CPAC/Working_2013-10-11_gelert/resting_preproc_0051095_session_1/sinker_3
+args:  {'stop_idx': None, 'in_files': '/data/Projects/ABIDE_Initiative/CPAC/RawData/NYU/0051095/session_1/rest_1/rest.nii.gz', 'start_idx': 0}
+131017-14:44:58,267 workflow INFO:
+	 Executing node skull_edge_0 in dir: /home2/data/Projects/ABIDE_Initiative/CPAC/Working_2013-10-11_gelert/resting_preproc_0051095_session_1/skull_edge_0
+131017-14:44:58,285 workflow INFO:
+	 Executing node anat_skullstrip in dir: /home2/data/Projects/ABIDE_Initiative/CPAC/Working_2013-10-11_gelert/resting_preproc_0051095_session_1/anat_preproc_0/anat_skullstrip
+131017-14:44:58,301 workflow INFO:
+	 Executing node func_drop_trs.c0 in dir: /home2/data/Projects/ABIDE_Initiative/CPAC/Working_2013-10-11_gelert/resting_preproc_0051095_session_1/func_preproc_0/_scan_rest_1_rest/func_drop_trs
+131017-14:44:58,532 workflow INFO:
+	 Running: 3dSkullStrip -input /data/Projects/ABIDE_Initiative/CPAC/Working_2013-10-11_gelert/resting_preproc_0051095_session_1/anat_preproc_0/anat_reorient/mprage_RPI.nii.gz -o_ply /data/Projects/ABIDE_Initiative/CPAC/Working_2013-10-11_gelert/resting_preproc_0051095_session_1/anat_preproc_0/anat_skullstrip/mprage_RPI_surf.nii.gz
+131017-14:44:58,544 workflow INFO:
+	 Running: 3dcalc -a /data/Projects/ABIDE_Initiative/CPAC/RawData/NYU/0051095/session_1/rest_1/rest.nii.gz[0..179] -expr 'a' -prefix rest_3dc.nii.gz
+131017-14:44:58,649 interface INFO:
+	 stderr 2013-10-17T14:44:58.649139:++ 3dcalc: AFNI version=AFNI_2011_12_21_1014 (May 21 2012) [64-bit]
+131017-14:44:58,652 interface INFO:
+	 stderr 2013-10-17T14:44:58.649139:++ Authored by: A cast of thousands
+131017-14:44:58,655 interface INFO:
+	 stderr 2013-10-17T14:44:58.654904:++ WARNING: file /home2/qli/.afni.log is now 103600819 (104 million) bytes long!
+131017-14:45:00,260 workflow INFO:
+	 [Job finished] jobname: sinker_3 jobid: 25
+131017-14:45:00,282 workflow INFO:
+	 Submitting 1 jobs
+131017-14:45:00,284 workflow INFO:
+	 Executing: link_3 ID: 164
+131017-14:45:00,308 workflow INFO:
+	 Executing node link_3 in dir: /home2/data/Projects/ABIDE_Initiative/CPAC/Working_2013-10-11_gelert/resting_preproc_0051095_session_1/link_3
+131017-14:45:02,297 workflow INFO:
+	 [Job finished] jobname: link_3 jobid: 164
+131017-14:45:08,337 workflow INFO:
+	 [Job finished] jobname: skull_edge_0 jobid: 108
+131017-14:45:08,360 workflow INFO:
+	 Submitting 1 jobs
+131017-14:45:08,362 workflow INFO:
+	 Executing: resample_o ID: 124
+args:  {'strategies': [['_compcor_ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic1.gm0.compcor1.csf0.ncomponents_5_selector_pc10.linear1.wm0.global1.motion1.quadratic1.gm0.compcor1.csf0', '_csf_threshold_0.96', '_gm_threshold_0.7', '_target_angle_deg_90', '_threshold_0.2', '_wm_threshold_0.96']], 'subject_id': '0051095_session_1', 'in_file': ['/home2/data/Projects/ABIDE_Initiative/CPAC/Output_2013-10-11_gelert/pipeline_RameyBorough/0051095_session_1/anatomical_reorient/mprage_RPI.nii.gz'], 'helper': {'_gm_threshold': 1, '_csf_threshold': 1, '_wm_threshold': 1, 'nuisance': 1, '_target_angle_deg': 0, '_threshold': 0}, 'pipeline_id': 'pipeline_RameyBorough'}
+~~~~~~  _compcor_ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic1.gm0.compcor1.csf0.ncomponents_5_selector  ~~~  _compcor_ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic1.gm0.compcor1.csf0.ncomponents_5_selector_pc10.linear1.wm0.global1.motion1.quadratic1.gm0.compcor1.csf0
+~~~~~~  _csf_threshold  ~~~  _csf_threshold_0.96
+~~~~~~  _gm_threshold  ~~~  _gm_threshold_0.7
+~~~~~~  _target_angle_deg  ~~~  _target_angle_deg_90
+~~~~~~  _threshold  ~~~  _threshold_0.2
+~~~~~~  _wm_threshold  ~~~  _wm_threshold_0.96
+~~~~~~  pipeline  ~~~  pipeline_RameyBorough
+_compcor_ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic1.gm0.compcor1.csf0.ncomponents_5_selector  ---------->  pc10.linear1.wm0.global1.motion1.quadratic1.gm0.compcor1.csf0
+_csf_threshold  ---------->  0.96
+_gm_threshold  ---------->  0.7
+_wm_threshold  ---------->  0.96
+pipeline  ---------->  RameyBorough
+~~~  ~~~ /mprage_RPI.nii.gz
+ln -s /home2/data/Projects/ABIDE_Initiative/CPAC/Output_2013-10-11_gelert/pipeline_RameyBorough/0051095_session_1/anatomical_reorient/mprage_RPI.nii.gz /home2/data/Projects/ABIDE_Initiative/CPAC/Output_2013-10-11_gelert/sym_links/pipeline_RameyBorough/_compcor_ncomponents_5_linear1.global1.motion1.quadratic1.compcor1.CSF_0.96_GM_0.7_WM_0.96/0051095_session_1/scan/anat/anatomical_reorient.nii.gz
+131017-14:45:08,385 workflow INFO:
+	 Executing node resample_o in dir: /home2/data/Projects/ABIDE_Initiative/CPAC/Working_2013-10-11_gelert/resting_preproc_0051095_session_1/montage_skull_0/resample_o
+131017-14:45:10,374 workflow INFO:
+	 [Job finished] jobname: resample_o jobid: 124
+131017-14:45:12,491 interface INFO:
+	 stderr 2013-10-17T14:45:12.491409:++ Output dataset ./rest_3dc.nii.gz
+131017-14:45:14,408 workflow INFO:
+	 [Job finished] jobname: func_drop_trs.c0 jobid: 14
+131017-14:45:14,423 workflow INFO:
+	 Submitting 1 jobs
+131017-14:45:14,425 workflow INFO:
+	 Executing: func_slice_timing_correction.c0 ID: 191
+args:  {'file_': '/data/Projects/ABIDE_Initiative/CPAC/Working_2013-10-11_gelert/resting_preproc_0051095_session_1/anat_preproc_0/anat_reorient/mprage_RPI.nii.gz'}
+3dedge3 -input /data/Projects/ABIDE_Initiative/CPAC/Working_2013-10-11_gelert/resting_preproc_0051095_session_1/anat_preproc_0/anat_reorient/mprage_RPI.nii.gz -prefix /data/Projects/ABIDE_Initiative/CPAC/Working_2013-10-11_gelert/resting_preproc_0051095_session_1/skull_edge_0/mprage_RPI_edge.nii.gz
+++ 3dedge3: AFNI version=AFNI_2011_12_21_1014 (May 21 2012) [64-bit]
+++ WARNING: file /home2/qli/.afni.log is now 103600492 (104 million) bytes long!
+131017-14:45:14,499 workflow INFO:
+	 Executing node func_slice_timing_correction.c0 in dir: /home2/data/Projects/ABIDE_Initiative/CPAC/Working_2013-10-11_gelert/resting_preproc_0051095_session_1/func_preproc_0/_scan_rest_1_rest/func_slice_timing_correction
+131017-14:45:14,594 workflow INFO:
+	 Running: 3dTshift -prefix /data/Projects/ABIDE_Initiative/CPAC/Working_2013-10-11_gelert/resting_preproc_0051095_session_1/func_preproc_0/_scan_rest_1_rest/func_slice_timing_correction/rest_3dc_tshift.nii.gz -tpattern alt+z -TR 2.0s -slice 17 /data/Projects/ABIDE_Initiative/CPAC/Working_2013-10-11_gelert/resting_preproc_0051095_session_1/func_preproc_0/_scan_rest_1_rest/func_drop_trs/rest_3dc.nii.gz
+131017-14:45:14,716 interface INFO:
+	 stderr 2013-10-17T14:45:14.715813:++ WARNING: file /home2/qli/.afni.log is now 103601339 (104 million) bytes long!
+131017-14:45:14,719 interface INFO:
+	 stderr 2013-10-17T14:45:14.719524:++ 3dTshift: AFNI version=AFNI_2011_12_21_1014 (May 21 2012) [64-bit]
+131017-14:45:14,727 interface INFO:
+	 stderr 2013-10-17T14:45:14.727582:*+ WARNING:   If you are performing spatial transformations on an oblique dset, 
+131017-14:45:14,729 interface INFO:
+	 stderr 2013-10-17T14:45:14.727582:  such as /data/Projects/ABIDE_Initiative/CPAC/Working_2013-10-11_gelert/resting_preproc_0051095_session_1/func_preproc_0/_scan_rest_1_rest/func_drop_trs/rest_3dc.nii.gz,
+131017-14:45:14,731 interface INFO:
+	 stderr 2013-10-17T14:45:14.727582:  or viewing/combining it with volumes of differing obliquity,
+131017-14:45:14,733 interface INFO:
+	 stderr 2013-10-17T14:45:14.727582:  you should consider running: 
+131017-14:45:14,734 interface INFO:
+	 stderr 2013-10-17T14:45:14.727582:     3dWarp -deoblique 
+131017-14:45:14,736 interface INFO:
+	 stderr 2013-10-17T14:45:14.727582:  on this and  other oblique datasets in the same session.
+131017-14:45:14,737 interface INFO:
+	 stderr 2013-10-17T14:45:14.727582: See 3dWarp -help for details.
+131017-14:45:14,739 interface INFO:
+	 stderr 2013-10-17T14:45:14.739347:++ Oblique dataset:/data/Projects/ABIDE_Initiative/CPAC/Working_2013-10-11_gelert/resting_preproc_0051095_session_1/func_preproc_0/_scan_rest_1_rest/func_drop_trs/rest_3dc.nii.gz is 23.000015 degrees from plumb.
+131017-14:45:30,490 workflow INFO:
+	 [Job finished] jobname: func_slice_timing_correction.c0 jobid: 191
+131017-14:45:30,513 workflow INFO:
+	 Submitting 2 jobs
+131017-14:45:30,514 workflow INFO:
+	 Executing: func_deoblique.c0 ID: 80
+131017-14:45:30,517 workflow INFO:
+	 Executing: sinker_49.c0 ID: 156
+args:  {'file_': '/data/Projects/ABIDE_Initiative/CPAC/Working_2013-10-11_gelert/resting_preproc_0051095_session_1/skull_edge_0/mprage_RPI_edge.nii.gz'}
+ 3dresample -dxyz 1.0 1.0 1.0 -prefix /data/Projects/ABIDE_Initiative/CPAC/Working_2013-10-11_gelert/resting_preproc_0051095_session_1/montage_skull_0/resample_o/mprage_RPI_edge_1mm.nii.gz -inset /data/Projects/ABIDE_Initiative/CPAC/Working_2013-10-11_gelert/resting_preproc_0051095_session_1/skull_edge_0/mprage_RPI_edge.nii.gz 
+131017-14:45:30,540 workflow INFO:
+	 Executing node func_deoblique.c0 in dir: /home2/data/Projects/ABIDE_Initiative/CPAC/Working_2013-10-11_gelert/resting_preproc_0051095_session_1/func_preproc_0/_scan_rest_1_rest/func_deoblique
+131017-14:45:30,550 workflow INFO:
+	 Executing node sinker_49.c0 in dir: /home2/data/Projects/ABIDE_Initiative/CPAC/Working_2013-10-11_gelert/resting_preproc_0051095_session_1/_scan_rest_1_rest/sinker_49
+131017-14:45:32,831 workflow INFO:
+	 Running: 3drefit -deoblique /data/Projects/ABIDE_Initiative/CPAC/Working_2013-10-11_gelert/resting_preproc_0051095_session_1/func_preproc_0/_scan_rest_1_rest/func_deoblique/rest_3dc_tshift.nii.gz
+131017-14:45:32,867 interface INFO:
+	 stderr 2013-10-17T14:45:32.866726:++ 3drefit: AFNI version=AFNI_2011_12_21_1014 (May 21 2012) [64-bit]
+131017-14:45:32,870 interface INFO:
+	 stderr 2013-10-17T14:45:32.866726:++ Authored by: RW Cox
+131017-14:45:32,871 interface INFO:
+	 stderr 2013-10-17T14:45:32.871718:++ WARNING: file /home2/qli/.afni.log is now 103601760 (104 million) bytes long!
+131017-14:45:32,880 interface INFO:
+	 stderr 2013-10-17T14:45:32.880138:++ Processing AFNI dataset /data/Projects/ABIDE_Initiative/CPAC/Working_2013-10-11_gelert/resting_preproc_0051095_session_1/func_preproc_0/_scan_rest_1_rest/func_deoblique/rest_3dc_tshift.nii.gz
+131017-14:45:32,881 interface INFO:
+	 stderr 2013-10-17T14:45:32.881689: + loading and re-writing dataset /data/Projects/ABIDE_Initiative/CPAC/Working_2013-10-11_gelert/resting_preproc_0051095_session_1/func_preproc_0/_scan_rest_1_rest/func_deoblique/rest_3dc_tshift.nii.gz (/data/Projects/ABIDE_Initiative/CPAC/Working_2013-10-11_gelert/resting_preproc_0051095_session_1/func_preproc_0/_scan_rest_1_rest/func_deoblique/rest_3dc_tshift.nii.gz in NIFTI storage)
+131017-14:45:34,542 workflow INFO:
+	 [Job finished] jobname: sinker_49.c0 jobid: 156
+131017-14:45:34,565 workflow INFO:
+	 Submitting 1 jobs
+131017-14:45:34,566 workflow INFO:
+	 Executing: link_49.c0 ID: 76
+131017-14:45:34,593 workflow INFO:
+	 Executing node link_49.c0 in dir: /home2/data/Projects/ABIDE_Initiative/CPAC/Working_2013-10-11_gelert/resting_preproc_0051095_session_1/_scan_rest_1_rest/link_49
+131017-14:45:36,579 workflow INFO:
+	 [Job finished] jobname: link_49.c0 jobid: 76
+131017-14:45:44,588 interface INFO:
+	 stderr 2013-10-17T14:45:44.587941:++ 3drefit processed 1 datasets
+131017-14:45:46,631 workflow INFO:
+	 [Job finished] jobname: func_deoblique.c0 jobid: 80
+131017-14:45:46,653 workflow INFO:
+	 Submitting 1 jobs
+131017-14:45:46,655 workflow INFO:
+	 Executing: sleep.c0 ID: 116
+131017-14:45:46,679 workflow INFO:
+	 Executing node sleep.c0 in dir: /home2/data/Projects/ABIDE_Initiative/CPAC/Working_2013-10-11_gelert/resting_preproc_0051095_session_1/func_preproc_0/_scan_rest_1_rest/sleep
+131017-14:45:52,681 workflow INFO:
+	 [Job finished] jobname: sleep.c0 jobid: 116
+131017-14:45:52,699 workflow INFO:
+	 Submitting 1 jobs
+131017-14:45:52,701 workflow INFO:
+	 Executing: func_reorient.c0 ID: 199
+args:  {'strategies': [['_compcor_ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic1.gm0.compcor1.csf0.ncomponents_5_selector_pc10.linear1.wm0.global1.motion1.quadratic1.gm0.compcor1.csf0', '_csf_threshold_0.96', '_gm_threshold_0.7', '_target_angle_deg_90', '_threshold_0.2', '_wm_threshold_0.96']], 'subject_id': '0051095_session_1', 'in_file': ['/home2/data/Projects/ABIDE_Initiative/CPAC/Output_2013-10-11_gelert/pipeline_RameyBorough/0051095_session_1/slice_timing_corrected/_scan_rest_1_rest/rest_3dc_tshift.nii.gz'], 'helper': {'_gm_threshold': 1, '_csf_threshold': 1, '_wm_threshold': 1, 'nuisance': 1, '_target_angle_deg': 0, '_threshold': 0}, 'pipeline_id': 'pipeline_RameyBorough'}
+~~~~~~  _compcor_ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic1.gm0.compcor1.csf0.ncomponents_5_selector  ~~~  _compcor_ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic1.gm0.compcor1.csf0.ncomponents_5_selector_pc10.linear1.wm0.global1.motion1.quadratic1.gm0.compcor1.csf0
+~~~~~~  _csf_threshold  ~~~  _csf_threshold_0.96
+~~~~~~  _gm_threshold  ~~~  _gm_threshold_0.7
+~~~~~~  _target_angle_deg  ~~~  _target_angle_deg_90
+~~~~~~  _threshold  ~~~  _threshold_0.2
+~~~~~~  _wm_threshold  ~~~  _wm_threshold_0.96
+~~~~~~  pipeline  ~~~  pipeline_RameyBorough
+.
+_compcor_ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic1.gm0.compcor1.csf0.ncomponents_5_selector  ---------->  pc10.linear1.wm0.global1.motion1.quadratic1.gm0.compcor1.csf0
+_csf_threshold  ---------->  0.96
+_gm_threshold  ---------->  0.7
+_wm_threshold  ---------->  0.96
+pipeline  ---------->  RameyBorough
+scan_rest_1_rest  ~~~ /_scan_rest_1_rest/rest_3dc_tshift.nii.gz
+.
+ln -s /home2/data/Projects/ABIDE_Initiative/CPAC/Output_2013-10-11_gelert/pipeline_RameyBorough/0051095_session_1/slice_timing_corrected/_scan_rest_1_rest/rest_3dc_tshift.nii.gz /home2/data/Projects/ABIDE_Initiative/CPAC/Output_2013-10-11_gelert/sym_links/pipeline_RameyBorough/_compcor_ncomponents_5_linear1.global1.motion1.quadratic1.compcor1.CSF_0.96_GM_0.7_WM_0.96/0051095_session_1/scan_rest_1_rest/func/slice_timing_corrected.nii.gz
+131017-14:45:52,724 workflow INFO:
+	 Executing node func_reorient.c0 in dir: /home2/data/Projects/ABIDE_Initiative/CPAC/Working_2013-10-11_gelert/resting_preproc_0051095_session_1/func_preproc_0/_scan_rest_1_rest/func_reorient
+131017-14:45:52,761 workflow INFO:
+	 Running: 3dresample -orient RPI -prefix /data/Projects/ABIDE_Initiative/CPAC/Working_2013-10-11_gelert/resting_preproc_0051095_session_1/func_preproc_0/_scan_rest_1_rest/func_reorient/rest_3dc_tshift_RPI.nii.gz -inset /data/Projects/ABIDE_Initiative/CPAC/Working_2013-10-11_gelert/resting_preproc_0051095_session_1/func_preproc_0/_scan_rest_1_rest/func_deoblique/rest_3dc_tshift.nii.gz
+131017-14:45:52,794 interface INFO:
+	 stderr 2013-10-17T14:45:52.794023:++ WARNING: file /home2/qli/.afni.log is now 103601974 (104 million) bytes long!
+131017-14:46:06,753 workflow INFO:
+	 [Job finished] jobname: func_reorient.c0 jobid: 199
+131017-14:46:06,775 workflow INFO:
+	 Submitting 1 jobs
+131017-14:46:06,776 workflow INFO:
+	 Executing: func_get_mean_RPI.c0 ID: 147
+131017-14:46:06,801 workflow INFO:
+	 Executing node func_get_mean_RPI.c0 in dir: /home2/data/Projects/ABIDE_Initiative/CPAC/Working_2013-10-11_gelert/resting_preproc_0051095_session_1/func_preproc_0/_scan_rest_1_rest/func_get_mean_RPI
+131017-14:46:06,837 workflow INFO:
+	 Running: 3dTstat -mean -prefix /data/Projects/ABIDE_Initiative/CPAC/Working_2013-10-11_gelert/resting_preproc_0051095_session_1/func_preproc_0/_scan_rest_1_rest/func_get_mean_RPI/rest_3dc_tshift_RPI_3dT.nii.gz /data/Projects/ABIDE_Initiative/CPAC/Working_2013-10-11_gelert/resting_preproc_0051095_session_1/func_preproc_0/_scan_rest_1_rest/func_reorient/rest_3dc_tshift_RPI.nii.gz
+131017-14:46:06,966 interface INFO:
+	 stderr 2013-10-17T14:46:06.965925:++ WARNING: file /home2/qli/.afni.log is now 103602378 (104 million) bytes long!
+131017-14:46:06,969 interface INFO:
+	 stderr 2013-10-17T14:46:06.969701:++ 3dTstat: AFNI version=AFNI_2011_12_21_1014 (May 21 2012) [64-bit]
+131017-14:46:06,971 interface INFO:
+	 stderr 2013-10-17T14:46:06.969701:++ Authored by: KR Hammett & RW Cox
+131017-14:46:09,127 interface INFO:
+	 stderr 2013-10-17T14:46:09.127639:++ Output dataset /data/Projects/ABIDE_Initiative/CPAC/Working_2013-10-11_gelert/resting_preproc_0051095_session_1/func_preproc_0/_scan_rest_1_rest/func_get_mean_RPI/rest_3dc_tshift_RPI_3dT.nii.gz
+131017-14:46:10,791 workflow INFO:
+	 [Job finished] jobname: func_get_mean_RPI.c0 jobid: 147
+131017-14:46:10,813 workflow INFO:
+	 Submitting 1 jobs
+131017-14:46:10,815 workflow INFO:
+	 Executing: func_motion_correct.c0 ID: 157
+args:  {'in_file': '/data/Projects/ABIDE_Initiative/CPAC/Working_2013-10-11_gelert/resting_preproc_0051095_session_1/func_preproc_0/_scan_rest_1_rest/func_deoblique/rest_3dc_tshift.nii.gz'}
+
+==================Sleep
+
+131017-14:46:10,858 workflow INFO:
+	 Executing node func_motion_correct.c0 in dir: /home2/data/Projects/ABIDE_Initiative/CPAC/Working_2013-10-11_gelert/resting_preproc_0051095_session_1/func_preproc_0/_scan_rest_1_rest/func_motion_correct
+131017-14:46:10,896 workflow INFO:
+	 Running: 3dvolreg -Fourier -twopass -1Dmatrix_save ./rest_3dc_tshift_RPI_3dmat1D.1D -base /data/Projects/ABIDE_Initiative/CPAC/Working_2013-10-11_gelert/resting_preproc_0051095_session_1/func_preproc_0/_scan_rest_1_rest/func_get_mean_RPI/rest_3dc_tshift_RPI_3dT.nii.gz -zpad 4 -maxdisp1D ./rest_3dc_tshift_RPI_3dvmd1D.1D -1Dfile ./rest_3dc_tshift_RPI_3dv1D.1D -prefix ./rest_3dc_tshift_RPI_3dv.nii.gz /data/Projects/ABIDE_Initiative/CPAC/Working_2013-10-11_gelert/resting_preproc_0051095_session_1/func_preproc_0/_scan_rest_1_rest/func_reorient/rest_3dc_tshift_RPI.nii.gz
+131017-14:46:10,973 interface INFO:
+	 stderr 2013-10-17T14:46:10.973426:++ WARNING: file /home2/qli/.afni.log is now 103602777 (104 million) bytes long!
+131017-14:46:10,977 interface INFO:
+	 stderr 2013-10-17T14:46:10.977194:++ 3dvolreg: AFNI version=AFNI_2011_12_21_1014 (May 21 2012) [64-bit]
+131017-14:46:10,979 interface INFO:
+	 stderr 2013-10-17T14:46:10.977194:++ Authored by: RW Cox
+131017-14:46:11,12 interface INFO:
+	 stderr 2013-10-17T14:46:11.011980:++ Coarse del was 10, replaced with 3
+131017-14:46:58,9 interface INFO:
+	 stderr 2013-10-17T14:46:58.008576:The intensity in the output dataset is a modified version
+131017-14:46:58,12 interface INFO:
+	 stderr 2013-10-17T14:46:58.008576:of the intensity in the input volume.
+131017-14:46:58,14 interface INFO:
+	 stderr 2013-10-17T14:46:58.008576:To obtain a masked version of the input with identical values inside
+131017-14:46:58,15 interface INFO:
+	 stderr 2013-10-17T14:46:58.008576:the brain, you can either use 3dSkullStrip's -orig_vol option
+131017-14:46:58,17 interface INFO:
+	 stderr 2013-10-17T14:46:58.008576:or run the following command:
+131017-14:46:58,19 interface INFO:
+	 stderr 2013-10-17T14:46:58.008576:  3dcalc -a /data/Projects/ABIDE_Initiative/CPAC/Working_2013-10-11_gelert/resting_preproc_0051095_session_1/anat_preproc_0/anat_reorient/mprage_RPI.nii.gz -b /data/Projects/ABIDE_Initiative/CPAC/Working_2013-10-11_gelert/resting_preproc_0051095_session_1/anat_preproc_0/anat_skullstrip/mprage_RPI_surf.nii.gz+orig -expr 'a*step(b)' \
+131017-14:46:58,20 interface INFO:
+	 stderr 2013-10-17T14:46:58.008576:         -prefix /data/Projects/ABIDE_Initiative/CPAC/Working_2013-10-11_gelert/resting_preproc_0051095_session_1/anat_preproc_0/anat_skullstrip/mprage_RPI_surf.nii.gz_orig_vol
+131017-14:46:58,22 interface INFO:
+	 stderr 2013-10-17T14:46:58.008576:to generate a new masked version of the input.
+131017-14:46:59,11 workflow INFO:
+	 [Job finished] jobname: anat_skullstrip jobid: 152
+131017-14:46:59,36 workflow INFO:
+	 Submitting 1 jobs
+131017-14:46:59,38 workflow INFO:
+	 Executing: anat_brain_only ID: 216
+131017-14:46:59,89 workflow INFO:
+	 Executing node anat_brain_only in dir: /home2/data/Projects/ABIDE_Initiative/CPAC/Working_2013-10-11_gelert/resting_preproc_0051095_session_1/anat_preproc_0/anat_brain_only
+131017-14:46:59,131 workflow INFO:
+	 Running: 3dcalc -a /data/Projects/ABIDE_Initiative/CPAC/Working_2013-10-11_gelert/resting_preproc_0051095_session_1/anat_preproc_0/anat_reorient/mprage_RPI.nii.gz  -b /data/Projects/ABIDE_Initiative/CPAC/Working_2013-10-11_gelert/resting_preproc_0051095_session_1/anat_preproc_0/anat_skullstrip/mprage_RPI_surf.nii.gz -expr 'a*step(b)' -prefix mprage_RPI_3dc.nii.gz
+131017-14:46:59,170 interface INFO:
+	 stderr 2013-10-17T14:46:59.169667:++ 3dcalc: AFNI version=AFNI_2011_12_21_1014 (May 21 2012) [64-bit]
+131017-14:46:59,172 interface INFO:
+	 stderr 2013-10-17T14:46:59.169667:++ Authored by: A cast of thousands
+131017-14:46:59,174 interface INFO:
+	 stderr 2013-10-17T14:46:59.174469:++ WARNING: file /home2/qli/.afni.log is now 103603367 (104 million) bytes long!
+131017-14:47:01,258 interface INFO:
+	 stderr 2013-10-17T14:47:01.258586:++ Output dataset ./mprage_RPI_3dc.nii.gz
+131017-14:47:03,60 workflow INFO:
+	 [Job finished] jobname: anat_brain_only jobid: 216
+131017-14:47:03,99 workflow INFO:
+	 Submitting 8 jobs
+131017-14:47:03,102 workflow INFO:
+	 Executing: anat_edge_0 ID: 49
+131017-14:47:03,105 workflow INFO:
+	 Executing: warp_brain ID: 75
+131017-14:47:03,110 workflow INFO:
+	 Executing: segment ID: 92
+131017-14:47:03,113 workflow INFO:
+	 Executing: resample_u ID: 118
+131017-14:47:03,118 workflow INFO:
+	 Executing: resample_u ID: 138
+131017-14:47:03,121 workflow INFO:
+	 Executing node warp_brain in dir: /home2/data/Projects/ABIDE_Initiative/CPAC/Working_2013-10-11_gelert/resting_preproc_0051095_session_1/anat_mni_ants_register_0/warp_brain
+131017-14:47:03,121 workflow INFO:
+	 Executing: resample_u ID: 150
+131017-14:47:03,124 workflow INFO:
+	 Executing: write_log ID: 189
+131017-14:47:03,126 workflow INFO:
+	 Executing node anat_edge_0 in dir: /home2/data/Projects/ABIDE_Initiative/CPAC/Working_2013-10-11_gelert/resting_preproc_0051095_session_1/anat_edge_0
+131017-14:47:03,127 workflow INFO:
+	 Executing: sinker_0 ID: 210
+131017-14:47:03,142 workflow INFO:
+	 Executing node segment in dir: /home2/data/Projects/ABIDE_Initiative/CPAC/Working_2013-10-11_gelert/resting_preproc_0051095_session_1/seg_preproc_0/segment
+131017-14:47:03,221 workflow INFO:
+	 Running: fast -t 1 -o segment -p -g -S 1 /data/Projects/ABIDE_Initiative/CPAC/Working_2013-10-11_gelert/resting_preproc_0051095_session_1/seg_preproc_0/segment/mprage_RPI_3dc.nii.gz
+131017-14:47:03,256 workflow INFO:
+	 Running: antsIntroduction.sh -d 3 -i /data/Projects/ABIDE_Initiative/CPAC/Working_2013-10-11_gelert/resting_preproc_0051095_session_1/anat_mni_ants_register_0/warp_brain/mprage_RPI_3dc.nii.gz -o ants_ -r /data/Projects/ABIDE_Initiative/CPAC/Working_2013-10-11_gelert/resting_preproc_0051095_session_1/anat_mni_ants_register_0/warp_brain/MNI152_T1_1mm_brain.nii.gz -t GR
+131017-14:47:03,472 interface INFO:
+	 stdout 2013-10-17T14:47:03.471735:input files: checking
+131017-14:47:03,474 interface INFO:
+	 stderr 2013-10-17T14:47:03.474854:/home2/data/PublicProgram/ANTs/Scripts/antsIntroduction.sh: line 416: /home2/data/PublicProgram/ANTs/binImageMath: No such file or directory
+131017-14:47:03,478 interface INFO:
+	 stderr 2013-10-17T14:47:03.478430:/home2/data/PublicProgram/ANTs/Scripts/antsIntroduction.sh: line 418: [: -ne: unary operator expected
+131017-14:47:03,479 interface INFO:
+	 stdout 2013-10-17T14:47:03.479764:input files: check passed
+131017-14:47:03,501 interface INFO:
+	 stdout 2013-10-17T14:47:03.500696:--------------------------------------------------------------------------------------
+131017-14:47:03,502 interface INFO:
+	 stdout 2013-10-17T14:47:03.500696:Mapping parameters
+131017-14:47:03,504 interface INFO:
+	 stdout 2013-10-17T14:47:03.500696:--------------------------------------------------------------------------------------
+131017-14:47:03,506 interface INFO:
+	 stdout 2013-10-17T14:47:03.500696:ANTSPATH is /home2/data/PublicProgram/ANTs/bin
+131017-14:47:03,507 interface INFO:
+	 stdout 2013-10-17T14:47:03.500696:
+131017-14:47:03,508 interface INFO:
+	 stdout 2013-10-17T14:47:03.500696:Dimensionality:				3
+131017-14:47:03,510 interface INFO:
+	 stdout 2013-10-17T14:47:03.500696:Fixed image:				MNI152_T1_1mm_brain.nii.gz
+131017-14:47:03,511 interface INFO:
+	 stdout 2013-10-17T14:47:03.500696:Moving image:				mprage_RPI_3dc.nii.gz
+131017-14:47:03,513 interface INFO:
+	 stdout 2013-10-17T14:47:03.500696:Use label image:			0
+131017-14:47:03,515 interface INFO:
+	 stdout 2013-10-17T14:47:03.500696:N4BiasFieldCorrection:			0
+131017-14:47:03,516 interface INFO:
+	 stdout 2013-10-17T14:47:03.500696:DoANTS Quality Check: 			0
+131017-14:47:03,518 interface INFO:
+	 stdout 2013-10-17T14:47:03.500696:Similarity Metric:			PR
+131017-14:47:03,519 interface INFO:
+	 stdout 2013-10-17T14:47:03.500696:Transformation:				GR
+131017-14:47:03,521 interface INFO:
+	 stdout 2013-10-17T14:47:03.500696:Regularization:				Gauss[3,0]
+131017-14:47:03,522 interface INFO:
+	 stdout 2013-10-17T14:47:03.500696:MaxIterations:				30x90x20
+131017-14:47:03,524 interface INFO:
+	 stdout 2013-10-17T14:47:03.500696:Number Of MultiResolution Levels:	3
+131017-14:47:03,526 interface INFO:
+	 stdout 2013-10-17T14:47:03.500696:OutputName prefix:			ants_
+131017-14:47:03,527 interface INFO:
+	 stdout 2013-10-17T14:47:03.500696:--------------------------------------------------------------------------------------
+131017-14:47:03,532 interface INFO:
+	 stdout 2013-10-17T14:47:03.532250:
+131017-14:47:03,534 interface INFO:
+	 stdout 2013-10-17T14:47:03.533982:--------------------------------------------------------------------------------------
+131017-14:47:03,536 interface INFO:
+	 stdout 2013-10-17T14:47:03.533982:ANTS command:
+131017-14:47:03,538 interface INFO:
+	 stdout 2013-10-17T14:47:03.533982:/home2/data/PublicProgram/ANTs/binANTS 3 -m  PR[MNI152_T1_1mm_brain.nii.gz,mprage_RPI_3dc.nii.gz,1,4] -t SyN[0.25] -r Gauss[3,0] -o ants_ -i 30x90x20 --use-Histogram-Matching  --number-of-affine-iterations 10000x10000x10000x10000x10000 --MI-option 32x16000  
+131017-14:47:03,539 interface INFO:
+	 stdout 2013-10-17T14:47:03.533982:--------------------------------------------------------------------------------------
+131017-14:47:03,541 interface INFO:
+	 stdout 2013-10-17T14:47:03.541247:
+131017-14:47:03,543 interface INFO:
+	 stdout 2013-10-17T14:47:03.541247:--------------------------------------------------------------------------------------
+131017-14:47:03,544 interface INFO:
+	 stdout 2013-10-17T14:47:03.541247:Applying forward transformation to mprage_RPI_3dc.nii.gz
+131017-14:47:03,546 interface INFO:
+	 stdout 2013-10-17T14:47:03.541247:--------------------------------------------------------------------------------------
+131017-14:47:03,548 interface INFO:
+	 stderr 2013-10-17T14:47:03.548531:/home2/data/PublicProgram/ANTs/Scripts/antsIntroduction.sh: line 581: /home2/data/PublicProgram/ANTs/binANTS: No such file or directory
+131017-14:47:03,550 interface INFO:
+	 stderr 2013-10-17T14:47:03.548531:/home2/data/PublicProgram/ANTs/Scripts/antsIntroduction.sh: line 589: /home2/data/PublicProgram/ANTs/binWarpImageMultiTransform: No such file or directory
+131017-14:47:03,552 interface INFO:
+	 stdout 2013-10-17T14:47:03.552193:
+131017-14:47:03,554 interface INFO:
+	 stdout 2013-10-17T14:47:03.552193:--------------------------------------------------------------------------------------
+131017-14:47:03,555 interface INFO:
+	 stdout 2013-10-17T14:47:03.552193:Applying inverse transformation to MNI152_T1_1mm_brain.nii.gz
+131017-14:47:03,557 interface INFO:
+	 stdout 2013-10-17T14:47:03.552193:--------------------------------------------------------------------------------------
+131017-14:47:03,559 interface INFO:
+	 stderr 2013-10-17T14:47:03.559018:/home2/data/PublicProgram/ANTs/Scripts/antsIntroduction.sh: line 606: /home2/data/PublicProgram/ANTs/binWarpImageMultiTransform: No such file or directory
+131017-14:47:03,657 workflow INFO:
+	 Executing node resample_u in dir: /home2/data/Projects/ABIDE_Initiative/CPAC/Working_2013-10-11_gelert/resting_preproc_0051095_session_1/montage_skull_0/resample_u
+args:  {'file_': '/data/Projects/ABIDE_Initiative/CPAC/Working_2013-10-11_gelert/resting_preproc_0051095_session_1/anat_preproc_0/anat_brain_only/mprage_RPI_3dc.nii.gz'}
+ 3dresample -dxyz 1.0 1.0 1.0 -prefix /data/Projects/ABIDE_Initiative/CPAC/Working_2013-10-11_gelert/resting_preproc_0051095_session_1/montage_skull_0/resample_u/mprage_RPI_3dc_1mm.nii.gz -inset /data/Projects/ABIDE_Initiative/CPAC/Working_2013-10-11_gelert/resting_preproc_0051095_session_1/anat_preproc_0/anat_brain_only/mprage_RPI_3dc.nii.gz 
+131017-14:47:04,692 workflow INFO:
+	 Executing node resample_u in dir: /home2/data/Projects/ABIDE_Initiative/CPAC/Working_2013-10-11_gelert/resting_preproc_0051095_session_1/montage_csf_gm_wm_0/resample_u
+131017-14:47:05,145 workflow ERROR:
+	 ['Node warp_brain failed to run on host node28.']
+131017-14:47:05,154 workflow INFO:
+	 Saving crash info to /home2/data/Projects/ABIDE_Initiative/CPAC/crash/crash-20131017-144705-qli-warp_brain.npz
+131017-14:47:05,155 workflow INFO:
+	 Traceback (most recent call last):
+  File "/home2/data/Projects/CPAC_Regression_Test/nipype-installs/fcp-indi-nipype/running-install/lib/python2.7/site-packages/nipype/pipeline/plugins/multiproc.py", line 18, in run_node
+    result['result'] = node.run(updatehash=updatehash)
+  File "/home2/data/Projects/CPAC_Regression_Test/nipype-installs/fcp-indi-nipype/running-install/lib/python2.7/site-packages/nipype/pipeline/engine.py", line 1282, in run
+    self._run_interface()
+  File "/home2/data/Projects/CPAC_Regression_Test/nipype-installs/fcp-indi-nipype/running-install/lib/python2.7/site-packages/nipype/pipeline/engine.py", line 1380, in _run_interface
+    self._result = self._run_command(execute)
+  File "/home2/data/Projects/CPAC_Regression_Test/nipype-installs/fcp-indi-nipype/running-install/lib/python2.7/site-packages/nipype/pipeline/engine.py", line 1504, in _run_command
+    result = self._interface.run()
+  File "/home2/data/Projects/CPAC_Regression_Test/nipype-installs/fcp-indi-nipype/running-install/lib/python2.7/site-packages/nipype/interfaces/base.py", line 899, in run
+    results.outputs = self.aggregate_outputs(results.runtime)
+  File "/home2/data/Projects/CPAC_Regression_Test/nipype-installs/fcp-indi-nipype/running-install/lib/python2.7/site-packages/nipype/interfaces/base.py", line 963, in aggregate_outputs
+    raise FileNotFoundError(msg)
+FileNotFoundError: File/Directory '/data/Projects/ABIDE_Initiative/CPAC/Working_2013-10-11_gelert/resting_preproc_0051095_session_1/anat_mni_ants_register_0/warp_brain/ants_InverseWarp.nii.gz' not found for GenWarpFields output 'inverse_warp_field'.
+Interface GenWarpFields failed to run. 
+
+131017-14:47:05,218 workflow INFO:
+	 [Job finished] jobname: resample_u jobid: 118
+131017-14:47:05,243 workflow INFO:
+	 Submitting 2 jobs
+131017-14:47:05,245 workflow INFO:
+	 Executing: montage_a ID: 38
+131017-14:47:05,248 workflow INFO:
+	 Executing: montage_s ID: 200
+args:  {'file_': '/data/Projects/ABIDE_Initiative/CPAC/Working_2013-10-11_gelert/resting_preproc_0051095_session_1/anat_preproc_0/anat_brain_only/mprage_RPI_3dc.nii.gz'}
+ 3dresample -dxyz 1.0 1.0 1.0 -prefix /data/Projects/ABIDE_Initiative/CPAC/Working_2013-10-11_gelert/resting_preproc_0051095_session_1/montage_csf_gm_wm_0/resample_u/mprage_RPI_3dc_1mm.nii.gz -inset /data/Projects/ABIDE_Initiative/CPAC/Working_2013-10-11_gelert/resting_preproc_0051095_session_1/anat_preproc_0/anat_brain_only/mprage_RPI_3dc.nii.gz 
+131017-14:47:05,737 workflow INFO:
+	 Executing node resample_u in dir: /home2/data/Projects/ABIDE_Initiative/CPAC/Working_2013-10-11_gelert/resting_preproc_0051095_session_1/montage_snr_0/resample_u
+args:  {'file_': '/data/Projects/ABIDE_Initiative/CPAC/Working_2013-10-11_gelert/resting_preproc_0051095_session_1/anat_preproc_0/anat_brain_only/mprage_RPI_3dc.nii.gz'}
+ 3dresample -dxyz 1.0 1.0 1.0 -prefix /data/Projects/ABIDE_Initiative/CPAC/Working_2013-10-11_gelert/resting_preproc_0051095_session_1/montage_snr_0/resample_u/mprage_RPI_3dc_1mm.nii.gz -inset /data/Projects/ABIDE_Initiative/CPAC/Working_2013-10-11_gelert/resting_preproc_0051095_session_1/anat_preproc_0/anat_brain_only/mprage_RPI_3dc.nii.gz 
+131017-14:47:06,770 workflow INFO:
+	 Executing node write_log in dir: /home2/data/Projects/ABIDE_Initiative/CPAC/Working_2013-10-11_gelert/resting_preproc_0051095_session_1/log_anat_preproc_0/write_log
+args:  {'index': 0, 'inputs': '/data/Projects/ABIDE_Initiative/CPAC/Working_2013-10-11_gelert/resting_preproc_0051095_session_1/anat_preproc_0/anat_brain_only/mprage_RPI_3dc.nii.gz', 'log_dir': '/home2/data/Projects/ABIDE_Initiative/CPAC/Output_2013-10-11_gelert/logs/0051095_session_1', 'scan_id': None, 'workflow': 'anat_preproc_0'}
+131017-14:47:06,834 interface INFO:
+	 CPAC custom log :
+131017-14:47:06,836 interface INFO:
+	  version - 0.3.2, timestamp -2013-10-17 14:47:06, subject_id -0051095_session_1, scan_id - scan_anat, strategy -, workflow - anat_preproc_0, status -COMPLETED
+131017-14:47:07,262 workflow INFO:
+	 [Job finished] jobname: resample_u jobid: 138
+131017-14:47:07,280 workflow INFO:
+	 [Job finished] jobname: resample_u jobid: 150
+131017-14:47:07,490 workflow INFO:
+	 Executing node sinker_0 in dir: /home2/data/Projects/ABIDE_Initiative/CPAC/Working_2013-10-11_gelert/resting_preproc_0051095_session_1/sinker_0
+131017-14:47:07,635 workflow INFO:
+	 Executing node montage_a in dir: /home2/data/Projects/ABIDE_Initiative/CPAC/Working_2013-10-11_gelert/resting_preproc_0051095_session_1/montage_skull_0/montage_a
+131017-14:47:09,303 workflow INFO:
+	 [Job finished] jobname: write_log jobid: 189
+131017-14:47:09,320 workflow INFO:
+	 [Job finished] jobname: sinker_0 jobid: 210
+131017-14:47:09,342 workflow INFO:
+	 Submitting 1 jobs
+131017-14:47:09,343 workflow INFO:
+	 Executing: link_0 ID: 71
+args:  {'file_': '/data/Projects/ABIDE_Initiative/CPAC/Working_2013-10-11_gelert/resting_preproc_0051095_session_1/anat_preproc_0/anat_brain_only/mprage_RPI_3dc.nii.gz'}
+3dedge3 -input /data/Projects/ABIDE_Initiative/CPAC/Working_2013-10-11_gelert/resting_preproc_0051095_session_1/anat_preproc_0/anat_brain_only/mprage_RPI_3dc.nii.gz -prefix /data/Projects/ABIDE_Initiative/CPAC/Working_2013-10-11_gelert/resting_preproc_0051095_session_1/anat_edge_0/mprage_RPI_3dc_edge.nii.gz
+++ 3dedge3: AFNI version=AFNI_2011_12_21_1014 (May 21 2012) [64-bit]
+++ WARNING: file /home2/qli/.afni.log is now 103603750 (104 million) bytes long!
+131017-14:47:10,301 workflow INFO:
+	 Executing node montage_s in dir: /home2/data/Projects/ABIDE_Initiative/CPAC/Working_2013-10-11_gelert/resting_preproc_0051095_session_1/montage_skull_0/montage_s
+131017-14:47:11,355 workflow INFO:
+	 [Job finished] jobname: anat_edge_0 jobid: 49
+131017-14:47:11,378 workflow INFO:
+	 Submitting 1 jobs
+131017-14:47:11,379 workflow INFO:
+	 Executing: resample_o ID: 31
+args:  {'png_name': 'skull_vis_a.png', 'underlay': '/data/Projects/ABIDE_Initiative/CPAC/Working_2013-10-11_gelert/resting_preproc_0051095_session_1/montage_skull_0/resample_u/mprage_RPI_3dc_1mm.nii.gz', 'cbar_name': 'red', 'overlay': '/data/Projects/ABIDE_Initiative/CPAC/Working_2013-10-11_gelert/resting_preproc_0051095_session_1/montage_skull_0/resample_o/mprage_RPI_edge_1mm.nii.gz'}
+^^ [   0.  232.]
+~~ 232.0
+~~~ 51   189
+131017-14:47:24,266 workflow INFO:
+	 Executing node link_0 in dir: /home2/data/Projects/ABIDE_Initiative/CPAC/Working_2013-10-11_gelert/resting_preproc_0051095_session_1/link_0
+args:  {'strategies': [['_compcor_ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic1.gm0.compcor1.csf0.ncomponents_5_selector_pc10.linear1.wm0.global1.motion1.quadratic1.gm0.compcor1.csf0', '_csf_threshold_0.96', '_gm_threshold_0.7', '_target_angle_deg_90', '_threshold_0.2', '_wm_threshold_0.96']], 'subject_id': '0051095_session_1', 'in_file': ['/home2/data/Projects/ABIDE_Initiative/CPAC/Output_2013-10-11_gelert/pipeline_RameyBorough/0051095_session_1/anatomical_brain/mprage_RPI_3dc.nii.gz'], 'helper': {'_gm_threshold': 1, '_csf_threshold': 1, '_wm_threshold': 1, 'nuisance': 1, '_target_angle_deg': 0, '_threshold': 0}, 'pipeline_id': 'pipeline_RameyBorough'}
+~~~~~~  _compcor_ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic1.gm0.compcor1.csf0.ncomponents_5_selector  ~~~  _compcor_ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic1.gm0.compcor1.csf0.ncomponents_5_selector_pc10.linear1.wm0.global1.motion1.quadratic1.gm0.compcor1.csf0
+~~~~~~  _csf_threshold  ~~~  _csf_threshold_0.96
+~~~~~~  _gm_threshold  ~~~  _gm_threshold_0.7
+~~~~~~  _target_angle_deg  ~~~  _target_angle_deg_90
+~~~~~~  _threshold  ~~~  _threshold_0.2
+~~~~~~  _wm_threshold  ~~~  _wm_threshold_0.96
+~~~~~~  pipeline  ~~~  pipeline_RameyBorough
+.
+_compcor_ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic1.gm0.compcor1.csf0.ncomponents_5_selector  ---------->  pc10.linear1.wm0.global1.motion1.quadratic1.gm0.compcor1.csf0
+_csf_threshold  ---------->  0.96
+_gm_threshold  ---------->  0.7
+_wm_threshold  ---------->  0.96
+pipeline  ---------->  RameyBorough
+~~~  ~~~ /mprage_RPI_3dc.nii.gz
+.
+.
+ln -s /home2/data/Projects/ABIDE_Initiative/CPAC/Output_2013-10-11_gelert/pipeline_RameyBorough/0051095_session_1/anatomical_brain/mprage_RPI_3dc.nii.gz /home2/data/Projects/ABIDE_Initiative/CPAC/Output_2013-10-11_gelert/sym_links/pipeline_RameyBorough/_compcor_ncomponents_5_linear1.global1.motion1.quadratic1.compcor1.CSF_0.96_GM_0.7_WM_0.96/0051095_session_1/scan/anat/anatomical_brain.nii.gz
+131017-14:47:24,409 workflow INFO:
+	 Executing node resample_o in dir: /home2/data/Projects/ABIDE_Initiative/CPAC/Working_2013-10-11_gelert/resting_preproc_0051095_session_1/montage_anat_0/resample_o
+131017-14:47:25,438 workflow INFO:
+	 [Job finished] jobname: montage_a jobid: 38
+131017-14:47:25,454 workflow INFO:
+	 [Job finished] jobname: link_0 jobid: 71
+131017-14:47:25,472 workflow INFO:
+	 [Job finished] jobname: resample_o jobid: 31
+131017-14:47:25,494 workflow INFO:
+	 Submitting 1 jobs
+131017-14:47:25,496 workflow INFO:
+	 Executing: sinker_37 ID: 195
+args:  {'file_': '/data/Projects/ABIDE_Initiative/CPAC/Working_2013-10-11_gelert/resting_preproc_0051095_session_1/anat_edge_0/mprage_RPI_3dc_edge.nii.gz'}
+ 3dresample -dxyz 1.0 1.0 1.0 -prefix /data/Projects/ABIDE_Initiative/CPAC/Working_2013-10-11_gelert/resting_preproc_0051095_session_1/montage_anat_0/resample_o/mprage_RPI_3dc_edge_1mm.nii.gz -inset /data/Projects/ABIDE_Initiative/CPAC/Working_2013-10-11_gelert/resting_preproc_0051095_session_1/anat_edge_0/mprage_RPI_3dc_edge.nii.gz 
+131017-14:47:25,526 workflow INFO:
+	 Executing node sinker_37 in dir: /home2/data/Projects/ABIDE_Initiative/CPAC/Working_2013-10-11_gelert/resting_preproc_0051095_session_1/sinker_37
+131017-14:47:25,577 interface INFO:
+	 sub: /home2/data/Projects/ABIDE_Initiative/CPAC/Output_2013-10-11_gelert/pipeline_RameyBorough/0051095_session_1/qc___skullstrip_vis_a/skull_vis_a.png -> /home2/data/Projects/ABIDE_Initiative/CPAC/Output_2013-10-11_gelert/pipeline_RameyBorough/0051095_session_1/qc/skullstrip_vis_a/skull_vis_a.png
+131017-14:47:27,511 workflow INFO:
+	 [Job finished] jobname: montage_s jobid: 200
+131017-14:47:27,528 workflow INFO:
+	 [Job finished] jobname: sinker_37 jobid: 195
+131017-14:47:27,550 workflow INFO:
+	 Submitting 2 jobs
+131017-14:47:27,552 workflow INFO:
+	 Executing: sinker_38 ID: 6
+131017-14:47:27,559 workflow INFO:
+	 Executing: link_37 ID: 220
+131017-14:47:27,579 workflow INFO:
+	 Executing node sinker_38 in dir: /home2/data/Projects/ABIDE_Initiative/CPAC/Working_2013-10-11_gelert/resting_preproc_0051095_session_1/sinker_38
+args:  {'png_name': 'skull_vis_s.png', 'underlay': '/data/Projects/ABIDE_Initiative/CPAC/Working_2013-10-11_gelert/resting_preproc_0051095_session_1/montage_skull_0/resample_u/mprage_RPI_3dc_1mm.nii.gz', 'cbar_name': 'red', 'overlay': '/data/Projects/ABIDE_Initiative/CPAC/Working_2013-10-11_gelert/resting_preproc_0051095_session_1/montage_skull_0/resample_o/mprage_RPI_edge_1mm.nii.gz'}
+^^ [   0.  232.]
+~~ 232.0
+131017-14:47:27,587 workflow INFO:
+	 Executing node link_37 in dir: /home2/data/Projects/ABIDE_Initiative/CPAC/Working_2013-10-11_gelert/resting_preproc_0051095_session_1/link_37
+131017-14:47:27,655 interface INFO:
+	 sub: /home2/data/Projects/ABIDE_Initiative/CPAC/Output_2013-10-11_gelert/pipeline_RameyBorough/0051095_session_1/qc___skullstrip_vis_s/skull_vis_s.png -> /home2/data/Projects/ABIDE_Initiative/CPAC/Output_2013-10-11_gelert/pipeline_RameyBorough/0051095_session_1/qc/skullstrip_vis_s/skull_vis_s.png
+131017-14:47:29,573 workflow INFO:
+	 [Job finished] jobname: sinker_38 jobid: 6
+131017-14:47:29,593 workflow INFO:
+	 [Job finished] jobname: link_37 jobid: 220
+131017-14:47:29,617 workflow INFO:
+	 Submitting 1 jobs
+131017-14:47:29,618 workflow INFO:
+	 Executing: link_38 ID: 169
+131017-14:47:29,645 workflow INFO:
+	 Executing node link_38 in dir: /home2/data/Projects/ABIDE_Initiative/CPAC/Working_2013-10-11_gelert/resting_preproc_0051095_session_1/link_38
+131017-14:47:31,632 workflow INFO:
+	 [Job finished] jobname: link_38 jobid: 169
+131017-14:48:57,765 interface INFO:
+	 stderr 2013-10-17T14:48:57.765821:++ Max displacement in automask = 4.04 (mm) at sub-brick 0
+131017-14:49:10,33 workflow INFO:
+	 [Job finished] jobname: func_motion_correct.c0 jobid: 157
+131017-14:49:10,57 workflow INFO:
+	 Submitting 1 jobs
+131017-14:49:10,58 workflow INFO:
+	 Executing: func_get_mean_motion.c0 ID: 127
+args:  {'strategies': [['_compcor_ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic1.gm0.compcor1.csf0.ncomponents_5_selector_pc10.linear1.wm0.global1.motion1.quadratic1.gm0.compcor1.csf0', '_csf_threshold_0.96', '_gm_threshold_0.7', '_target_angle_deg_90', '_threshold_0.2', '_wm_threshold_0.96']], 'subject_id': '0051095_session_1', 'in_file': ['/home2/data/Projects/ABIDE_Initiative/CPAC/Output_2013-10-11_gelert/pipeline_RameyBorough/0051095_session_1/qc/skullstrip_vis_a/skull_vis_a.png'], 'helper': {'_gm_threshold': 1, '_csf_threshold': 1, '_wm_threshold': 1, 'nuisance': 1, '_target_angle_deg': 0, '_threshold': 0}, 'pipeline_id': 'pipeline_RameyBorough'}
+~~~~~~  _compcor_ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic1.gm0.compcor1.csf0.ncomponents_5_selector  ~~~  _compcor_ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic1.gm0.compcor1.csf0.ncomponents_5_selector_pc10.linear1.wm0.global1.motion1.quadratic1.gm0.compcor1.csf0
+~~~~~~  _csf_threshold  ~~~  _csf_threshold_0.96
+~~~~~~  _gm_threshold  ~~~  _gm_threshold_0.7
+~~~~~~  _target_angle_deg  ~~~  _target_angle_deg_90
+~~~~~~  _threshold  ~~~  _threshold_0.2
+~~~~~~  _wm_threshold  ~~~  _wm_threshold_0.96
+~~~~~~  pipeline  ~~~  pipeline_RameyBorough
+.
+_compcor_ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic1.gm0.compcor1.csf0.ncomponents_5_selector  ---------->  pc10.linear1.wm0.global1.motion1.quadratic1.gm0.compcor1.csf0
+_csf_threshold  ---------->  0.96
+_gm_threshold  ---------->  0.7
+_wm_threshold  ---------->  0.96
+pipeline  ---------->  RameyBorough
+~~~  ~~~ /skullstrip_vis_a/skull_vis_a.png
+ln -s /home2/data/Projects/ABIDE_Initiative/CPAC/Output_2013-10-11_gelert/pipeline_RameyBorough/0051095_session_1/qc/skullstrip_vis_a/skull_vis_a.png /home2/data/Projects/ABIDE_Initiative/CPAC/Output_2013-10-11_gelert/sym_links/pipeline_RameyBorough/_compcor_ncomponents_5_linear1.global1.motion1.quadratic1.compcor1.CSF_0.96_GM_0.7_WM_0.96/0051095_session_1/scan/qc/skull_vis_a.png
+131017-14:49:10,87 workflow INFO:
+	 Executing node func_get_mean_motion.c0 in dir: /home2/data/Projects/ABIDE_Initiative/CPAC/Working_2013-10-11_gelert/resting_preproc_0051095_session_1/func_preproc_0/_scan_rest_1_rest/func_get_mean_motion
+131017-14:49:10,124 workflow INFO:
+	 Running: 3dTstat -mean -prefix /data/Projects/ABIDE_Initiative/CPAC/Working_2013-10-11_gelert/resting_preproc_0051095_session_1/func_preproc_0/_scan_rest_1_rest/func_get_mean_motion/rest_3dc_tshift_RPI_3dv_3dT.nii.gz /data/Projects/ABIDE_Initiative/CPAC/Working_2013-10-11_gelert/resting_preproc_0051095_session_1/func_preproc_0/_scan_rest_1_rest/func_motion_correct/rest_3dc_tshift_RPI_3dv.nii.gz
+131017-14:49:10,175 interface INFO:
+	 stderr 2013-10-17T14:49:10.174659:++ WARNING: file /home2/qli/.afni.log is now 103605562 (104 million) bytes long!
+131017-14:49:10,178 interface INFO:
+	 stderr 2013-10-17T14:49:10.178478:++ 3dTstat: AFNI version=AFNI_2011_12_21_1014 (May 21 2012) [64-bit]
+131017-14:49:10,180 interface INFO:
+	 stderr 2013-10-17T14:49:10.178478:++ Authored by: KR Hammett & RW Cox
+131017-14:49:12,848 interface INFO:
+	 stderr 2013-10-17T14:49:12.847882:++ Output dataset /data/Projects/ABIDE_Initiative/CPAC/Working_2013-10-11_gelert/resting_preproc_0051095_session_1/func_preproc_0/_scan_rest_1_rest/func_get_mean_motion/rest_3dc_tshift_RPI_3dv_3dT.nii.gz
+131017-14:49:14,75 workflow INFO:
+	 [Job finished] jobname: func_get_mean_motion.c0 jobid: 127
+131017-14:49:14,97 workflow INFO:
+	 Submitting 1 jobs
+131017-14:49:14,99 workflow INFO:
+	 Executing: func_motion_correct_A.c0 ID: 9
+args:  {'strategies': [['_compcor_ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic1.gm0.compcor1.csf0.ncomponents_5_selector_pc10.linear1.wm0.global1.motion1.quadratic1.gm0.compcor1.csf0', '_csf_threshold_0.96', '_gm_threshold_0.7', '_target_angle_deg_90', '_threshold_0.2', '_wm_threshold_0.96']], 'subject_id': '0051095_session_1', 'in_file': ['/home2/data/Projects/ABIDE_Initiative/CPAC/Output_2013-10-11_gelert/pipeline_RameyBorough/0051095_session_1/qc/skullstrip_vis_s/skull_vis_s.png'], 'helper': {'_gm_threshold': 1, '_csf_threshold': 1, '_wm_threshold': 1, 'nuisance': 1, '_target_angle_deg': 0, '_threshold': 0}, 'pipeline_id': 'pipeline_RameyBorough'}
+~~~~~~  _compcor_ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic1.gm0.compcor1.csf0.ncomponents_5_selector  ~~~  _compcor_ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic1.gm0.compcor1.csf0.ncomponents_5_selector_pc10.linear1.wm0.global1.motion1.quadratic1.gm0.compcor1.csf0
+~~~~~~  _csf_threshold  ~~~  _csf_threshold_0.96
+~~~~~~  _gm_threshold  ~~~  _gm_threshold_0.7
+~~~~~~  _target_angle_deg  ~~~  _target_angle_deg_90
+~~~~~~  _threshold  ~~~  _threshold_0.2
+~~~~~~  _wm_threshold  ~~~  _wm_threshold_0.96
+~~~~~~  pipeline  ~~~  pipeline_RameyBorough
+.
+_compcor_ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic1.gm0.compcor1.csf0.ncomponents_5_selector  ---------->  pc10.linear1.wm0.global1.motion1.quadratic1.gm0.compcor1.csf0
+_csf_threshold  ---------->  0.96
+_gm_threshold  ---------->  0.7
+_wm_threshold  ---------->  0.96
+pipeline  ---------->  RameyBorough
+~~~  ~~~ /skullstrip_vis_s/skull_vis_s.png
+.
+.
+ln -s /home2/data/Projects/ABIDE_Initiative/CPAC/Output_2013-10-11_gelert/pipeline_RameyBorough/0051095_session_1/qc/skullstrip_vis_s/skull_vis_s.png /home2/data/Projects/ABIDE_Initiative/CPAC/Output_2013-10-11_gelert/sym_links/pipeline_RameyBorough/_compcor_ncomponents_5_linear1.global1.motion1.quadratic1.compcor1.CSF_0.96_GM_0.7_WM_0.96/0051095_session_1/scan/qc/skull_vis_s.png
+131017-14:49:14,148 workflow INFO:
+	 Executing node func_motion_correct_A.c0 in dir: /home2/data/Projects/ABIDE_Initiative/CPAC/Working_2013-10-11_gelert/resting_preproc_0051095_session_1/func_preproc_0/_scan_rest_1_rest/func_motion_correct_A
+131017-14:49:14,191 workflow INFO:
+	 Running: 3dvolreg -Fourier -twopass -1Dmatrix_save ./rest_3dc_tshift_RPI_3dmat1D.1D -base /data/Projects/ABIDE_Initiative/CPAC/Working_2013-10-11_gelert/resting_preproc_0051095_session_1/func_preproc_0/_scan_rest_1_rest/func_get_mean_motion/rest_3dc_tshift_RPI_3dv_3dT.nii.gz -zpad 4 -maxdisp1D ./rest_3dc_tshift_RPI_3dvmd1D.1D -1Dfile ./rest_3dc_tshift_RPI_3dv1D.1D -prefix ./rest_3dc_tshift_RPI_3dv.nii.gz /data/Projects/ABIDE_Initiative/CPAC/Working_2013-10-11_gelert/resting_preproc_0051095_session_1/func_preproc_0/_scan_rest_1_rest/func_reorient/rest_3dc_tshift_RPI.nii.gz
+131017-14:49:14,243 interface INFO:
+	 stderr 2013-10-17T14:49:14.243174:++ WARNING: file /home2/qli/.afni.log is now 103605978 (104 million) bytes long!
+131017-14:49:14,247 interface INFO:
+	 stderr 2013-10-17T14:49:14.247145:++ 3dvolreg: AFNI version=AFNI_2011_12_21_1014 (May 21 2012) [64-bit]
+131017-14:49:14,248 interface INFO:
+	 stderr 2013-10-17T14:49:14.247145:++ Authored by: RW Cox
+131017-14:49:14,283 interface INFO:
+	 stderr 2013-10-17T14:49:14.283238:++ Coarse del was 10, replaced with 3
+131017-14:52:00,323 interface INFO:
+	 stderr 2013-10-17T14:52:00.323146:++ Max displacement in automask = 3.85 (mm) at sub-brick 178
+131017-14:52:12,805 workflow INFO:
+	 [Job finished] jobname: func_motion_correct_A.c0 jobid: 9
+131017-14:52:12,833 workflow INFO:
+	 Submitting 4 jobs
+131017-14:52:12,835 workflow INFO:
+	 Executing: func_get_brain_mask.c0 ID: 48
+131017-14:52:12,838 workflow INFO:
+	 Executing: sinker_21.c0 ID: 96
+131017-14:52:12,846 workflow INFO:
+	 Executing: calc_friston.c0 ID: 126
+131017-14:52:12,850 workflow INFO:
+	 Executing: sinker_15.c0 ID: 198
+131017-14:52:12,861 workflow INFO:
+	 Executing node func_get_brain_mask.c0 in dir: /home2/data/Projects/ABIDE_Initiative/CPAC/Working_2013-10-11_gelert/resting_preproc_0051095_session_1/func_preproc_0/_scan_rest_1_rest/func_get_brain_mask
+131017-14:52:12,870 workflow INFO:
+	 Executing node sinker_21.c0 in dir: /home2/data/Projects/ABIDE_Initiative/CPAC/Working_2013-10-11_gelert/resting_preproc_0051095_session_1/_scan_rest_1_rest/sinker_21
+131017-14:52:12,872 workflow INFO:
+	 Executing node calc_friston.c0 in dir: /home2/data/Projects/ABIDE_Initiative/CPAC/Working_2013-10-11_gelert/resting_preproc_0051095_session_1/fristons_parameter_model_0/_scan_rest_1_rest/calc_friston
+131017-14:52:12,925 workflow INFO:
+	 Running: 3dAutomask -prefix /data/Projects/ABIDE_Initiative/CPAC/Working_2013-10-11_gelert/resting_preproc_0051095_session_1/func_preproc_0/_scan_rest_1_rest/func_get_brain_mask/rest_3dc_tshift_RPI_3dv_automask.nii.gz /data/Projects/ABIDE_Initiative/CPAC/Working_2013-10-11_gelert/resting_preproc_0051095_session_1/func_preproc_0/_scan_rest_1_rest/func_motion_correct_A/rest_3dc_tshift_RPI_3dv.nii.gz
+131017-14:52:13,128 interface INFO:
+	 stderr 2013-10-17T14:52:13.127546:++ WARNING: file /home2/qli/.afni.log is now 103606575 (104 million) bytes long!
+131017-14:52:13,131 interface INFO:
+	 stderr 2013-10-17T14:52:13.130999:++ 3dAutomask: AFNI version=AFNI_2011_12_21_1014 (May 21 2012) [64-bit]
+131017-14:52:13,132 interface INFO:
+	 stderr 2013-10-17T14:52:13.130999:++ Authored by: Emperor Zhark
+args:  {'in_file': '/data/Projects/ABIDE_Initiative/CPAC/Working_2013-10-11_gelert/resting_preproc_0051095_session_1/func_preproc_0/_scan_rest_1_rest/func_motion_correct_A/rest_3dc_tshift_RPI_3dv1D.1D'}
+131017-14:52:13,142 workflow INFO:
+	 Executing node sinker_15.c0 in dir: /home2/data/Projects/ABIDE_Initiative/CPAC/Working_2013-10-11_gelert/resting_preproc_0051095_session_1/_scan_rest_1_rest/sinker_15
+131017-14:52:13,161 interface INFO:
+	 stderr 2013-10-17T14:52:13.161474:++ Loading dataset /data/Projects/ABIDE_Initiative/CPAC/Working_2013-10-11_gelert/resting_preproc_0051095_session_1/func_preproc_0/_scan_rest_1_rest/func_motion_correct_A/rest_3dc_tshift_RPI_3dv.nii.gz
+131017-14:52:14,866 workflow INFO:
+	 [Job finished] jobname: sinker_21.c0 jobid: 96
+131017-14:52:14,885 workflow INFO:
+	 [Job finished] jobname: calc_friston.c0 jobid: 126
+131017-14:52:14,906 workflow INFO:
+	 [Job finished] jobname: sinker_15.c0 jobid: 198
+131017-14:52:14,928 workflow INFO:
+	 Submitting 8 jobs
+131017-14:52:14,929 workflow INFO:
+	 Executing: link_15.c0 ID: 12
+131017-14:52:14,933 workflow INFO:
+	 Executing: calculate_FDJ.c0 ID: 28
+131017-14:52:14,937 workflow INFO:
+	 Executing: calculate_FD.c0 ID: 43
+131017-14:52:14,941 workflow INFO:
+	 Executing: write_log.c0 ID: 54
+131017-14:52:14,945 workflow INFO:
+	 Executing: motion_plt_0.c0 ID: 68
+131017-14:52:14,946 interface INFO:
+	 stderr 2013-10-17T14:52:14.946733:++ Forming automask
+131017-14:52:14,949 workflow INFO:
+	 Executing: link_21.c0 ID: 91
+131017-14:52:14,953 workflow INFO:
+	 Executing node link_15.c0 in dir: /home2/data/Projects/ABIDE_Initiative/CPAC/Working_2013-10-11_gelert/resting_preproc_0051095_session_1/_scan_rest_1_rest/link_15
+131017-14:52:14,953 workflow INFO:
+	 Executing: calc_motion_parameters.c0 ID: 123
+131017-14:52:14,956 workflow INFO:
+	 Executing node calculate_FDJ.c0 in dir: /home2/data/Projects/ABIDE_Initiative/CPAC/Working_2013-10-11_gelert/resting_preproc_0051095_session_1/gen_motion_stats_0/_scan_rest_1_rest/calculate_FDJ
+131017-14:52:14,957 workflow INFO:
+	 Executing: sinker_23.c0 ID: 162
+args:  {'strategies': [['_compcor_ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic1.gm0.compcor1.csf0.ncomponents_5_selector_pc10.linear1.wm0.global1.motion1.quadratic1.gm0.compcor1.csf0', '_csf_threshold_0.96', '_gm_threshold_0.7', '_target_angle_deg_90', '_threshold_0.2', '_wm_threshold_0.96']], 'subject_id': '0051095_session_1', 'in_file': ['/home2/data/Projects/ABIDE_Initiative/CPAC/Output_2013-10-11_gelert/pipeline_RameyBorough/0051095_session_1/max_displacement/_scan_rest_1_rest/rest_3dc_tshift_RPI_3dvmd1D.1D'], 'helper': {'_gm_threshold': 1, '_csf_threshold': 1, '_wm_threshold': 1, 'nuisance': 1, '_target_angle_deg': 0, '_threshold': 0}, 'pipeline_id': 'pipeline_RameyBorough'}
+~~~~~~  _compcor_ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic1.gm0.compcor1.csf0.ncomponents_5_selector  ~~~  _compcor_ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic1.gm0.compcor1.csf0.ncomponents_5_selector_pc10.linear1.wm0.global1.motion1.quadratic1.gm0.compcor1.csf0
+~~~~~~  _csf_threshold  ~~~  _csf_threshold_0.96
+~~~~~~  _gm_threshold  ~~~  _gm_threshold_0.7
+~~~~~~  _target_angle_deg  ~~~  _target_angle_deg_90
+~~~~~~  _threshold  ~~~  _threshold_0.2
+~~~~~~  _wm_threshold  ~~~  _wm_threshold_0.96
+~~~~~~  pipeline  ~~~  pipeline_RameyBorough
+.
+_compcor_ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic1.gm0.compcor1.csf0.ncomponents_5_selector  ---------->  pc10.linear1.wm0.global1.motion1.quadratic1.gm0.compcor1.csf0
+_csf_threshold  ---------->  0.96
+_gm_threshold  ---------->  0.7
+_wm_threshold  ---------->  0.96
+pipeline  ---------->  RameyBorough
+scan_rest_1_rest  ~~~ /_scan_rest_1_rest/rest_3dc_tshift_RPI_3dvmd1D.1D
+.
+ln -s /home2/data/Projects/ABIDE_Initiative/CPAC/Output_2013-10-11_gelert/pipeline_RameyBorough/0051095_session_1/max_displacement/_scan_rest_1_rest/rest_3dc_tshift_RPI_3dvmd1D.1D /home2/data/Projects/ABIDE_Initiative/CPAC/Output_2013-10-11_gelert/sym_links/pipeline_RameyBorough/_compcor_ncomponents_5_linear1.global1.motion1.quadratic1.compcor1.CSF_0.96_GM_0.7_WM_0.96/0051095_session_1/scan_rest_1_rest/parameters/max_displacement.1D
+131017-14:52:15,151 workflow INFO:
+	 Executing node calculate_FD.c0 in dir: /home2/data/Projects/ABIDE_Initiative/CPAC/Working_2013-10-11_gelert/resting_preproc_0051095_session_1/gen_motion_stats_0/_scan_rest_1_rest/calculate_FD
+args:  {'in_file': '/data/Projects/ABIDE_Initiative/CPAC/Working_2013-10-11_gelert/resting_preproc_0051095_session_1/fristons_parameter_model_0/_scan_rest_1_rest/calc_friston/fristons_twenty_four.1D'}
+131017-14:52:15,239 workflow INFO:
+	 Executing node write_log.c0 in dir: /home2/data/Projects/ABIDE_Initiative/CPAC/Working_2013-10-11_gelert/resting_preproc_0051095_session_1/log_fristons_parameter_model_0/_scan_rest_1_rest/write_log
+args:  {'in_file': '/data/Projects/ABIDE_Initiative/CPAC/Working_2013-10-11_gelert/resting_preproc_0051095_session_1/fristons_parameter_model_0/_scan_rest_1_rest/calc_friston/fristons_twenty_four.1D'}
+131017-14:52:15,264 workflow INFO:
+	 Executing node motion_plt_0.c0 in dir: /home2/data/Projects/ABIDE_Initiative/CPAC/Working_2013-10-11_gelert/resting_preproc_0051095_session_1/_scan_rest_1_rest/motion_plt_0
+args:  {'index': 0, 'inputs': '/data/Projects/ABIDE_Initiative/CPAC/Working_2013-10-11_gelert/resting_preproc_0051095_session_1/fristons_parameter_model_0/_scan_rest_1_rest/calc_friston/fristons_twenty_four.1D', 'log_dir': '/home2/data/Projects/ABIDE_Initiative/CPAC/Output_2013-10-11_gelert/logs/0051095_session_1', 'scan_id': None, 'workflow': 'fristons_parameter_model_0'}
+131017-14:52:15,312 interface INFO:
+	 CPAC custom log :
+131017-14:52:15,313 interface INFO:
+	  version - 0.3.2, timestamp -2013-10-17 14:52:15, subject_id -0051095_session_1, scan_id - scan_rest_1_rest, strategy -, workflow - fristons_parameter_model_0, status -COMPLETED
+131017-14:52:15,791 interface INFO:
+	 stderr 2013-10-17T14:52:15.791419: + Fixed clip level = 35.366737
+131017-14:52:15,806 interface INFO:
+	 stderr 2013-10-17T14:52:15.806806: + Used gradual clip level = 30.661530 .. 38.471539
+131017-14:52:15,808 interface INFO:
+	 stderr 2013-10-17T14:52:15.808362: + Number voxels above clip level = 39334
+131017-14:52:15,809 interface INFO:
+	 stderr 2013-10-17T14:52:15.808362: + Clustering voxels ...
+131017-14:52:15,811 interface INFO:
+	 stderr 2013-10-17T14:52:15.811467: + Largest cluster has 39277 voxels
+131017-14:52:15,811 workflow INFO:
+	 Executing node link_21.c0 in dir: /home2/data/Projects/ABIDE_Initiative/CPAC/Working_2013-10-11_gelert/resting_preproc_0051095_session_1/_scan_rest_1_rest/link_21
+131017-14:52:15,813 interface INFO:
+	 stderr 2013-10-17T14:52:15.813007: + Clustering voxels ...
+131017-14:52:15,815 interface INFO:
+	 stderr 2013-10-17T14:52:15.815179: + Largest cluster has 39066 voxels
+131017-14:52:15,821 interface INFO:
+	 stderr 2013-10-17T14:52:15.821813: + Filled   269 voxels in small holes; now have 39335 voxels
+131017-14:52:15,826 interface INFO:
+	 stderr 2013-10-17T14:52:15.826342: + Clustering voxels ...
+131017-14:52:15,829 interface INFO:
+	 stderr 2013-10-17T14:52:15.828966: + Largest cluster has 39335 voxels
+131017-14:52:15,830 interface INFO:
+	 stderr 2013-10-17T14:52:15.830501: + Clustering non-brain voxels ...
+131017-14:52:15,832 interface INFO:
+	 stderr 2013-10-17T14:52:15.830501: + Clustering voxels ...
+131017-14:52:15,838 interface INFO:
+	 stderr 2013-10-17T14:52:15.838095: + Largest cluster has 129625 voxels
+131017-14:52:15,840 interface INFO:
+	 stderr 2013-10-17T14:52:15.839953: + Mask now has 39335 voxels
+131017-14:52:15,841 interface INFO:
+	 stderr 2013-10-17T14:52:15.839953:++ 39335 voxels in the mask [out of 168960: 23.28%]
+131017-14:52:15,843 interface INFO:
+	 stderr 2013-10-17T14:52:15.839953:++ first  12 x-planes are zero [from R]
+131017-14:52:15,844 interface INFO:
+	 stderr 2013-10-17T14:52:15.839953:++ last    7 x-planes are zero [from L]
+131017-14:52:15,846 interface INFO:
+	 stderr 2013-10-17T14:52:15.839953:++ first   9 y-planes are zero [from P]
+131017-14:52:15,847 interface INFO:
+	 stderr 2013-10-17T14:52:15.839953:++ last   11 y-planes are zero [from A]
+131017-14:52:15,849 interface INFO:
+	 stderr 2013-10-17T14:52:15.839953:++ first   0 z-planes are zero [from I]
+131017-14:52:15,851 interface INFO:
+	 stderr 2013-10-17T14:52:15.839953:++ last    4 z-planes are zero [from S]
+131017-14:52:15,879 interface INFO:
+	 stderr 2013-10-17T14:52:15.878971:++ Output dataset /data/Projects/ABIDE_Initiative/CPAC/Working_2013-10-11_gelert/resting_preproc_0051095_session_1/func_preproc_0/_scan_rest_1_rest/func_get_brain_mask/rest_3dc_tshift_RPI_3dv_automask.nii.gz
+131017-14:52:15,880 interface INFO:
+	 stderr 2013-10-17T14:52:15.880505:++ CPU time = 0.000000 sec
+131017-14:52:15,959 workflow INFO:
+	 Executing node sinker_23.c0 in dir: /home2/data/Projects/ABIDE_Initiative/CPAC/Working_2013-10-11_gelert/resting_preproc_0051095_session_1/_scan_rest_1_rest/sinker_23
+args:  {'strategies': [['_compcor_ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic1.gm0.compcor1.csf0.ncomponents_5_selector_pc10.linear1.wm0.global1.motion1.quadratic1.gm0.compcor1.csf0', '_csf_threshold_0.96', '_gm_threshold_0.7', '_target_angle_deg_90', '_threshold_0.2', '_wm_threshold_0.96']], 'subject_id': '0051095_session_1', 'in_file': ['/home2/data/Projects/ABIDE_Initiative/CPAC/Output_2013-10-11_gelert/pipeline_RameyBorough/0051095_session_1/motion_correct/_scan_rest_1_rest/rest_3dc_tshift_RPI_3dv.nii.gz'], 'helper': {'_gm_threshold': 1, '_csf_threshold': 1, '_wm_threshold': 1, 'nuisance': 1, '_target_angle_deg': 0, '_threshold': 0}, 'pipeline_id': 'pipeline_RameyBorough'}
+~~~~~~  _compcor_ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic1.gm0.compcor1.csf0.ncomponents_5_selector  ~~~  _compcor_ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic1.gm0.compcor1.csf0.ncomponents_5_selector_pc10.linear1.wm0.global1.motion1.quadratic1.gm0.compcor1.csf0
+~~~~~~  _csf_threshold  ~~~  _csf_threshold_0.96
+~~~~~~  _gm_threshold  ~~~  _gm_threshold_0.7
+~~~~~~  _target_angle_deg  ~~~  _target_angle_deg_90
+~~~~~~  _threshold  ~~~  _threshold_0.2
+~~~~~~  _wm_threshold  ~~~  _wm_threshold_0.96
+~~~~~~  pipeline  ~~~  pipeline_RameyBorough
+.
+_compcor_ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic1.gm0.compcor1.csf0.ncomponents_5_selector  ---------->  pc10.linear1.wm0.global1.motion1.quadratic1.gm0.compcor1.csf0
+_csf_threshold  ---------->  0.96
+_gm_threshold  ---------->  0.7
+_wm_threshold  ---------->  0.96
+pipeline  ---------->  RameyBorough
+scan_rest_1_rest  ~~~ /_scan_rest_1_rest/rest_3dc_tshift_RPI_3dv.nii.gz
+.
+.
+ln -s /home2/data/Projects/ABIDE_Initiative/CPAC/Output_2013-10-11_gelert/pipeline_RameyBorough/0051095_session_1/motion_correct/_scan_rest_1_rest/rest_3dc_tshift_RPI_3dv.nii.gz /home2/data/Projects/ABIDE_Initiative/CPAC/Output_2013-10-11_gelert/sym_links/pipeline_RameyBorough/_compcor_ncomponents_5_linear1.global1.motion1.quadratic1.compcor1.CSF_0.96_GM_0.7_WM_0.96/0051095_session_1/scan_rest_1_rest/func/motion_correct.nii.gz
+131017-14:52:15,973 workflow INFO:
+	 Executing node calc_motion_parameters.c0 in dir: /home2/data/Projects/ABIDE_Initiative/CPAC/Working_2013-10-11_gelert/resting_preproc_0051095_session_1/gen_motion_stats_0/_scan_rest_1_rest/calc_motion_parameters
+131017-14:52:16,974 workflow INFO:
+	 [Job finished] jobname: func_get_brain_mask.c0 jobid: 48
+131017-14:52:16,997 workflow INFO:
+	 [Job finished] jobname: link_15.c0 jobid: 12
+131017-14:52:17,14 workflow INFO:
+	 [Job finished] jobname: calculate_FDJ.c0 jobid: 28
+131017-14:52:17,32 workflow INFO:
+	 [Job finished] jobname: calculate_FD.c0 jobid: 43
+131017-14:52:17,51 workflow INFO:
+	 [Job finished] jobname: write_log.c0 jobid: 54
+131017-14:52:17,68 workflow INFO:
+	 [Job finished] jobname: motion_plt_0.c0 jobid: 68
+131017-14:52:17,85 workflow INFO:
+	 [Job finished] jobname: link_21.c0 jobid: 91
+131017-14:52:17,102 workflow INFO:
+	 [Job finished] jobname: calc_motion_parameters.c0 jobid: 123
+131017-14:52:17,120 workflow INFO:
+	 [Job finished] jobname: sinker_23.c0 jobid: 162
+131017-14:52:17,142 workflow INFO:
+	 Submitting 10 jobs
+131017-14:52:17,144 workflow INFO:
+	 Executing: cal_DVARS.c0 ID: 8
+131017-14:52:17,148 workflow INFO:
+	 Executing: link_23.c0 ID: 11
+131017-14:52:17,152 workflow INFO:
+	 Executing: sinker_7.c0 ID: 18
+131017-14:52:17,160 workflow INFO:
+	 Executing: write_log.c0 ID: 44
+131017-14:52:17,164 workflow INFO:
+	 Executing: exclude_frames.a0.c0 ID: 51
+131017-14:52:17,168 workflow INFO:
+	 Executing: sinker_22.c0 ID: 141
+args:  {'max_displacement': '/data/Projects/ABIDE_Initiative/CPAC/Working_2013-10-11_gelert/resting_preproc_0051095_session_1/func_preproc_0/_scan_rest_1_rest/func_motion_correct_A/rest_3dc_tshift_RPI_3dvmd1D.1D', 'movement_parameters': '/data/Projects/ABIDE_Initiative/CPAC/Working_2013-10-11_gelert/resting_preproc_0051095_session_1/fristons_parameter_model_0/_scan_rest_1_rest/calc_friston/fristons_twenty_four.1D', 'subject_id': '0051095_session_1', 'scan_id': 'rest_1_rest'}
+131017-14:52:17,172 workflow INFO:
+	 Executing node link_23.c0 in dir: /home2/data/Projects/ABIDE_Initiative/CPAC/Working_2013-10-11_gelert/resting_preproc_0051095_session_1/_scan_rest_1_rest/link_23
+131017-14:52:17,176 workflow INFO:
+	 Executing: func_edge_detect.c0 ID: 178
+args:  {'motion_parameters': '/data/Projects/ABIDE_Initiative/CPAC/Working_2013-10-11_gelert/resting_preproc_0051095_session_1/fristons_parameter_model_0/_scan_rest_1_rest/calc_friston/fristons_twenty_four.1D'}
+131017-14:52:17,180 workflow INFO:
+	 Executing node sinker_7.c0 in dir: /home2/data/Projects/ABIDE_Initiative/CPAC/Working_2013-10-11_gelert/resting_preproc_0051095_session_1/_scan_rest_1_rest/sinker_7
+131017-14:52:17,179 workflow INFO:
+	 Executing: sinker_8.c0 ID: 207
+131017-14:52:17,182 workflow INFO:
+	 Executing node cal_DVARS.c0 in dir: /home2/data/Projects/ABIDE_Initiative/CPAC/Working_2013-10-11_gelert/resting_preproc_0051095_session_1/gen_motion_stats_0/_scan_rest_1_rest/cal_DVARS
+131017-14:52:17,187 workflow INFO:
+	 Executing: sinker_35.c0 ID: 215
+131017-14:52:17,195 workflow INFO:
+	 Executing: sinker_36.c0 ID: 219
+131017-14:52:17,303 workflow INFO:
+	 Executing node write_log.c0 in dir: /home2/data/Projects/ABIDE_Initiative/CPAC/Working_2013-10-11_gelert/resting_preproc_0051095_session_1/log_gen_motion_stats_0/_scan_rest_1_rest/write_log
+args:  {'strategies': [['_compcor_ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic1.gm0.compcor1.csf0.ncomponents_5_selector_pc10.linear1.wm0.global1.motion1.quadratic1.gm0.compcor1.csf0', '_csf_threshold_0.96', '_gm_threshold_0.7', '_target_angle_deg_90', '_threshold_0.2', '_wm_threshold_0.96']], 'subject_id': '0051095_session_1', 'in_file': ['/home2/data/Projects/ABIDE_Initiative/CPAC/Output_2013-10-11_gelert/pipeline_RameyBorough/0051095_session_1/movement_parameters/_scan_rest_1_rest/fristons_twenty_four.1D'], 'helper': {'_gm_threshold': 1, '_csf_threshold': 1, '_wm_threshold': 1, 'nuisance': 1, '_target_angle_deg': 0, '_threshold': 0}, 'pipeline_id': 'pipeline_RameyBorough'}
+~~~~~~  _compcor_ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic1.gm0.compcor1.csf0.ncomponents_5_selector  ~~~  _compcor_ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic1.gm0.compcor1.csf0.ncomponents_5_selector_pc10.linear1.wm0.global1.motion1.quadratic1.gm0.compcor1.csf0
+~~~~~~  _csf_threshold  ~~~  _csf_threshold_0.96
+~~~~~~  _gm_threshold  ~~~  _gm_threshold_0.7
+~~~~~~  _target_angle_deg  ~~~  _target_angle_deg_90
+~~~~~~  _threshold  ~~~  _threshold_0.2
+~~~~~~  _wm_threshold  ~~~  _wm_threshold_0.96
+~~~~~~  pipeline  ~~~  pipeline_RameyBorough
+.
+_compcor_ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic1.gm0.compcor1.csf0.ncomponents_5_selector  ---------->  pc10.linear1.wm0.global1.motion1.quadratic1.gm0.compcor1.csf0
+_csf_threshold  ---------->  0.96
+_gm_threshold  ---------->  0.7
+_wm_threshold  ---------->  0.96
+pipeline  ---------->  RameyBorough
+scan_rest_1_rest  ~~~ /_scan_rest_1_rest/fristons_twenty_four.1D
+.
+.
+ln -s /home2/data/Projects/ABIDE_Initiative/CPAC/Output_2013-10-11_gelert/pipeline_RameyBorough/0051095_session_1/movement_parameters/_scan_rest_1_rest/fristons_twenty_four.1D /home2/data/Projects/ABIDE_Initiative/CPAC/Output_2013-10-11_gelert/sym_links/pipeline_RameyBorough/_compcor_ncomponents_5_linear1.global1.motion1.quadratic1.compcor1.CSF_0.96_GM_0.7_WM_0.96/0051095_session_1/scan_rest_1_rest/parameters/movement_parameters.1D
+131017-14:52:17,336 workflow INFO:
+	 Executing node exclude_frames.a0.c0 in dir: /home2/data/Projects/ABIDE_Initiative/CPAC/Working_2013-10-11_gelert/resting_preproc_0051095_session_1/gen_motion_stats_0/_scan_rest_1_rest/_threshold_0.2/exclude_frames
+args:  {'index': 0, 'inputs': '/data/Projects/ABIDE_Initiative/CPAC/Working_2013-10-11_gelert/resting_preproc_0051095_session_1/gen_motion_stats_0/_scan_rest_1_rest/calc_motion_parameters/motion_parameters.txt', 'log_dir': '/home2/data/Projects/ABIDE_Initiative/CPAC/Output_2013-10-11_gelert/logs/0051095_session_1', 'scan_id': None, 'workflow': 'gen_motion_stats_0'}
+131017-14:52:17,368 interface INFO:
+	 CPAC custom log :
+131017-14:52:17,370 interface INFO:
+	  version - 0.3.2, timestamp -2013-10-17 14:52:17, subject_id -0051095_session_1, scan_id - scan_rest_1_rest, strategy -, workflow - gen_motion_stats_0, status -COMPLETED
+args:  {'threshold': 0.2, 'frames_after': 2, 'in_file': '/data/Projects/ABIDE_Initiative/CPAC/Working_2013-10-11_gelert/resting_preproc_0051095_session_1/gen_motion_stats_0/_scan_rest_1_rest/calculate_FD/FD.1D', 'frames_before': 1}
+131017-14:52:17,440 workflow INFO:
+	 Executing node sinker_22.c0 in dir: /home2/data/Projects/ABIDE_Initiative/CPAC/Working_2013-10-11_gelert/resting_preproc_0051095_session_1/_scan_rest_1_rest/sinker_22
+131017-14:52:17,562 workflow INFO:
+	 Executing node func_edge_detect.c0 in dir: /home2/data/Projects/ABIDE_Initiative/CPAC/Working_2013-10-11_gelert/resting_preproc_0051095_session_1/func_preproc_0/_scan_rest_1_rest/func_edge_detect
+131017-14:52:17,602 workflow INFO:
+	 Running: 3dcalc -a /data/Projects/ABIDE_Initiative/CPAC/Working_2013-10-11_gelert/resting_preproc_0051095_session_1/func_preproc_0/_scan_rest_1_rest/func_motion_correct_A/rest_3dc_tshift_RPI_3dv.nii.gz  -b /data/Projects/ABIDE_Initiative/CPAC/Working_2013-10-11_gelert/resting_preproc_0051095_session_1/func_preproc_0/_scan_rest_1_rest/func_get_brain_mask/rest_3dc_tshift_RPI_3dv_automask.nii.gz -expr 'a*b' -prefix rest_3dc_tshift_RPI_3dv_3dc.nii.gz
+131017-14:52:17,651 interface INFO:
+	 stderr 2013-10-17T14:52:17.651107:++ 3dcalc: AFNI version=AFNI_2011_12_21_1014 (May 21 2012) [64-bit]
+131017-14:52:17,654 interface INFO:
+	 stderr 2013-10-17T14:52:17.651107:++ Authored by: A cast of thousands
+131017-14:52:17,656 interface INFO:
+	 stderr 2013-10-17T14:52:17.656091:++ WARNING: file /home2/qli/.afni.log is now 103606994 (104 million) bytes long!
+131017-14:52:17,759 workflow INFO:
+	 Executing node sinker_8.c0 in dir: /home2/data/Projects/ABIDE_Initiative/CPAC/Working_2013-10-11_gelert/resting_preproc_0051095_session_1/_scan_rest_1_rest/sinker_8
+131017-14:52:17,864 workflow INFO:
+	 Executing node sinker_35.c0 in dir: /home2/data/Projects/ABIDE_Initiative/CPAC/Working_2013-10-11_gelert/resting_preproc_0051095_session_1/_scan_rest_1_rest/sinker_35
+131017-14:52:17,908 interface INFO:
+	 sub: /home2/data/Projects/ABIDE_Initiative/CPAC/Output_2013-10-11_gelert/pipeline_RameyBorough/0051095_session_1/qc___movement_rot_plot/_scan_rest_1_rest/motion_rot_plot.png -> /home2/data/Projects/ABIDE_Initiative/CPAC/Output_2013-10-11_gelert/pipeline_RameyBorough/0051095_session_1/qc/movement_rot_plot/_scan_rest_1_rest/motion_rot_plot.png
+131017-14:52:17,971 workflow INFO:
+	 Executing node sinker_36.c0 in dir: /home2/data/Projects/ABIDE_Initiative/CPAC/Working_2013-10-11_gelert/resting_preproc_0051095_session_1/_scan_rest_1_rest/sinker_36
+131017-14:52:18,14 interface INFO:
+	 sub: /home2/data/Projects/ABIDE_Initiative/CPAC/Output_2013-10-11_gelert/pipeline_RameyBorough/0051095_session_1/qc___movement_trans_plot/_scan_rest_1_rest/motion_trans_plot.png -> /home2/data/Projects/ABIDE_Initiative/CPAC/Output_2013-10-11_gelert/pipeline_RameyBorough/0051095_session_1/qc/movement_trans_plot/_scan_rest_1_rest/motion_trans_plot.png
+131017-14:52:19,211 workflow INFO:
+	 [Job finished] jobname: link_23.c0 jobid: 11
+131017-14:52:19,229 workflow INFO:
+	 [Job finished] jobname: sinker_7.c0 jobid: 18
+131017-14:52:19,246 workflow INFO:
+	 [Job finished] jobname: write_log.c0 jobid: 44
+131017-14:52:19,262 workflow INFO:
+	 [Job finished] jobname: exclude_frames.a0.c0 jobid: 51
+131017-14:52:19,280 workflow INFO:
+	 [Job finished] jobname: sinker_22.c0 jobid: 141
+131017-14:52:19,296 workflow INFO:
+	 [Job finished] jobname: sinker_8.c0 jobid: 207
+131017-14:52:19,305 workflow INFO:
+	 [Job finished] jobname: sinker_35.c0 jobid: 215
+131017-14:52:19,314 workflow INFO:
+	 [Job finished] jobname: sinker_36.c0 jobid: 219
+131017-14:52:19,325 workflow INFO:
+	 Submitting 8 jobs
+131017-14:52:19,326 workflow INFO:
+	 Executing: fd_plot_0.a0.c0 ID: 1
+131017-14:52:19,329 workflow INFO:
+	 Executing: link_22.c0 ID: 5
+131017-14:52:19,332 workflow INFO:
+	 Executing: link_8.c0 ID: 34
+131017-14:52:19,336 workflow INFO:
+	 Executing: link_7.c0 ID: 58
+131017-14:52:19,339 workflow INFO:
+	 Executing: link_36.c0 ID: 87
+131017-14:52:19,343 workflow INFO:
+	 Executing: include_frames.a0.c0 ID: 137
+131017-14:52:19,346 workflow INFO:
+	 Executing: sinker_43.a0.c0 ID: 193
+131017-14:52:19,350 workflow INFO:
+	 Executing: link_35.c0 ID: 209
+131017-14:52:19,353 workflow INFO:
+	 Executing node fd_plot_0.a0.c0 in dir: /home2/data/Projects/ABIDE_Initiative/CPAC/Working_2013-10-11_gelert/resting_preproc_0051095_session_1/_scan_rest_1_rest/_threshold_0.2/fd_plot_0
+args:  {'arr': '/data/Projects/ABIDE_Initiative/CPAC/Working_2013-10-11_gelert/resting_preproc_0051095_session_1/gen_motion_stats_0/_scan_rest_1_rest/calculate_FD/FD.1D', 'measure': 'FD', 'ex_vol': '/data/Projects/ABIDE_Initiative/CPAC/Working_2013-10-11_gelert/resting_preproc_0051095_session_1/gen_motion_stats_0/_scan_rest_1_rest/_threshold_0.2/exclude_frames/frames_ex.1D'}
+131017-14:52:20,325 workflow INFO:
+	 Executing node link_22.c0 in dir: /home2/data/Projects/ABIDE_Initiative/CPAC/Working_2013-10-11_gelert/resting_preproc_0051095_session_1/_scan_rest_1_rest/link_22
+args:  {'strategies': [['_compcor_ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic1.gm0.compcor1.csf0.ncomponents_5_selector_pc10.linear1.wm0.global1.motion1.quadratic1.gm0.compcor1.csf0', '_csf_threshold_0.96', '_gm_threshold_0.7', '_target_angle_deg_90', '_threshold_0.2', '_wm_threshold_0.96']], 'subject_id': '0051095_session_1', 'in_file': ['/home2/data/Projects/ABIDE_Initiative/CPAC/Output_2013-10-11_gelert/pipeline_RameyBorough/0051095_session_1/motion_params/_scan_rest_1_rest/motion_parameters.txt'], 'helper': {'_gm_threshold': 1, '_csf_threshold': 1, '_wm_threshold': 1, 'nuisance': 1, '_target_angle_deg': 0, '_threshold': 0}, 'pipeline_id': 'pipeline_RameyBorough'}
+~~~~~~  _compcor_ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic1.gm0.compcor1.csf0.ncomponents_5_selector  ~~~  _compcor_ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic1.gm0.compcor1.csf0.ncomponents_5_selector_pc10.linear1.wm0.global1.motion1.quadratic1.gm0.compcor1.csf0
+~~~~~~  _csf_threshold  ~~~  _csf_threshold_0.96
+~~~~~~  _gm_threshold  ~~~  _gm_threshold_0.7
+~~~~~~  _target_angle_deg  ~~~  _target_angle_deg_90
+~~~~~~  _threshold  ~~~  _threshold_0.2
+~~~~~~  _wm_threshold  ~~~  _wm_threshold_0.96
+~~~~~~  pipeline  ~~~  pipeline_RameyBorough
+.
+_compcor_ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic1.gm0.compcor1.csf0.ncomponents_5_selector  ---------->  pc10.linear1.wm0.global1.motion1.quadratic1.gm0.compcor1.csf0
+_csf_threshold  ---------->  0.96
+_gm_threshold  ---------->  0.7
+_wm_threshold  ---------->  0.96
+pipeline  ---------->  RameyBorough
+scan_rest_1_rest  ~~~ /_scan_rest_1_rest/motion_parameters.txt
+.
+.
+ln -s /home2/data/Projects/ABIDE_Initiative/CPAC/Output_2013-10-11_gelert/pipeline_RameyBorough/0051095_session_1/motion_params/_scan_rest_1_rest/motion_parameters.txt /home2/data/Projects/ABIDE_Initiative/CPAC/Output_2013-10-11_gelert/sym_links/pipeline_RameyBorough/_compcor_ncomponents_5_linear1.global1.motion1.quadratic1.compcor1.CSF_0.96_GM_0.7_WM_0.96/0051095_session_1/scan_rest_1_rest/parameters/motion_params.txt
+131017-14:52:20,460 workflow INFO:
+	 Executing node link_8.c0 in dir: /home2/data/Projects/ABIDE_Initiative/CPAC/Working_2013-10-11_gelert/resting_preproc_0051095_session_1/_scan_rest_1_rest/link_8
+args:  {'strategies': [['_compcor_ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic1.gm0.compcor1.csf0.ncomponents_5_selector_pc10.linear1.wm0.global1.motion1.quadratic1.gm0.compcor1.csf0', '_csf_threshold_0.96', '_gm_threshold_0.7', '_target_angle_deg_90', '_threshold_0.2', '_wm_threshold_0.96']], 'subject_id': '0051095_session_1', 'in_file': ['/home2/data/Projects/ABIDE_Initiative/CPAC/Output_2013-10-11_gelert/pipeline_RameyBorough/0051095_session_1/functional_brain_mask/_scan_rest_1_rest/rest_3dc_tshift_RPI_3dv_automask.nii.gz'], 'helper': {'_gm_threshold': 1, '_csf_threshold': 1, '_wm_threshold': 1, 'nuisance': 1, '_target_angle_deg': 0, '_threshold': 0}, 'pipeline_id': 'pipeline_RameyBorough'}
+~~~~~~  _compcor_ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic1.gm0.compcor1.csf0.ncomponents_5_selector  ~~~  _compcor_ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic1.gm0.compcor1.csf0.ncomponents_5_selector_pc10.linear1.wm0.global1.motion1.quadratic1.gm0.compcor1.csf0
+~~~~~~  _csf_threshold  ~~~  _csf_threshold_0.96
+~~~~~~  _gm_threshold  ~~~  _gm_threshold_0.7
+~~~~~~  _target_angle_deg  ~~~  _target_angle_deg_90
+~~~~~~  _threshold  ~~~  _threshold_0.2
+~~~~~~  _wm_threshold  ~~~  _wm_threshold_0.96
+~~~~~~  pipeline  ~~~  pipeline_RameyBorough
+.
+_compcor_ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic1.gm0.compcor1.csf0.ncomponents_5_selector  ---------->  pc10.linear1.wm0.global1.motion1.quadratic1.gm0.compcor1.csf0
+_csf_threshold  ---------->  0.96
+_gm_threshold  ---------->  0.7
+_wm_threshold  ---------->  0.96
+pipeline  ---------->  RameyBorough
+scan_rest_1_rest  ~~~ /_scan_rest_1_rest/rest_3dc_tshift_RPI_3dv_automask.nii.gz
+.
+.
+ln -s /home2/data/Projects/ABIDE_Initiative/CPAC/Output_2013-10-11_gelert/pipeline_RameyBorough/0051095_session_1/functional_brain_mask/_scan_rest_1_rest/rest_3dc_tshift_RPI_3dv_automask.nii.gz /home2/data/Projects/ABIDE_Initiative/CPAC/Output_2013-10-11_gelert/sym_links/pipeline_RameyBorough/_compcor_ncomponents_5_linear1.global1.motion1.quadratic1.compcor1.CSF_0.96_GM_0.7_WM_0.96/0051095_session_1/scan_rest_1_rest/func/functional_brain_mask.nii.gz
+131017-14:52:20,601 workflow INFO:
+	 Executing node link_7.c0 in dir: /home2/data/Projects/ABIDE_Initiative/CPAC/Working_2013-10-11_gelert/resting_preproc_0051095_session_1/_scan_rest_1_rest/link_7
+args:  {'strategies': [['_compcor_ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic1.gm0.compcor1.csf0.ncomponents_5_selector_pc10.linear1.wm0.global1.motion1.quadratic1.gm0.compcor1.csf0', '_csf_threshold_0.96', '_gm_threshold_0.7', '_target_angle_deg_90', '_threshold_0.2', '_wm_threshold_0.96']], 'subject_id': '0051095_session_1', 'in_file': ['/home2/data/Projects/ABIDE_Initiative/CPAC/Output_2013-10-11_gelert/pipeline_RameyBorough/0051095_session_1/frame_wise_displacement/_scan_rest_1_rest/FD.1D'], 'helper': {'_gm_threshold': 1, '_csf_threshold': 1, '_wm_threshold': 1, 'nuisance': 1, '_target_angle_deg': 0, '_threshold': 0}, 'pipeline_id': 'pipeline_RameyBorough'}
+~~~~~~  _compcor_ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic1.gm0.compcor1.csf0.ncomponents_5_selector  ~~~  _compcor_ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic1.gm0.compcor1.csf0.ncomponents_5_selector_pc10.linear1.wm0.global1.motion1.quadratic1.gm0.compcor1.csf0
+~~~~~~  _csf_threshold  ~~~  _csf_threshold_0.96
+~~~~~~  _gm_threshold  ~~~  _gm_threshold_0.7
+~~~~~~  _target_angle_deg  ~~~  _target_angle_deg_90
+~~~~~~  _threshold  ~~~  _threshold_0.2
+~~~~~~  _wm_threshold  ~~~  _wm_threshold_0.96
+~~~~~~  pipeline  ~~~  pipeline_RameyBorough
+.
+_compcor_ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic1.gm0.compcor1.csf0.ncomponents_5_selector  ---------->  pc10.linear1.wm0.global1.motion1.quadratic1.gm0.compcor1.csf0
+_csf_threshold  ---------->  0.96
+_gm_threshold  ---------->  0.7
+_wm_threshold  ---------->  0.96
+pipeline  ---------->  RameyBorough
+scan_rest_1_rest  ~~~ /_scan_rest_1_rest/FD.1D
+.
+.
+ln -s /home2/data/Projects/ABIDE_Initiative/CPAC/Output_2013-10-11_gelert/pipeline_RameyBorough/0051095_session_1/frame_wise_displacement/_scan_rest_1_rest/FD.1D /home2/data/Projects/ABIDE_Initiative/CPAC/Output_2013-10-11_gelert/sym_links/pipeline_RameyBorough/_compcor_ncomponents_5_linear1.global1.motion1.quadratic1.compcor1.CSF_0.96_GM_0.7_WM_0.96/0051095_session_1/scan_rest_1_rest/parameters/frame_wise_displacement.1D
+131017-14:52:20,743 workflow INFO:
+	 Executing node link_36.c0 in dir: /home2/data/Projects/ABIDE_Initiative/CPAC/Working_2013-10-11_gelert/resting_preproc_0051095_session_1/_scan_rest_1_rest/link_36
+args:  {'strategies': [['_compcor_ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic1.gm0.compcor1.csf0.ncomponents_5_selector_pc10.linear1.wm0.global1.motion1.quadratic1.gm0.compcor1.csf0', '_csf_threshold_0.96', '_gm_threshold_0.7', '_target_angle_deg_90', '_threshold_0.2', '_wm_threshold_0.96']], 'subject_id': '0051095_session_1', 'in_file': ['/home2/data/Projects/ABIDE_Initiative/CPAC/Output_2013-10-11_gelert/pipeline_RameyBorough/0051095_session_1/qc/movement_trans_plot/_scan_rest_1_rest/motion_trans_plot.png'], 'helper': {'_gm_threshold': 1, '_csf_threshold': 1, '_wm_threshold': 1, 'nuisance': 1, '_target_angle_deg': 0, '_threshold': 0}, 'pipeline_id': 'pipeline_RameyBorough'}
+~~~~~~  _compcor_ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic1.gm0.compcor1.csf0.ncomponents_5_selector  ~~~  _compcor_ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic1.gm0.compcor1.csf0.ncomponents_5_selector_pc10.linear1.wm0.global1.motion1.quadratic1.gm0.compcor1.csf0
+~~~~~~  _csf_threshold  ~~~  _csf_threshold_0.96
+~~~~~~  _gm_threshold  ~~~  _gm_threshold_0.7
+~~~~~~  _target_angle_deg  ~~~  _target_angle_deg_90
+~~~~~~  _threshold  ~~~  _threshold_0.2
+~~~~~~  _wm_threshold  ~~~  _wm_threshold_0.96
+~~~~~~  pipeline  ~~~  pipeline_RameyBorough
+.
+_compcor_ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic1.gm0.compcor1.csf0.ncomponents_5_selector  ---------->  pc10.linear1.wm0.global1.motion1.quadratic1.gm0.compcor1.csf0
+_csf_threshold  ---------->  0.96
+_gm_threshold  ---------->  0.7
+_wm_threshold  ---------->  0.96
+pipeline  ---------->  RameyBorough
+scan_rest_1_rest  ~~~ /movement_trans_plot/_scan_rest_1_rest/motion_trans_plot.png
+.
+ln -s /home2/data/Projects/ABIDE_Initiative/CPAC/Output_2013-10-11_gelert/pipeline_RameyBorough/0051095_session_1/qc/movement_trans_plot/_scan_rest_1_rest/motion_trans_plot.png /home2/data/Projects/ABIDE_Initiative/CPAC/Output_2013-10-11_gelert/sym_links/pipeline_RameyBorough/_compcor_ncomponents_5_linear1.global1.motion1.quadratic1.compcor1.CSF_0.96_GM_0.7_WM_0.96/0051095_session_1/scan_rest_1_rest/qc/motion_trans_plot.png
+131017-14:52:20,910 workflow INFO:
+	 Executing node include_frames.a0.c0 in dir: /home2/data/Projects/ABIDE_Initiative/CPAC/Working_2013-10-11_gelert/resting_preproc_0051095_session_1/gen_motion_stats_0/_scan_rest_1_rest/_threshold_0.2/include_frames
+args:  {'threshold': 0.2, 'exclude_list': '/data/Projects/ABIDE_Initiative/CPAC/Working_2013-10-11_gelert/resting_preproc_0051095_session_1/gen_motion_stats_0/_scan_rest_1_rest/_threshold_0.2/exclude_frames/frames_ex.1D', 'in_file': '/data/Projects/ABIDE_Initiative/CPAC/Working_2013-10-11_gelert/resting_preproc_0051095_session_1/gen_motion_stats_0/_scan_rest_1_rest/calculate_FD/FD.1D'}
+[0, 1, 2, 3, 4, 5, 17, 18, 19, 20, 21, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 86, 87, 88, 89, 90, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141, 142, 143, 144, 145, 151, 152, 153, 154, 158, 159, 160, 161, 162, 163, 164, 165, 166, 167, 177, 178, 179, 180, 181]
+131017-14:52:20,999 workflow INFO:
+	 Executing node sinker_43.a0.c0 in dir: /home2/data/Projects/ABIDE_Initiative/CPAC/Working_2013-10-11_gelert/resting_preproc_0051095_session_1/_scan_rest_1_rest/_threshold_0.2/sinker_43
+131017-14:52:21,92 workflow INFO:
+	 Executing node link_35.c0 in dir: /home2/data/Projects/ABIDE_Initiative/CPAC/Working_2013-10-11_gelert/resting_preproc_0051095_session_1/_scan_rest_1_rest/link_35
+131017-14:52:21,359 workflow INFO:
+	 [Job finished] jobname: fd_plot_0.a0.c0 jobid: 1
+131017-14:52:21,376 workflow INFO:
+	 [Job finished] jobname: link_22.c0 jobid: 5
+131017-14:52:21,385 workflow INFO:
+	 [Job finished] jobname: link_8.c0 jobid: 34
+131017-14:52:21,394 workflow INFO:
+	 [Job finished] jobname: link_7.c0 jobid: 58
+131017-14:52:21,403 workflow INFO:
+	 [Job finished] jobname: link_36.c0 jobid: 87
+131017-14:52:21,412 workflow INFO:
+	 [Job finished] jobname: include_frames.a0.c0 jobid: 137
+131017-14:52:21,421 workflow INFO:
+	 [Job finished] jobname: sinker_43.a0.c0 jobid: 193
+131017-14:52:21,430 workflow INFO:
+	 [Job finished] jobname: link_35.c0 jobid: 209
+131017-14:52:21,441 workflow INFO:
+	 Submitting 3 jobs
+131017-14:52:21,443 workflow INFO:
+	 Executing: sinker_44.a0.c0 ID: 15
+131017-14:52:21,447 workflow INFO:
+	 Executing: sinker_28.a0.c0 ID: 135
+131017-14:52:21,455 workflow INFO:
+	 Executing: link_43.a0.c0 ID: 202
+args:  {'strategies': [['_compcor_ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic1.gm0.compcor1.csf0.ncomponents_5_selector_pc10.linear1.wm0.global1.motion1.quadratic1.gm0.compcor1.csf0', '_csf_threshold_0.96', '_gm_threshold_0.7', '_target_angle_deg_90', '_threshold_0.2', '_wm_threshold_0.96']], 'subject_id': '0051095_session_1', 'in_file': ['/home2/data/Projects/ABIDE_Initiative/CPAC/Output_2013-10-11_gelert/pipeline_RameyBorough/0051095_session_1/qc/movement_rot_plot/_scan_rest_1_rest/motion_rot_plot.png'], 'helper': {'_gm_threshold': 1, '_csf_threshold': 1, '_wm_threshold': 1, 'nuisance': 1, '_target_angle_deg': 0, '_threshold': 0}, 'pipeline_id': 'pipeline_RameyBorough'}
+~~~~~~  _compcor_ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic1.gm0.compcor1.csf0.ncomponents_5_selector  ~~~  _compcor_ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic1.gm0.compcor1.csf0.ncomponents_5_selector_pc10.linear1.wm0.global1.motion1.quadratic1.gm0.compcor1.csf0
+~~~~~~  _csf_threshold  ~~~  _csf_threshold_0.96
+~~~~~~  _gm_threshold  ~~~  _gm_threshold_0.7
+~~~~~~  _target_angle_deg  ~~~  _target_angle_deg_90
+~~~~~~  _threshold  ~~~  _threshold_0.2
+~~~~~~  _wm_threshold  ~~~  _wm_threshold_0.96
+~~~~~~  pipeline  ~~~  pipeline_RameyBorough
+.
+_compcor_ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic1.gm0.compcor1.csf0.ncomponents_5_selector  ---------->  pc10.linear1.wm0.global1.motion1.quadratic1.gm0.compcor1.csf0
+_csf_threshold  ---------->  0.96
+_gm_threshold  ---------->  0.7
+_wm_threshold  ---------->  0.96
+pipeline  ---------->  RameyBorough
+scan_rest_1_rest  ~~~ /movement_rot_plot/_scan_rest_1_rest/motion_rot_plot.png
+.
+.
+ln -s /home2/data/Projects/ABIDE_Initiative/CPAC/Output_2013-10-11_gelert/pipeline_RameyBorough/0051095_session_1/qc/movement_rot_plot/_scan_rest_1_rest/motion_rot_plot.png /home2/data/Projects/ABIDE_Initiative/CPAC/Output_2013-10-11_gelert/sym_links/pipeline_RameyBorough/_compcor_ncomponents_5_linear1.global1.motion1.quadratic1.compcor1.CSF_0.96_GM_0.7_WM_0.96/0051095_session_1/scan_rest_1_rest/qc/motion_rot_plot.png
+131017-14:52:21,460 workflow INFO:
+	 Executing node sinker_44.a0.c0 in dir: /home2/data/Projects/ABIDE_Initiative/CPAC/Working_2013-10-11_gelert/resting_preproc_0051095_session_1/_scan_rest_1_rest/_threshold_0.2/sinker_44
+131017-14:52:21,547 workflow INFO:
+	 Executing node sinker_28.a0.c0 in dir: /home2/data/Projects/ABIDE_Initiative/CPAC/Working_2013-10-11_gelert/resting_preproc_0051095_session_1/_scan_rest_1_rest/_threshold_0.2/sinker_28
+131017-14:52:21,580 interface INFO:
+	 sub: /home2/data/Projects/ABIDE_Initiative/CPAC/Output_2013-10-11_gelert/pipeline_RameyBorough/0051095_session_1/qc___fd_plot/_scan_rest_1_rest/_threshold_0.2/FD_plot.png -> /home2/data/Projects/ABIDE_Initiative/CPAC/Output_2013-10-11_gelert/pipeline_RameyBorough/0051095_session_1/qc/fd_plot/_scan_rest_1_rest/_threshold_0.2/FD_plot.png
+131017-14:52:21,653 workflow INFO:
+	 Executing node link_43.a0.c0 in dir: /home2/data/Projects/ABIDE_Initiative/CPAC/Working_2013-10-11_gelert/resting_preproc_0051095_session_1/_scan_rest_1_rest/_threshold_0.2/link_43
+131017-14:52:23,464 workflow INFO:
+	 [Job finished] jobname: sinker_44.a0.c0 jobid: 15
+131017-14:52:23,480 workflow INFO:
+	 [Job finished] jobname: sinker_28.a0.c0 jobid: 135
+131017-14:52:23,496 workflow INFO:
+	 [Job finished] jobname: link_43.a0.c0 jobid: 202
+131017-14:52:23,507 workflow INFO:
+	 Submitting 2 jobs
+131017-14:52:23,509 workflow INFO:
+	 Executing: link_44.a0.c0 ID: 20
+131017-14:52:23,511 workflow INFO:
+	 Executing: link_28.a0.c0 ID: 103
+args:  {'strategies': [['_compcor_ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic1.gm0.compcor1.csf0.ncomponents_5_selector_pc10.linear1.wm0.global1.motion1.quadratic1.gm0.compcor1.csf0', '_csf_threshold_0.96', '_gm_threshold_0.7', '_target_angle_deg_90', '_threshold_0.2', '_wm_threshold_0.96']], 'subject_id': '0051095_session_1', 'in_file': ['/home2/data/Projects/ABIDE_Initiative/CPAC/Output_2013-10-11_gelert/pipeline_RameyBorough/0051095_session_1/scrubbing_frames_excluded/_scan_rest_1_rest/_threshold_0.2/frames_ex.1D'], 'helper': {'_gm_threshold': 1, '_csf_threshold': 1, '_wm_threshold': 1, 'nuisance': 1, '_target_angle_deg': 0, '_threshold': 0}, 'pipeline_id': 'pipeline_RameyBorough'}
+~~~~~~  _compcor_ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic1.gm0.compcor1.csf0.ncomponents_5_selector  ~~~  _compcor_ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic1.gm0.compcor1.csf0.ncomponents_5_selector_pc10.linear1.wm0.global1.motion1.quadratic1.gm0.compcor1.csf0
+~~~~~~  _csf_threshold  ~~~  _csf_threshold_0.96
+~~~~~~  _gm_threshold  ~~~  _gm_threshold_0.7
+~~~~~~  _target_angle_deg  ~~~  _target_angle_deg_90
+~~~~~~  _threshold  ~~~  _threshold_0.2
+~~~~~~  _wm_threshold  ~~~  _wm_threshold_0.96
+~~~~~~  pipeline  ~~~  pipeline_RameyBorough
+.
+_compcor_ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic1.gm0.compcor1.csf0.ncomponents_5_selector  ---------->  pc10.linear1.wm0.global1.motion1.quadratic1.gm0.compcor1.csf0
+_csf_threshold  ---------->  0.96
+_gm_threshold  ---------->  0.7
+_wm_threshold  ---------->  0.96
+pipeline  ---------->  RameyBorough
+scan_rest_1_rest  ~~~ /_scan_rest_1_rest/_threshold_0.2/frames_ex.1D
+.
+.
+ln -s /home2/data/Projects/ABIDE_Initiative/CPAC/Output_2013-10-11_gelert/pipeline_RameyBorough/0051095_session_1/scrubbing_frames_excluded/_scan_rest_1_rest/_threshold_0.2/frames_ex.1D /home2/data/Projects/ABIDE_Initiative/CPAC/Output_2013-10-11_gelert/sym_links/pipeline_RameyBorough/_compcor_ncomponents_5_linear1.global1.motion1.quadratic1.compcor1.CSF_0.96_GM_0.7_WM_0.96/0051095_session_1/scan_rest_1_rest/parameters/scrubbing_frames_excluded.1D
+131017-14:52:23,534 workflow INFO:
+	 Executing node link_44.a0.c0 in dir: /home2/data/Projects/ABIDE_Initiative/CPAC/Working_2013-10-11_gelert/resting_preproc_0051095_session_1/_scan_rest_1_rest/_threshold_0.2/link_44
+args:  {'strategies': [['_compcor_ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic1.gm0.compcor1.csf0.ncomponents_5_selector_pc10.linear1.wm0.global1.motion1.quadratic1.gm0.compcor1.csf0', '_csf_threshold_0.96', '_gm_threshold_0.7', '_target_angle_deg_90', '_threshold_0.2', '_wm_threshold_0.96']], 'subject_id': '0051095_session_1', 'in_file': ['/home2/data/Projects/ABIDE_Initiative/CPAC/Output_2013-10-11_gelert/pipeline_RameyBorough/0051095_session_1/scrubbing_frames_included/_scan_rest_1_rest/_threshold_0.2/frames_in.1D'], 'helper': {'_gm_threshold': 1, '_csf_threshold': 1, '_wm_threshold': 1, 'nuisance': 1, '_target_angle_deg': 0, '_threshold': 0}, 'pipeline_id': 'pipeline_RameyBorough'}
+~~~~~~  _compcor_ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic1.gm0.compcor1.csf0.ncomponents_5_selector  ~~~  _compcor_ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic1.gm0.compcor1.csf0.ncomponents_5_selector_pc10.linear1.wm0.global1.motion1.quadratic1.gm0.compcor1.csf0
+~~~~~~  _csf_threshold  ~~~  _csf_threshold_0.96
+~~~~~~  _gm_threshold  ~~~  _gm_threshold_0.7
+~~~~~~  _target_angle_deg  ~~~  _target_angle_deg_90
+~~~~~~  _threshold  ~~~  _threshold_0.2
+~~~~~~  _wm_threshold  ~~~  _wm_threshold_0.96
+~~~~~~  pipeline  ~~~  pipeline_RameyBorough
+.
+_compcor_ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic1.gm0.compcor1.csf0.ncomponents_5_selector  ---------->  pc10.linear1.wm0.global1.motion1.quadratic1.gm0.compcor1.csf0
+_csf_threshold  ---------->  0.96
+_gm_threshold  ---------->  0.7
+_wm_threshold  ---------->  0.96
+pipeline  ---------->  RameyBorough
+scan_rest_1_rest  ~~~ /_scan_rest_1_rest/_threshold_0.2/frames_in.1D
+.
+.
+ln -s /home2/data/Projects/ABIDE_Initiative/CPAC/Output_2013-10-11_gelert/pipeline_RameyBorough/0051095_session_1/scrubbing_frames_included/_scan_rest_1_rest/_threshold_0.2/frames_in.1D /home2/data/Projects/ABIDE_Initiative/CPAC/Output_2013-10-11_gelert/sym_links/pipeline_RameyBorough/_compcor_ncomponents_5_linear1.global1.motion1.quadratic1.compcor1.CSF_0.96_GM_0.7_WM_0.96/0051095_session_1/scan_rest_1_rest/parameters/scrubbing_frames_included.1D
+131017-14:52:23,667 workflow INFO:
+	 Executing node link_28.a0.c0 in dir: /home2/data/Projects/ABIDE_Initiative/CPAC/Working_2013-10-11_gelert/resting_preproc_0051095_session_1/_scan_rest_1_rest/_threshold_0.2/link_28
+131017-14:52:25,293 interface INFO:
+	 stderr 2013-10-17T14:52:25.293538:++ Output dataset ./rest_3dc_tshift_RPI_3dv_3dc.nii.gz
+131017-14:52:25,520 workflow INFO:
+	 [Job finished] jobname: cal_DVARS.c0 jobid: 8
+131017-14:52:25,537 workflow INFO:
+	 [Job finished] jobname: func_edge_detect.c0 jobid: 178
+131017-14:52:25,547 workflow INFO:
+	 [Job finished] jobname: link_44.a0.c0 jobid: 20
+131017-14:52:25,556 workflow INFO:
+	 [Job finished] jobname: link_28.a0.c0 jobid: 103
+131017-14:52:25,568 workflow INFO:
+	 Submitting 3 jobs
+131017-14:52:25,570 workflow INFO:
+	 Executing: func_mean_skullstrip.c0 ID: 122
+131017-14:52:25,572 workflow INFO:
+	 Executing: func_normalize.c0 ID: 125
+131017-14:52:25,575 workflow INFO:
+	 Executing: calc_power_parameters.a0.c0 ID: 143
+args:  {'mask': '/data/Projects/ABIDE_Initiative/CPAC/Working_2013-10-11_gelert/resting_preproc_0051095_session_1/func_preproc_0/_scan_rest_1_rest/func_get_brain_mask/rest_3dc_tshift_RPI_3dv_automask.nii.gz', 'rest': '/data/Projects/ABIDE_Initiative/CPAC/Working_2013-10-11_gelert/resting_preproc_0051095_session_1/func_preproc_0/_scan_rest_1_rest/func_motion_correct_A/rest_3dc_tshift_RPI_3dv.nii.gz'}
+PRINT TO CHECK IF THIS IN LOG FILE ****************
+131017-14:52:25,595 workflow INFO:
+	 Executing node func_normalize.c0 in dir: /home2/data/Projects/ABIDE_Initiative/CPAC/Working_2013-10-11_gelert/resting_preproc_0051095_session_1/func_preproc_0/_scan_rest_1_rest/func_normalize
+args:  {'strategies': [['_compcor_ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic1.gm0.compcor1.csf0.ncomponents_5_selector_pc10.linear1.wm0.global1.motion1.quadratic1.gm0.compcor1.csf0', '_csf_threshold_0.96', '_gm_threshold_0.7', '_target_angle_deg_90', '_threshold_0.2', '_wm_threshold_0.96']], 'subject_id': '0051095_session_1', 'in_file': ['/home2/data/Projects/ABIDE_Initiative/CPAC/Output_2013-10-11_gelert/pipeline_RameyBorough/0051095_session_1/qc/fd_plot/_scan_rest_1_rest/_threshold_0.2/FD_plot.png'], 'helper': {'_gm_threshold': 1, '_csf_threshold': 1, '_wm_threshold': 1, 'nuisance': 1, '_target_angle_deg': 0, '_threshold': 0}, 'pipeline_id': 'pipeline_RameyBorough'}
+~~~~~~  _compcor_ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic1.gm0.compcor1.csf0.ncomponents_5_selector  ~~~  _compcor_ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic1.gm0.compcor1.csf0.ncomponents_5_selector_pc10.linear1.wm0.global1.motion1.quadratic1.gm0.compcor1.csf0
+~~~~~~  _csf_threshold  ~~~  _csf_threshold_0.96
+~~~~~~  _gm_threshold  ~~~  _gm_threshold_0.7
+~~~~~~  _target_angle_deg  ~~~  _target_angle_deg_90
+~~~~~~  _threshold  ~~~  _threshold_0.2
+~~~~~~  _wm_threshold  ~~~  _wm_threshold_0.96
+~~~~~~  pipeline  ~~~  pipeline_RameyBorough
+.
+_compcor_ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic1.gm0.compcor1.csf0.ncomponents_5_selector  ---------->  pc10.linear1.wm0.global1.motion1.quadratic1.gm0.compcor1.csf0
+_csf_threshold  ---------->  0.96
+_gm_threshold  ---------->  0.7
+_wm_threshold  ---------->  0.96
+pipeline  ---------->  RameyBorough
+scan_rest_1_rest  ~~~ /fd_plot/_scan_rest_1_rest/_threshold_0.2/FD_plot.png
+.
+.
+ln -s /home2/data/Projects/ABIDE_Initiative/CPAC/Output_2013-10-11_gelert/pipeline_RameyBorough/0051095_session_1/qc/fd_plot/_scan_rest_1_rest/_threshold_0.2/FD_plot.png /home2/data/Projects/ABIDE_Initiative/CPAC/Output_2013-10-11_gelert/sym_links/pipeline_RameyBorough/_compcor_ncomponents_5_linear1.global1.motion1.quadratic1.compcor1.CSF_0.96_GM_0.7_WM_0.96/0051095_session_1/scan_rest_1_rest/qc/FD_plot.png
+131017-14:52:25,595 workflow INFO:
+	 Executing node func_mean_skullstrip.c0 in dir: /home2/data/Projects/ABIDE_Initiative/CPAC/Working_2013-10-11_gelert/resting_preproc_0051095_session_1/func_preproc_0/_scan_rest_1_rest/func_mean_skullstrip
+131017-14:52:25,634 workflow INFO:
+	 Executing node calc_power_parameters.a0.c0 in dir: /home2/data/Projects/ABIDE_Initiative/CPAC/Working_2013-10-11_gelert/resting_preproc_0051095_session_1/gen_motion_stats_0/_scan_rest_1_rest/_threshold_0.2/calc_power_parameters
+131017-14:52:25,653 workflow INFO:
+	 Running: 3dTstat -mean -prefix /data/Projects/ABIDE_Initiative/CPAC/Working_2013-10-11_gelert/resting_preproc_0051095_session_1/func_preproc_0/_scan_rest_1_rest/func_mean_skullstrip/rest_3dc_tshift_RPI_3dv_3dc_3dT.nii.gz /data/Projects/ABIDE_Initiative/CPAC/Working_2013-10-11_gelert/resting_preproc_0051095_session_1/func_preproc_0/_scan_rest_1_rest/func_edge_detect/rest_3dc_tshift_RPI_3dv_3dc.nii.gz
+131017-14:52:25,661 workflow INFO:
+	 Running: fslmaths /data/Projects/ABIDE_Initiative/CPAC/Working_2013-10-11_gelert/resting_preproc_0051095_session_1/func_preproc_0/_scan_rest_1_rest/func_edge_detect/rest_3dc_tshift_RPI_3dv_3dc.nii.gz -ing 10000 /data/Projects/ABIDE_Initiative/CPAC/Working_2013-10-11_gelert/resting_preproc_0051095_session_1/func_preproc_0/_scan_rest_1_rest/func_normalize/rest_3dc_tshift_RPI_3dv_3dc_maths.nii.gz -odt float
+131017-14:52:25,707 interface INFO:
+	 stderr 2013-10-17T14:52:25.707346:++ WARNING: file /home2/qli/.afni.log is now 103607462 (104 million) bytes long!
+131017-14:52:25,710 interface INFO:
+	 stderr 2013-10-17T14:52:25.710404:++ 3dTstat: AFNI version=AFNI_2011_12_21_1014 (May 21 2012) [64-bit]
+131017-14:52:25,711 interface INFO:
+	 stderr 2013-10-17T14:52:25.710404:++ Authored by: KR Hammett & RW Cox
+131017-14:52:27,461 interface INFO:
+	 stderr 2013-10-17T14:52:27.461319:++ Output dataset /data/Projects/ABIDE_Initiative/CPAC/Working_2013-10-11_gelert/resting_preproc_0051095_session_1/func_preproc_0/_scan_rest_1_rest/func_mean_skullstrip/rest_3dc_tshift_RPI_3dv_3dc_3dT.nii.gz
+131017-14:52:27,583 workflow INFO:
+	 [Job finished] jobname: func_mean_skullstrip.c0 jobid: 122
+131017-14:52:27,602 workflow INFO:
+	 [Job finished] jobname: calc_power_parameters.a0.c0 jobid: 143
+131017-14:52:27,624 workflow INFO:
+	 Submitting 3 jobs
+131017-14:52:27,626 workflow INFO:
+	 Executing: sinker_16.c0 ID: 47
+131017-14:52:27,633 workflow INFO:
+	 Executing: linear_func_to_anat.c0 ID: 151
+131017-14:52:27,638 workflow INFO:
+	 Executing: sinker_24.a0.c0 ID: 180
+args:  {'scan_id': 'rest_1_rest', 'subject_id': '0051095_session_1', 'DVARS': '/data/Projects/ABIDE_Initiative/CPAC/Working_2013-10-11_gelert/resting_preproc_0051095_session_1/gen_motion_stats_0/_scan_rest_1_rest/cal_DVARS/DVARS.npy', 'FDJ_1D': '/data/Projects/ABIDE_Initiative/CPAC/Working_2013-10-11_gelert/resting_preproc_0051095_session_1/gen_motion_stats_0/_scan_rest_1_rest/calculate_FDJ/FD_jenkinson.1D', 'FD_1D': '/data/Projects/ABIDE_Initiative/CPAC/Working_2013-10-11_gelert/resting_preproc_0051095_session_1/gen_motion_stats_0/_scan_rest_1_rest/calculate_FD/FD.1D', 'threshold': 0.2}
+131017-14:52:27,654 workflow INFO:
+	 Executing node sinker_16.c0 in dir: /home2/data/Projects/ABIDE_Initiative/CPAC/Working_2013-10-11_gelert/resting_preproc_0051095_session_1/_scan_rest_1_rest/sinker_16
+131017-14:52:27,680 workflow INFO:
+	 Executing node linear_func_to_anat.c0 in dir: /home2/data/Projects/ABIDE_Initiative/CPAC/Working_2013-10-11_gelert/resting_preproc_0051095_session_1/func_to_anat_FLIRT_0/_scan_rest_1_rest/linear_func_to_anat
+131017-14:52:27,748 workflow INFO:
+	 Running: flirt -in /data/Projects/ABIDE_Initiative/CPAC/Working_2013-10-11_gelert/resting_preproc_0051095_session_1/func_preproc_0/_scan_rest_1_rest/func_mean_skullstrip/rest_3dc_tshift_RPI_3dv_3dc_3dT.nii.gz -ref /data/Projects/ABIDE_Initiative/CPAC/Working_2013-10-11_gelert/resting_preproc_0051095_session_1/anat_preproc_0/anat_brain_only/mprage_RPI_3dc.nii.gz -out /data/Projects/ABIDE_Initiative/CPAC/Working_2013-10-11_gelert/resting_preproc_0051095_session_1/func_to_anat_FLIRT_0/_scan_rest_1_rest/linear_func_to_anat/rest_3dc_tshift_RPI_3dv_3dc_3dT_flirt.nii.gz -omat /data/Projects/ABIDE_Initiative/CPAC/Working_2013-10-11_gelert/resting_preproc_0051095_session_1/func_to_anat_FLIRT_0/_scan_rest_1_rest/linear_func_to_anat/rest_3dc_tshift_RPI_3dv_3dc_3dT_flirt.mat -cost corratio -dof 6 -interp trilinear
+131017-14:52:27,765 workflow INFO:
+	 Executing node sinker_24.a0.c0 in dir: /home2/data/Projects/ABIDE_Initiative/CPAC/Working_2013-10-11_gelert/resting_preproc_0051095_session_1/_scan_rest_1_rest/_threshold_0.2/sinker_24
+131017-14:52:29,654 workflow INFO:
+	 [Job finished] jobname: sinker_16.c0 jobid: 47
+131017-14:52:29,670 workflow INFO:
+	 [Job finished] jobname: sinker_24.a0.c0 jobid: 180
+131017-14:52:29,691 workflow INFO:
+	 Submitting 2 jobs
+131017-14:52:29,693 workflow INFO:
+	 Executing: link_16.c0 ID: 35
+131017-14:52:29,697 workflow INFO:
+	 Executing: link_24.a0.c0 ID: 99
+131017-14:52:29,716 workflow INFO:
+	 Executing node link_16.c0 in dir: /home2/data/Projects/ABIDE_Initiative/CPAC/Working_2013-10-11_gelert/resting_preproc_0051095_session_1/_scan_rest_1_rest/link_16
+args:  {'strategies': [['_compcor_ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic1.gm0.compcor1.csf0.ncomponents_5_selector_pc10.linear1.wm0.global1.motion1.quadratic1.gm0.compcor1.csf0', '_csf_threshold_0.96', '_gm_threshold_0.7', '_target_angle_deg_90', '_threshold_0.2', '_wm_threshold_0.96']], 'subject_id': '0051095_session_1', 'in_file': ['/home2/data/Projects/ABIDE_Initiative/CPAC/Output_2013-10-11_gelert/pipeline_RameyBorough/0051095_session_1/mean_functional/_scan_rest_1_rest/rest_3dc_tshift_RPI_3dv_3dc_3dT.nii.gz'], 'helper': {'_gm_threshold': 1, '_csf_threshold': 1, '_wm_threshold': 1, 'nuisance': 1, '_target_angle_deg': 0, '_threshold': 0}, 'pipeline_id': 'pipeline_RameyBorough'}
+~~~~~~  _compcor_ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic1.gm0.compcor1.csf0.ncomponents_5_selector  ~~~  _compcor_ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic1.gm0.compcor1.csf0.ncomponents_5_selector_pc10.linear1.wm0.global1.motion1.quadratic1.gm0.compcor1.csf0
+~~~~~~  _csf_threshold  ~~~  _csf_threshold_0.96
+~~~~~~  _gm_threshold  ~~~  _gm_threshold_0.7
+~~~~~~  _target_angle_deg  ~~~  _target_angle_deg_90
+~~~~~~  _threshold  ~~~  _threshold_0.2
+~~~~~~  _wm_threshold  ~~~  _wm_threshold_0.96
+~~~~~~  pipeline  ~~~  pipeline_RameyBorough
+.
+_compcor_ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic1.gm0.compcor1.csf0.ncomponents_5_selector  ---------->  pc10.linear1.wm0.global1.motion1.quadratic1.gm0.compcor1.csf0
+_csf_threshold  ---------->  0.96
+_gm_threshold  ---------->  0.7
+_wm_threshold  ---------->  0.96
+pipeline  ---------->  RameyBorough
+scan_rest_1_rest  ~~~ /_scan_rest_1_rest/rest_3dc_tshift_RPI_3dv_3dc_3dT.nii.gz
+.
+.
+ln -s /home2/data/Projects/ABIDE_Initiative/CPAC/Output_2013-10-11_gelert/pipeline_RameyBorough/0051095_session_1/mean_functional/_scan_rest_1_rest/rest_3dc_tshift_RPI_3dv_3dc_3dT.nii.gz /home2/data/Projects/ABIDE_Initiative/CPAC/Output_2013-10-11_gelert/sym_links/pipeline_RameyBorough/_compcor_ncomponents_5_linear1.global1.motion1.quadratic1.compcor1.CSF_0.96_GM_0.7_WM_0.96/0051095_session_1/scan_rest_1_rest/func/mean_functional.nii.gz
+131017-14:52:29,854 workflow INFO:
+	 Executing node link_24.a0.c0 in dir: /home2/data/Projects/ABIDE_Initiative/CPAC/Working_2013-10-11_gelert/resting_preproc_0051095_session_1/_scan_rest_1_rest/_threshold_0.2/link_24
+131017-14:52:31,710 workflow INFO:
+	 [Job finished] jobname: link_16.c0 jobid: 35
+131017-14:52:31,727 workflow INFO:
+	 [Job finished] jobname: link_24.a0.c0 jobid: 99
+131017-14:52:41,781 workflow INFO:
+	 [Job finished] jobname: func_normalize.c0 jobid: 125
+131017-14:52:41,803 workflow INFO:
+	 [Job finished] jobname: linear_func_to_anat.c0 jobid: 151
+131017-14:52:41,825 workflow INFO:
+	 Submitting 4 jobs
+131017-14:52:41,826 workflow INFO:
+	 Executing: func_mask_normalize.c0 ID: 7
+131017-14:52:41,829 workflow INFO:
+	 Executing: write_log.c0 ID: 84
+131017-14:52:41,834 workflow INFO:
+	 Executing: std_dev_0.c0 ID: 217
+131017-14:52:41,838 workflow INFO:
+	 Executing: sinker_25.c0 ID: 218
+args:  {'strategies': [['_compcor_ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic1.gm0.compcor1.csf0.ncomponents_5_selector_pc10.linear1.wm0.global1.motion1.quadratic1.gm0.compcor1.csf0', '_csf_threshold_0.96', '_gm_threshold_0.7', '_target_angle_deg_90', '_threshold_0.2', '_wm_threshold_0.96']], 'subject_id': '0051095_session_1', 'in_file': ['/home2/data/Projects/ABIDE_Initiative/CPAC/Output_2013-10-11_gelert/pipeline_RameyBorough/0051095_session_1/power_params/_scan_rest_1_rest/_threshold_0.2/pow_params.txt'], 'helper': {'_gm_threshold': 1, '_csf_threshold': 1, '_wm_threshold': 1, 'nuisance': 1, '_target_angle_deg': 0, '_threshold': 0}, 'pipeline_id': 'pipeline_RameyBorough'}
+~~~~~~  _compcor_ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic1.gm0.compcor1.csf0.ncomponents_5_selector  ~~~  _compcor_ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic1.gm0.compcor1.csf0.ncomponents_5_selector_pc10.linear1.wm0.global1.motion1.quadratic1.gm0.compcor1.csf0
+~~~~~~  _csf_threshold  ~~~  _csf_threshold_0.96
+~~~~~~  _gm_threshold  ~~~  _gm_threshold_0.7
+~~~~~~  _target_angle_deg  ~~~  _target_angle_deg_90
+~~~~~~  _threshold  ~~~  _threshold_0.2
+~~~~~~  _wm_threshold  ~~~  _wm_threshold_0.96
+~~~~~~  pipeline  ~~~  pipeline_RameyBorough
+.
+_compcor_ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic1.gm0.compcor1.csf0.ncomponents_5_selector  ---------->  pc10.linear1.wm0.global1.motion1.quadratic1.gm0.compcor1.csf0
+_csf_threshold  ---------->  0.96
+_gm_threshold  ---------->  0.7
+_wm_threshold  ---------->  0.96
+pipeline  ---------->  RameyBorough
+scan_rest_1_rest  ~~~ /_scan_rest_1_rest/_threshold_0.2/pow_params.txt
+.
+.
+ln -s /home2/data/Projects/ABIDE_Initiative/CPAC/Output_2013-10-11_gelert/pipeline_RameyBorough/0051095_session_1/power_params/_scan_rest_1_rest/_threshold_0.2/pow_params.txt /home2/data/Projects/ABIDE_Initiative/CPAC/Output_2013-10-11_gelert/sym_links/pipeline_RameyBorough/_compcor_ncomponents_5_linear1.global1.motion1.quadratic1.compcor1.CSF_0.96_GM_0.7_WM_0.96/0051095_session_1/scan_rest_1_rest/parameters/power_params.txt
+131017-14:52:41,852 workflow INFO:
+	 Executing node func_mask_normalize.c0 in dir: /home2/data/Projects/ABIDE_Initiative/CPAC/Working_2013-10-11_gelert/resting_preproc_0051095_session_1/func_preproc_0/_scan_rest_1_rest/func_mask_normalize
+131017-14:52:41,856 workflow INFO:
+	 Executing node write_log.c0 in dir: /home2/data/Projects/ABIDE_Initiative/CPAC/Working_2013-10-11_gelert/resting_preproc_0051095_session_1/log_func_preproc_0/_scan_rest_1_rest/write_log
+131017-14:52:41,879 workflow INFO:
+	 Executing node std_dev_0.c0 in dir: /home2/data/Projects/ABIDE_Initiative/CPAC/Working_2013-10-11_gelert/resting_preproc_0051095_session_1/_scan_rest_1_rest/std_dev_0
+131017-14:52:41,916 workflow INFO:
+	 Running: fslmaths /data/Projects/ABIDE_Initiative/CPAC/Working_2013-10-11_gelert/resting_preproc_0051095_session_1/func_preproc_0/_scan_rest_1_rest/func_normalize/rest_3dc_tshift_RPI_3dv_3dc_maths.nii.gz -Tmin -bin /data/Projects/ABIDE_Initiative/CPAC/Working_2013-10-11_gelert/resting_preproc_0051095_session_1/func_preproc_0/_scan_rest_1_rest/func_mask_normalize/rest_3dc_tshift_RPI_3dv_3dc_maths_maths.nii.gz -odt char
+args:  {'index': 0, 'inputs': '/data/Projects/ABIDE_Initiative/CPAC/Working_2013-10-11_gelert/resting_preproc_0051095_session_1/func_preproc_0/_scan_rest_1_rest/func_normalize/rest_3dc_tshift_RPI_3dv_3dc_maths.nii.gz', 'log_dir': '/home2/data/Projects/ABIDE_Initiative/CPAC/Output_2013-10-11_gelert/logs/0051095_session_1', 'scan_id': None, 'workflow': 'func_preproc_0'}
+131017-14:52:41,939 interface INFO:
+	 CPAC custom log :
+131017-14:52:41,941 interface INFO:
+	  version - 0.3.2, timestamp -2013-10-17 14:52:41, subject_id -0051095_session_1, scan_id - scan_rest_1_rest, strategy -, workflow - func_preproc_0, status -COMPLETED
+131017-14:52:42,446 workflow INFO:
+	 Executing node sinker_25.c0 in dir: /home2/data/Projects/ABIDE_Initiative/CPAC/Working_2013-10-11_gelert/resting_preproc_0051095_session_1/_scan_rest_1_rest/sinker_25
+131017-14:52:43,855 workflow INFO:
+	 [Job finished] jobname: write_log.c0 jobid: 84
+131017-14:52:43,873 workflow INFO:
+	 [Job finished] jobname: std_dev_0.c0 jobid: 217
+131017-14:52:43,889 workflow INFO:
+	 [Job finished] jobname: sinker_25.c0 jobid: 218
+131017-14:52:43,911 workflow INFO:
+	 Submitting 1 jobs
+131017-14:52:43,913 workflow INFO:
+	 Executing: link_25.c0 ID: 24
+131017-14:52:43,937 workflow INFO:
+	 Executing node link_25.c0 in dir: /home2/data/Projects/ABIDE_Initiative/CPAC/Working_2013-10-11_gelert/resting_preproc_0051095_session_1/_scan_rest_1_rest/link_25
+131017-14:52:45,926 workflow INFO:
+	 [Job finished] jobname: link_25.c0 jobid: 24
+131017-14:52:47,946 workflow INFO:
+	 [Job finished] jobname: func_mask_normalize.c0 jobid: 7
+131017-14:52:47,971 workflow INFO:
+	 Submitting 1 jobs
+131017-14:52:47,973 workflow INFO:
+	 Executing: sinker_13.c0 ID: 107
+args:  {'mask_': '/data/Projects/ABIDE_Initiative/CPAC/Working_2013-10-11_gelert/resting_preproc_0051095_session_1/func_preproc_0/_scan_rest_1_rest/func_get_brain_mask/rest_3dc_tshift_RPI_3dv_automask.nii.gz', 'func_': '/data/Projects/ABIDE_Initiative/CPAC/Working_2013-10-11_gelert/resting_preproc_0051095_session_1/func_preproc_0/_scan_rest_1_rest/func_normalize/rest_3dc_tshift_RPI_3dv_3dc_maths.nii.gz'}
+++ WARNING: file /home2/qli/.afni.log is now 103607883 (104 million) bytes long!
+++ 3dTstat: AFNI version=AFNI_2011_12_21_1014 (May 21 2012) [64-bit]
+++ Authored by: KR Hammett & RW Cox
+++ Output dataset /data/Projects/ABIDE_Initiative/CPAC/Working_2013-10-11_gelert/resting_preproc_0051095_session_1/_scan_rest_1_rest/std_dev_0/std_dev.nii.gz
+131017-14:52:48,6 workflow INFO:
+	 Executing node sinker_13.c0 in dir: /home2/data/Projects/ABIDE_Initiative/CPAC/Working_2013-10-11_gelert/resting_preproc_0051095_session_1/_scan_rest_1_rest/sinker_13
+131017-14:52:49,989 workflow INFO:
+	 [Job finished] jobname: sinker_13.c0 jobid: 107
+131017-14:52:50,14 workflow INFO:
+	 Submitting 1 jobs
+131017-14:52:50,15 workflow INFO:
+	 Executing: link_13.c0 ID: 174
+args:  {'strategies': [['_compcor_ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic1.gm0.compcor1.csf0.ncomponents_5_selector_pc10.linear1.wm0.global1.motion1.quadratic1.gm0.compcor1.csf0', '_csf_threshold_0.96', '_gm_threshold_0.7', '_target_angle_deg_90', '_threshold_0.2', '_wm_threshold_0.96']], 'subject_id': '0051095_session_1', 'in_file': ['/home2/data/Projects/ABIDE_Initiative/CPAC/Output_2013-10-11_gelert/pipeline_RameyBorough/0051095_session_1/preprocessed/_scan_rest_1_rest/rest_3dc_tshift_RPI_3dv_3dc_maths.nii.gz'], 'helper': {'_gm_threshold': 1, '_csf_threshold': 1, '_wm_threshold': 1, 'nuisance': 1, '_target_angle_deg': 0, '_threshold': 0}, 'pipeline_id': 'pipeline_RameyBorough'}
+~~~~~~  _compcor_ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic1.gm0.compcor1.csf0.ncomponents_5_selector  ~~~  _compcor_ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic1.gm0.compcor1.csf0.ncomponents_5_selector_pc10.linear1.wm0.global1.motion1.quadratic1.gm0.compcor1.csf0
+~~~~~~  _csf_threshold  ~~~  _csf_threshold_0.96
+~~~~~~  _gm_threshold  ~~~  _gm_threshold_0.7
+~~~~~~  _target_angle_deg  ~~~  _target_angle_deg_90
+~~~~~~  _threshold  ~~~  _threshold_0.2
+~~~~~~  _wm_threshold  ~~~  _wm_threshold_0.96
+~~~~~~  pipeline  ~~~  pipeline_RameyBorough
+.
+_compcor_ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic1.gm0.compcor1.csf0.ncomponents_5_selector  ---------->  pc10.linear1.wm0.global1.motion1.quadratic1.gm0.compcor1.csf0
+_csf_threshold  ---------->  0.96
+_gm_threshold  ---------->  0.7
+_wm_threshold  ---------->  0.96
+pipeline  ---------->  RameyBorough
+scan_rest_1_rest  ~~~ /_scan_rest_1_rest/rest_3dc_tshift_RPI_3dv_3dc_maths.nii.gz
+.
+.
+ln -s /home2/data/Projects/ABIDE_Initiative/CPAC/Output_2013-10-11_gelert/pipeline_RameyBorough/0051095_session_1/preprocessed/_scan_rest_1_rest/rest_3dc_tshift_RPI_3dv_3dc_maths.nii.gz /home2/data/Projects/ABIDE_Initiative/CPAC/Output_2013-10-11_gelert/sym_links/pipeline_RameyBorough/_compcor_ncomponents_5_linear1.global1.motion1.quadratic1.compcor1.CSF_0.96_GM_0.7_WM_0.96/0051095_session_1/scan_rest_1_rest/func/preprocessed.nii.gz
+131017-14:52:50,45 workflow INFO:
+	 Executing node link_13.c0 in dir: /home2/data/Projects/ABIDE_Initiative/CPAC/Working_2013-10-11_gelert/resting_preproc_0051095_session_1/_scan_rest_1_rest/link_13
+131017-14:52:52,29 workflow INFO:
+	 [Job finished] jobname: link_13.c0 jobid: 174
+131017-15:00:17,721 workflow INFO:
+	 [Job finished] jobname: segment jobid: 92
+131017-15:00:17,781 workflow INFO:
+	 Submitting 6 jobs
+131017-15:00:17,783 workflow INFO:
+	 Executing: sinker_46 ID: 2
+131017-15:00:17,790 workflow INFO:
+	 Executing: wm_bb_mask ID: 23
+131017-15:00:17,793 workflow INFO:
+	 Executing: write_log ID: 77
+131017-15:00:17,797 workflow INFO:
+	 Executing: sinker_48 ID: 110
+131017-15:00:17,809 workflow INFO:
+	 Executing node sinker_46 in dir: /home2/data/Projects/ABIDE_Initiative/CPAC/Working_2013-10-11_gelert/resting_preproc_0051095_session_1/sinker_46
+131017-15:00:17,810 workflow INFO:
+	 Executing: sinker_47 ID: 133
+131017-15:00:17,816 workflow INFO:
+	 Executing node wm_bb_mask in dir: /home2/data/Projects/ABIDE_Initiative/CPAC/Working_2013-10-11_gelert/resting_preproc_0051095_session_1/func_to_anat_bbreg_0/wm_bb_mask
+131017-15:00:17,819 workflow INFO:
+	 Executing: sinker_45 ID: 175
+args:  {'strategies': [['_compcor_ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic1.gm0.compcor1.csf0.ncomponents_5_selector_pc10.linear1.wm0.global1.motion1.quadratic1.gm0.compcor1.csf0', '_csf_threshold_0.96', '_gm_threshold_0.7', '_target_angle_deg_90', '_threshold_0.2', '_wm_threshold_0.96']], 'subject_id': '0051095_session_1', 'in_file': ['/home2/data/Projects/ABIDE_Initiative/CPAC/Output_2013-10-11_gelert/pipeline_RameyBorough/0051095_session_1/functional_preprocessed_mask/_scan_rest_1_rest/rest_3dc_tshift_RPI_3dv_3dc_maths_maths.nii.gz'], 'helper': {'_gm_threshold': 1, '_csf_threshold': 1, '_wm_threshold': 1, 'nuisance': 1, '_target_angle_deg': 0, '_threshold': 0}, 'pipeline_id': 'pipeline_RameyBorough'}
+~~~~~~  _compcor_ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic1.gm0.compcor1.csf0.ncomponents_5_selector  ~~~  _compcor_ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic1.gm0.compcor1.csf0.ncomponents_5_selector_pc10.linear1.wm0.global1.motion1.quadratic1.gm0.compcor1.csf0
+~~~~~~  _csf_threshold  ~~~  _csf_threshold_0.96
+~~~~~~  _gm_threshold  ~~~  _gm_threshold_0.7
+~~~~~~  _target_angle_deg  ~~~  _target_angle_deg_90
+~~~~~~  _threshold  ~~~  _threshold_0.2
+~~~~~~  _wm_threshold  ~~~  _wm_threshold_0.96
+~~~~~~  pipeline  ~~~  pipeline_RameyBorough
+.
+_compcor_ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic1.gm0.compcor1.csf0.ncomponents_5_selector  ---------->  pc10.linear1.wm0.global1.motion1.quadratic1.gm0.compcor1.csf0
+_csf_threshold  ---------->  0.96
+_gm_threshold  ---------->  0.7
+_wm_threshold  ---------->  0.96
+pipeline  ---------->  RameyBorough
+scan_rest_1_rest  ~~~ /_scan_rest_1_rest/rest_3dc_tshift_RPI_3dv_3dc_maths_maths.nii.gz
+.
+.
+ln -s /home2/data/Projects/ABIDE_Initiative/CPAC/Output_2013-10-11_gelert/pipeline_RameyBorough/0051095_session_1/functional_preprocessed_mask/_scan_rest_1_rest/rest_3dc_tshift_RPI_3dv_3dc_maths_maths.nii.gz /home2/data/Projects/ABIDE_Initiative/CPAC/Output_2013-10-11_gelert/sym_links/pipeline_RameyBorough/_compcor_ncomponents_5_linear1.global1.motion1.quadratic1.compcor1.CSF_0.96_GM_0.7_WM_0.96/0051095_session_1/scan_rest_1_rest/func/functional_preprocessed_mask.nii.gz
+131017-15:00:17,820 workflow INFO:
+	 Executing node write_log in dir: /home2/data/Projects/ABIDE_Initiative/CPAC/Working_2013-10-11_gelert/resting_preproc_0051095_session_1/log_seg_preproc_0/write_log
+131017-15:00:17,826 workflow INFO:
+	 Executing node sinker_48 in dir: /home2/data/Projects/ABIDE_Initiative/CPAC/Working_2013-10-11_gelert/resting_preproc_0051095_session_1/sinker_48
+131017-15:00:17,899 workflow INFO:
+	 Running: fslmaths /data/Projects/ABIDE_Initiative/CPAC/Working_2013-10-11_gelert/resting_preproc_0051095_session_1/seg_preproc_0/segment/segment_prob_2.nii.gz -thr 0.5 -bin /data/Projects/ABIDE_Initiative/CPAC/Working_2013-10-11_gelert/resting_preproc_0051095_session_1/func_to_anat_bbreg_0/wm_bb_mask/segment_prob_2_maths.nii.gz
+args:  {'index': 0, 'inputs': '/data/Projects/ABIDE_Initiative/CPAC/Working_2013-10-11_gelert/resting_preproc_0051095_session_1/seg_preproc_0/segment/segment_pveseg.nii.gz', 'log_dir': '/home2/data/Projects/ABIDE_Initiative/CPAC/Output_2013-10-11_gelert/logs/0051095_session_1', 'scan_id': None, 'workflow': 'seg_preproc_0'}
+131017-15:00:17,931 interface INFO:
+	 CPAC custom log :
+131017-15:00:17,933 interface INFO:
+	  version - 0.3.2, timestamp -2013-10-17 15:00:17, subject_id -0051095_session_1, scan_id - scan_anat, strategy -, workflow - seg_preproc_0, status -COMPLETED
+131017-15:00:18,113 workflow INFO:
+	 Executing node sinker_47 in dir: /home2/data/Projects/ABIDE_Initiative/CPAC/Working_2013-10-11_gelert/resting_preproc_0051095_session_1/sinker_47
+131017-15:00:18,199 workflow INFO:
+	 Executing node sinker_45 in dir: /home2/data/Projects/ABIDE_Initiative/CPAC/Working_2013-10-11_gelert/resting_preproc_0051095_session_1/sinker_45
+131017-15:00:19,836 workflow INFO:
+	 [Job finished] jobname: sinker_46 jobid: 2
+131017-15:00:19,857 workflow INFO:
+	 [Job finished] jobname: write_log jobid: 77
+131017-15:00:19,875 workflow INFO:
+	 [Job finished] jobname: sinker_48 jobid: 110
+131017-15:00:19,893 workflow INFO:
+	 [Job finished] jobname: sinker_47 jobid: 133
+131017-15:00:19,913 workflow INFO:
+	 [Job finished] jobname: sinker_45 jobid: 175
+131017-15:00:19,938 workflow INFO:
+	 Submitting 4 jobs
+131017-15:00:19,939 workflow INFO:
+	 Executing: link_48 ID: 16
+131017-15:00:19,943 workflow INFO:
+	 Executing: link_45 ID: 88
+131017-15:00:19,948 workflow INFO:
+	 Executing: link_46 ID: 165
+131017-15:00:19,952 workflow INFO:
+	 Executing: link_47 ID: 185
+131017-15:00:19,964 workflow INFO:
+	 Executing node link_48 in dir: /home2/data/Projects/ABIDE_Initiative/CPAC/Working_2013-10-11_gelert/resting_preproc_0051095_session_1/link_48
+131017-15:00:19,967 workflow INFO:
+	 Executing node link_45 in dir: /home2/data/Projects/ABIDE_Initiative/CPAC/Working_2013-10-11_gelert/resting_preproc_0051095_session_1/link_45
+131017-15:00:19,976 workflow INFO:
+	 Executing node link_46 in dir: /home2/data/Projects/ABIDE_Initiative/CPAC/Working_2013-10-11_gelert/resting_preproc_0051095_session_1/link_46
+args:  {'strategies': [['_compcor_ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic1.gm0.compcor1.csf0.ncomponents_5_selector_pc10.linear1.wm0.global1.motion1.quadratic1.gm0.compcor1.csf0', '_csf_threshold_0.96', '_gm_threshold_0.7', '_target_angle_deg_90', '_threshold_0.2', '_wm_threshold_0.96']], 'subject_id': '0051095_session_1', 'in_file': ['/home2/data/Projects/ABIDE_Initiative/CPAC/Output_2013-10-11_gelert/pipeline_RameyBorough/0051095_session_1/seg_mixeltype/segment_mixeltype.nii.gz'], 'helper': {'_gm_threshold': 1, '_csf_threshold': 1, '_wm_threshold': 1, 'nuisance': 1, '_target_angle_deg': 0, '_threshold': 0}, 'pipeline_id': 'pipeline_RameyBorough'}
+~~~~~~  _compcor_ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic1.gm0.compcor1.csf0.ncomponents_5_selector  ~~~  _compcor_ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic1.gm0.compcor1.csf0.ncomponents_5_selector_pc10.linear1.wm0.global1.motion1.quadratic1.gm0.compcor1.csf0
+~~~~~~  _csf_threshold  ~~~  _csf_threshold_0.96
+~~~~~~  _gm_threshold  ~~~  _gm_threshold_0.7
+~~~~~~  _target_angle_deg  ~~~  _target_angle_deg_90
+~~~~~~  _threshold  ~~~  _threshold_0.2
+~~~~~~  _wm_threshold  ~~~  _wm_threshold_0.96
+~~~~~~  pipeline  ~~~  pipeline_RameyBorough
+.
+_compcor_ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic1.gm0.compcor1.csf0.ncomponents_5_selector  ---------->  pc10.linear1.wm0.global1.motion1.quadratic1.gm0.compcor1.csf0
+_csf_threshold  ---------->  0.96
+_gm_threshold  ---------->  0.7
+_wm_threshold  ---------->  0.96
+pipeline  ---------->  RameyBorough
+~~~  ~~~ /segment_mixeltype.nii.gz
+.
+.
+ln -s /home2/data/Projects/ABIDE_Initiative/CPAC/Output_2013-10-11_gelert/pipeline_RameyBorough/0051095_session_1/seg_mixeltype/segment_mixeltype.nii.gz /home2/data/Projects/ABIDE_Initiative/CPAC/Output_2013-10-11_gelert/sym_links/pipeline_RameyBorough/_compcor_ncomponents_5_linear1.global1.motion1.quadratic1.compcor1.CSF_0.96_GM_0.7_WM_0.96/0051095_session_1/scan/anat/segment_mixeltype.nii.gz
+131017-15:00:20,275 workflow INFO:
+	 Executing node link_47 in dir: /home2/data/Projects/ABIDE_Initiative/CPAC/Working_2013-10-11_gelert/resting_preproc_0051095_session_1/link_47
+131017-15:00:21,966 workflow INFO:
+	 [Job finished] jobname: wm_bb_mask jobid: 23
+131017-15:00:21,987 workflow INFO:
+	 [Job finished] jobname: link_48 jobid: 16
+131017-15:00:22,5 workflow INFO:
+	 [Job finished] jobname: link_45 jobid: 88
+131017-15:00:22,23 workflow INFO:
+	 [Job finished] jobname: link_46 jobid: 165
+131017-15:00:22,41 workflow INFO:
+	 [Job finished] jobname: link_47 jobid: 185
+131017-15:00:22,64 workflow INFO:
+	 Submitting 1 jobs
+131017-15:00:22,66 workflow INFO:
+	 Executing: bbreg_func_to_anat.c0 ID: 115
+args:  {'strategies': [['_compcor_ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic1.gm0.compcor1.csf0.ncomponents_5_selector_pc10.linear1.wm0.global1.motion1.quadratic1.gm0.compcor1.csf0', '_csf_threshold_0.96', '_gm_threshold_0.7', '_target_angle_deg_90', '_threshold_0.2', '_wm_threshold_0.96']], 'subject_id': '0051095_session_1', 'in_file': ['/home2/data/Projects/ABIDE_Initiative/CPAC/Output_2013-10-11_gelert/pipeline_RameyBorough/0051095_session_1/seg_probability_maps/segment_prob_0.nii.gz', '/home2/data/Projects/ABIDE_Initiative/CPAC/Output_2013-10-11_gelert/pipeline_RameyBorough/0051095_session_1/seg_probability_maps/segment_prob_1.nii.gz', '/home2/data/Projects/ABIDE_Initiative/CPAC/Output_2013-10-11_gelert/pipeline_RameyBorough/0051095_session_1/seg_probability_maps/segment_prob_2.nii.gz'], 'helper': {'_gm_threshold': 1, '_csf_threshold': 1, '_wm_threshold': 1, 'nuisance': 1, '_target_angle_deg': 0, '_threshold': 0}, 'pipeline_id': 'pipeline_RameyBorough'}
+~~~~~~  _compcor_ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic1.gm0.compcor1.csf0.ncomponents_5_selector  ~~~  _compcor_ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic1.gm0.compcor1.csf0.ncomponents_5_selector_pc10.linear1.wm0.global1.motion1.quadratic1.gm0.compcor1.csf0
+~~~~~~  _csf_threshold  ~~~  _csf_threshold_0.96
+~~~~~~  _gm_threshold  ~~~  _gm_threshold_0.7
+~~~~~~  _target_angle_deg  ~~~  _target_angle_deg_90
+~~~~~~  _threshold  ~~~  _threshold_0.2
+~~~~~~  _wm_threshold  ~~~  _wm_threshold_0.96
+~~~~~~  pipeline  ~~~  pipeline_RameyBorough
+.
+_compcor_ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic1.gm0.compcor1.csf0.ncomponents_5_selector  ---------->  pc10.linear1.wm0.global1.motion1.quadratic1.gm0.compcor1.csf0
+_csf_threshold  ---------->  0.96
+_gm_threshold  ---------->  0.7
+_wm_threshold  ---------->  0.96
+pipeline  ---------->  RameyBorough
+~~~  ~~~ /segment_prob_0.nii.gz
+.
+.
+ln -s /home2/data/Projects/ABIDE_Initiative/CPAC/Output_2013-10-11_gelert/pipeline_RameyBorough/0051095_session_1/seg_probability_maps/segment_prob_0.nii.gz /home2/data/Projects/ABIDE_Initiative/CPAC/Output_2013-10-11_gelert/sym_links/pipeline_RameyBorough/_compcor_ncomponents_5_linear1.global1.motion1.quadratic1.compcor1.CSF_0.96_GM_0.7_WM_0.96/0051095_session_1/scan/anat/segment_prob_0.nii.gz
+~~~~~~  _compcor_ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic1.gm0.compcor1.csf0.ncomponents_5_selector  ~~~  _compcor_ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic1.gm0.compcor1.csf0.ncomponents_5_selector_pc10.linear1.wm0.global1.motion1.quadratic1.gm0.compcor1.csf0
+~~~~~~  _csf_threshold  ~~~  _csf_threshold_0.96
+~~~~~~  _gm_threshold  ~~~  _gm_threshold_0.7
+~~~~~~  _target_angle_deg  ~~~  _target_angle_deg_90
+~~~~~~  _threshold  ~~~  _threshold_0.2
+~~~~~~  _wm_threshold  ~~~  _wm_threshold_0.96
+~~~~~~  pipeline  ~~~  pipeline_RameyBorough
+~~~~~~  pipeline  ~~~  pipeline_RameyBorough
+.
+_compcor_ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic1.gm0.compcor1.csf0.ncomponents_5_selector  ---------->  pc10.linear1.wm0.global1.motion1.quadratic1.gm0.compcor1.csf0
+_csf_threshold  ---------->  0.96
+_gm_threshold  ---------->  0.7
+_wm_threshold  ---------->  0.96
+pipeline  ---------->  RameyBorough
+pipeline  ---------->  RameyBorough
+~~~  ~~~ /segment_prob_1.nii.gz
+.
+.
+ln -s /home2/data/Projects/ABIDE_Initiative/CPAC/Output_2013-10-11_gelert/pipeline_RameyBorough/0051095_session_1/seg_probability_maps/segment_prob_1.nii.gz /home2/data/Projects/ABIDE_Initiative/CPAC/Output_2013-10-11_gelert/sym_links/pipeline_RameyBorough/_compcor_ncomponents_5_linear1.global1.motion1.quadratic1.compcor1.CSF_0.96_GM_0.7_WM_0.96/0051095_session_1/scan/anat/segment_prob_1.nii.gz
+~~~~~~  _compcor_ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic1.gm0.compcor1.csf0.ncomponents_5_selector  ~~~  _compcor_ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic1.gm0.compcor1.csf0.ncomponents_5_selector_pc10.linear1.wm0.global1.motion1.quadratic1.gm0.compcor1.csf0
+~~~~~~  _csf_threshold  ~~~  _csf_threshold_0.96
+~~~~~~  _gm_threshold  ~~~  _gm_threshold_0.7
+~~~~~~  _target_angle_deg  ~~~  _target_angle_deg_90
+~~~~~~  _threshold  ~~~  _threshold_0.2
+~~~~~~  _wm_threshold  ~~~  _wm_threshold_0.96
+~~~~~~  pipeline  ~~~  pipeline_RameyBorough
+~~~~~~  pipeline  ~~~  pipeline_RameyBorough
+~~~~~~  pipeline  ~~~  pipeline_RameyBorough
+.
+_compcor_ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic1.gm0.compcor1.csf0.ncomponents_5_selector  ---------->  pc10.linear1.wm0.global1.motion1.quadratic1.gm0.compcor1.csf0
+_csf_threshold  ---------->  0.96
+_gm_threshold  ---------->  0.7
+_wm_threshold  ---------->  0.96
+pipeline  ---------->  RameyBorough
+pipeline  ---------->  RameyBorough
+pipeline  ---------->  RameyBorough
+~~~  ~~~ /segment_prob_2.nii.gz
+.
+.
+ln -s /home2/data/Projects/ABIDE_Initiative/CPAC/Output_2013-10-11_gelert/pipeline_RameyBorough/0051095_session_1/seg_probability_maps/segment_prob_2.nii.gz /home2/data/Projects/ABIDE_Initiative/CPAC/Output_2013-10-11_gelert/sym_links/pipeline_RameyBorough/_compcor_ncomponents_5_linear1.global1.motion1.quadratic1.compcor1.CSF_0.96_GM_0.7_WM_0.96/0051095_session_1/scan/anat/segment_prob_2.nii.gz
+131017-15:00:22,154 workflow INFO:
+	 Executing node bbreg_func_to_anat.c0 in dir: /home2/data/Projects/ABIDE_Initiative/CPAC/Working_2013-10-11_gelert/resting_preproc_0051095_session_1/func_to_anat_bbreg_0/_scan_rest_1_rest/bbreg_func_to_anat
+131017-15:00:22,287 workflow INFO:
+	 Running: flirt -in /data/Projects/ABIDE_Initiative/CPAC/Working_2013-10-11_gelert/resting_preproc_0051095_session_1/func_preproc_0/_scan_rest_1_rest/func_mean_skullstrip/rest_3dc_tshift_RPI_3dv_3dc_3dT.nii.gz -ref /data/Projects/ABIDE_Initiative/CPAC/Working_2013-10-11_gelert/resting_preproc_0051095_session_1/anat_preproc_0/anat_reorient/mprage_RPI.nii.gz -out /data/Projects/ABIDE_Initiative/CPAC/Working_2013-10-11_gelert/resting_preproc_0051095_session_1/func_to_anat_bbreg_0/_scan_rest_1_rest/bbreg_func_to_anat/rest_3dc_tshift_RPI_3dv_3dc_3dT_flirt.nii.gz -omat /data/Projects/ABIDE_Initiative/CPAC/Working_2013-10-11_gelert/resting_preproc_0051095_session_1/func_to_anat_bbreg_0/_scan_rest_1_rest/bbreg_func_to_anat/rest_3dc_tshift_RPI_3dv_3dc_3dT_flirt.mat -cost bbr -wmseg /data/Projects/ABIDE_Initiative/CPAC/Working_2013-10-11_gelert/resting_preproc_0051095_session_1/func_to_anat_bbreg_0/wm_bb_mask/segment_prob_2_maths.nii.gz -dof 6 -init /data/Projects/ABIDE_Initiative/CPAC/Working_2013-10-11_gelert/resting_preproc_0051095_session_1/func_to_anat_FLIRT_0/_scan_rest_1_rest/linear_func_to_anat/rest_3dc_tshift_RPI_3dv_3dc_3dT_flirt.mat -schedule /home2/data/PublicProgram/fsl-4.1.9/etc/flirtsch/bbr.sch
+131017-15:06:22,326 interface INFO:
+	 stdout 2013-10-17T15:06:22.325953:0.478735 0.998659 0.051323 0.006848 0.000000 -0.051381 0.998642 0.008587 0.000000 -0.006398 -0.008928 0.999940 0.000000 5.879813 -3.104526 1.339124 1.000000 
+131017-15:06:25,388 workflow INFO:
+	 [Job finished] jobname: bbreg_func_to_anat.c0 jobid: 115
+131017-15:06:25,417 workflow INFO:
+	 Submitting 7 jobs
+131017-15:06:25,419 workflow INFO:
+	 Executing: resample_u.c0 ID: 37
+131017-15:06:25,421 workflow INFO:
+	 Executing: std_dev_anat_0.c0 ID: 57
+131017-15:06:25,425 workflow INFO:
+	 Executing: sinker_14.c0 ID: 114
+131017-15:06:25,433 workflow INFO:
+	 Executing: fsl_reg_2_itk_mask_0.c0 ID: 117
+131017-15:06:25,436 workflow INFO:
+	 Executing: fsl_reg_2_itk_mean_0.c0 ID: 132
+131017-15:06:25,439 workflow INFO:
+	 Executing: fsl_reg_2_itk_0.c0 ID: 140
+131017-15:06:25,442 workflow INFO:
+	 Executing: sinker_17.c0 ID: 155
+args:  {'strategies': [['_compcor_ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic1.gm0.compcor1.csf0.ncomponents_5_selector_pc10.linear1.wm0.global1.motion1.quadratic1.gm0.compcor1.csf0', '_csf_threshold_0.96', '_gm_threshold_0.7', '_target_angle_deg_90', '_threshold_0.2', '_wm_threshold_0.96']], 'subject_id': '0051095_session_1', 'in_file': ['/home2/data/Projects/ABIDE_Initiative/CPAC/Output_2013-10-11_gelert/pipeline_RameyBorough/0051095_session_1/seg_partial_volume_files/segment_pve_0.nii.gz', '/home2/data/Projects/ABIDE_Initiative/CPAC/Output_2013-10-11_gelert/pipeline_RameyBorough/0051095_session_1/seg_partial_volume_files/segment_pve_1.nii.gz', '/home2/data/Projects/ABIDE_Initiative/CPAC/Output_2013-10-11_gelert/pipeline_RameyBorough/0051095_session_1/seg_partial_volume_files/segment_pve_2.nii.gz'], 'helper': {'_gm_threshold': 1, '_csf_threshold': 1, '_wm_threshold': 1, 'nuisance': 1, '_target_angle_deg': 0, '_threshold': 0}, 'pipeline_id': 'pipeline_RameyBorough'}
+~~~~~~  _compcor_ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic1.gm0.compcor1.csf0.ncomponents_5_selector  ~~~  _compcor_ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic1.gm0.compcor1.csf0.ncomponents_5_selector_pc10.linear1.wm0.global1.motion1.quadratic1.gm0.compcor1.csf0
+~~~~~~  _csf_threshold  ~~~  _csf_threshold_0.96
+~~~~~~  _gm_threshold  ~~~  _gm_threshold_0.7
+~~~~~~  _target_angle_deg  ~~~  _target_angle_deg_90
+~~~~~~  _threshold  ~~~  _threshold_0.2
+~~~~~~  _wm_threshold  ~~~  _wm_threshold_0.96
+~~~~~~  pipeline  ~~~  pipeline_RameyBorough
+.
+_compcor_ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic1.gm0.compcor1.csf0.ncomponents_5_selector  ---------->  pc10.linear1.wm0.global1.motion1.quadratic1.gm0.compcor1.csf0
+_csf_threshold  ---------->  0.96
+_gm_threshold  ---------->  0.7
+_wm_threshold  ---------->  0.96
+pipeline  ---------->  RameyBorough
+~~~  ~~~ /segment_pve_0.nii.gz
+.
+.
+ln -s /home2/data/Projects/ABIDE_Initiative/CPAC/Output_2013-10-11_gelert/pipeline_RameyBorough/0051095_session_1/seg_partial_volume_files/segment_pve_0.nii.gz /home2/data/Projects/ABIDE_Initiative/CPAC/Output_2013-10-11_gelert/sym_links/pipeline_RameyBorough/_compcor_ncomponents_5_linear1.global1.motion1.quadratic1.compcor1.CSF_0.96_GM_0.7_WM_0.96/0051095_session_1/scan/anat/segment_pve_0.nii.gz
+~~~~~~  _compcor_ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic1.gm0.compcor1.csf0.ncomponents_5_selector  ~~~  _compcor_ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic1.gm0.compcor1.csf0.ncomponents_5_selector_pc10.linear1.wm0.global1.motion1.quadratic1.gm0.compcor1.csf0
+~~~~~~  _csf_threshold  ~~~  _csf_threshold_0.96
+~~~~~~  _gm_threshold  ~~~  _gm_threshold_0.7
+~~~~~~  _target_angle_deg  ~~~  _target_angle_deg_90
+~~~~~~  _threshold  ~~~  _threshold_0.2
+~~~~~~  _wm_threshold  ~~~  _wm_threshold_0.96
+~~~~~~  pipeline  ~~~  pipeline_RameyBorough
+~~~~~~  pipeline  ~~~  pipeline_RameyBorough
+.
+_compcor_ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic1.gm0.compcor1.csf0.ncomponents_5_selector  ---------->  pc10.linear1.wm0.global1.motion1.quadratic1.gm0.compcor1.csf0
+_csf_threshold  ---------->  0.96
+_gm_threshold  ---------->  0.7
+_wm_threshold  ---------->  0.96
+pipeline  ---------->  RameyBorough
+pipeline  ---------->  RameyBorough
+~~~  ~~~ /segment_pve_1.nii.gz
+.
+.
+ln -s /home2/data/Projects/ABIDE_Initiative/CPAC/Output_2013-10-11_gelert/pipeline_RameyBorough/0051095_session_1/seg_partial_volume_files/segment_pve_1.nii.gz /home2/data/Projects/ABIDE_Initiative/CPAC/Output_2013-10-11_gelert/sym_links/pipeline_RameyBorough/_compcor_ncomponents_5_linear1.global1.motion1.quadratic1.compcor1.CSF_0.96_GM_0.7_WM_0.96/0051095_session_1/scan/anat/segment_pve_1.nii.gz
+~~~~~~  _compcor_ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic1.gm0.compcor1.csf0.ncomponents_5_selector  ~~~  _compcor_ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic1.gm0.compcor1.csf0.ncomponents_5_selector_pc10.linear1.wm0.global1.motion1.quadratic1.gm0.compcor1.csf0
+~~~~~~  _csf_threshold  ~~~  _csf_threshold_0.96
+~~~~~~  _gm_threshold  ~~~  _gm_threshold_0.7
+~~~~~~  _target_angle_deg  ~~~  _target_angle_deg_90
+~~~~~~  _threshold  ~~~  _threshold_0.2
+~~~~~~  _wm_threshold  ~~~  _wm_threshold_0.96
+~~~~~~  pipeline  ~~~  pipeline_RameyBorough
+~~~~~~  pipeline  ~~~  pipeline_RameyBorough
+~~~~~~  pipeline  ~~~  pipeline_RameyBorough
+.
+_compcor_ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic1.gm0.compcor1.csf0.ncomponents_5_selector  ---------->  pc10.linear1.wm0.global1.motion1.quadratic1.gm0.compcor1.csf0
+_csf_threshold  ---------->  0.96
+_gm_threshold  ---------->  0.7
+_wm_threshold  ---------->  0.96
+pipeline  ---------->  RameyBorough
+pipeline  ---------->  RameyBorough
+pipeline  ---------->  RameyBorough
+~~~  ~~~ /segment_pve_2.nii.gz
+.
+.
+ln -s /home2/data/Projects/ABIDE_Initiative/CPAC/Output_2013-10-11_gelert/pipeline_RameyBorough/0051095_session_1/seg_partial_volume_files/segment_pve_2.nii.gz /home2/data/Projects/ABIDE_Initiative/CPAC/Output_2013-10-11_gelert/sym_links/pipeline_RameyBorough/_compcor_ncomponents_5_linear1.global1.motion1.quadratic1.compcor1.CSF_0.96_GM_0.7_WM_0.96/0051095_session_1/scan/anat/segment_pve_2.nii.gz
+131017-15:06:25,442 workflow INFO:
+	 Executing node resample_u.c0 in dir: /home2/data/Projects/ABIDE_Initiative/CPAC/Working_2013-10-11_gelert/resting_preproc_0051095_session_1/montage_anat_0/_scan_rest_1_rest/resample_u
+131017-15:06:25,456 workflow INFO:
+	 Executing node sinker_14.c0 in dir: /home2/data/Projects/ABIDE_Initiative/CPAC/Working_2013-10-11_gelert/resting_preproc_0051095_session_1/_scan_rest_1_rest/sinker_14
+args:  {'strategies': [['_compcor_ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic1.gm0.compcor1.csf0.ncomponents_5_selector_pc10.linear1.wm0.global1.motion1.quadratic1.gm0.compcor1.csf0', '_csf_threshold_0.96', '_gm_threshold_0.7', '_target_angle_deg_90', '_threshold_0.2', '_wm_threshold_0.96']], 'subject_id': '0051095_session_1', 'in_file': ['/home2/data/Projects/ABIDE_Initiative/CPAC/Output_2013-10-11_gelert/pipeline_RameyBorough/0051095_session_1/seg_partial_volume_map/segment_pveseg.nii.gz'], 'helper': {'_gm_threshold': 1, '_csf_threshold': 1, '_wm_threshold': 1, 'nuisance': 1, '_target_angle_deg': 0, '_threshold': 0}, 'pipeline_id': 'pipeline_RameyBorough'}
+~~~~~~  _compcor_ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic1.gm0.compcor1.csf0.ncomponents_5_selector  ~~~  _compcor_ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic1.gm0.compcor1.csf0.ncomponents_5_selector_pc10.linear1.wm0.global1.motion1.quadratic1.gm0.compcor1.csf0
+~~~~~~  _csf_threshold  ~~~  _csf_threshold_0.96
+~~~~~~  _gm_threshold  ~~~  _gm_threshold_0.7
+~~~~~~  _target_angle_deg  ~~~  _target_angle_deg_90
+~~~~~~  _threshold  ~~~  _threshold_0.2
+~~~~~~  _wm_threshold  ~~~  _wm_threshold_0.96
+~~~~~~  pipeline  ~~~  pipeline_RameyBorough
+.
+_compcor_ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic1.gm0.compcor1.csf0.ncomponents_5_selector  ---------->  pc10.linear1.wm0.global1.motion1.quadratic1.gm0.compcor1.csf0
+_csf_threshold  ---------->  0.96
+_gm_threshold  ---------->  0.7
+_wm_threshold  ---------->  0.96
+pipeline  ---------->  RameyBorough
+~~~  ~~~ /segment_pveseg.nii.gz
+.
+.
+ln -s /home2/data/Projects/ABIDE_Initiative/CPAC/Output_2013-10-11_gelert/pipeline_RameyBorough/0051095_session_1/seg_partial_volume_map/segment_pveseg.nii.gz /home2/data/Projects/ABIDE_Initiative/CPAC/Output_2013-10-11_gelert/sym_links/pipeline_RameyBorough/_compcor_ncomponents_5_linear1.global1.motion1.quadratic1.compcor1.CSF_0.96_GM_0.7_WM_0.96/0051095_session_1/scan/anat/segment_pveseg.nii.gz
+131017-15:06:25,465 workflow INFO:
+	 Executing node std_dev_anat_0.c0 in dir: /home2/data/Projects/ABIDE_Initiative/CPAC/Working_2013-10-11_gelert/resting_preproc_0051095_session_1/_scan_rest_1_rest/std_dev_anat_0
+131017-15:06:25,498 workflow INFO:
+	 Executing node fsl_reg_2_itk_mask_0.c0 in dir: /home2/data/Projects/ABIDE_Initiative/CPAC/Working_2013-10-11_gelert/resting_preproc_0051095_session_1/_scan_rest_1_rest/fsl_reg_2_itk_mask_0
+131017-15:06:25,808 workflow INFO:
+	 Running: c3d_affine_tool -ref /data/Projects/ABIDE_Initiative/CPAC/Working_2013-10-11_gelert/resting_preproc_0051095_session_1/anat_preproc_0/anat_brain_only/mprage_RPI_3dc.nii.gz -src /data/Projects/ABIDE_Initiative/CPAC/Working_2013-10-11_gelert/resting_preproc_0051095_session_1/func_preproc_0/_scan_rest_1_rest/func_get_brain_mask/rest_3dc_tshift_RPI_3dv_automask.nii.gz /data/Projects/ABIDE_Initiative/CPAC/Working_2013-10-11_gelert/resting_preproc_0051095_session_1/func_to_anat_bbreg_0/_scan_rest_1_rest/bbreg_func_to_anat/rest_3dc_tshift_RPI_3dv_3dc_3dT_flirt.mat -fsl2ras -oitk /data/Projects/ABIDE_Initiative/CPAC/Working_2013-10-11_gelert/resting_preproc_0051095_session_1/_scan_rest_1_rest/fsl_reg_2_itk_mask_0/affine.txt
+131017-15:06:25,882 workflow INFO:
+	 Executing node fsl_reg_2_itk_mean_0.c0 in dir: /home2/data/Projects/ABIDE_Initiative/CPAC/Working_2013-10-11_gelert/resting_preproc_0051095_session_1/_scan_rest_1_rest/fsl_reg_2_itk_mean_0
+131017-15:06:25,892 workflow INFO:
+	 Executing node fsl_reg_2_itk_0.c0 in dir: /home2/data/Projects/ABIDE_Initiative/CPAC/Working_2013-10-11_gelert/resting_preproc_0051095_session_1/_scan_rest_1_rest/fsl_reg_2_itk_0
+131017-15:06:26,76 workflow INFO:
+	 Running: c3d_affine_tool -ref /data/Projects/ABIDE_Initiative/CPAC/Working_2013-10-11_gelert/resting_preproc_0051095_session_1/anat_preproc_0/anat_brain_only/mprage_RPI_3dc.nii.gz -src /data/Projects/ABIDE_Initiative/CPAC/Working_2013-10-11_gelert/resting_preproc_0051095_session_1/func_preproc_0/_scan_rest_1_rest/func_mean_skullstrip/rest_3dc_tshift_RPI_3dv_3dc_3dT.nii.gz /data/Projects/ABIDE_Initiative/CPAC/Working_2013-10-11_gelert/resting_preproc_0051095_session_1/func_to_anat_bbreg_0/_scan_rest_1_rest/bbreg_func_to_anat/rest_3dc_tshift_RPI_3dv_3dc_3dT_flirt.mat -fsl2ras -oitk /data/Projects/ABIDE_Initiative/CPAC/Working_2013-10-11_gelert/resting_preproc_0051095_session_1/_scan_rest_1_rest/fsl_reg_2_itk_0/affine.txt
+131017-15:06:26,91 workflow INFO:
+	 Running: c3d_affine_tool -ref /data/Projects/ABIDE_Initiative/CPAC/Working_2013-10-11_gelert/resting_preproc_0051095_session_1/anat_preproc_0/anat_brain_only/mprage_RPI_3dc.nii.gz -src /data/Projects/ABIDE_Initiative/CPAC/Working_2013-10-11_gelert/resting_preproc_0051095_session_1/func_preproc_0/_scan_rest_1_rest/func_mean_skullstrip/rest_3dc_tshift_RPI_3dv_3dc_3dT.nii.gz /data/Projects/ABIDE_Initiative/CPAC/Working_2013-10-11_gelert/resting_preproc_0051095_session_1/func_to_anat_bbreg_0/_scan_rest_1_rest/bbreg_func_to_anat/rest_3dc_tshift_RPI_3dv_3dc_3dT_flirt.mat -fsl2ras -oitk /data/Projects/ABIDE_Initiative/CPAC/Working_2013-10-11_gelert/resting_preproc_0051095_session_1/_scan_rest_1_rest/fsl_reg_2_itk_mean_0/affine.txt
+131017-15:06:26,117 workflow INFO:
+	 Executing node sinker_17.c0 in dir: /home2/data/Projects/ABIDE_Initiative/CPAC/Working_2013-10-11_gelert/resting_preproc_0051095_session_1/_scan_rest_1_rest/sinker_17
+131017-15:06:27,458 workflow INFO:
+	 [Job finished] jobname: sinker_14.c0 jobid: 114
+131017-15:06:27,475 workflow ERROR:
+	 ['Node fsl_reg_2_itk_mask_0.c0 failed to run on host node28.']
+131017-15:06:27,477 workflow INFO:
+	 Saving crash info to /home2/data/Projects/ABIDE_Initiative/CPAC/crash/crash-20131017-150627-qli-fsl_reg_2_itk_mask_0.c0.npz
+131017-15:06:27,478 workflow INFO:
+	 Traceback (most recent call last):
+  File "/home2/data/Projects/CPAC_Regression_Test/nipype-installs/fcp-indi-nipype/running-install/lib/python2.7/site-packages/nipype/pipeline/plugins/multiproc.py", line 18, in run_node
+    result['result'] = node.run(updatehash=updatehash)
+  File "/home2/data/Projects/CPAC_Regression_Test/nipype-installs/fcp-indi-nipype/running-install/lib/python2.7/site-packages/nipype/pipeline/engine.py", line 1282, in run
+    self._run_interface()
+  File "/home2/data/Projects/CPAC_Regression_Test/nipype-installs/fcp-indi-nipype/running-install/lib/python2.7/site-packages/nipype/pipeline/engine.py", line 1380, in _run_interface
+    self._result = self._run_command(execute)
+  File "/home2/data/Projects/CPAC_Regression_Test/nipype-installs/fcp-indi-nipype/running-install/lib/python2.7/site-packages/nipype/pipeline/engine.py", line 1504, in _run_command
+    result = self._interface.run()
+  File "/home2/data/Projects/CPAC_Regression_Test/nipype-installs/fcp-indi-nipype/running-install/lib/python2.7/site-packages/nipype/interfaces/base.py", line 895, in run
+    runtime = self._run_interface(runtime)
+  File "/home2/data/Projects/CPAC_Regression_Test/nipype-installs/fcp-indi-nipype/running-install/lib/python2.7/site-packages/nipype/interfaces/base.py", line 1269, in _run_interface
+    runtime.hostname))
+IOError: c3d_affine_tool could not be found on host node28
+Interface C3dAffineTool failed to run. 
+
+131017-15:06:27,500 workflow ERROR:
+	 ['Node fsl_reg_2_itk_mean_0.c0 failed to run on host node28.']
+131017-15:06:27,502 workflow INFO:
+	 Saving crash info to /home2/data/Projects/ABIDE_Initiative/CPAC/crash/crash-20131017-150627-qli-fsl_reg_2_itk_mean_0.c0.npz
+131017-15:06:27,503 workflow INFO:
+	 Traceback (most recent call last):
+  File "/home2/data/Projects/CPAC_Regression_Test/nipype-installs/fcp-indi-nipype/running-install/lib/python2.7/site-packages/nipype/pipeline/plugins/multiproc.py", line 18, in run_node
+    result['result'] = node.run(updatehash=updatehash)
+  File "/home2/data/Projects/CPAC_Regression_Test/nipype-installs/fcp-indi-nipype/running-install/lib/python2.7/site-packages/nipype/pipeline/engine.py", line 1282, in run
+    self._run_interface()
+  File "/home2/data/Projects/CPAC_Regression_Test/nipype-installs/fcp-indi-nipype/running-install/lib/python2.7/site-packages/nipype/pipeline/engine.py", line 1380, in _run_interface
+    self._result = self._run_command(execute)
+  File "/home2/data/Projects/CPAC_Regression_Test/nipype-installs/fcp-indi-nipype/running-install/lib/python2.7/site-packages/nipype/pipeline/engine.py", line 1504, in _run_command
+    result = self._interface.run()
+  File "/home2/data/Projects/CPAC_Regression_Test/nipype-installs/fcp-indi-nipype/running-install/lib/python2.7/site-packages/nipype/interfaces/base.py", line 895, in run
+    runtime = self._run_interface(runtime)
+  File "/home2/data/Projects/CPAC_Regression_Test/nipype-installs/fcp-indi-nipype/running-install/lib/python2.7/site-packages/nipype/interfaces/base.py", line 1269, in _run_interface
+    runtime.hostname))
+IOError: c3d_affine_tool could not be found on host node28
+Interface C3dAffineTool failed to run. 
+
+131017-15:06:27,524 workflow ERROR:
+	 ['Node fsl_reg_2_itk_0.c0 failed to run on host node28.']
+131017-15:06:27,525 workflow INFO:
+	 Saving crash info to /home2/data/Projects/ABIDE_Initiative/CPAC/crash/crash-20131017-150627-qli-fsl_reg_2_itk_0.c0.npz
+131017-15:06:27,527 workflow INFO:
+	 Traceback (most recent call last):
+  File "/home2/data/Projects/CPAC_Regression_Test/nipype-installs/fcp-indi-nipype/running-install/lib/python2.7/site-packages/nipype/pipeline/plugins/multiproc.py", line 18, in run_node
+    result['result'] = node.run(updatehash=updatehash)
+  File "/home2/data/Projects/CPAC_Regression_Test/nipype-installs/fcp-indi-nipype/running-install/lib/python2.7/site-packages/nipype/pipeline/engine.py", line 1282, in run
+    self._run_interface()
+  File "/home2/data/Projects/CPAC_Regression_Test/nipype-installs/fcp-indi-nipype/running-install/lib/python2.7/site-packages/nipype/pipeline/engine.py", line 1380, in _run_interface
+    self._result = self._run_command(execute)
+  File "/home2/data/Projects/CPAC_Regression_Test/nipype-installs/fcp-indi-nipype/running-install/lib/python2.7/site-packages/nipype/pipeline/engine.py", line 1504, in _run_command
+    result = self._interface.run()
+  File "/home2/data/Projects/CPAC_Regression_Test/nipype-installs/fcp-indi-nipype/running-install/lib/python2.7/site-packages/nipype/interfaces/base.py", line 895, in run
+    runtime = self._run_interface(runtime)
+  File "/home2/data/Projects/CPAC_Regression_Test/nipype-installs/fcp-indi-nipype/running-install/lib/python2.7/site-packages/nipype/interfaces/base.py", line 1269, in _run_interface
+    runtime.hostname))
+IOError: c3d_affine_tool could not be found on host node28
+Interface C3dAffineTool failed to run. 
+
+131017-15:06:27,548 workflow INFO:
+	 [Job finished] jobname: sinker_17.c0 jobid: 155
+131017-15:06:27,569 workflow INFO:
+	 Submitting 2 jobs
+131017-15:06:27,570 workflow INFO:
+	 Executing: link_14.c0 ID: 90
+131017-15:06:27,574 workflow INFO:
+	 Executing: link_17.c0 ID: 146
+131017-15:06:27,594 workflow INFO:
+	 Executing node link_14.c0 in dir: /home2/data/Projects/ABIDE_Initiative/CPAC/Working_2013-10-11_gelert/resting_preproc_0051095_session_1/_scan_rest_1_rest/link_14
+131017-15:06:27,598 workflow INFO:
+	 Executing node link_17.c0 in dir: /home2/data/Projects/ABIDE_Initiative/CPAC/Working_2013-10-11_gelert/resting_preproc_0051095_session_1/_scan_rest_1_rest/link_17
+131017-15:06:29,586 workflow INFO:
+	 [Job finished] jobname: resample_u.c0 jobid: 37
+131017-15:06:29,607 workflow INFO:
+	 [Job finished] jobname: link_14.c0 jobid: 90
+131017-15:06:29,623 workflow INFO:
+	 [Job finished] jobname: link_17.c0 jobid: 146
+131017-15:06:29,635 workflow INFO:
+	 Submitting 2 jobs
+131017-15:06:29,636 workflow INFO:
+	 Executing: montage_a.c0 ID: 106
+131017-15:06:29,638 workflow INFO:
+	 Executing: montage_s.c0 ID: 184
+args:  {'file_': '/data/Projects/ABIDE_Initiative/CPAC/Working_2013-10-11_gelert/resting_preproc_0051095_session_1/func_to_anat_bbreg_0/_scan_rest_1_rest/bbreg_func_to_anat/rest_3dc_tshift_RPI_3dv_3dc_3dT_flirt.nii.gz'}
+ 3dresample -dxyz 1.0 1.0 1.0 -prefix /data/Projects/ABIDE_Initiative/CPAC/Working_2013-10-11_gelert/resting_preproc_0051095_session_1/montage_anat_0/_scan_rest_1_rest/resample_u/rest_3dc_tshift_RPI_3dv_3dc_3dT_flirt_1mm.nii.gz -inset /data/Projects/ABIDE_Initiative/CPAC/Working_2013-10-11_gelert/resting_preproc_0051095_session_1/func_to_anat_bbreg_0/_scan_rest_1_rest/bbreg_func_to_anat/rest_3dc_tshift_RPI_3dv_3dc_3dT_flirt.nii.gz 
+131017-15:06:29,669 workflow INFO:
+	 Executing node montage_a.c0 in dir: /home2/data/Projects/ABIDE_Initiative/CPAC/Working_2013-10-11_gelert/resting_preproc_0051095_session_1/montage_anat_0/_scan_rest_1_rest/montage_a
+args:  {'strategies': [['_compcor_ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic1.gm0.compcor1.csf0.ncomponents_5_selector_pc10.linear1.wm0.global1.motion1.quadratic1.gm0.compcor1.csf0', '_csf_threshold_0.96', '_gm_threshold_0.7', '_target_angle_deg_90', '_threshold_0.2', '_wm_threshold_0.96']], 'subject_id': '0051095_session_1', 'in_file': ['/home2/data/Projects/ABIDE_Initiative/CPAC/Output_2013-10-11_gelert/pipeline_RameyBorough/0051095_session_1/mean_functional_in_anat/_scan_rest_1_rest/rest_3dc_tshift_RPI_3dv_3dc_3dT_flirt.nii.gz'], 'helper': {'_gm_threshold': 1, '_csf_threshold': 1, '_wm_threshold': 1, 'nuisance': 1, '_target_angle_deg': 0, '_threshold': 0}, 'pipeline_id': 'pipeline_RameyBorough'}
+~~~~~~  _compcor_ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic1.gm0.compcor1.csf0.ncomponents_5_selector  ~~~  _compcor_ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic1.gm0.compcor1.csf0.ncomponents_5_selector_pc10.linear1.wm0.global1.motion1.quadratic1.gm0.compcor1.csf0
+~~~~~~  _csf_threshold  ~~~  _csf_threshold_0.96
+~~~~~~  _gm_threshold  ~~~  _gm_threshold_0.7
+~~~~~~  _target_angle_deg  ~~~  _target_angle_deg_90
+~~~~~~  _threshold  ~~~  _threshold_0.2
+~~~~~~  _wm_threshold  ~~~  _wm_threshold_0.96
+~~~~~~  pipeline  ~~~  pipeline_RameyBorough
+.
+_compcor_ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic1.gm0.compcor1.csf0.ncomponents_5_selector  ---------->  pc10.linear1.wm0.global1.motion1.quadratic1.gm0.compcor1.csf0
+_csf_threshold  ---------->  0.96
+_gm_threshold  ---------->  0.7
+_wm_threshold  ---------->  0.96
+pipeline  ---------->  RameyBorough
+scan_rest_1_rest  ~~~ /_scan_rest_1_rest/rest_3dc_tshift_RPI_3dv_3dc_3dT_flirt.nii.gz
+.
+.
+ln -s /home2/data/Projects/ABIDE_Initiative/CPAC/Output_2013-10-11_gelert/pipeline_RameyBorough/0051095_session_1/mean_functional_in_anat/_scan_rest_1_rest/rest_3dc_tshift_RPI_3dv_3dc_3dT_flirt.nii.gz /home2/data/Projects/ABIDE_Initiative/CPAC/Output_2013-10-11_gelert/sym_links/pipeline_RameyBorough/_compcor_ncomponents_5_linear1.global1.motion1.quadratic1.compcor1.CSF_0.96_GM_0.7_WM_0.96/0051095_session_1/scan_rest_1_rest/func/mean_functional_in_anat.nii.gz
+131017-15:06:29,670 workflow INFO:
+	 Executing node montage_s.c0 in dir: /home2/data/Projects/ABIDE_Initiative/CPAC/Working_2013-10-11_gelert/resting_preproc_0051095_session_1/montage_anat_0/_scan_rest_1_rest/montage_s
+131017-15:06:33,652 workflow INFO:
+	 [Job finished] jobname: std_dev_anat_0.c0 jobid: 57
+131017-15:06:33,675 workflow INFO:
+	 Submitting 1 jobs
+131017-15:06:33,676 workflow INFO:
+	 Executing: snr_0.c0 ID: 81
+args:  {'strategies': [['_compcor_ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic1.gm0.compcor1.csf0.ncomponents_5_selector_pc10.linear1.wm0.global1.motion1.quadratic1.gm0.compcor1.csf0', '_csf_threshold_0.96', '_gm_threshold_0.7', '_target_angle_deg_90', '_threshold_0.2', '_wm_threshold_0.96']], 'subject_id': '0051095_session_1', 'in_file': ['/home2/data/Projects/ABIDE_Initiative/CPAC/Output_2013-10-11_gelert/pipeline_RameyBorough/0051095_session_1/functional_to_anat_linear_xfm/_scan_rest_1_rest/rest_3dc_tshift_RPI_3dv_3dc_3dT_flirt.mat'], 'helper': {'_gm_threshold': 1, '_csf_threshold': 1, '_wm_threshold': 1, 'nuisance': 1, '_target_angle_deg': 0, '_threshold': 0}, 'pipeline_id': 'pipeline_RameyBorough'}
+~~~~~~  _compcor_ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic1.gm0.compcor1.csf0.ncomponents_5_selector  ~~~  _compcor_ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic1.gm0.compcor1.csf0.ncomponents_5_selector_pc10.linear1.wm0.global1.motion1.quadratic1.gm0.compcor1.csf0
+~~~~~~  _csf_threshold  ~~~  _csf_threshold_0.96
+~~~~~~  _gm_threshold  ~~~  _gm_threshold_0.7
+~~~~~~  _target_angle_deg  ~~~  _target_angle_deg_90
+~~~~~~  _threshold  ~~~  _threshold_0.2
+~~~~~~  _wm_threshold  ~~~  _wm_threshold_0.96
+~~~~~~  pipeline  ~~~  pipeline_RameyBorough
+.
+_compcor_ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic1.gm0.compcor1.csf0.ncomponents_5_selector  ---------->  pc10.linear1.wm0.global1.motion1.quadratic1.gm0.compcor1.csf0
+_csf_threshold  ---------->  0.96
+_gm_threshold  ---------->  0.7
+_wm_threshold  ---------->  0.96
+pipeline  ---------->  RameyBorough
+scan_rest_1_rest  ~~~ /_scan_rest_1_rest/rest_3dc_tshift_RPI_3dv_3dc_3dT_flirt.mat
+.
+ln -s /home2/data/Projects/ABIDE_Initiative/CPAC/Output_2013-10-11_gelert/pipeline_RameyBorough/0051095_session_1/functional_to_anat_linear_xfm/_scan_rest_1_rest/rest_3dc_tshift_RPI_3dv_3dc_3dT_flirt.mat /home2/data/Projects/ABIDE_Initiative/CPAC/Output_2013-10-11_gelert/sym_links/pipeline_RameyBorough/_compcor_ncomponents_5_linear1.global1.motion1.quadratic1.compcor1.CSF_0.96_GM_0.7_WM_0.96/0051095_session_1/scan_rest_1_rest/registration/functional_to_anat_linear_xfm.mat
+131017-15:06:33,725 workflow INFO:
+	 Executing node snr_0.c0 in dir: /home2/data/Projects/ABIDE_Initiative/CPAC/Working_2013-10-11_gelert/resting_preproc_0051095_session_1/_scan_rest_1_rest/snr_0
+131017-15:06:37,697 workflow INFO:
+	 [Job finished] jobname: snr_0.c0 jobid: 81
+131017-15:06:37,720 workflow INFO:
+	 Submitting 3 jobs
+131017-15:06:37,722 workflow INFO:
+	 Executing: hist_snr_0.c0 ID: 153
+131017-15:06:37,726 workflow INFO:
+	 Executing: snr_val0.c0 ID: 161
+131017-15:06:37,730 workflow INFO:
+	 Executing: dp_snr_0.c0 ID: 188
+args:  {'func_': '/data/Projects/ABIDE_Initiative/CPAC/Working_2013-10-11_gelert/resting_preproc_0051095_session_1/_scan_rest_1_rest/std_dev_0/std_dev.nii.gz', 'xfm_': '/data/Projects/ABIDE_Initiative/CPAC/Working_2013-10-11_gelert/resting_preproc_0051095_session_1/func_to_anat_bbreg_0/_scan_rest_1_rest/bbreg_func_to_anat/rest_3dc_tshift_RPI_3dv_3dc_3dT_flirt.mat', 'ref_': '/data/Projects/ABIDE_Initiative/CPAC/Working_2013-10-11_gelert/resting_preproc_0051095_session_1/anat_preproc_0/anat_brain_only/mprage_RPI_3dc.nii.gz', 'interp_': 'trilinear'}
+applywarp --ref=/data/Projects/ABIDE_Initiative/CPAC/Working_2013-10-11_gelert/resting_preproc_0051095_session_1/anat_preproc_0/anat_brain_only/mprage_RPI_3dc.nii.gz --in=/data/Projects/ABIDE_Initiative/CPAC/Working_2013-10-11_gelert/resting_preproc_0051095_session_1/_scan_rest_1_rest/std_dev_0/std_dev.nii.gz --out=/data/Projects/ABIDE_Initiative/CPAC/Working_2013-10-11_gelert/resting_preproc_0051095_session_1/_scan_rest_1_rest/std_dev_anat_0/std_dev_anat.nii.gz --premat=/data/Projects/ABIDE_Initiative/CPAC/Working_2013-10-11_gelert/resting_preproc_0051095_session_1/func_to_anat_bbreg_0/_scan_rest_1_rest/bbreg_func_to_anat/rest_3dc_tshift_RPI_3dv_3dc_3dT_flirt.mat --interp=trilinear
+
+131017-15:06:37,746 workflow INFO:
+	 Executing node hist_snr_0.c0 in dir: /home2/data/Projects/ABIDE_Initiative/CPAC/Working_2013-10-11_gelert/resting_preproc_0051095_session_1/_scan_rest_1_rest/hist_snr_0
+args:  {'mean_func_anat': '/data/Projects/ABIDE_Initiative/CPAC/Working_2013-10-11_gelert/resting_preproc_0051095_session_1/func_to_anat_bbreg_0/_scan_rest_1_rest/bbreg_func_to_anat/rest_3dc_tshift_RPI_3dv_3dc_3dT_flirt.nii.gz', 'std_dev': '/data/Projects/ABIDE_Initiative/CPAC/Working_2013-10-11_gelert/resting_preproc_0051095_session_1/_scan_rest_1_rest/std_dev_anat_0/std_dev_anat.nii.gz'}
+3dcalc -a /data/Projects/ABIDE_Initiative/CPAC/Working_2013-10-11_gelert/resting_preproc_0051095_session_1/_scan_rest_1_rest/std_dev_anat_0/std_dev_anat.nii.gz -b /data/Projects/ABIDE_Initiative/CPAC/Working_2013-10-11_gelert/resting_preproc_0051095_session_1/func_to_anat_bbreg_0/_scan_rest_1_rest/bbreg_func_to_anat/rest_3dc_tshift_RPI_3dv_3dc_3dT_flirt.nii.gz -expr "b/a" -prefix /data/Projects/ABIDE_Initiative/CPAC/Working_2013-10-11_gelert/resting_preproc_0051095_session_1/_scan_rest_1_rest/snr_0/snr.nii.gz
+++ 3dcalc: AFNI version=AFNI_2011_12_21_1014 (May 21 2012) [64-bit]
+++ Authored by: A cast of thousands
+++ WARNING: file /home2/qli/.afni.log is now 103608916 (104 million) bytes long!
+++ Output dataset /data/Projects/ABIDE_Initiative/CPAC/Working_2013-10-11_gelert/resting_preproc_0051095_session_1/_scan_rest_1_rest/snr_0/snr.nii.gz
+131017-15:06:37,749 workflow INFO:
+	 Executing node snr_val0.c0 in dir: /home2/data/Projects/ABIDE_Initiative/CPAC/Working_2013-10-11_gelert/resting_preproc_0051095_session_1/_scan_rest_1_rest/snr_val0
+args:  {'measure_file': '/data/Projects/ABIDE_Initiative/CPAC/Working_2013-10-11_gelert/resting_preproc_0051095_session_1/_scan_rest_1_rest/snr_0/snr.nii.gz'}
+131017-15:06:39,762 workflow INFO:
+	 Executing node dp_snr_0.c0 in dir: /home2/data/Projects/ABIDE_Initiative/CPAC/Working_2013-10-11_gelert/resting_preproc_0051095_session_1/_scan_rest_1_rest/dp_snr_0
+131017-15:06:41,751 workflow INFO:
+	 [Job finished] jobname: hist_snr_0.c0 jobid: 153
+131017-15:06:41,768 workflow INFO:
+	 [Job finished] jobname: snr_val0.c0 jobid: 161
+131017-15:06:41,784 workflow INFO:
+	 Submitting 2 jobs
+131017-15:06:41,785 workflow INFO:
+	 Executing: sinker_40.c0 ID: 65
+131017-15:06:41,789 workflow INFO:
+	 Executing: sinker_42.c0 ID: 170
+args:  {'measure_file': '/data/Projects/ABIDE_Initiative/CPAC/Working_2013-10-11_gelert/resting_preproc_0051095_session_1/_scan_rest_1_rest/snr_0/snr.nii.gz', 'measure': 'snr'}
+131017-15:06:41,808 workflow INFO:
+	 Executing node sinker_40.c0 in dir: /home2/data/Projects/ABIDE_Initiative/CPAC/Working_2013-10-11_gelert/resting_preproc_0051095_session_1/_scan_rest_1_rest/sinker_40
+131017-15:06:41,872 interface INFO:
+	 sub: /home2/data/Projects/ABIDE_Initiative/CPAC/Output_2013-10-11_gelert/pipeline_RameyBorough/0051095_session_1/qc___snr_hist/_scan_rest_1_rest/snr_hist_plot.png -> /home2/data/Projects/ABIDE_Initiative/CPAC/Output_2013-10-11_gelert/pipeline_RameyBorough/0051095_session_1/qc/snr_hist/_scan_rest_1_rest/snr_hist_plot.png
+131017-15:06:41,955 workflow INFO:
+	 Executing node sinker_42.c0 in dir: /home2/data/Projects/ABIDE_Initiative/CPAC/Working_2013-10-11_gelert/resting_preproc_0051095_session_1/_scan_rest_1_rest/sinker_42
+131017-15:06:42,1 interface INFO:
+	 sub: /home2/data/Projects/ABIDE_Initiative/CPAC/Output_2013-10-11_gelert/pipeline_RameyBorough/0051095_session_1/qc___snr_val/_scan_rest_1_rest/average_snr_file.txt -> /home2/data/Projects/ABIDE_Initiative/CPAC/Output_2013-10-11_gelert/pipeline_RameyBorough/0051095_session_1/qc/snr_val/_scan_rest_1_rest/average_snr_file.txt
+131017-15:06:43,799 workflow INFO:
+	 [Job finished] jobname: sinker_40.c0 jobid: 65
+131017-15:06:43,816 workflow INFO:
+	 [Job finished] jobname: sinker_42.c0 jobid: 170
+131017-15:06:43,827 workflow INFO:
+	 Submitting 2 jobs
+131017-15:06:43,828 workflow INFO:
+	 Executing: link_40.c0 ID: 130
+131017-15:06:43,830 workflow INFO:
+	 Executing: link_42.c0 ID: 158
+131017-15:06:43,849 workflow INFO:
+	 Executing node link_40.c0 in dir: /home2/data/Projects/ABIDE_Initiative/CPAC/Working_2013-10-11_gelert/resting_preproc_0051095_session_1/_scan_rest_1_rest/link_40
+args:  {'strategies': [['_compcor_ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic1.gm0.compcor1.csf0.ncomponents_5_selector_pc10.linear1.wm0.global1.motion1.quadratic1.gm0.compcor1.csf0', '_csf_threshold_0.96', '_gm_threshold_0.7', '_target_angle_deg_90', '_threshold_0.2', '_wm_threshold_0.96']], 'subject_id': '0051095_session_1', 'in_file': ['/home2/data/Projects/ABIDE_Initiative/CPAC/Output_2013-10-11_gelert/pipeline_RameyBorough/0051095_session_1/qc/snr_hist/_scan_rest_1_rest/snr_hist_plot.png'], 'helper': {'_gm_threshold': 1, '_csf_threshold': 1, '_wm_threshold': 1, 'nuisance': 1, '_target_angle_deg': 0, '_threshold': 0}, 'pipeline_id': 'pipeline_RameyBorough'}
+~~~~~~  _compcor_ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic1.gm0.compcor1.csf0.ncomponents_5_selector  ~~~  _compcor_ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic1.gm0.compcor1.csf0.ncomponents_5_selector_pc10.linear1.wm0.global1.motion1.quadratic1.gm0.compcor1.csf0
+~~~~~~  _csf_threshold  ~~~  _csf_threshold_0.96
+~~~~~~  _gm_threshold  ~~~  _gm_threshold_0.7
+~~~~~~  _target_angle_deg  ~~~  _target_angle_deg_90
+~~~~~~  _threshold  ~~~  _threshold_0.2
+~~~~~~  _wm_threshold  ~~~  _wm_threshold_0.96
+~~~~~~  pipeline  ~~~  pipeline_RameyBorough
+.
+_compcor_ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic1.gm0.compcor1.csf0.ncomponents_5_selector  ---------->  pc10.linear1.wm0.global1.motion1.quadratic1.gm0.compcor1.csf0
+_csf_threshold  ---------->  0.96
+_gm_threshold  ---------->  0.7
+_wm_threshold  ---------->  0.96
+pipeline  ---------->  RameyBorough
+scan_rest_1_rest  ~~~ /snr_hist/_scan_rest_1_rest/snr_hist_plot.png
+.
+.
+ln -s /home2/data/Projects/ABIDE_Initiative/CPAC/Output_2013-10-11_gelert/pipeline_RameyBorough/0051095_session_1/qc/snr_hist/_scan_rest_1_rest/snr_hist_plot.png /home2/data/Projects/ABIDE_Initiative/CPAC/Output_2013-10-11_gelert/sym_links/pipeline_RameyBorough/_compcor_ncomponents_5_linear1.global1.motion1.quadratic1.compcor1.CSF_0.96_GM_0.7_WM_0.96/0051095_session_1/scan_rest_1_rest/qc/snr_hist_plot.png
+131017-15:06:44,6 workflow INFO:
+	 Executing node link_42.c0 in dir: /home2/data/Projects/ABIDE_Initiative/CPAC/Working_2013-10-11_gelert/resting_preproc_0051095_session_1/_scan_rest_1_rest/link_42
+131017-15:06:45,838 workflow INFO:
+	 [Job finished] jobname: montage_a.c0 jobid: 106
+131017-15:06:45,856 workflow INFO:
+	 [Job finished] jobname: montage_s.c0 jobid: 184
+131017-15:06:45,864 workflow INFO:
+	 [Job finished] jobname: link_40.c0 jobid: 130
+131017-15:06:45,873 workflow INFO:
+	 [Job finished] jobname: link_42.c0 jobid: 158
+131017-15:06:45,885 workflow INFO:
+	 Submitting 2 jobs
+131017-15:06:45,886 workflow INFO:
+	 Executing: sinker_32.c0 ID: 113
+131017-15:06:45,890 workflow INFO:
+	 Executing: sinker_31.c0 ID: 176
+args:  {'png_name': 't1_edge_on_mean_func_in_t1_a.png', 'underlay': '/data/Projects/ABIDE_Initiative/CPAC/Working_2013-10-11_gelert/resting_preproc_0051095_session_1/montage_anat_0/_scan_rest_1_rest/resample_u/rest_3dc_tshift_RPI_3dv_3dc_3dT_flirt_1mm.nii.gz', 'cbar_name': 'red', 'overlay': '/data/Projects/ABIDE_Initiative/CPAC/Working_2013-10-11_gelert/resting_preproc_0051095_session_1/montage_anat_0/resample_o/mprage_RPI_3dc_edge_1mm.nii.gz'}
+^^ [   0.  218.]
+~~ 218.0
+~~~ 65   190
+131017-15:06:45,911 workflow INFO:
+	 Executing node sinker_32.c0 in dir: /home2/data/Projects/ABIDE_Initiative/CPAC/Working_2013-10-11_gelert/resting_preproc_0051095_session_1/_scan_rest_1_rest/sinker_32
+args:  {'strategies': [['_compcor_ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic1.gm0.compcor1.csf0.ncomponents_5_selector_pc10.linear1.wm0.global1.motion1.quadratic1.gm0.compcor1.csf0', '_csf_threshold_0.96', '_gm_threshold_0.7', '_target_angle_deg_90', '_threshold_0.2', '_wm_threshold_0.96']], 'subject_id': '0051095_session_1', 'in_file': ['/home2/data/Projects/ABIDE_Initiative/CPAC/Output_2013-10-11_gelert/pipeline_RameyBorough/0051095_session_1/qc/snr_val/_scan_rest_1_rest/average_snr_file.txt'], 'helper': {'_gm_threshold': 1, '_csf_threshold': 1, '_wm_threshold': 1, 'nuisance': 1, '_target_angle_deg': 0, '_threshold': 0}, 'pipeline_id': 'pipeline_RameyBorough'}
+~~~~~~  _compcor_ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic1.gm0.compcor1.csf0.ncomponents_5_selector  ~~~  _compcor_ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic1.gm0.compcor1.csf0.ncomponents_5_selector_pc10.linear1.wm0.global1.motion1.quadratic1.gm0.compcor1.csf0
+~~~~~~  _csf_threshold  ~~~  _csf_threshold_0.96
+~~~~~~  _gm_threshold  ~~~  _gm_threshold_0.7
+~~~~~~  _target_angle_deg  ~~~  _target_angle_deg_90
+~~~~~~  _threshold  ~~~  _threshold_0.2
+~~~~~~  _wm_threshold  ~~~  _wm_threshold_0.96
+~~~~~~  pipeline  ~~~  pipeline_RameyBorough
+.
+_compcor_ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic1.gm0.compcor1.csf0.ncomponents_5_selector  ---------->  pc10.linear1.wm0.global1.motion1.quadratic1.gm0.compcor1.csf0
+_csf_threshold  ---------->  0.96
+_gm_threshold  ---------->  0.7
+_wm_threshold  ---------->  0.96
+pipeline  ---------->  RameyBorough
+scan_rest_1_rest  ~~~ /snr_val/_scan_rest_1_rest/average_snr_file.txt
+.
+.
+ln -s /home2/data/Projects/ABIDE_Initiative/CPAC/Output_2013-10-11_gelert/pipeline_RameyBorough/0051095_session_1/qc/snr_val/_scan_rest_1_rest/average_snr_file.txt /home2/data/Projects/ABIDE_Initiative/CPAC/Output_2013-10-11_gelert/sym_links/pipeline_RameyBorough/_compcor_ncomponents_5_linear1.global1.motion1.quadratic1.compcor1.CSF_0.96_GM_0.7_WM_0.96/0051095_session_1/scan_rest_1_rest/qc/average_snr_file.txt
+131017-15:06:45,918 workflow INFO:
+	 Executing node sinker_31.c0 in dir: /home2/data/Projects/ABIDE_Initiative/CPAC/Working_2013-10-11_gelert/resting_preproc_0051095_session_1/_scan_rest_1_rest/sinker_31
+131017-15:06:45,973 interface INFO:
+	 sub: /home2/data/Projects/ABIDE_Initiative/CPAC/Output_2013-10-11_gelert/pipeline_RameyBorough/0051095_session_1/qc___mean_func_with_t1_edge_s/_scan_rest_1_rest/t1_edge_on_mean_func_in_t1_s.png -> /home2/data/Projects/ABIDE_Initiative/CPAC/Output_2013-10-11_gelert/pipeline_RameyBorough/0051095_session_1/qc/mean_func_with_t1_edge_s/_scan_rest_1_rest/t1_edge_on_mean_func_in_t1_s.png
+131017-15:06:45,975 interface INFO:
+	 sub: /home2/data/Projects/ABIDE_Initiative/CPAC/Output_2013-10-11_gelert/pipeline_RameyBorough/0051095_session_1/qc___mean_func_with_t1_edge_a/_scan_rest_1_rest/t1_edge_on_mean_func_in_t1_a.png -> /home2/data/Projects/ABIDE_Initiative/CPAC/Output_2013-10-11_gelert/pipeline_RameyBorough/0051095_session_1/qc/mean_func_with_t1_edge_a/_scan_rest_1_rest/t1_edge_on_mean_func_in_t1_a.png
+131017-15:06:47,901 workflow INFO:
+	 [Job finished] jobname: sinker_32.c0 jobid: 113
+131017-15:06:47,919 workflow INFO:
+	 [Job finished] jobname: sinker_31.c0 jobid: 176
+131017-15:06:47,941 workflow INFO:
+	 Submitting 2 jobs
+131017-15:06:47,942 workflow INFO:
+	 Executing: link_31.c0 ID: 120
+131017-15:06:47,945 workflow INFO:
+	 Executing: link_32.c0 ID: 144
+args:  {'png_name': 't1_edge_on_mean_func_in_t1_s.png', 'underlay': '/data/Projects/ABIDE_Initiative/CPAC/Working_2013-10-11_gelert/resting_preproc_0051095_session_1/montage_anat_0/_scan_rest_1_rest/resample_u/rest_3dc_tshift_RPI_3dv_3dc_3dT_flirt_1mm.nii.gz', 'cbar_name': 'red', 'overlay': '/data/Projects/ABIDE_Initiative/CPAC/Working_2013-10-11_gelert/resting_preproc_0051095_session_1/montage_anat_0/resample_o/mprage_RPI_3dc_edge_1mm.nii.gz'}
+^^ [   0.  218.]
+~~ 218.0
+131017-15:06:47,965 workflow INFO:
+	 Executing node link_31.c0 in dir: /home2/data/Projects/ABIDE_Initiative/CPAC/Working_2013-10-11_gelert/resting_preproc_0051095_session_1/_scan_rest_1_rest/link_31
+131017-15:06:47,969 workflow INFO:
+	 Executing node link_32.c0 in dir: /home2/data/Projects/ABIDE_Initiative/CPAC/Working_2013-10-11_gelert/resting_preproc_0051095_session_1/_scan_rest_1_rest/link_32
+131017-15:06:49,958 workflow INFO:
+	 [Job finished] jobname: link_31.c0 jobid: 120
+131017-15:06:49,975 workflow INFO:
+	 [Job finished] jobname: link_32.c0 jobid: 144
+131017-15:08:56,429 workflow INFO:
+	 [Job finished] jobname: dp_snr_0.c0 jobid: 188
+131017-15:08:56,455 workflow INFO:
+	 Submitting 1 jobs
+131017-15:08:56,457 workflow INFO:
+	 Executing: resample_o.c0 ID: 211
+131017-15:08:56,482 workflow INFO:
+	 Executing node resample_o.c0 in dir: /home2/data/Projects/ABIDE_Initiative/CPAC/Working_2013-10-11_gelert/resting_preproc_0051095_session_1/montage_snr_0/_scan_rest_1_rest/resample_o
+131017-15:08:58,469 workflow INFO:
+	 [Job finished] jobname: resample_o.c0 jobid: 211
+131017-15:08:58,495 workflow INFO:
+	 Submitting 2 jobs
+131017-15:08:58,496 workflow INFO:
+	 Executing: montage_a.c0 ID: 19
+131017-15:08:58,498 workflow INFO:
+	 Executing: montage_s.c0 ID: 131
+args:  {'strategies': [['_compcor_ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic1.gm0.compcor1.csf0.ncomponents_5_selector_pc10.linear1.wm0.global1.motion1.quadratic1.gm0.compcor1.csf0', '_csf_threshold_0.96', '_gm_threshold_0.7', '_target_angle_deg_90', '_threshold_0.2', '_wm_threshold_0.96']], 'subject_id': '0051095_session_1', 'in_file': ['/home2/data/Projects/ABIDE_Initiative/CPAC/Output_2013-10-11_gelert/pipeline_RameyBorough/0051095_session_1/qc/mean_func_with_t1_edge_a/_scan_rest_1_rest/t1_edge_on_mean_func_in_t1_a.png'], 'helper': {'_gm_threshold': 1, '_csf_threshold': 1, '_wm_threshold': 1, 'nuisance': 1, '_target_angle_deg': 0, '_threshold': 0}, 'pipeline_id': 'pipeline_RameyBorough'}
+~~~~~~  _compcor_ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic1.gm0.compcor1.csf0.ncomponents_5_selector  ~~~  _compcor_ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic1.gm0.compcor1.csf0.ncomponents_5_selector_pc10.linear1.wm0.global1.motion1.quadratic1.gm0.compcor1.csf0
+~~~~~~  _csf_threshold  ~~~  _csf_threshold_0.96
+~~~~~~  _gm_threshold  ~~~  _gm_threshold_0.7
+~~~~~~  _target_angle_deg  ~~~  _target_angle_deg_90
+~~~~~~  _threshold  ~~~  _threshold_0.2
+~~~~~~  _wm_threshold  ~~~  _wm_threshold_0.96
+~~~~~~  pipeline  ~~~  pipeline_RameyBorough
+.
+_compcor_ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic1.gm0.compcor1.csf0.ncomponents_5_selector  ---------->  pc10.linear1.wm0.global1.motion1.quadratic1.gm0.compcor1.csf0
+_csf_threshold  ---------->  0.96
+_gm_threshold  ---------->  0.7
+_wm_threshold  ---------->  0.96
+pipeline  ---------->  RameyBorough
+scan_rest_1_rest  ~~~ /mean_func_with_t1_edge_a/_scan_rest_1_rest/t1_edge_on_mean_func_in_t1_a.png
+.
+.
+ln -s /home2/data/Projects/ABIDE_Initiative/CPAC/Output_2013-10-11_gelert/pipeline_RameyBorough/0051095_session_1/qc/mean_func_with_t1_edge_a/_scan_rest_1_rest/t1_edge_on_mean_func_in_t1_a.png /home2/data/Projects/ABIDE_Initiative/CPAC/Output_2013-10-11_gelert/sym_links/pipeline_RameyBorough/_compcor_ncomponents_5_linear1.global1.motion1.quadratic1.compcor1.CSF_0.96_GM_0.7_WM_0.96/0051095_session_1/scan_rest_1_rest/qc/t1_edge_on_mean_func_in_t1_a.png
+131017-15:08:58,534 workflow INFO:
+	 Executing node montage_a.c0 in dir: /home2/data/Projects/ABIDE_Initiative/CPAC/Working_2013-10-11_gelert/resting_preproc_0051095_session_1/montage_snr_0/_scan_rest_1_rest/montage_a
+args:  {'strategies': [['_compcor_ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic1.gm0.compcor1.csf0.ncomponents_5_selector_pc10.linear1.wm0.global1.motion1.quadratic1.gm0.compcor1.csf0', '_csf_threshold_0.96', '_gm_threshold_0.7', '_target_angle_deg_90', '_threshold_0.2', '_wm_threshold_0.96']], 'subject_id': '0051095_session_1', 'in_file': ['/home2/data/Projects/ABIDE_Initiative/CPAC/Output_2013-10-11_gelert/pipeline_RameyBorough/0051095_session_1/qc/mean_func_with_t1_edge_s/_scan_rest_1_rest/t1_edge_on_mean_func_in_t1_s.png'], 'helper': {'_gm_threshold': 1, '_csf_threshold': 1, '_wm_threshold': 1, 'nuisance': 1, '_target_angle_deg': 0, '_threshold': 0}, 'pipeline_id': 'pipeline_RameyBorough'}
+~~~~~~  _compcor_ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic1.gm0.compcor1.csf0.ncomponents_5_selector  ~~~  _compcor_ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic1.gm0.compcor1.csf0.ncomponents_5_selector_pc10.linear1.wm0.global1.motion1.quadratic1.gm0.compcor1.csf0
+~~~~~~  _csf_threshold  ~~~  _csf_threshold_0.96
+~~~~~~  _gm_threshold  ~~~  _gm_threshold_0.7
+~~~~~~  _target_angle_deg  ~~~  _target_angle_deg_90
+~~~~~~  _threshold  ~~~  _threshold_0.2
+~~~~~~  _wm_threshold  ~~~  _wm_threshold_0.96
+~~~~~~  pipeline  ~~~  pipeline_RameyBorough
+.
+_compcor_ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic1.gm0.compcor1.csf0.ncomponents_5_selector  ---------->  pc10.linear1.wm0.global1.motion1.quadratic1.gm0.compcor1.csf0
+_csf_threshold  ---------->  0.96
+_gm_threshold  ---------->  0.7
+_wm_threshold  ---------->  0.96
+pipeline  ---------->  RameyBorough
+scan_rest_1_rest  ~~~ /mean_func_with_t1_edge_s/_scan_rest_1_rest/t1_edge_on_mean_func_in_t1_s.png
+.
+.
+ln -s /home2/data/Projects/ABIDE_Initiative/CPAC/Output_2013-10-11_gelert/pipeline_RameyBorough/0051095_session_1/qc/mean_func_with_t1_edge_s/_scan_rest_1_rest/t1_edge_on_mean_func_in_t1_s.png /home2/data/Projects/ABIDE_Initiative/CPAC/Output_2013-10-11_gelert/sym_links/pipeline_RameyBorough/_compcor_ncomponents_5_linear1.global1.motion1.quadratic1.compcor1.CSF_0.96_GM_0.7_WM_0.96/0051095_session_1/scan_rest_1_rest/qc/t1_edge_on_mean_func_in_t1_s.png
+131017-15:08:58,537 workflow INFO:
+	 Executing node montage_s.c0 in dir: /home2/data/Projects/ABIDE_Initiative/CPAC/Working_2013-10-11_gelert/resting_preproc_0051095_session_1/montage_snr_0/_scan_rest_1_rest/montage_s
+131017-15:09:10,548 workflow INFO:
+	 [Job finished] jobname: montage_a.c0 jobid: 19
+131017-15:09:10,568 workflow INFO:
+	 [Job finished] jobname: montage_s.c0 jobid: 131
+131017-15:09:10,584 workflow INFO:
+	 Submitting 2 jobs
+131017-15:09:10,585 workflow INFO:
+	 Executing: sinker_41.c0 ID: 171
+131017-15:09:10,589 workflow INFO:
+	 Executing: sinker_39.c0 ID: 204
+args:  {'measure_file': '/data/Projects/ABIDE_Initiative/CPAC/Working_2013-10-11_gelert/resting_preproc_0051095_session_1/_scan_rest_1_rest/snr_0/snr.nii.gz', 'percent_': 99}
+131017-15:09:10,614 workflow INFO:
+	 Executing node sinker_41.c0 in dir: /home2/data/Projects/ABIDE_Initiative/CPAC/Working_2013-10-11_gelert/resting_preproc_0051095_session_1/_scan_rest_1_rest/sinker_41
+args:  {'file_': '/data/Projects/ABIDE_Initiative/CPAC/Working_2013-10-11_gelert/resting_preproc_0051095_session_1/_scan_rest_1_rest/dp_snr_0/snr_99.nii.gz'}
+ 3dresample -dxyz 1.0 1.0 1.0 -prefix /data/Projects/ABIDE_Initiative/CPAC/Working_2013-10-11_gelert/resting_preproc_0051095_session_1/montage_snr_0/_scan_rest_1_rest/resample_o/snr_99_1mm.nii.gz -inset /data/Projects/ABIDE_Initiative/CPAC/Working_2013-10-11_gelert/resting_preproc_0051095_session_1/_scan_rest_1_rest/dp_snr_0/snr_99.nii.gz 
+131017-15:09:10,622 workflow INFO:
+	 Executing node sinker_39.c0 in dir: /home2/data/Projects/ABIDE_Initiative/CPAC/Working_2013-10-11_gelert/resting_preproc_0051095_session_1/_scan_rest_1_rest/sinker_39
+131017-15:09:10,763 interface INFO:
+	 sub: /home2/data/Projects/ABIDE_Initiative/CPAC/Output_2013-10-11_gelert/pipeline_RameyBorough/0051095_session_1/qc___snr_s/_scan_rest_1_rest/snr_s.png -> /home2/data/Projects/ABIDE_Initiative/CPAC/Output_2013-10-11_gelert/pipeline_RameyBorough/0051095_session_1/qc/snr_s/_scan_rest_1_rest/snr_s.png
+131017-15:09:10,777 interface INFO:
+	 sub: /home2/data/Projects/ABIDE_Initiative/CPAC/Output_2013-10-11_gelert/pipeline_RameyBorough/0051095_session_1/qc___snr_a/_scan_rest_1_rest/snr_a.png -> /home2/data/Projects/ABIDE_Initiative/CPAC/Output_2013-10-11_gelert/pipeline_RameyBorough/0051095_session_1/qc/snr_a/_scan_rest_1_rest/snr_a.png
+131017-15:09:12,601 workflow INFO:
+	 [Job finished] jobname: sinker_41.c0 jobid: 171
+131017-15:09:12,621 workflow INFO:
+	 [Job finished] jobname: sinker_39.c0 jobid: 204
+131017-15:09:12,645 workflow INFO:
+	 Submitting 2 jobs
+131017-15:09:12,647 workflow INFO:
+	 Executing: link_39.c0 ID: 177
+131017-15:09:12,651 workflow INFO:
+	 Executing: link_41.c0 ID: 196
+args:  {'png_name': 'snr_s.png', 'underlay': '/data/Projects/ABIDE_Initiative/CPAC/Working_2013-10-11_gelert/resting_preproc_0051095_session_1/montage_snr_0/resample_u/mprage_RPI_3dc_1mm.nii.gz', 'cbar_name': 'red_to_blue', 'overlay': '/data/Projects/ABIDE_Initiative/CPAC/Working_2013-10-11_gelert/resting_preproc_0051095_session_1/montage_snr_0/_scan_rest_1_rest/resample_o/snr_99_1mm.nii.gz'}
+~~ 0.34302
+131017-15:09:12,673 workflow INFO:
+	 Executing node link_39.c0 in dir: /home2/data/Projects/ABIDE_Initiative/CPAC/Working_2013-10-11_gelert/resting_preproc_0051095_session_1/_scan_rest_1_rest/link_39
+args:  {'png_name': 'snr_a.png', 'underlay': '/data/Projects/ABIDE_Initiative/CPAC/Working_2013-10-11_gelert/resting_preproc_0051095_session_1/montage_snr_0/resample_u/mprage_RPI_3dc_1mm.nii.gz', 'cbar_name': 'red_to_blue', 'overlay': '/data/Projects/ABIDE_Initiative/CPAC/Working_2013-10-11_gelert/resting_preproc_0051095_session_1/montage_snr_0/_scan_rest_1_rest/resample_o/snr_99_1mm.nii.gz'}
+~~ 0.34302
+~~~ 51   189
+131017-15:09:12,678 workflow INFO:
+	 Executing node link_41.c0 in dir: /home2/data/Projects/ABIDE_Initiative/CPAC/Working_2013-10-11_gelert/resting_preproc_0051095_session_1/_scan_rest_1_rest/link_41
+131017-15:09:14,658 workflow INFO:
+	 [Job finished] jobname: link_39.c0 jobid: 177
+131017-15:09:14,678 workflow INFO:
+	 [Job finished] jobname: link_41.c0 jobid: 196
+131017-15:09:16,698 workflow INFO:
+	 ***********************************
+131017-15:09:16,699 workflow ERROR:
+	 could not run node: resting_preproc_0051095_session_1.anat_mni_ants_register_0.warp_brain
+131017-15:09:16,700 workflow INFO:
+	 crashfile: /home2/data/Projects/ABIDE_Initiative/CPAC/crash/crash-20131017-144705-qli-warp_brain.npz
+131017-15:09:16,702 workflow ERROR:
+	 could not run node: resting_preproc_0051095_session_1.fsl_reg_2_itk_mask_0.c0
+131017-15:09:16,703 workflow INFO:
+	 crashfile: /home2/data/Projects/ABIDE_Initiative/CPAC/crash/crash-20131017-150627-qli-fsl_reg_2_itk_mask_0.c0.npz
+131017-15:09:16,704 workflow ERROR:
+	 could not run node: resting_preproc_0051095_session_1.fsl_reg_2_itk_mean_0.c0
+131017-15:09:16,705 workflow INFO:
+	 crashfile: /home2/data/Projects/ABIDE_Initiative/CPAC/crash/crash-20131017-150627-qli-fsl_reg_2_itk_mean_0.c0.npz
+131017-15:09:16,706 workflow ERROR:
+	 could not run node: resting_preproc_0051095_session_1.fsl_reg_2_itk_0.c0
+131017-15:09:16,707 workflow INFO:
+	 crashfile: /home2/data/Projects/ABIDE_Initiative/CPAC/crash/crash-20131017-150627-qli-fsl_reg_2_itk_0.c0.npz
+131017-15:09:16,708 workflow INFO:
+	 ***********************************
+args:  {'strategies': [['_compcor_ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic1.gm0.compcor1.csf0.ncomponents_5_selector_pc10.linear1.wm0.global1.motion1.quadratic1.gm0.compcor1.csf0', '_csf_threshold_0.96', '_gm_threshold_0.7', '_target_angle_deg_90', '_threshold_0.2', '_wm_threshold_0.96']], 'subject_id': '0051095_session_1', 'in_file': ['/home2/data/Projects/ABIDE_Initiative/CPAC/Output_2013-10-11_gelert/pipeline_RameyBorough/0051095_session_1/qc/snr_a/_scan_rest_1_rest/snr_a.png'], 'helper': {'_gm_threshold': 1, '_csf_threshold': 1, '_wm_threshold': 1, 'nuisance': 1, '_target_angle_deg': 0, '_threshold': 0}, 'pipeline_id': 'pipeline_RameyBorough'}
+~~~~~~  _compcor_ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic1.gm0.compcor1.csf0.ncomponents_5_selector  ~~~  _compcor_ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic1.gm0.compcor1.csf0.ncomponents_5_selector_pc10.linear1.wm0.global1.motion1.quadratic1.gm0.compcor1.csf0
+~~~~~~  _csf_threshold  ~~~  _csf_threshold_0.96
+~~~~~~  _gm_threshold  ~~~  _gm_threshold_0.7
+~~~~~~  _target_angle_deg  ~~~  _target_angle_deg_90
+~~~~~~  _threshold  ~~~  _threshold_0.2
+~~~~~~  _wm_threshold  ~~~  _wm_threshold_0.96
+~~~~~~  pipeline  ~~~  pipeline_RameyBorough
+.
+_compcor_ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic1.gm0.compcor1.csf0.ncomponents_5_selector  ---------->  pc10.linear1.wm0.global1.motion1.quadratic1.gm0.compcor1.csf0
+_csf_threshold  ---------->  0.96
+_gm_threshold  ---------->  0.7
+_wm_threshold  ---------->  0.96
+pipeline  ---------->  RameyBorough
+scan_rest_1_rest  ~~~ /snr_a/_scan_rest_1_rest/snr_a.png
+.
+.
+ln -s /home2/data/Projects/ABIDE_Initiative/CPAC/Output_2013-10-11_gelert/pipeline_RameyBorough/0051095_session_1/qc/snr_a/_scan_rest_1_rest/snr_a.png /home2/data/Projects/ABIDE_Initiative/CPAC/Output_2013-10-11_gelert/sym_links/pipeline_RameyBorough/_compcor_ncomponents_5_linear1.global1.motion1.quadratic1.compcor1.CSF_0.96_GM_0.7_WM_0.96/0051095_session_1/scan_rest_1_rest/qc/snr_a.png
+args:  {'strategies': [['_compcor_ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic1.gm0.compcor1.csf0.ncomponents_5_selector_pc10.linear1.wm0.global1.motion1.quadratic1.gm0.compcor1.csf0', '_csf_threshold_0.96', '_gm_threshold_0.7', '_target_angle_deg_90', '_threshold_0.2', '_wm_threshold_0.96']], 'subject_id': '0051095_session_1', 'in_file': ['/home2/data/Projects/ABIDE_Initiative/CPAC/Output_2013-10-11_gelert/pipeline_RameyBorough/0051095_session_1/qc/snr_s/_scan_rest_1_rest/snr_s.png'], 'helper': {'_gm_threshold': 1, '_csf_threshold': 1, '_wm_threshold': 1, 'nuisance': 1, '_target_angle_deg': 0, '_threshold': 0}, 'pipeline_id': 'pipeline_RameyBorough'}
+~~~~~~  _compcor_ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic1.gm0.compcor1.csf0.ncomponents_5_selector  ~~~  _compcor_ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic1.gm0.compcor1.csf0.ncomponents_5_selector_pc10.linear1.wm0.global1.motion1.quadratic1.gm0.compcor1.csf0
+~~~~~~  _csf_threshold  ~~~  _csf_threshold_0.96
+~~~~~~  _gm_threshold  ~~~  _gm_threshold_0.7
+~~~~~~  _target_angle_deg  ~~~  _target_angle_deg_90
+~~~~~~  _threshold  ~~~  _threshold_0.2
+~~~~~~  _wm_threshold  ~~~  _wm_threshold_0.96
+~~~~~~  pipeline  ~~~  pipeline_RameyBorough
+.
+_compcor_ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic1.gm0.compcor1.csf0.ncomponents_5_selector  ---------->  pc10.linear1.wm0.global1.motion1.quadratic1.gm0.compcor1.csf0
+_csf_threshold  ---------->  0.96
+_gm_threshold  ---------->  0.7
+_wm_threshold  ---------->  0.96
+pipeline  ---------->  RameyBorough
+scan_rest_1_rest  ~~~ /snr_s/_scan_rest_1_rest/snr_s.png
+.
+.
+ln -s /home2/data/Projects/ABIDE_Initiative/CPAC/Output_2013-10-11_gelert/pipeline_RameyBorough/0051095_session_1/qc/snr_s/_scan_rest_1_rest/snr_s.png /home2/data/Projects/ABIDE_Initiative/CPAC/Output_2013-10-11_gelert/sym_links/pipeline_RameyBorough/_compcor_ncomponents_5_linear1.global1.motion1.quadratic1.compcor1.CSF_0.96_GM_0.7_WM_0.96/0051095_session_1/scan_rest_1_rest/qc/snr_s.png
