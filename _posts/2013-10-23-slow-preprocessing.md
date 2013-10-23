@@ -35,5 +35,5 @@ So maybe the issue is that the process is stuck on something.  There are no cras
 
 This error/warning makes me think that I created the mask for centrality incorrectly. I should have possibly used a 100% mask instead of a 90% mask. Checking this with others but it does seem that it is a RuntimeWarning and not something else. The previous degrade mode error appears to be a registration issue?
 
-Ok after speaking to Dan, he suggested to look at the time-stamp of the c-pac_*.out and it appears that stuff is being continually written. One possibility for the slowness is that on gelert we need to set a somewhat low memory limit for centrality (2gb), which might slow things down. However, this step (centrality) does seem to be computed and the .out shows stuff related to symlinks being done.
+Ok after speaking to Dan, he suggested to look at the time-stamp of the `c-pac_*.out` and it appears that stuff is being continually written. One possibility for the slowness is that on gelert we need to set a somewhat low memory limit for centrality (2gb), which might slow things down. However, this step (centrality) does seem to be computed and the .out shows stuff related to symlinks being done.
 
