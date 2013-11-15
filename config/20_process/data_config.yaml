@@ -1,0 +1,14 @@
+anatomicalTemplate  :  /home2/data/Projects/ABIDE_Initiative/CPAC/RawData/%s/%s/session_1/*/mprage.nii.gz 
+
+functionalTemplate  :  /home2/data/Projects/ABIDE_Initiative/CPAC/RawData/%s/%s/*/*/rest.nii.gz 
+
+subjectList  :  None
+
+exclusionSubjectList  :  None 
+
+siteList  :  None 
+
+scanParametersCSV  :  /data/Projects/ABIDE_Initiative/CPAC/abide/config/slice_timing_parameters.csv 
+
+outputSubjectListLocation  :  /home2/data/Projects/ABIDE_Initiative/CPAC/abide/config/20_process
+
