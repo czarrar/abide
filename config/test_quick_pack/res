@@ -1,0 +1,1112 @@
+[{'global': 1, 'linear': 1, 'wm': 0, 'pc1': 0, 'motion': 1, 'quadratic': 1, 'gm': 0, 'compcor': 1, 'csf': 0}]
+Paths:  ["['ncomponents_5_selector_pc10.linear1.wm0.global1.motion1.quadratic1.gm0.compcor1.csf0']#['0.96']#['0.7']#[90]#['0.2']#['0.96']"]
+['_compcor_ncomponents_5_selector_pc10.linear1.wm0.global1.motion1.quadratic1.gm0.compcor1.csf0', '_csf_threshold_0.96', '_gm_threshold_0.7', '_target_angle_deg_90', '_threshold_0.2', '_wm_threshold_0.96']
+strategies --->  [['_compcor_ncomponents_5_selector_pc10.linear1.wm0.global1.motion1.quadratic1.gm0.compcor1.csf0', '_csf_threshold_0.96', '_gm_threshold_0.7', '_target_angle_deg_90', '_threshold_0.2', '_wm_threshold_0.96']]
+
+[{'functional_mni': {'rest_1_rest': '/home2/data/Projects/ABIDE_Initiative/CPAC/Output_2013-10-22/sym_links/pipeline_MerrittIsland/_compcor_ncomponents_5_linear1.global1.motion1.quadratic1.compcor1.CSF_0.96_GM_0.7_WM_0.96/0051466_session_1/scan_rest_1_rest/func/functional_mni.nii.gz'}, 'functional_freq_filtered': {'rest_1_rest': ''}, 'rest': {'rest_1_rest': '/data/Projects/ABIDE_Initiative/CPAC/RawData/Caltech/0051466/session_1/rest_1/rest.nii.gz'}, 'ants_affine_xfm': '/home2/data/Projects/ABIDE_Initiative/CPAC/Output_2013-10-22/sym_links/pipeline_MerrittIsland/_compcor_ncomponents_5_linear1.global1.motion1.quadratic1.compcor1.CSF_0.96_GM_0.7_WM_0.96/0051466_session_1/scan/anat/ants_affine_xfm.txt', 'anatomical_brain': '/home2/data/Projects/ABIDE_Initiative/CPAC/Output_2013-10-22/sym_links/pipeline_MerrittIsland/_compcor_ncomponents_5_linear1.global1.motion1.quadratic1.compcor1.CSF_0.96_GM_0.7_WM_0.96/0051466_session_1/scan/anat/anatomical_brain.nii.gz', 'anatomical_to_mni_nonlinear_xfm': '/home2/data/Projects/ABIDE_Initiative/CPAC/Output_2013-10-22/sym_links/pipeline_MerrittIsland/_compcor_ncomponents_5_linear1.global1.motion1.quadratic1.compcor1.CSF_0.96_GM_0.7_WM_0.96/0051466_session_1/scan/anat/anatomical_to_mni_nonlinear_xfm.nii.gz', 'anat': '/data/Projects/ABIDE_Initiative/CPAC/RawData/Caltech/0051466/session_1/anat_1/mprage.nii.gz', 'functional_brain_mask_to_standard': {'rest_1_rest': '/home2/data/Projects/ABIDE_Initiative/CPAC/Output_2013-10-22/sym_links/pipeline_MerrittIsland/_compcor_ncomponents_5_linear1.global1.motion1.quadratic1.compcor1.CSF_0.96_GM_0.7_WM_0.96/0051466_session_1/scan_rest_1_rest/func/functional_brain_mask_to_standard.nii.gz'}, 'subject_id': '0051466', 'functional_brain_mask': {'rest_1_rest': '/home2/data/Projects/ABIDE_Initiative/CPAC/Output_2013-10-22/sym_links/pipeline_MerrittIsland/_compcor_ncomponents_5_linear1.global1.motion1.quadratic1.compcor1.CSF_0.96_GM_0.7_WM_0.96/0051466_session_1/scan_rest_1_rest/func/functional_brain_mask.nii.gz'}, 'functional_to_anat_linear_xfm': {'scan_rest_1_rest': '/home2/data/Projects/ABIDE_Initiative/CPAC/Output_2013-10-22/sym_links/pipeline_MerrittIsland/_compcor_ncomponents_5_linear1.global1.motion1.quadratic1.compcor1.CSF_0.96_GM_0.7_WM_0.96/0051466_session_1/scan_rest_1_rest/registration/functional_to_anat_linear_xfm.mat'}, 'mean_functional': {'rest_1_rest': '/home2/data/Projects/ABIDE_Initiative/CPAC/Output_2013-10-22/sym_links/pipeline_MerrittIsland/_compcor_ncomponents_5_linear1.global1.motion1.quadratic1.compcor1.CSF_0.96_GM_0.7_WM_0.96/0051466_session_1/scan_rest_1_rest/func/mean_functional.nii.gz'}, 'preprocessed': {'rest_1_rest': '/home2/data/Projects/ABIDE_Initiative/CPAC/Output_2013-10-22/sym_links/pipeline_MerrittIsland/_compcor_ncomponents_5_linear1.global1.motion1.quadratic1.compcor1.CSF_0.96_GM_0.7_WM_0.96/0051466_session_1/scan_rest_1_rest/func/preprocessed.nii.gz'}, 'functional_nuisance_residuals': {'rest_1_rest': '/home2/data/Projects/ABIDE_Initiative/CPAC/Output_2013-10-22/sym_links/pipeline_MerrittIsland/_compcor_ncomponents_5_linear1.global1.motion1.quadratic1.compcor1.CSF_0.96_GM_0.7_WM_0.96/0051466_session_1/scan_rest_1_rest/func/functional_nuisance_residuals.nii.gz'}, 'scan_parameters': {'acquisition': 'alt+z', 'tr': '2', 'last_tr': 'None', 'reference': '17', 'first_tr': '0'}, 'anatomical_reorient': '/home2/data/Projects/ABIDE_Initiative/CPAC/Output_2013-10-22/sym_links/pipeline_MerrittIsland/_compcor_ncomponents_5_linear1.global1.motion1.quadratic1.compcor1.CSF_0.96_GM_0.7_WM_0.96/0051466_session_1/scan/anat/anatomical_reorient.nii.gz', 'mni_normalized_anatomical': '/home2/data/Projects/ABIDE_Initiative/CPAC/Output_2013-10-22/sym_links/pipeline_MerrittIsland/_compcor_ncomponents_5_linear1.global1.motion1.quadratic1.compcor1.CSF_0.96_GM_0.7_WM_0.96/0051466_session_1/scan/anat/mni_normalized_anatomical.nii.gz', 'unique_id': 'session_1'}]
+******************** /usr/share/fsl/5.0/data/standard/MNI152_T1_2mm_brain.nii.gz
+find /home2/data/Projects/ABIDE_Initiative/CPAC/test_qp/ALFF_Working/resting_preproc_0051466_session_1 -name '*sink*' -exec rm -rf {} \;
+find /home2/data/Projects/ABIDE_Initiative/CPAC/test_qp/ALFF_Working/resting_preproc_0051466_session_1 -name '*link*' -exec rm -rf {} \;
+find /home2/data/Projects/ABIDE_Initiative/CPAC/test_qp/ALFF_Working/resting_preproc_0051466_session_1 -name '*log*' -exec rm -rf {} \;
+[<CPAC.pipeline.cpac_pipeline.strategy instance at 0x501cf38>]
+131113-14:21:18,625 workflow INFO:
+	 Creating detailed dot file: /home2/data/Projects/ABIDE_Initiative/CPAC/test_qp/ALFF_Working/resting_preproc_0051466_session_1/graph_detailed.dot
+strat_tag,  ~~~~~ , hash_val,  ~~~~~~ , pipeline_id:    ~~~~~  0  ~~~~~~  me
+node, out_file, key:  resting_preproc_0051466_session_1.alff_falff_0 outputspec.alff_Z_img alff_Z_img
+sink index:  1
+node, out_file, key:  resting_preproc_0051466_session_1.alff_Z_smooth_0 out_file alff_Z_smooth
+sink index:  2
+node, out_file, key:  resting_preproc_0051466_session_1.alff_Z_to_standard_0 outputspec.out_file alff_Z_to_standard
+sink index:  3
+node, out_file, key:  resting_preproc_0051466_session_1.alff_Z_to_standard_smooth_0 out_file alff_Z_to_standard_smooth
+sink index:  4
+node, out_file, key:  resting_preproc_0051466_session_1.alff_falff_0 outputspec.alff_img alff_img
+sink index:  5
+node, out_file, key:  resting_preproc_0051466_session_1.anatomical_brain_gather_0 outputspec.anat anatomical_brain
+sink index:  6
+node, out_file, key:  resting_preproc_0051466_session_1.anatomical_reorient_gather_0 outputspec.anat anatomical_reorient
+sink index:  7
+node, out_file, key:  resting_preproc_0051466_session_1.anatomical_to_mni_nonlinear_xfm_gather_0 outputspec.anat anatomical_to_mni_nonlinear_xfm
+sink index:  8
+node, out_file, key:  resting_preproc_0051466_session_1.ants_affine_xfm_gather_0 outputspec.anat ants_affine_xfm
+sink index:  9
+node, out_file, key:  resting_preproc_0051466_session_1.alff_falff_0 outputspec.falff_Z_img falff_Z_img
+sink index:  10
+node, out_file, key:  resting_preproc_0051466_session_1.falff_Z_smooth_0 out_file falff_Z_smooth
+sink index:  11
+node, out_file, key:  resting_preproc_0051466_session_1.falff_Z_to_standard_0 outputspec.out_file falff_Z_to_standard
+sink index:  12
+node, out_file, key:  resting_preproc_0051466_session_1.falff_Z_to_standard_smooth_0 out_file falff_Z_to_standard_smooth
+sink index:  13
+node, out_file, key:  resting_preproc_0051466_session_1.alff_falff_0 outputspec.falff_img falff_img
+sink index:  14
+node, out_file, key:  resting_preproc_0051466_session_1.functional_brain_mask_gather_0 outputspec.rest functional_brain_mask
+sink index:  15
+node, out_file, key:  resting_preproc_0051466_session_1.functional_brain_mask_to_standard_gather_0 outputspec.rest functional_brain_mask_to_standard
+sink index:  16
+node, out_file, key:  resting_preproc_0051466_session_1.functional_freq_filtered_gather_0 outputspec.rest functional_freq_filtered
+sink index:  17
+node, out_file, key:  resting_preproc_0051466_session_1.functional_mni_gather_0 outputspec.rest functional_mni
+sink index:  18
+node, out_file, key:  resting_preproc_0051466_session_1.functional_nuisance_residuals_gather_0 outputspec.rest functional_nuisance_residuals
+sink index:  19
+node, out_file, key:  resting_preproc_0051466_session_1.functional_to_anat_linear_xfm_gather_0 outputspec.rest functional_to_anat_linear_xfm
+sink index:  20
+node, out_file, key:  resting_preproc_0051466_session_1.mean_functional_gather_0 outputspec.rest mean_functional
+sink index:  21
+node, out_file, key:  resting_preproc_0051466_session_1.mni_normalized_anatomical_gather_0 outputspec.anat mni_normalized_anatomical
+sink index:  22
+node, out_file, key:  resting_preproc_0051466_session_1.preprocessed_gather_0 outputspec.rest preprocessed
+sink index:  23
+Cannot Create the strategy and pipeline graph, dot or/and pygraphviz is not installed
+/home2/data/Projects/ABIDE_Initiative/CPAC/test_qp/ALFF_Output/pipeline_me/0051466_session_1 *
+131113-14:21:21,430 workflow INFO:
+	 ['check', 'execution', 'logging']
+131113-14:21:21,940 workflow INFO:
+	 Running in parallel.
+131113-14:21:21,946 workflow INFO:
+	 Submitting 15 jobs
+131113-14:21:21,946 workflow INFO:
+	 Executing: selectrest.a0 ID: 0
+131113-14:21:21,947 workflow INFO:
+	 Executing: selectrest.a0 ID: 1
+131113-14:21:21,950 workflow INFO:
+	 Executing: selectrest.a0 ID: 16
+131113-14:21:21,951 workflow INFO:
+	 Executing: selectrest.a0 ID: 17
+131113-14:21:21,952 workflow INFO:
+	 Executing node selectrest.a0 in dir: /home2/data/Projects/ABIDE_Initiative/CPAC/test_qp/ALFF_Working/resting_preproc_0051466_session_1/functional_nuisance_residuals_gather_0/_scan_rest_1_rest/selectrest
+131113-14:21:21,953 workflow INFO:
+	 Executing: selectrest.a0 ID: 21
+131113-14:21:21,953 workflow INFO:
+	 Executing node selectrest.a0 in dir: /home2/data/Projects/ABIDE_Initiative/CPAC/test_qp/ALFF_Working/resting_preproc_0051466_session_1/functional_brain_mask_to_standard_gather_0/_scan_rest_1_rest/selectrest
+131113-14:21:21,954 workflow INFO:
+	 Collecting precomputed outputs
+131113-14:21:21,955 workflow INFO:
+	 Executing: write_log ID: 28
+131113-14:21:21,955 workflow INFO:
+	 Collecting precomputed outputs
+131113-14:21:21,955 workflow INFO:
+	 Executing node selectrest.a0 in dir: /home2/data/Projects/ABIDE_Initiative/CPAC/test_qp/ALFF_Working/resting_preproc_0051466_session_1/functional_mni_gather_0/_scan_rest_1_rest/selectrest
+131113-14:21:21,956 workflow INFO:
+	 Executing node selectrest.a0 in dir: /home2/data/Projects/ABIDE_Initiative/CPAC/test_qp/ALFF_Working/resting_preproc_0051466_session_1/functional_freq_filtered_gather_0/_scan_rest_1_rest/selectrest
+131113-14:21:21,957 workflow INFO:
+	 Collecting precomputed outputs
+131113-14:21:21,957 workflow INFO:
+	 Collecting precomputed outputs
+131113-14:21:21,957 workflow INFO:
+	 Executing: sinker_8 ID: 30
+131113-14:21:21,960 workflow INFO:
+	 Executing: selectrest.a0 ID: 39
+131113-14:21:21,963 workflow INFO:
+	 Executing node selectrest.a0 in dir: /home2/data/Projects/ABIDE_Initiative/CPAC/test_qp/ALFF_Working/resting_preproc_0051466_session_1/mean_functional_gather_0/_scan_rest_1_rest/selectrest
+131113-14:21:21,962 workflow INFO:
+	 Executing: write_log ID: 40
+131113-14:21:21,964 workflow INFO:
+	 Executing node write_log in dir: /home2/data/Projects/ABIDE_Initiative/CPAC/test_qp/ALFF_Working/resting_preproc_0051466_session_1/log_anatomical_brain_gather_0/write_log
+131113-14:21:21,964 workflow INFO:
+	 Collecting precomputed outputs
+131113-14:21:21,965 workflow INFO:
+	 Executing: sinker_21 ID: 49
+131113-14:21:21,966 workflow INFO:
+	 Executing node sinker_8 in dir: /home2/data/Projects/ABIDE_Initiative/CPAC/test_qp/ALFF_Working/resting_preproc_0051466_session_1/sinker_8
+131113-14:21:21,967 workflow INFO:
+	 Executing node selectrest.a0 in dir: /home2/data/Projects/ABIDE_Initiative/CPAC/test_qp/ALFF_Working/resting_preproc_0051466_session_1/functional_to_anat_linear_xfm_gather_0/_scan_scan_rest_1_rest/selectrest
+131113-14:21:21,968 workflow INFO:
+	 Collecting precomputed outputs
+131113-14:21:21,970 workflow INFO:
+	 Executing: selectrest.a0 ID: 58
+131113-14:21:21,971 workflow INFO:
+	 Executing node write_log in dir: /home2/data/Projects/ABIDE_Initiative/CPAC/test_qp/ALFF_Working/resting_preproc_0051466_session_1/log_mni_normalized_anatomical_gather_0/write_log
+131113-14:21:21,972 workflow INFO:
+	 Executing: sinker_7 ID: 60
+args:  {'index': 0, 'inputs': '/home2/data/Projects/ABIDE_Initiative/CPAC/Output_2013-10-22/sym_links/pipeline_MerrittIsland/_compcor_ncomponents_5_linear1.global1.motion1.quadratic1.compcor1.CSF_0.96_GM_0.7_WM_0.96/0051466_session_1/scan/anat/anatomical_brain.nii.gz', 'log_dir': '/home2/data/Projects/ABIDE_Initiative/CPAC/test_qp/ALFF_Output/logs/0051466_session_1', 'scan_id': None, 'workflow': 'anatomical_brain_gather_0'}
+131113-14:21:21,973 interface INFO:
+	 filepath already exist, filepath- /home2/data/Projects/ABIDE_Initiative/CPAC/test_qp/ALFF_Output/logs/0051466_session_1/scan_anat/anatomical_brain_gather_0, curr_dir - /data/Projects/ABIDE_Initiative/CPAC/test_qp/ALFF_Working/resting_preproc_0051466_session_1/log_anatomical_brain_gather_0/write_log
+131113-14:21:21,974 interface INFO:
+	 CPAC custom log :
+131113-14:21:21,974 interface INFO:
+	  version - 0.3.2.1, timestamp -2013-11-13 14:21:21, subject_id -0051466_session_1, scan_id - scan_anat, strategy -, workflow - anatomical_brain_gather_0, status -COMPLETED
+131113-14:21:21,976 workflow INFO:
+	 Executing node sinker_21 in dir: /home2/data/Projects/ABIDE_Initiative/CPAC/test_qp/ALFF_Working/resting_preproc_0051466_session_1/sinker_21
+131113-14:21:21,976 workflow INFO:
+	 Executing: sinker_5 ID: 64
+args:  {'index': 0, 'inputs': '/home2/data/Projects/ABIDE_Initiative/CPAC/Output_2013-10-22/sym_links/pipeline_MerrittIsland/_compcor_ncomponents_5_linear1.global1.motion1.quadratic1.compcor1.CSF_0.96_GM_0.7_WM_0.96/0051466_session_1/scan/anat/mni_normalized_anatomical.nii.gz', 'log_dir': '/home2/data/Projects/ABIDE_Initiative/CPAC/test_qp/ALFF_Output/logs/0051466_session_1', 'scan_id': None, 'workflow': 'mni_normalized_anatomical_gather_0'}
+131113-14:21:21,980 interface INFO:
+	 filepath already exist, filepath- /home2/data/Projects/ABIDE_Initiative/CPAC/test_qp/ALFF_Output/logs/0051466_session_1/scan_anat/mni_normalized_anatomical_gather_0, curr_dir - /data/Projects/ABIDE_Initiative/CPAC/test_qp/ALFF_Working/resting_preproc_0051466_session_1/log_mni_normalized_anatomical_gather_0/write_log
+131113-14:21:21,981 interface INFO:
+	 CPAC custom log :
+131113-14:21:21,981 interface INFO:
+	  version - 0.3.2.1, timestamp -2013-11-13 14:21:21, subject_id -0051466_session_1, scan_id - scan_anat, strategy -, workflow - mni_normalized_anatomical_gather_0, status -COMPLETED
+131113-14:21:21,980 workflow INFO:
+	 Executing: selectrest.a0 ID: 65
+131113-14:21:21,983 workflow INFO:
+	 Executing node selectrest.a0 in dir: /home2/data/Projects/ABIDE_Initiative/CPAC/test_qp/ALFF_Working/resting_preproc_0051466_session_1/functional_brain_mask_gather_0/_scan_rest_1_rest/selectrest
+131113-14:21:21,982 workflow INFO:
+	 Executing: sinker_6 ID: 66
+131113-14:21:21,984 workflow INFO:
+	 Collecting precomputed outputs
+131113-14:21:21,987 workflow INFO:
+	 Executing node sinker_7 in dir: /home2/data/Projects/ABIDE_Initiative/CPAC/test_qp/ALFF_Working/resting_preproc_0051466_session_1/sinker_7
+131113-14:21:21,991 workflow INFO:
+	 Executing node sinker_5 in dir: /home2/data/Projects/ABIDE_Initiative/CPAC/test_qp/ALFF_Working/resting_preproc_0051466_session_1/sinker_5
+131113-14:21:21,991 workflow INFO:
+	 Executing node selectrest.a0 in dir: /home2/data/Projects/ABIDE_Initiative/CPAC/test_qp/ALFF_Working/resting_preproc_0051466_session_1/preprocessed_gather_0/_scan_rest_1_rest/selectrest
+131113-14:21:21,992 workflow INFO:
+	 Collecting precomputed outputs
+131113-14:21:21,999 workflow INFO:
+	 Executing node sinker_6 in dir: /home2/data/Projects/ABIDE_Initiative/CPAC/test_qp/ALFF_Working/resting_preproc_0051466_session_1/sinker_6
+131113-14:21:23,991 workflow INFO:
+	 [Job finished] jobname: selectrest.a0 jobid: 0
+131113-14:21:23,997 workflow INFO:
+	 [Job finished] jobname: selectrest.a0 jobid: 1
+131113-14:21:24,1 workflow INFO:
+	 [Job finished] jobname: selectrest.a0 jobid: 16
+131113-14:21:24,5 workflow INFO:
+	 [Job finished] jobname: selectrest.a0 jobid: 17
+131113-14:21:24,10 workflow INFO:
+	 [Job finished] jobname: selectrest.a0 jobid: 21
+131113-14:21:24,14 workflow INFO:
+	 [Job finished] jobname: write_log jobid: 28
+131113-14:21:24,18 workflow INFO:
+	 [Job finished] jobname: sinker_8 jobid: 30
+131113-14:21:24,22 workflow INFO:
+	 [Job finished] jobname: selectrest.a0 jobid: 39
+131113-14:21:24,26 workflow INFO:
+	 [Job finished] jobname: write_log jobid: 40
+131113-14:21:24,30 workflow INFO:
+	 [Job finished] jobname: sinker_21 jobid: 49
+131113-14:21:24,34 workflow INFO:
+	 [Job finished] jobname: selectrest.a0 jobid: 58
+131113-14:21:24,42 workflow INFO:
+	 [Job finished] jobname: sinker_7 jobid: 60
+131113-14:21:24,46 workflow INFO:
+	 [Job finished] jobname: sinker_5 jobid: 64
+131113-14:21:24,50 workflow INFO:
+	 [Job finished] jobname: selectrest.a0 jobid: 65
+131113-14:21:24,54 workflow INFO:
+	 [Job finished] jobname: sinker_6 jobid: 66
+131113-14:21:24,60 workflow INFO:
+	 Submitting 19 jobs
+131113-14:21:24,60 workflow INFO:
+	 Executing: sinker_14.a0 ID: 5
+131113-14:21:24,63 workflow INFO:
+	 Executing: link_5 ID: 7
+131113-14:21:24,65 workflow INFO:
+	 Executing: write_log.a0 ID: 14
+131113-14:21:24,67 workflow INFO:
+	 Executing: get_option_string.a0 ID: 18
+131113-14:21:24,69 workflow INFO:
+	 Executing: sinker_18.a0 ID: 22
+131113-14:21:24,72 workflow INFO:
+	 Executing node sinker_14.a0 in dir: /home2/data/Projects/ABIDE_Initiative/CPAC/test_qp/ALFF_Working/resting_preproc_0051466_session_1/_scan_rest_1_rest/sinker_14
+131113-14:21:24,73 workflow INFO:
+	 Executing: sinker_20.a0 ID: 23
+131113-14:21:24,74 workflow INFO:
+	 Executing node link_5 in dir: /home2/data/Projects/ABIDE_Initiative/CPAC/test_qp/ALFF_Working/resting_preproc_0051466_session_1/link_5
+131113-14:21:24,75 workflow INFO:
+	 Executing node write_log.a0 in dir: /home2/data/Projects/ABIDE_Initiative/CPAC/test_qp/ALFF_Working/resting_preproc_0051466_session_1/log_functional_nuisance_residuals_gather_0/_scan_rest_1_rest/write_log
+131113-14:21:24,76 workflow INFO:
+	 Executing: sinker_22.a0 ID: 31
+131113-14:21:24,77 workflow INFO:
+	 Executing node get_option_string.a0 in dir: /home2/data/Projects/ABIDE_Initiative/CPAC/test_qp/ALFF_Working/resting_preproc_0051466_session_1/alff_falff_0/_scan_rest_1_rest/get_option_string
+131113-14:21:24,78 workflow INFO:
+	 Collecting precomputed outputs
+131113-14:21:24,79 workflow INFO:
+	 Executing: link_8 ID: 32
+131113-14:21:24,81 workflow INFO:
+	 Executing: sinker_16.a0 ID: 35
+args:  {'index': 0, 'inputs': '/home2/data/Projects/ABIDE_Initiative/CPAC/Output_2013-10-22/sym_links/pipeline_MerrittIsland/_compcor_ncomponents_5_linear1.global1.motion1.quadratic1.compcor1.CSF_0.96_GM_0.7_WM_0.96/0051466_session_1/scan_rest_1_rest/func/functional_nuisance_residuals.nii.gz', 'log_dir': '/home2/data/Projects/ABIDE_Initiative/CPAC/test_qp/ALFF_Output/logs/0051466_session_1', 'scan_id': None, 'workflow': 'functional_nuisance_residuals_gather_0'}
+131113-14:21:24,84 interface INFO:
+	 filepath already exist, filepath- /home2/data/Projects/ABIDE_Initiative/CPAC/test_qp/ALFF_Output/logs/0051466_session_1/scan_rest_1_rest/functional_nuisance_residuals_gather_0, curr_dir - /data/Projects/ABIDE_Initiative/CPAC/test_qp/ALFF_Working/resting_preproc_0051466_session_1/log_functional_nuisance_residuals_gather_0/_scan_rest_1_rest/write_log
+131113-14:21:24,84 interface INFO:
+	 CPAC custom log :
+131113-14:21:24,84 interface INFO:
+	  version - 0.3.2.1, timestamp -2013-11-13 14:21:24, subject_id -0051466_session_1, scan_id - scan_rest_1_rest, strategy -, workflow - functional_nuisance_residuals_gather_0, status -COMPLETED
+131113-14:21:24,85 workflow INFO:
+	 Executing: write_log.a0 ID: 38
+131113-14:21:24,88 workflow INFO:
+	 Executing: link_21 ID: 41
+131113-14:21:24,91 workflow INFO:
+	 Executing node sinker_18.a0 in dir: /home2/data/Projects/ABIDE_Initiative/CPAC/test_qp/ALFF_Working/resting_preproc_0051466_session_1/_scan_rest_1_rest/sinker_18
+131113-14:21:24,91 workflow INFO:
+	 Executing: link_6 ID: 48
+args:  {'strategies': [['_compcor_ncomponents_5_selector_pc10.linear1.wm0.global1.motion1.quadratic1.gm0.compcor1.csf0', '_csf_threshold_0.96', '_gm_threshold_0.7', '_target_angle_deg_90', '_threshold_0.2', '_wm_threshold_0.96']], 'subject_id': '0051466_session_1', 'in_file': ['/home2/data/Projects/ABIDE_Initiative/CPAC/test_qp/ALFF_Output/pipeline_me/0051466_session_1/anatomical_brain/_compcor_ncomponents_5_linear1.global1.motion1.quadratic1.compcor1.CSF_0.96_GM_0.7_WM_0.96/anatomical_brain.nii.gz'], 'helper': {'_gm_threshold': 0, '_csf_threshold': 0, '_wm_threshold': 0, 'nuisance': 1, '_target_angle_deg': 0, '_threshold': 0}, 'pipeline_id': 'pipeline_me'}
+ZZZ -  ['/home2/data/Projects/ABIDE_Initiative/CPAC/test_qp/ALFF_Output/pipeline_me/0051466_session_1/anatomical_brain/_compcor_ncomponents_5_linear1.global1.motion1.quadratic1.compcor1.CSF_0.96_GM_0.7_WM_0.96/anatomical_brain.nii.gz']  - ZZZZ
+~~~~~~  _compcor_ncomponents_5_selector  ~~~  _compcor_ncomponents_5_selector_pc10.linear1.wm0.global1.motion1.quadratic1.gm0.compcor1.csf0
+~~~~~~  _csf_threshold  ~~~  _csf_threshold_0.96
+~~~~~~  _gm_threshold  ~~~  _gm_threshold_0.7
+~~~~~~  _target_angle_deg  ~~~  _target_angle_deg_90
+~~~~~~  _threshold  ~~~  _threshold_0.2
+~~~~~~  _wm_threshold  ~~~  _wm_threshold_0.96
+~~~~~~  pipeline  ~~~  pipeline_me
+.
+_compcor_ncomponents_5_selector  ---------->  pc10.linear1.wm0.global1.motion1.quadratic1.gm0.compcor1.csf0
+pipeline  ---------->  me
+~~~  ~~~ /_compcor_ncomponents_5_linear1.global1.motion1.quadratic1.compcor1.CSF_0.96_GM_0.7_WM_0.96/
+.
+.
+131113-14:21:24,94 workflow INFO:
+	 Executing node sinker_20.a0 in dir: /home2/data/Projects/ABIDE_Initiative/CPAC/test_qp/ALFF_Working/resting_preproc_0051466_session_1/_scan_rest_1_rest/sinker_20
+131113-14:21:24,93 workflow INFO:
+	 Executing: bandpass_filtering.a0.a0.a0 ID: 52
+131113-14:21:24,95 workflow INFO:
+	 Executing node sinker_22.a0 in dir: /home2/data/Projects/ABIDE_Initiative/CPAC/test_qp/ALFF_Working/resting_preproc_0051466_session_1/_scan_rest_1_rest/sinker_22
+131113-14:21:24,95 workflow INFO:
+	 Executing: link_7 ID: 69
+131113-14:21:24,97 workflow INFO:
+	 Executing: sinker_17.a0 ID: 70
+131113-14:21:24,98 workflow INFO:
+	 Executing node link_8 in dir: /home2/data/Projects/ABIDE_Initiative/CPAC/test_qp/ALFF_Working/resting_preproc_0051466_session_1/link_8
+131113-14:21:24,101 workflow INFO:
+	 Executing: write_log.a0 ID: 77
+131113-14:21:24,103 workflow INFO:
+	 Executing: write_log.a0 ID: 80
+131113-14:21:24,104 workflow INFO:
+	 Executing: sinker_15.a0 ID: 83
+131113-14:21:24,108 workflow INFO:
+	 Executing: sinker_19.a0 ID: 84
+131113-14:21:24,116 workflow INFO:
+	 Executing node sinker_16.a0 in dir: /home2/data/Projects/ABIDE_Initiative/CPAC/test_qp/ALFF_Working/resting_preproc_0051466_session_1/_scan_rest_1_rest/sinker_16
+args:  {'strategies': [['_compcor_ncomponents_5_selector_pc10.linear1.wm0.global1.motion1.quadratic1.gm0.compcor1.csf0', '_csf_threshold_0.96', '_gm_threshold_0.7', '_target_angle_deg_90', '_threshold_0.2', '_wm_threshold_0.96']], 'subject_id': '0051466_session_1', 'in_file': ['/home2/data/Projects/ABIDE_Initiative/CPAC/test_qp/ALFF_Output/pipeline_me/0051466_session_1/ants_affine_xfm/_compcor_ncomponents_5_linear1.global1.motion1.quadratic1.compcor1.CSF_0.96_GM_0.7_WM_0.96/ants_affine_xfm.txt'], 'helper': {'_gm_threshold': 0, '_csf_threshold': 0, '_wm_threshold': 0, 'nuisance': 1, '_target_angle_deg': 0, '_threshold': 0}, 'pipeline_id': 'pipeline_me'}
+ZZZ -  ['/home2/data/Projects/ABIDE_Initiative/CPAC/test_qp/ALFF_Output/pipeline_me/0051466_session_1/ants_affine_xfm/_compcor_ncomponents_5_linear1.global1.motion1.quadratic1.compcor1.CSF_0.96_GM_0.7_WM_0.96/ants_affine_xfm.txt']  - ZZZZ
+~~~~~~  _compcor_ncomponents_5_selector  ~~~  _compcor_ncomponents_5_selector_pc10.linear1.wm0.global1.motion1.quadratic1.gm0.compcor1.csf0
+~~~~~~  _csf_threshold  ~~~  _csf_threshold_0.96
+~~~~~~  _gm_threshold  ~~~  _gm_threshold_0.7
+~~~~~~  _target_angle_deg  ~~~  _target_angle_deg_90
+~~~~~~  _threshold  ~~~  _threshold_0.2
+~~~~~~  _wm_threshold  ~~~  _wm_threshold_0.96
+~~~~~~  pipeline  ~~~  pipeline_me
+.
+_compcor_ncomponents_5_selector  ---------->  pc10.linear1.wm0.global1.motion1.quadratic1.gm0.compcor1.csf0
+pipeline  ---------->  me
+~~~  ~~~ /_compcor_ncomponents_5_linear1.global1.motion1.quadratic1.compcor1.CSF_0.96_GM_0.7_WM_0.96/
+.
+.
+131113-14:21:24,117 workflow INFO:
+	 Executing node write_log.a0 in dir: /home2/data/Projects/ABIDE_Initiative/CPAC/test_qp/ALFF_Working/resting_preproc_0051466_session_1/log_functional_to_anat_linear_xfm_gather_0/_scan_scan_rest_1_rest/write_log
+args:  {'index': 0, 'inputs': '/home2/data/Projects/ABIDE_Initiative/CPAC/Output_2013-10-22/sym_links/pipeline_MerrittIsland/_compcor_ncomponents_5_linear1.global1.motion1.quadratic1.compcor1.CSF_0.96_GM_0.7_WM_0.96/0051466_session_1/scan_rest_1_rest/registration/functional_to_anat_linear_xfm.mat', 'log_dir': '/home2/data/Projects/ABIDE_Initiative/CPAC/test_qp/ALFF_Output/logs/0051466_session_1', 'scan_id': None, 'workflow': 'functional_to_anat_linear_xfm_gather_0'}
+131113-14:21:24,126 interface INFO:
+	 filepath already exist, filepath- /home2/data/Projects/ABIDE_Initiative/CPAC/test_qp/ALFF_Output/logs/0051466_session_1/scan_scan_rest_1_rest/functional_to_anat_linear_xfm_gather_0, curr_dir - /data/Projects/ABIDE_Initiative/CPAC/test_qp/ALFF_Working/resting_preproc_0051466_session_1/log_functional_to_anat_linear_xfm_gather_0/_scan_scan_rest_1_rest/write_log
+131113-14:21:24,126 interface INFO:
+	 CPAC custom log :
+131113-14:21:24,126 interface INFO:
+	  version - 0.3.2.1, timestamp -2013-11-13 14:21:24, subject_id -0051466_session_1, scan_id - scan_scan_rest_1_rest, strategy -, workflow - functional_to_anat_linear_xfm_gather_0, status -COMPLETED
+131113-14:21:24,139 workflow INFO:
+	 Executing node link_21 in dir: /home2/data/Projects/ABIDE_Initiative/CPAC/test_qp/ALFF_Working/resting_preproc_0051466_session_1/link_21
+131113-14:21:24,140 workflow INFO:
+	 Executing node link_6 in dir: /home2/data/Projects/ABIDE_Initiative/CPAC/test_qp/ALFF_Working/resting_preproc_0051466_session_1/link_6
+args:  {'strategies': [['_compcor_ncomponents_5_selector_pc10.linear1.wm0.global1.motion1.quadratic1.gm0.compcor1.csf0', '_csf_threshold_0.96', '_gm_threshold_0.7', '_target_angle_deg_90', '_threshold_0.2', '_wm_threshold_0.96']], 'subject_id': '0051466_session_1', 'in_file': ['/home2/data/Projects/ABIDE_Initiative/CPAC/test_qp/ALFF_Output/pipeline_me/0051466_session_1/mni_normalized_anatomical/_compcor_ncomponents_5_linear1.global1.motion1.quadratic1.compcor1.CSF_0.96_GM_0.7_WM_0.96/mni_normalized_anatomical.nii.gz'], 'helper': {'_gm_threshold': 0, '_csf_threshold': 0, '_wm_threshold': 0, 'nuisance': 1, '_target_angle_deg': 0, '_threshold': 0}, 'pipeline_id': 'pipeline_me'}
+ZZZ -  ['/home2/data/Projects/ABIDE_Initiative/CPAC/test_qp/ALFF_Output/pipeline_me/0051466_session_1/mni_normalized_anatomical/_compcor_ncomponents_5_linear1.global1.motion1.quadratic1.compcor1.CSF_0.96_GM_0.7_WM_0.96/mni_normalized_anatomical.nii.gz']  - ZZZZ
+~~~~~~  _compcor_ncomponents_5_selector  ~~~  _compcor_ncomponents_5_selector_pc10.linear1.wm0.global1.motion1.quadratic1.gm0.compcor1.csf0
+~~~~~~  _csf_threshold  ~~~  _csf_threshold_0.96
+~~~~~~  _gm_threshold  ~~~  _gm_threshold_0.7
+~~~~~~  _target_angle_deg  ~~~  _target_angle_deg_90
+~~~~~~  _threshold  ~~~  _threshold_0.2
+~~~~~~  _wm_threshold  ~~~  _wm_threshold_0.96
+~~~~~~  pipeline  ~~~  pipeline_me
+.
+_compcor_ncomponents_5_selector  ---------->  pc10.linear1.wm0.global1.motion1.quadratic1.gm0.compcor1.csf0
+pipeline  ---------->  me
+~~~  ~~~ /_compcor_ncomponents_5_linear1.global1.motion1.quadratic1.compcor1.CSF_0.96_GM_0.7_WM_0.96/
+.
+.
+131113-14:21:24,159 workflow INFO:
+	 Executing node bandpass_filtering.a0.a0.a0 in dir: /home2/data/Projects/ABIDE_Initiative/CPAC/test_qp/ALFF_Working/resting_preproc_0051466_session_1/alff_falff_0/_scan_rest_1_rest/_hp_0.01/_lp_0.1/bandpass_filtering
+131113-14:21:24,160 workflow INFO:
+	 Collecting precomputed outputs
+args:  {'strategies': [['_compcor_ncomponents_5_selector_pc10.linear1.wm0.global1.motion1.quadratic1.gm0.compcor1.csf0', '_csf_threshold_0.96', '_gm_threshold_0.7', '_target_angle_deg_90', '_threshold_0.2', '_wm_threshold_0.96']], 'subject_id': '0051466_session_1', 'in_file': ['/home2/data/Projects/ABIDE_Initiative/CPAC/test_qp/ALFF_Output/pipeline_me/0051466_session_1/anatomical_reorient/_compcor_ncomponents_5_linear1.global1.motion1.quadratic1.compcor1.CSF_0.96_GM_0.7_WM_0.96/anatomical_reorient.nii.gz'], 'helper': {'_gm_threshold': 0, '_csf_threshold': 0, '_wm_threshold': 0, 'nuisance': 1, '_target_angle_deg': 0, '_threshold': 0}, 'pipeline_id': 'pipeline_me'}
+ZZZ -  ['/home2/data/Projects/ABIDE_Initiative/CPAC/test_qp/ALFF_Output/pipeline_me/0051466_session_1/anatomical_reorient/_compcor_ncomponents_5_linear1.global1.motion1.quadratic1.compcor1.CSF_0.96_GM_0.7_WM_0.96/anatomical_reorient.nii.gz']  - ZZZZ
+~~~~~~  _compcor_ncomponents_5_selector  ~~~  _compcor_ncomponents_5_selector_pc10.linear1.wm0.global1.motion1.quadratic1.gm0.compcor1.csf0
+~~~~~~  _csf_threshold  ~~~  _csf_threshold_0.96
+~~~~~~  _gm_threshold  ~~~  _gm_threshold_0.7
+~~~~~~  _target_angle_deg  ~~~  _target_angle_deg_90
+~~~~~~  _threshold  ~~~  _threshold_0.2
+~~~~~~  _wm_threshold  ~~~  _wm_threshold_0.96
+~~~~~~  pipeline  ~~~  pipeline_me
+.
+_compcor_ncomponents_5_selector  ---------->  pc10.linear1.wm0.global1.motion1.quadratic1.gm0.compcor1.csf0
+pipeline  ---------->  me
+~~~  ~~~ /_compcor_ncomponents_5_linear1.global1.motion1.quadratic1.compcor1.CSF_0.96_GM_0.7_WM_0.96/
+.
+.
+131113-14:21:24,160 workflow INFO:
+	 Executing node link_7 in dir: /home2/data/Projects/ABIDE_Initiative/CPAC/test_qp/ALFF_Working/resting_preproc_0051466_session_1/link_7
+131113-14:21:24,174 workflow INFO:
+	 Executing node sinker_17.a0 in dir: /home2/data/Projects/ABIDE_Initiative/CPAC/test_qp/ALFF_Working/resting_preproc_0051466_session_1/_scan_rest_1_rest/sinker_17
+131113-14:21:24,180 workflow INFO:
+	 Executing node write_log.a0 in dir: /home2/data/Projects/ABIDE_Initiative/CPAC/test_qp/ALFF_Working/resting_preproc_0051466_session_1/log_preprocessed_gather_0/_scan_rest_1_rest/write_log
+args:  {'index': 0, 'inputs': '/home2/data/Projects/ABIDE_Initiative/CPAC/Output_2013-10-22/sym_links/pipeline_MerrittIsland/_compcor_ncomponents_5_linear1.global1.motion1.quadratic1.compcor1.CSF_0.96_GM_0.7_WM_0.96/0051466_session_1/scan_rest_1_rest/func/preprocessed.nii.gz', 'log_dir': '/home2/data/Projects/ABIDE_Initiative/CPAC/test_qp/ALFF_Output/logs/0051466_session_1', 'scan_id': None, 'workflow': 'preprocessed_gather_0'}
+131113-14:21:24,375 interface INFO:
+	 filepath already exist, filepath- /home2/data/Projects/ABIDE_Initiative/CPAC/test_qp/ALFF_Output/logs/0051466_session_1/scan_rest_1_rest/preprocessed_gather_0, curr_dir - /data/Projects/ABIDE_Initiative/CPAC/test_qp/ALFF_Working/resting_preproc_0051466_session_1/log_preprocessed_gather_0/_scan_rest_1_rest/write_log
+131113-14:21:24,375 interface INFO:
+	 CPAC custom log :
+131113-14:21:24,375 interface INFO:
+	  version - 0.3.2.1, timestamp -2013-11-13 14:21:24, subject_id -0051466_session_1, scan_id - scan_rest_1_rest, strategy -, workflow - preprocessed_gather_0, status -COMPLETED
+args:  {'strategies': [['_compcor_ncomponents_5_selector_pc10.linear1.wm0.global1.motion1.quadratic1.gm0.compcor1.csf0', '_csf_threshold_0.96', '_gm_threshold_0.7', '_target_angle_deg_90', '_threshold_0.2', '_wm_threshold_0.96']], 'subject_id': '0051466_session_1', 'in_file': ['/home2/data/Projects/ABIDE_Initiative/CPAC/test_qp/ALFF_Output/pipeline_me/0051466_session_1/anatomical_to_mni_nonlinear_xfm/_compcor_ncomponents_5_linear1.global1.motion1.quadratic1.compcor1.CSF_0.96_GM_0.7_WM_0.96/anatomical_to_mni_nonlinear_xfm.nii.gz'], 'helper': {'_gm_threshold': 0, '_csf_threshold': 0, '_wm_threshold': 0, 'nuisance': 1, '_target_angle_deg': 0, '_threshold': 0}, 'pipeline_id': 'pipeline_me'}
+ZZZ -  ['/home2/data/Projects/ABIDE_Initiative/CPAC/test_qp/ALFF_Output/pipeline_me/0051466_session_1/anatomical_to_mni_nonlinear_xfm/_compcor_ncomponents_5_linear1.global1.motion1.quadratic1.compcor1.CSF_0.96_GM_0.7_WM_0.96/anatomical_to_mni_nonlinear_xfm.nii.gz']  - ZZZZ
+~~~~~~  _compcor_ncomponents_5_selector  ~~~  _compcor_ncomponents_5_selector_pc10.linear1.wm0.global1.motion1.quadratic1.gm0.compcor1.csf0
+~~~~~~  _csf_threshold  ~~~  _csf_threshold_0.96
+~~~~~~  _gm_threshold  ~~~  _gm_threshold_0.7
+~~~~~~  _target_angle_deg  ~~~  _target_angle_deg_90
+~~~~~~  _threshold  ~~~  _threshold_0.2
+~~~~~~  _wm_threshold  ~~~  _wm_threshold_0.96
+~~~~~~  pipeline  ~~~  pipeline_me
+.
+_compcor_ncomponents_5_selector  ---------->  pc10.linear1.wm0.global1.motion1.quadratic1.gm0.compcor1.csf0
+pipeline  ---------->  me
+~~~  ~~~ /_compcor_ncomponents_5_linear1.global1.motion1.quadratic1.compcor1.CSF_0.96_GM_0.7_WM_0.96/
+.
+.
+131113-14:21:24,379 workflow INFO:
+	 Executing node write_log.a0 in dir: /home2/data/Projects/ABIDE_Initiative/CPAC/test_qp/ALFF_Working/resting_preproc_0051466_session_1/log_functional_freq_filtered_gather_0/_scan_rest_1_rest/write_log
+131113-14:21:24,380 workflow INFO:
+	 Executing node sinker_15.a0 in dir: /home2/data/Projects/ABIDE_Initiative/CPAC/test_qp/ALFF_Working/resting_preproc_0051466_session_1/_scan_rest_1_rest/sinker_15
+args:  {'index': 0, 'inputs': '', 'log_dir': '/home2/data/Projects/ABIDE_Initiative/CPAC/test_qp/ALFF_Output/logs/0051466_session_1', 'scan_id': None, 'workflow': 'functional_freq_filtered_gather_0'}
+131113-14:21:24,387 interface INFO:
+	 filepath already exist, filepath- /home2/data/Projects/ABIDE_Initiative/CPAC/test_qp/ALFF_Output/logs/0051466_session_1/scan_rest_1_rest/functional_freq_filtered_gather_0, curr_dir - /data/Projects/ABIDE_Initiative/CPAC/test_qp/ALFF_Working/resting_preproc_0051466_session_1/log_functional_freq_filtered_gather_0/_scan_rest_1_rest/write_log
+131113-14:21:24,387 interface INFO:
+	 CPAC custom log :
+131113-14:21:24,387 interface INFO:
+	  version - 0.3.2.1, timestamp -2013-11-13 14:21:24, subject_id -0051466_session_1, scan_id - scan_rest_1_rest, strategy -, workflow - functional_freq_filtered_gather_0, status -ERROR
+131113-14:21:24,388 workflow INFO:
+	 Executing node sinker_19.a0 in dir: /home2/data/Projects/ABIDE_Initiative/CPAC/test_qp/ALFF_Working/resting_preproc_0051466_session_1/_scan_scan_rest_1_rest/sinker_19
+131113-14:21:26,116 workflow INFO:
+	 [Job finished] jobname: sinker_14.a0 jobid: 5
+131113-14:21:26,121 workflow INFO:
+	 [Job finished] jobname: link_5 jobid: 7
+131113-14:21:26,125 workflow INFO:
+	 [Job finished] jobname: write_log.a0 jobid: 14
+131113-14:21:26,129 workflow INFO:
+	 [Job finished] jobname: get_option_string.a0 jobid: 18
+131113-14:21:26,134 workflow INFO:
+	 [Job finished] jobname: sinker_18.a0 jobid: 22
+131113-14:21:26,138 workflow INFO:
+	 [Job finished] jobname: sinker_20.a0 jobid: 23
+131113-14:21:26,142 workflow INFO:
+	 [Job finished] jobname: sinker_22.a0 jobid: 31
+131113-14:21:26,147 workflow INFO:
+	 [Job finished] jobname: link_8 jobid: 32
+131113-14:21:26,151 workflow INFO:
+	 [Job finished] jobname: sinker_16.a0 jobid: 35
+131113-14:21:26,155 workflow INFO:
+	 [Job finished] jobname: write_log.a0 jobid: 38
+131113-14:21:26,160 workflow INFO:
+	 [Job finished] jobname: link_21 jobid: 41
+131113-14:21:26,164 workflow INFO:
+	 [Job finished] jobname: link_6 jobid: 48
+131113-14:21:26,168 workflow INFO:
+	 [Job finished] jobname: bandpass_filtering.a0.a0.a0 jobid: 52
+131113-14:21:26,172 workflow INFO:
+	 [Job finished] jobname: link_7 jobid: 69
+131113-14:21:26,176 workflow INFO:
+	 [Job finished] jobname: sinker_17.a0 jobid: 70
+131113-14:21:26,181 workflow INFO:
+	 [Job finished] jobname: write_log.a0 jobid: 77
+131113-14:21:26,185 workflow INFO:
+	 [Job finished] jobname: write_log.a0 jobid: 80
+131113-14:21:26,189 workflow INFO:
+	 [Job finished] jobname: sinker_15.a0 jobid: 83
+131113-14:21:26,194 workflow INFO:
+	 [Job finished] jobname: sinker_19.a0 jobid: 84
+131113-14:21:26,199 workflow INFO:
+	 Submitting 10 jobs
+131113-14:21:26,199 workflow INFO:
+	 Executing: link_14.a0 ID: 19
+131113-14:21:26,201 workflow INFO:
+	 Executing: link_20.a0 ID: 29
+131113-14:21:26,203 workflow INFO:
+	 Executing: link_19.a0 ID: 36
+131113-14:21:26,205 workflow INFO:
+	 Executing: link_16.a0 ID: 50
+131113-14:21:26,207 workflow INFO:
+	 Executing: link_15.a0 ID: 51
+131113-14:21:26,209 workflow INFO:
+	 Executing node link_14.a0 in dir: /home2/data/Projects/ABIDE_Initiative/CPAC/test_qp/ALFF_Working/resting_preproc_0051466_session_1/_scan_rest_1_rest/link_14
+131113-14:21:26,209 workflow INFO:
+	 Executing: link_18.a0 ID: 53
+131113-14:21:26,211 workflow INFO:
+	 Executing node link_20.a0 in dir: /home2/data/Projects/ABIDE_Initiative/CPAC/test_qp/ALFF_Working/resting_preproc_0051466_session_1/_scan_rest_1_rest/link_20
+131113-14:21:26,211 workflow INFO:
+	 Executing: stddev_fltrd.a0.a0.a0.a0 ID: 59
+131113-14:21:26,213 workflow INFO:
+	 Executing: link_22.a0 ID: 71
+131113-14:21:26,213 workflow INFO:
+	 Executing node link_19.a0 in dir: /home2/data/Projects/ABIDE_Initiative/CPAC/test_qp/ALFF_Working/resting_preproc_0051466_session_1/_scan_scan_rest_1_rest/link_19
+131113-14:21:26,215 workflow INFO:
+	 Executing node link_16.a0 in dir: /home2/data/Projects/ABIDE_Initiative/CPAC/test_qp/ALFF_Working/resting_preproc_0051466_session_1/_scan_rest_1_rest/link_16
+131113-14:21:26,215 workflow INFO:
+	 Executing: link_17.a0 ID: 74
+131113-14:21:26,217 workflow INFO:
+	 Executing: stddev_unfltrd.a0.a0 ID: 81
+args:  {'strategies': [['_compcor_ncomponents_5_selector_pc10.linear1.wm0.global1.motion1.quadratic1.gm0.compcor1.csf0', '_csf_threshold_0.96', '_gm_threshold_0.7', '_target_angle_deg_90', '_threshold_0.2', '_wm_threshold_0.96']], 'subject_id': '0051466_session_1', 'in_file': ['/home2/data/Projects/ABIDE_Initiative/CPAC/test_qp/ALFF_Output/pipeline_me/0051466_session_1/functional_freq_filtered/_scan_rest_1_rest/sinker_16'], 'helper': {'_gm_threshold': 0, '_csf_threshold': 0, '_wm_threshold': 0, 'nuisance': 1, '_target_angle_deg': 0, '_threshold': 0}, 'pipeline_id': 'pipeline_me'}
+ZZZ -  ['/home2/data/Projects/ABIDE_Initiative/CPAC/test_qp/ALFF_Output/pipeline_me/0051466_session_1/functional_freq_filtered/_scan_rest_1_rest/sinker_16']  - ZZZZ
+~~~~~~  _compcor_ncomponents_5_selector  ~~~  _compcor_ncomponents_5_selector_pc10.linear1.wm0.global1.motion1.quadratic1.gm0.compcor1.csf0
+~~~~~~  _csf_threshold  ~~~  _csf_threshold_0.96
+~~~~~~  _gm_threshold  ~~~  _gm_threshold_0.7
+~~~~~~  _target_angle_deg  ~~~  _target_angle_deg_90
+~~~~~~  _threshold  ~~~  _threshold_0.2
+~~~~~~  _wm_threshold  ~~~  _wm_threshold_0.96
+~~~~~~  pipeline  ~~~  pipeline_me
+.
+_compcor_ncomponents_5_selector  ---------->  pc10.linear1.wm0.global1.motion1.quadratic1.gm0.compcor1.csf0
+pipeline  ---------->  me
+scan_rest_1_rest  ~~~ /_scan_rest_1_rest/sinker_16
+.
+.
+HHHHHHHHHHH
+/home2/data/Projects/ABIDE_Initiative/CPAC/test_qp/ALFF_Output/pipeline_me/0051466_session_1/functional_freq_filtered/_scan_rest_1_rest/sinker_16
+/home2/data/Projects/ABIDE_Initiative/CPAC/test_qp/ALFF_Output/sym_links/pipeline_me/_compcor_ncomponents_5_linear1.global1.motion1.quadratic1.compcor1.csf0/0051466_session_1/scan_rest_1_rest/func
+HHHHHHHHHHH
+131113-14:21:26,324 workflow INFO:
+	 Executing node link_15.a0 in dir: /home2/data/Projects/ABIDE_Initiative/CPAC/test_qp/ALFF_Working/resting_preproc_0051466_session_1/_scan_rest_1_rest/link_15
+args:  {'strategies': [['_compcor_ncomponents_5_selector_pc10.linear1.wm0.global1.motion1.quadratic1.gm0.compcor1.csf0', '_csf_threshold_0.96', '_gm_threshold_0.7', '_target_angle_deg_90', '_threshold_0.2', '_wm_threshold_0.96']], 'subject_id': '0051466_session_1', 'in_file': ['/home2/data/Projects/ABIDE_Initiative/CPAC/test_qp/ALFF_Output/pipeline_me/0051466_session_1/functional_brain_mask/_compcor_ncomponents_5_linear1.global1.motion1.quadratic1.compcor1.CSF_0.96_GM_0.7_WM_0.96/functional_brain_mask.nii.gz'], 'helper': {'_gm_threshold': 0, '_csf_threshold': 0, '_wm_threshold': 0, 'nuisance': 1, '_target_angle_deg': 0, '_threshold': 0}, 'pipeline_id': 'pipeline_me'}
+ZZZ -  ['/home2/data/Projects/ABIDE_Initiative/CPAC/test_qp/ALFF_Output/pipeline_me/0051466_session_1/functional_brain_mask/_compcor_ncomponents_5_linear1.global1.motion1.quadratic1.compcor1.CSF_0.96_GM_0.7_WM_0.96/functional_brain_mask.nii.gz']  - ZZZZ
+~~~~~~  _compcor_ncomponents_5_selector  ~~~  _compcor_ncomponents_5_selector_pc10.linear1.wm0.global1.motion1.quadratic1.gm0.compcor1.csf0
+~~~~~~  _csf_threshold  ~~~  _csf_threshold_0.96
+~~~~~~  _gm_threshold  ~~~  _gm_threshold_0.7
+~~~~~~  _target_angle_deg  ~~~  _target_angle_deg_90
+~~~~~~  _threshold  ~~~  _threshold_0.2
+~~~~~~  _wm_threshold  ~~~  _wm_threshold_0.96
+~~~~~~  pipeline  ~~~  pipeline_me
+.
+_compcor_ncomponents_5_selector  ---------->  pc10.linear1.wm0.global1.motion1.quadratic1.gm0.compcor1.csf0
+pipeline  ---------->  me
+~~~  ~~~ /_compcor_ncomponents_5_linear1.global1.motion1.quadratic1.compcor1.CSF_0.96_GM_0.7_WM_0.96/
+.
+.
+131113-14:21:26,325 workflow INFO:
+	 Executing node link_18.a0 in dir: /home2/data/Projects/ABIDE_Initiative/CPAC/test_qp/ALFF_Working/resting_preproc_0051466_session_1/_scan_rest_1_rest/link_18
+args:  {'strategies': [['_compcor_ncomponents_5_selector_pc10.linear1.wm0.global1.motion1.quadratic1.gm0.compcor1.csf0', '_csf_threshold_0.96', '_gm_threshold_0.7', '_target_angle_deg_90', '_threshold_0.2', '_wm_threshold_0.96']], 'subject_id': '0051466_session_1', 'in_file': ['/home2/data/Projects/ABIDE_Initiative/CPAC/test_qp/ALFF_Output/pipeline_me/0051466_session_1/functional_to_anat_linear_xfm/_compcor_ncomponents_5_linear1.global1.motion1.quadratic1.compcor1.CSF_0.96_GM_0.7_WM_0.96/functional_to_anat_linear_xfm.mat'], 'helper': {'_gm_threshold': 0, '_csf_threshold': 0, '_wm_threshold': 0, 'nuisance': 1, '_target_angle_deg': 0, '_threshold': 0}, 'pipeline_id': 'pipeline_me'}
+ZZZ -  ['/home2/data/Projects/ABIDE_Initiative/CPAC/test_qp/ALFF_Output/pipeline_me/0051466_session_1/functional_to_anat_linear_xfm/_compcor_ncomponents_5_linear1.global1.motion1.quadratic1.compcor1.CSF_0.96_GM_0.7_WM_0.96/functional_to_anat_linear_xfm.mat']  - ZZZZ
+~~~~~~  _compcor_ncomponents_5_selector  ~~~  _compcor_ncomponents_5_selector_pc10.linear1.wm0.global1.motion1.quadratic1.gm0.compcor1.csf0
+~~~~~~  _csf_threshold  ~~~  _csf_threshold_0.96
+~~~~~~  _gm_threshold  ~~~  _gm_threshold_0.7
+~~~~~~  _target_angle_deg  ~~~  _target_angle_deg_90
+~~~~~~  _threshold  ~~~  _threshold_0.2
+~~~~~~  _wm_threshold  ~~~  _wm_threshold_0.96
+~~~~~~  pipeline  ~~~  pipeline_me
+.
+_compcor_ncomponents_5_selector  ---------->  pc10.linear1.wm0.global1.motion1.quadratic1.gm0.compcor1.csf0
+pipeline  ---------->  me
+~~~  ~~~ /_compcor_ncomponents_5_linear1.global1.motion1.quadratic1.compcor1.CSF_0.96_GM_0.7_WM_0.96/
+.
+.
+131113-14:21:26,327 workflow INFO:
+	 Executing node link_22.a0 in dir: /home2/data/Projects/ABIDE_Initiative/CPAC/test_qp/ALFF_Working/resting_preproc_0051466_session_1/_scan_rest_1_rest/link_22
+args:  {'strategies': [['_compcor_ncomponents_5_selector_pc10.linear1.wm0.global1.motion1.quadratic1.gm0.compcor1.csf0', '_csf_threshold_0.96', '_gm_threshold_0.7', '_target_angle_deg_90', '_threshold_0.2', '_wm_threshold_0.96']], 'subject_id': '0051466_session_1', 'in_file': ['/home2/data/Projects/ABIDE_Initiative/CPAC/test_qp/ALFF_Output/pipeline_me/0051466_session_1/mean_functional/_compcor_ncomponents_5_linear1.global1.motion1.quadratic1.compcor1.CSF_0.96_GM_0.7_WM_0.96/mean_functional.nii.gz'], 'helper': {'_gm_threshold': 0, '_csf_threshold': 0, '_wm_threshold': 0, 'nuisance': 1, '_target_angle_deg': 0, '_threshold': 0}, 'pipeline_id': 'pipeline_me'}
+ZZZ -  ['/home2/data/Projects/ABIDE_Initiative/CPAC/test_qp/ALFF_Output/pipeline_me/0051466_session_1/mean_functional/_compcor_ncomponents_5_linear1.global1.motion1.quadratic1.compcor1.CSF_0.96_GM_0.7_WM_0.96/mean_functional.nii.gz']  - ZZZZ
+~~~~~~  _compcor_ncomponents_5_selector  ~~~  _compcor_ncomponents_5_selector_pc10.linear1.wm0.global1.motion1.quadratic1.gm0.compcor1.csf0
+~~~~~~  _csf_threshold  ~~~  _csf_threshold_0.96
+~~~~~~  _gm_threshold  ~~~  _gm_threshold_0.7
+~~~~~~  _target_angle_deg  ~~~  _target_angle_deg_90
+~~~~~~  _threshold  ~~~  _threshold_0.2
+~~~~~~  _wm_threshold  ~~~  _wm_threshold_0.96
+~~~~~~  pipeline  ~~~  pipeline_me
+.
+_compcor_ncomponents_5_selector  ---------->  pc10.linear1.wm0.global1.motion1.quadratic1.gm0.compcor1.csf0
+pipeline  ---------->  me
+~~~  ~~~ /_compcor_ncomponents_5_linear1.global1.motion1.quadratic1.compcor1.CSF_0.96_GM_0.7_WM_0.96/
+.
+.
+131113-14:21:26,333 workflow INFO:
+	 Executing node stddev_fltrd.a0.a0.a0.a0 in dir: /home2/data/Projects/ABIDE_Initiative/CPAC/test_qp/ALFF_Working/resting_preproc_0051466_session_1/alff_falff_0/_scan_rest_1_rest/_scan_rest_1_rest/_hp_0.01/_lp_0.1/stddev_fltrd
+131113-14:21:26,334 workflow INFO:
+	 Collecting precomputed outputs
+args:  {'strategies': [['_compcor_ncomponents_5_selector_pc10.linear1.wm0.global1.motion1.quadratic1.gm0.compcor1.csf0', '_csf_threshold_0.96', '_gm_threshold_0.7', '_target_angle_deg_90', '_threshold_0.2', '_wm_threshold_0.96']], 'subject_id': '0051466_session_1', 'in_file': ['/home2/data/Projects/ABIDE_Initiative/CPAC/test_qp/ALFF_Output/pipeline_me/0051466_session_1/functional_brain_mask_to_standard/_compcor_ncomponents_5_linear1.global1.motion1.quadratic1.compcor1.CSF_0.96_GM_0.7_WM_0.96/functional_brain_mask_to_standard.nii.gz'], 'helper': {'_gm_threshold': 0, '_csf_threshold': 0, '_wm_threshold': 0, 'nuisance': 1, '_target_angle_deg': 0, '_threshold': 0}, 'pipeline_id': 'pipeline_me'}
+ZZZ -  ['/home2/data/Projects/ABIDE_Initiative/CPAC/test_qp/ALFF_Output/pipeline_me/0051466_session_1/functional_brain_mask_to_standard/_compcor_ncomponents_5_linear1.global1.motion1.quadratic1.compcor1.CSF_0.96_GM_0.7_WM_0.96/functional_brain_mask_to_standard.nii.gz']  - ZZZZ
+~~~~~~  _compcor_ncomponents_5_selector  ~~~  _compcor_ncomponents_5_selector_pc10.linear1.wm0.global1.motion1.quadratic1.gm0.compcor1.csf0
+~~~~~~  _csf_threshold  ~~~  _csf_threshold_0.96
+~~~~~~  _gm_threshold  ~~~  _gm_threshold_0.7
+~~~~~~  _target_angle_deg  ~~~  _target_angle_deg_90
+~~~~~~  _threshold  ~~~  _threshold_0.2
+~~~~~~  _wm_threshold  ~~~  _wm_threshold_0.96
+~~~~~~  pipeline  ~~~  pipeline_me
+.
+_compcor_ncomponents_5_selector  ---------->  pc10.linear1.wm0.global1.motion1.quadratic1.gm0.compcor1.csf0
+pipeline  ---------->  me
+~~~  ~~~ /_compcor_ncomponents_5_linear1.global1.motion1.quadratic1.compcor1.CSF_0.96_GM_0.7_WM_0.96/
+.
+.
+131113-14:21:26,343 workflow INFO:
+	 Executing node link_17.a0 in dir: /home2/data/Projects/ABIDE_Initiative/CPAC/test_qp/ALFF_Working/resting_preproc_0051466_session_1/_scan_rest_1_rest/link_17
+args:  {'strategies': [['_compcor_ncomponents_5_selector_pc10.linear1.wm0.global1.motion1.quadratic1.gm0.compcor1.csf0', '_csf_threshold_0.96', '_gm_threshold_0.7', '_target_angle_deg_90', '_threshold_0.2', '_wm_threshold_0.96']], 'subject_id': '0051466_session_1', 'in_file': ['/home2/data/Projects/ABIDE_Initiative/CPAC/test_qp/ALFF_Output/pipeline_me/0051466_session_1/functional_nuisance_residuals/_compcor_ncomponents_5_linear1.global1.motion1.quadratic1.compcor1.CSF_0.96_GM_0.7_WM_0.96/functional_nuisance_residuals.nii.gz'], 'helper': {'_gm_threshold': 0, '_csf_threshold': 0, '_wm_threshold': 0, 'nuisance': 1, '_target_angle_deg': 0, '_threshold': 0}, 'pipeline_id': 'pipeline_me'}
+ZZZ -  ['/home2/data/Projects/ABIDE_Initiative/CPAC/test_qp/ALFF_Output/pipeline_me/0051466_session_1/functional_nuisance_residuals/_compcor_ncomponents_5_linear1.global1.motion1.quadratic1.compcor1.CSF_0.96_GM_0.7_WM_0.96/functional_nuisance_residuals.nii.gz']  - ZZZZ
+~~~~~~  _compcor_ncomponents_5_selector  ~~~  _compcor_ncomponents_5_selector_pc10.linear1.wm0.global1.motion1.quadratic1.gm0.compcor1.csf0
+~~~~~~  _csf_threshold  ~~~  _csf_threshold_0.96
+~~~~~~  _gm_threshold  ~~~  _gm_threshold_0.7
+~~~~~~  _target_angle_deg  ~~~  _target_angle_deg_90
+~~~~~~  _threshold  ~~~  _threshold_0.2
+~~~~~~  _wm_threshold  ~~~  _wm_threshold_0.96
+~~~~~~  pipeline  ~~~  pipeline_me
+.
+_compcor_ncomponents_5_selector  ---------->  pc10.linear1.wm0.global1.motion1.quadratic1.gm0.compcor1.csf0
+pipeline  ---------->  me
+~~~  ~~~ /_compcor_ncomponents_5_linear1.global1.motion1.quadratic1.compcor1.CSF_0.96_GM_0.7_WM_0.96/
+.
+.
+131113-14:21:26,350 workflow INFO:
+	 Executing node stddev_unfltrd.a0.a0 in dir: /home2/data/Projects/ABIDE_Initiative/CPAC/test_qp/ALFF_Working/resting_preproc_0051466_session_1/alff_falff_0/_scan_rest_1_rest/_scan_rest_1_rest/stddev_unfltrd
+131113-14:21:26,351 workflow INFO:
+	 Collecting precomputed outputs
+131113-14:21:28,223 workflow INFO:
+	 [Job finished] jobname: link_14.a0 jobid: 19
+131113-14:21:28,227 workflow INFO:
+	 [Job finished] jobname: link_20.a0 jobid: 29
+131113-14:21:28,231 workflow INFO:
+	 [Job finished] jobname: link_19.a0 jobid: 36
+131113-14:21:28,236 workflow ERROR:
+	 ['Node link_16.a0 failed to run on host rocky.']
+131113-14:21:28,237 workflow INFO:
+	 Saving crash info to /home2/data/Projects/ABIDE_Initiative/CPAC/test_qp/crash/crash-20131113-142128-milham-link_16.a0.npz
+131113-14:21:28,237 workflow INFO:
+	 Traceback (most recent call last):
+  File "/home2/data/Projects/CPAC_Regression_Test/nipype-installs/fcp-indi-nipype/running-install/lib/python2.7/site-packages/nipype/pipeline/plugins/multiproc.py", line 18, in run_node
+    result['result'] = node.run(updatehash=updatehash)
+  File "/home2/data/Projects/CPAC_Regression_Test/nipype-installs/fcp-indi-nipype/running-install/lib/python2.7/site-packages/nipype/pipeline/engine.py", line 1282, in run
+    self._run_interface()
+  File "/home2/data/Projects/CPAC_Regression_Test/nipype-installs/fcp-indi-nipype/running-install/lib/python2.7/site-packages/nipype/pipeline/engine.py", line 1380, in _run_interface
+    self._result = self._run_command(execute)
+  File "/home2/data/Projects/CPAC_Regression_Test/nipype-installs/fcp-indi-nipype/running-install/lib/python2.7/site-packages/nipype/pipeline/engine.py", line 1504, in _run_command
+    result = self._interface.run()
+  File "/home2/data/Projects/CPAC_Regression_Test/nipype-installs/fcp-indi-nipype/running-install/lib/python2.7/site-packages/nipype/interfaces/base.py", line 895, in run
+    runtime = self._run_interface(runtime)
+  File "/home2/data/Projects/CPAC_Regression_Test/nipype-installs/fcp-indi-nipype/running-install/lib/python2.7/site-packages/nipype/interfaces/utility.py", line 412, in _run_interface
+    out = function_handle(**args)
+  File "<string>", line 17, in prepare_symbolic_links
+  File "/home2/data/Projects/CPAC_Regression_Test/2013-05-30_cwas/C-PAC/CPAC/utils/utils.py", line 563, in create_symbolic_links
+    ext = fname.split('.', 1)[1]
+IndexError: list index out of range
+Interface Function failed to run. 
+
+131113-14:21:28,244 workflow INFO:
+	 [Job finished] jobname: link_15.a0 jobid: 51
+131113-14:21:28,249 workflow INFO:
+	 [Job finished] jobname: link_18.a0 jobid: 53
+131113-14:21:28,253 workflow INFO:
+	 [Job finished] jobname: stddev_fltrd.a0.a0.a0.a0 jobid: 59
+131113-14:21:28,258 workflow INFO:
+	 [Job finished] jobname: link_22.a0 jobid: 71
+131113-14:21:28,262 workflow INFO:
+	 [Job finished] jobname: link_17.a0 jobid: 74
+131113-14:21:28,266 workflow INFO:
+	 [Job finished] jobname: stddev_unfltrd.a0.a0 jobid: 81
+131113-14:21:28,272 workflow INFO:
+	 Submitting 4 jobs
+131113-14:21:28,272 workflow INFO:
+	 Executing: falff.a0.a0.a0.a0 ID: 12
+131113-14:21:28,273 workflow INFO:
+	 Executing: sinker_4.a0.a0.a0.a0 ID: 47
+131113-14:21:28,277 workflow INFO:
+	 Executing: mean.a0.a0.a0.a0 ID: 68
+131113-14:21:28,279 workflow INFO:
+	 Executing: standard_deviation.a0.a0.a0.a0 ID: 79
+131113-14:21:28,286 workflow INFO:
+	 Executing node sinker_4.a0.a0.a0.a0 in dir: /home2/data/Projects/ABIDE_Initiative/CPAC/test_qp/ALFF_Working/resting_preproc_0051466_session_1/_scan_rest_1_rest/_scan_rest_1_rest/_hp_0.01/_lp_0.1/sinker_4
+args:  {'strategies': [['_compcor_ncomponents_5_selector_pc10.linear1.wm0.global1.motion1.quadratic1.gm0.compcor1.csf0', '_csf_threshold_0.96', '_gm_threshold_0.7', '_target_angle_deg_90', '_threshold_0.2', '_wm_threshold_0.96']], 'subject_id': '0051466_session_1', 'in_file': ['/home2/data/Projects/ABIDE_Initiative/CPAC/test_qp/ALFF_Output/pipeline_me/0051466_session_1/functional_mni/_compcor_ncomponents_5_linear1.global1.motion1.quadratic1.compcor1.CSF_0.96_GM_0.7_WM_0.96/functional_mni.nii.gz'], 'helper': {'_gm_threshold': 0, '_csf_threshold': 0, '_wm_threshold': 0, 'nuisance': 1, '_target_angle_deg': 0, '_threshold': 0}, 'pipeline_id': 'pipeline_me'}
+ZZZ -  ['/home2/data/Projects/ABIDE_Initiative/CPAC/test_qp/ALFF_Output/pipeline_me/0051466_session_1/functional_mni/_compcor_ncomponents_5_linear1.global1.motion1.quadratic1.compcor1.CSF_0.96_GM_0.7_WM_0.96/functional_mni.nii.gz']  - ZZZZ
+~~~~~~  _compcor_ncomponents_5_selector  ~~~  _compcor_ncomponents_5_selector_pc10.linear1.wm0.global1.motion1.quadratic1.gm0.compcor1.csf0
+~~~~~~  _csf_threshold  ~~~  _csf_threshold_0.96
+~~~~~~  _gm_threshold  ~~~  _gm_threshold_0.7
+~~~~~~  _target_angle_deg  ~~~  _target_angle_deg_90
+~~~~~~  _threshold  ~~~  _threshold_0.2
+~~~~~~  _wm_threshold  ~~~  _wm_threshold_0.96
+~~~~~~  pipeline  ~~~  pipeline_me
+.
+_compcor_ncomponents_5_selector  ---------->  pc10.linear1.wm0.global1.motion1.quadratic1.gm0.compcor1.csf0
+pipeline  ---------->  me
+~~~  ~~~ /_compcor_ncomponents_5_linear1.global1.motion1.quadratic1.compcor1.CSF_0.96_GM_0.7_WM_0.96/
+.
+.
+131113-14:21:28,293 workflow INFO:
+	 Executing node mean.a0.a0.a0.a0 in dir: /home2/data/Projects/ABIDE_Initiative/CPAC/test_qp/ALFF_Working/resting_preproc_0051466_session_1/alff_falff_0/alff_zscore/_scan_rest_1_rest/_scan_rest_1_rest/_hp_0.01/_lp_0.1/mean
+args:  {'strategies': [['_compcor_ncomponents_5_selector_pc10.linear1.wm0.global1.motion1.quadratic1.gm0.compcor1.csf0', '_csf_threshold_0.96', '_gm_threshold_0.7', '_target_angle_deg_90', '_threshold_0.2', '_wm_threshold_0.96']], 'subject_id': '0051466_session_1', 'in_file': ['/home2/data/Projects/ABIDE_Initiative/CPAC/test_qp/ALFF_Output/pipeline_me/0051466_session_1/preprocessed/_compcor_ncomponents_5_linear1.global1.motion1.quadratic1.compcor1.CSF_0.96_GM_0.7_WM_0.96/preprocessed.nii.gz'], 'helper': {'_gm_threshold': 0, '_csf_threshold': 0, '_wm_threshold': 0, 'nuisance': 1, '_target_angle_deg': 0, '_threshold': 0}, 'pipeline_id': 'pipeline_me'}
+ZZZ -  ['/home2/data/Projects/ABIDE_Initiative/CPAC/test_qp/ALFF_Output/pipeline_me/0051466_session_1/preprocessed/_compcor_ncomponents_5_linear1.global1.motion1.quadratic1.compcor1.CSF_0.96_GM_0.7_WM_0.96/preprocessed.nii.gz']  - ZZZZ
+~~~~~~  _compcor_ncomponents_5_selector  ~~~  _compcor_ncomponents_5_selector_pc10.linear1.wm0.global1.motion1.quadratic1.gm0.compcor1.csf0
+~~~~~~  _csf_threshold  ~~~  _csf_threshold_0.96
+~~~~~~  _gm_threshold  ~~~  _gm_threshold_0.7
+~~~~~~  _target_angle_deg  ~~~  _target_angle_deg_90
+~~~~~~  _threshold  ~~~  _threshold_0.2
+~~~~~~  _wm_threshold  ~~~  _wm_threshold_0.96
+~~~~~~  pipeline  ~~~  pipeline_me
+.
+_compcor_ncomponents_5_selector  ---------->  pc10.linear1.wm0.global1.motion1.quadratic1.gm0.compcor1.csf0
+pipeline  ---------->  me
+~~~  ~~~ /_compcor_ncomponents_5_linear1.global1.motion1.quadratic1.compcor1.CSF_0.96_GM_0.7_WM_0.96/
+.
+.
+131113-14:21:28,293 workflow INFO:
+	 Executing node falff.a0.a0.a0.a0 in dir: /home2/data/Projects/ABIDE_Initiative/CPAC/test_qp/ALFF_Working/resting_preproc_0051466_session_1/alff_falff_0/_scan_rest_1_rest/_scan_rest_1_rest/_hp_0.01/_lp_0.1/falff
+131113-14:21:28,294 workflow INFO:
+	 Collecting precomputed outputs
+131113-14:21:28,295 workflow INFO:
+	 Collecting precomputed outputs
+131113-14:21:28,296 workflow INFO:
+	 Executing node standard_deviation.a0.a0.a0.a0 in dir: /home2/data/Projects/ABIDE_Initiative/CPAC/test_qp/ALFF_Working/resting_preproc_0051466_session_1/alff_falff_0/alff_zscore/_scan_rest_1_rest/_scan_rest_1_rest/_hp_0.01/_lp_0.1/standard_deviation
+131113-14:21:28,297 workflow INFO:
+	 Collecting precomputed outputs
+131113-14:21:30,285 workflow INFO:
+	 [Job finished] jobname: falff.a0.a0.a0.a0 jobid: 12
+131113-14:21:30,290 workflow INFO:
+	 [Job finished] jobname: sinker_4.a0.a0.a0.a0 jobid: 47
+131113-14:21:30,294 workflow INFO:
+	 [Job finished] jobname: mean.a0.a0.a0.a0 jobid: 68
+131113-14:21:30,299 workflow INFO:
+	 [Job finished] jobname: standard_deviation.a0.a0.a0.a0 jobid: 79
+131113-14:21:30,305 workflow INFO:
+	 Submitting 6 jobs
+131113-14:21:30,305 workflow INFO:
+	 Executing: sinker_13.a0.a0.a0.a0 ID: 3
+131113-14:21:30,308 workflow INFO:
+	 Executing: write_log.a0.a0.a0.a0 ID: 9
+131113-14:21:30,310 workflow INFO:
+	 Executing: mean.a0.a0.a0.a0 ID: 24
+131113-14:21:30,311 workflow INFO:
+	 Executing: link_4.a0.a0.a0.a0 ID: 27
+131113-14:21:30,313 workflow INFO:
+	 Executing: standard_deviation.a0.a0.a0.a0 ID: 37
+131113-14:21:30,316 workflow INFO:
+	 Executing: op_string.a0.a0.a0.a0 ID: 63
+131113-14:21:30,317 workflow INFO:
+	 Executing node sinker_13.a0.a0.a0.a0 in dir: /home2/data/Projects/ABIDE_Initiative/CPAC/test_qp/ALFF_Working/resting_preproc_0051466_session_1/_scan_rest_1_rest/_scan_rest_1_rest/_hp_0.01/_lp_0.1/sinker_13
+131113-14:21:30,318 workflow INFO:
+	 Executing node write_log.a0.a0.a0.a0 in dir: /home2/data/Projects/ABIDE_Initiative/CPAC/test_qp/ALFF_Working/resting_preproc_0051466_session_1/log_alff_falff_0/_scan_rest_1_rest/_scan_rest_1_rest/_hp_0.01/_lp_0.1/write_log
+131113-14:21:30,321 workflow INFO:
+	 Executing node link_4.a0.a0.a0.a0 in dir: /home2/data/Projects/ABIDE_Initiative/CPAC/test_qp/ALFF_Working/resting_preproc_0051466_session_1/_scan_rest_1_rest/_scan_rest_1_rest/_hp_0.01/_lp_0.1/link_4
+131113-14:21:30,325 workflow INFO:
+	 Executing node mean.a0.a0.a0.a0 in dir: /home2/data/Projects/ABIDE_Initiative/CPAC/test_qp/ALFF_Working/resting_preproc_0051466_session_1/alff_falff_0/falf_zscore/_scan_rest_1_rest/_scan_rest_1_rest/_hp_0.01/_lp_0.1/mean
+131113-14:21:30,326 workflow INFO:
+	 Collecting precomputed outputs
+args:  {'index': 0, 'inputs': '/data/Projects/ABIDE_Initiative/CPAC/test_qp/ALFF_Working/resting_preproc_0051466_session_1/alff_falff_0/_scan_rest_1_rest/_scan_rest_1_rest/_hp_0.01/_lp_0.1/falff/functional_brain_mask_3dc.nii.gz', 'log_dir': '/home2/data/Projects/ABIDE_Initiative/CPAC/test_qp/ALFF_Output/logs/0051466_session_1', 'scan_id': None, 'workflow': 'alff_falff_0'}
+131113-14:21:30,327 interface INFO:
+	 filepath already exist, filepath- /home2/data/Projects/ABIDE_Initiative/CPAC/test_qp/ALFF_Output/logs/0051466_session_1/scan_rest_1_rest/alff_falff_0, curr_dir - /data/Projects/ABIDE_Initiative/CPAC/test_qp/ALFF_Working/resting_preproc_0051466_session_1/log_alff_falff_0/_scan_rest_1_rest/_scan_rest_1_rest/_hp_0.01/_lp_0.1/write_log
+131113-14:21:30,327 interface INFO:
+	 CPAC custom log :
+131113-14:21:30,327 interface INFO:
+	  version - 0.3.2.1, timestamp -2013-11-13 14:21:30, subject_id -0051466_session_1, scan_id - scan_rest_1_rest, strategy -_scan_rest_1_rest_hp_0.01_lp_0.1, workflow - alff_falff_0, status -COMPLETED
+131113-14:21:30,345 workflow INFO:
+	 Executing node standard_deviation.a0.a0.a0.a0 in dir: /home2/data/Projects/ABIDE_Initiative/CPAC/test_qp/ALFF_Working/resting_preproc_0051466_session_1/alff_falff_0/falf_zscore/_scan_rest_1_rest/_scan_rest_1_rest/_hp_0.01/_lp_0.1/standard_deviation
+131113-14:21:30,345 workflow INFO:
+	 Executing node op_string.a0.a0.a0.a0 in dir: /home2/data/Projects/ABIDE_Initiative/CPAC/test_qp/ALFF_Working/resting_preproc_0051466_session_1/alff_falff_0/alff_zscore/_scan_rest_1_rest/_scan_rest_1_rest/_hp_0.01/_lp_0.1/op_string
+131113-14:21:30,346 workflow INFO:
+	 Collecting precomputed outputs
+131113-14:21:30,346 workflow INFO:
+	 Collecting precomputed outputs
+131113-14:21:32,321 workflow INFO:
+	 [Job finished] jobname: sinker_13.a0.a0.a0.a0 jobid: 3
+131113-14:21:32,325 workflow INFO:
+	 [Job finished] jobname: write_log.a0.a0.a0.a0 jobid: 9
+131113-14:21:32,330 workflow INFO:
+	 [Job finished] jobname: mean.a0.a0.a0.a0 jobid: 24
+131113-14:21:32,334 workflow INFO:
+	 [Job finished] jobname: link_4.a0.a0.a0.a0 jobid: 27
+131113-14:21:32,338 workflow INFO:
+	 [Job finished] jobname: standard_deviation.a0.a0.a0.a0 jobid: 37
+131113-14:21:32,342 workflow INFO:
+	 [Job finished] jobname: op_string.a0.a0.a0.a0 jobid: 63
+131113-14:21:32,348 workflow INFO:
+	 Submitting 3 jobs
+131113-14:21:32,348 workflow INFO:
+	 Executing: z_score.a0.a0.a0.a0 ID: 55
+131113-14:21:32,349 workflow INFO:
+	 Executing: link_13.a0.a0.a0.a0 ID: 73
+131113-14:21:32,352 workflow INFO:
+	 Executing: op_string.a0.a0.a0.a0 ID: 82
+args:  {'strategies': [['_compcor_ncomponents_5_selector_pc10.linear1.wm0.global1.motion1.quadratic1.gm0.compcor1.csf0', '_csf_threshold_0.96', '_gm_threshold_0.7', '_target_angle_deg_90', '_threshold_0.2', '_wm_threshold_0.96']], 'subject_id': '0051466_session_1', 'in_file': ['/home2/data/Projects/ABIDE_Initiative/CPAC/test_qp/ALFF_Output/pipeline_me/0051466_session_1/alff_img/_scan_rest_1_rest/_scan_rest_1_rest/_hp_0.01/_lp_0.1/residual_filtered_3dT.nii.gz'], 'helper': {'_gm_threshold': 0, '_csf_threshold': 0, '_wm_threshold': 0, 'nuisance': 1, '_target_angle_deg': 0, '_threshold': 0}, 'pipeline_id': 'pipeline_me'}
+ZZZ -  ['/home2/data/Projects/ABIDE_Initiative/CPAC/test_qp/ALFF_Output/pipeline_me/0051466_session_1/alff_img/_scan_rest_1_rest/_scan_rest_1_rest/_hp_0.01/_lp_0.1/residual_filtered_3dT.nii.gz']  - ZZZZ
+~~~~~~  _compcor_ncomponents_5_selector  ~~~  _compcor_ncomponents_5_selector_pc10.linear1.wm0.global1.motion1.quadratic1.gm0.compcor1.csf0
+~~~~~~  _csf_threshold  ~~~  _csf_threshold_0.96
+~~~~~~  _gm_threshold  ~~~  _gm_threshold_0.7
+~~~~~~  _target_angle_deg  ~~~  _target_angle_deg_90
+~~~~~~  _threshold  ~~~  _threshold_0.2
+~~~~~~  _wm_threshold  ~~~  _wm_threshold_0.96
+~~~~~~  pipeline  ~~~  pipeline_me
+.
+_compcor_ncomponents_5_selector  ---------->  pc10.linear1.wm0.global1.motion1.quadratic1.gm0.compcor1.csf0
+pipeline  ---------->  me
+scan_rest_1_rest  ~~~ /_scan_rest_1_rest/_scan_rest_1_rest/_hp_0.01/_lp_0.1/residual_filtered_3dT.nii.gz
+.
+.
+131113-14:21:32,360 workflow INFO:
+	 Executing node link_13.a0.a0.a0.a0 in dir: /home2/data/Projects/ABIDE_Initiative/CPAC/test_qp/ALFF_Working/resting_preproc_0051466_session_1/_scan_rest_1_rest/_scan_rest_1_rest/_hp_0.01/_lp_0.1/link_13
+131113-14:21:32,368 workflow INFO:
+	 Executing node op_string.a0.a0.a0.a0 in dir: /home2/data/Projects/ABIDE_Initiative/CPAC/test_qp/ALFF_Working/resting_preproc_0051466_session_1/alff_falff_0/falf_zscore/_scan_rest_1_rest/_scan_rest_1_rest/_hp_0.01/_lp_0.1/op_string
+131113-14:21:32,369 workflow INFO:
+	 Executing node z_score.a0.a0.a0.a0 in dir: /home2/data/Projects/ABIDE_Initiative/CPAC/test_qp/ALFF_Working/resting_preproc_0051466_session_1/alff_falff_0/alff_zscore/_scan_rest_1_rest/_scan_rest_1_rest/_hp_0.01/_lp_0.1/z_score
+131113-14:21:32,369 workflow INFO:
+	 Collecting precomputed outputs
+131113-14:21:32,370 workflow INFO:
+	 Collecting precomputed outputs
+131113-14:21:34,356 workflow INFO:
+	 [Job finished] jobname: z_score.a0.a0.a0.a0 jobid: 55
+131113-14:21:34,361 workflow INFO:
+	 [Job finished] jobname: link_13.a0.a0.a0.a0 jobid: 73
+131113-14:21:34,365 workflow INFO:
+	 [Job finished] jobname: op_string.a0.a0.a0.a0 jobid: 82
+131113-14:21:34,371 workflow INFO:
+	 Submitting 4 jobs
+131113-14:21:34,371 workflow INFO:
+	 Executing: sinker_0.a0.a0.a0.a0 ID: 11
+131113-14:21:34,374 workflow INFO:
+	 Executing: alff_Z_smooth_0.a0.a0.a0.a0.a0 ID: 33
+131113-14:21:34,376 workflow INFO:
+	 Executing: z_score.a0.a0.a0.a0 ID: 43
+131113-14:21:34,378 workflow INFO:
+	 Executing: fsl_reg_2_itk.a0.a0.a0.a0.a0 ID: 45
+131113-14:21:34,383 workflow INFO:
+	 Executing node sinker_0.a0.a0.a0.a0 in dir: /home2/data/Projects/ABIDE_Initiative/CPAC/test_qp/ALFF_Working/resting_preproc_0051466_session_1/_scan_rest_1_rest/_scan_rest_1_rest/_hp_0.01/_lp_0.1/sinker_0
+args:  {'strategies': [['_compcor_ncomponents_5_selector_pc10.linear1.wm0.global1.motion1.quadratic1.gm0.compcor1.csf0', '_csf_threshold_0.96', '_gm_threshold_0.7', '_target_angle_deg_90', '_threshold_0.2', '_wm_threshold_0.96']], 'subject_id': '0051466_session_1', 'in_file': ['/home2/data/Projects/ABIDE_Initiative/CPAC/test_qp/ALFF_Output/pipeline_me/0051466_session_1/falff_img/_scan_rest_1_rest/_scan_rest_1_rest/_hp_0.01/_lp_0.1/functional_brain_mask_3dc.nii.gz'], 'helper': {'_gm_threshold': 0, '_csf_threshold': 0, '_wm_threshold': 0, 'nuisance': 1, '_target_angle_deg': 0, '_threshold': 0}, 'pipeline_id': 'pipeline_me'}
+ZZZ -  ['/home2/data/Projects/ABIDE_Initiative/CPAC/test_qp/ALFF_Output/pipeline_me/0051466_session_1/falff_img/_scan_rest_1_rest/_scan_rest_1_rest/_hp_0.01/_lp_0.1/functional_brain_mask_3dc.nii.gz']  - ZZZZ
+~~~~~~  _compcor_ncomponents_5_selector  ~~~  _compcor_ncomponents_5_selector_pc10.linear1.wm0.global1.motion1.quadratic1.gm0.compcor1.csf0
+~~~~~~  _csf_threshold  ~~~  _csf_threshold_0.96
+~~~~~~  _gm_threshold  ~~~  _gm_threshold_0.7
+~~~~~~  _target_angle_deg  ~~~  _target_angle_deg_90
+~~~~~~  _threshold  ~~~  _threshold_0.2
+~~~~~~  _wm_threshold  ~~~  _wm_threshold_0.96
+~~~~~~  pipeline  ~~~  pipeline_me
+.
+_compcor_ncomponents_5_selector  ---------->  pc10.linear1.wm0.global1.motion1.quadratic1.gm0.compcor1.csf0
+pipeline  ---------->  me
+scan_rest_1_rest  ~~~ /_scan_rest_1_rest/_scan_rest_1_rest/_hp_0.01/_lp_0.1/functional_brain_mask_3dc.nii.gz
+.
+.
+131113-14:21:34,390 workflow INFO:
+	 Executing node alff_Z_smooth_0.a0.a0.a0.a0.a0 in dir: /home2/data/Projects/ABIDE_Initiative/CPAC/test_qp/ALFF_Working/resting_preproc_0051466_session_1/_scan_rest_1_rest/_scan_rest_1_rest/_hp_0.01/_lp_0.1/_fwhm_6/alff_Z_smooth_0
+131113-14:21:34,391 workflow INFO:
+	 Collecting precomputed outputs
+131113-14:21:34,393 workflow INFO:
+	 Executing node fsl_reg_2_itk.a0.a0.a0.a0.a0 in dir: /home2/data/Projects/ABIDE_Initiative/CPAC/test_qp/ALFF_Working/resting_preproc_0051466_session_1/alff_Z_to_standard_0/_scan_rest_1_rest/_scan_rest_1_rest/_hp_0.01/_lp_0.1/_scan_scan_rest_1_rest/fsl_reg_2_itk
+131113-14:21:34,395 workflow INFO:
+	 Collecting precomputed outputs
+131113-14:21:34,397 workflow INFO:
+	 Executing node z_score.a0.a0.a0.a0 in dir: /home2/data/Projects/ABIDE_Initiative/CPAC/test_qp/ALFF_Working/resting_preproc_0051466_session_1/alff_falff_0/falf_zscore/_scan_rest_1_rest/_scan_rest_1_rest/_hp_0.01/_lp_0.1/z_score
+131113-14:21:34,398 workflow INFO:
+	 Collecting precomputed outputs
+131113-14:21:36,384 workflow INFO:
+	 [Job finished] jobname: sinker_0.a0.a0.a0.a0 jobid: 11
+131113-14:21:36,389 workflow INFO:
+	 [Job finished] jobname: alff_Z_smooth_0.a0.a0.a0.a0.a0 jobid: 33
+131113-14:21:36,393 workflow INFO:
+	 [Job finished] jobname: z_score.a0.a0.a0.a0 jobid: 43
+131113-14:21:36,398 workflow INFO:
+	 [Job finished] jobname: fsl_reg_2_itk.a0.a0.a0.a0.a0 jobid: 45
+131113-14:21:36,404 workflow INFO:
+	 Submitting 6 jobs
+131113-14:21:36,404 workflow INFO:
+	 Executing: link_0.a0.a0.a0.a0 ID: 2
+131113-14:21:36,405 workflow INFO:
+	 Executing: fsl_reg_2_itk.a0.a0.a0.a0.a0 ID: 15
+131113-14:21:36,408 workflow INFO:
+	 Executing: falff_Z_smooth_0.a0.a0.a0.a0.a0 ID: 20
+131113-14:21:36,409 workflow INFO:
+	 Executing: sinker_9.a0.a0.a0.a0 ID: 25
+131113-14:21:36,413 workflow INFO:
+	 Executing: sinker_1.a0.a0.a0.a0.a0 ID: 57
+131113-14:21:36,414 workflow INFO:
+	 Executing node link_0.a0.a0.a0.a0 in dir: /home2/data/Projects/ABIDE_Initiative/CPAC/test_qp/ALFF_Working/resting_preproc_0051466_session_1/_scan_rest_1_rest/_scan_rest_1_rest/_hp_0.01/_lp_0.1/link_0
+131113-14:21:36,417 workflow INFO:
+	 Executing: collect_transforms.a0.a0.a0.a0.a0 ID: 72
+131113-14:21:36,421 workflow INFO:
+	 Executing node fsl_reg_2_itk.a0.a0.a0.a0.a0 in dir: /home2/data/Projects/ABIDE_Initiative/CPAC/test_qp/ALFF_Working/resting_preproc_0051466_session_1/falff_Z_to_standard_0/_scan_rest_1_rest/_scan_rest_1_rest/_hp_0.01/_lp_0.1/_scan_scan_rest_1_rest/fsl_reg_2_itk
+131113-14:21:36,421 workflow INFO:
+	 Executing node sinker_9.a0.a0.a0.a0 in dir: /home2/data/Projects/ABIDE_Initiative/CPAC/test_qp/ALFF_Working/resting_preproc_0051466_session_1/_scan_rest_1_rest/_scan_rest_1_rest/_hp_0.01/_lp_0.1/sinker_9
+131113-14:21:36,422 workflow INFO:
+	 Collecting precomputed outputs
+131113-14:21:36,423 workflow INFO:
+	 Executing node falff_Z_smooth_0.a0.a0.a0.a0.a0 in dir: /home2/data/Projects/ABIDE_Initiative/CPAC/test_qp/ALFF_Working/resting_preproc_0051466_session_1/_scan_rest_1_rest/_scan_rest_1_rest/_hp_0.01/_lp_0.1/_fwhm_6/falff_Z_smooth_0
+131113-14:21:36,424 workflow INFO:
+	 Collecting precomputed outputs
+args:  {'strategies': [['_compcor_ncomponents_5_selector_pc10.linear1.wm0.global1.motion1.quadratic1.gm0.compcor1.csf0', '_csf_threshold_0.96', '_gm_threshold_0.7', '_target_angle_deg_90', '_threshold_0.2', '_wm_threshold_0.96']], 'subject_id': '0051466_session_1', 'in_file': ['/home2/data/Projects/ABIDE_Initiative/CPAC/test_qp/ALFF_Output/pipeline_me/0051466_session_1/alff_Z_img/_scan_rest_1_rest/_scan_rest_1_rest/_hp_0.01/_lp_0.1/residual_filtered_3dT_maths.nii.gz'], 'helper': {'_gm_threshold': 0, '_csf_threshold': 0, '_wm_threshold': 0, 'nuisance': 1, '_target_angle_deg': 0, '_threshold': 0}, 'pipeline_id': 'pipeline_me'}
+ZZZ -  ['/home2/data/Projects/ABIDE_Initiative/CPAC/test_qp/ALFF_Output/pipeline_me/0051466_session_1/alff_Z_img/_scan_rest_1_rest/_scan_rest_1_rest/_hp_0.01/_lp_0.1/residual_filtered_3dT_maths.nii.gz']  - ZZZZ
+~~~~~~  _compcor_ncomponents_5_selector  ~~~  _compcor_ncomponents_5_selector_pc10.linear1.wm0.global1.motion1.quadratic1.gm0.compcor1.csf0
+~~~~~~  _csf_threshold  ~~~  _csf_threshold_0.96
+~~~~~~  _gm_threshold  ~~~  _gm_threshold_0.7
+~~~~~~  _target_angle_deg  ~~~  _target_angle_deg_90
+~~~~~~  _threshold  ~~~  _threshold_0.2
+~~~~~~  _wm_threshold  ~~~  _wm_threshold_0.96
+~~~~~~  pipeline  ~~~  pipeline_me
+.
+_compcor_ncomponents_5_selector  ---------->  pc10.linear1.wm0.global1.motion1.quadratic1.gm0.compcor1.csf0
+pipeline  ---------->  me
+scan_rest_1_rest  ~~~ /_scan_rest_1_rest/_scan_rest_1_rest/_hp_0.01/_lp_0.1/residual_filtered_3dT_maths.nii.gz
+.
+.
+131113-14:21:36,435 workflow INFO:
+	 Executing node sinker_1.a0.a0.a0.a0.a0 in dir: /home2/data/Projects/ABIDE_Initiative/CPAC/test_qp/ALFF_Working/resting_preproc_0051466_session_1/_scan_rest_1_rest/_scan_rest_1_rest/_hp_0.01/_lp_0.1/_fwhm_6/sinker_1
+131113-14:21:36,435 workflow INFO:
+	 Executing node collect_transforms.a0.a0.a0.a0.a0 in dir: /home2/data/Projects/ABIDE_Initiative/CPAC/test_qp/ALFF_Working/resting_preproc_0051466_session_1/alff_Z_to_standard_0/_scan_rest_1_rest/_scan_rest_1_rest/_hp_0.01/_lp_0.1/_scan_scan_rest_1_rest/collect_transforms
+131113-14:21:36,437 workflow INFO:
+	 Collecting precomputed outputs
+131113-14:21:38,423 workflow INFO:
+	 [Job finished] jobname: link_0.a0.a0.a0.a0 jobid: 2
+131113-14:21:38,428 workflow INFO:
+	 [Job finished] jobname: fsl_reg_2_itk.a0.a0.a0.a0.a0 jobid: 15
+131113-14:21:38,432 workflow INFO:
+	 [Job finished] jobname: falff_Z_smooth_0.a0.a0.a0.a0.a0 jobid: 20
+131113-14:21:38,436 workflow INFO:
+	 [Job finished] jobname: sinker_9.a0.a0.a0.a0 jobid: 25
+131113-14:21:38,441 workflow INFO:
+	 [Job finished] jobname: sinker_1.a0.a0.a0.a0.a0 jobid: 57
+131113-14:21:38,445 workflow INFO:
+	 [Job finished] jobname: collect_transforms.a0.a0.a0.a0.a0 jobid: 72
+131113-14:21:38,450 workflow INFO:
+	 Submitting 5 jobs
+131113-14:21:38,451 workflow INFO:
+	 Executing: link_1.a0.a0.a0.a0.a0 ID: 54
+131113-14:21:38,452 workflow INFO:
+	 Executing: sinker_10.a0.a0.a0.a0.a0 ID: 56
+131113-14:21:38,456 workflow INFO:
+	 Executing: link_9.a0.a0.a0.a0 ID: 61
+131113-14:21:38,458 workflow INFO:
+	 Executing: collect_transforms.a0.a0.a0.a0.a0 ID: 76
+131113-14:21:38,460 workflow INFO:
+	 Executing: apply_ants_3d_warp.a0.a0.a0.a0.a0 ID: 85
+131113-14:21:38,460 workflow INFO:
+	 Executing node link_1.a0.a0.a0.a0.a0 in dir: /home2/data/Projects/ABIDE_Initiative/CPAC/test_qp/ALFF_Working/resting_preproc_0051466_session_1/_scan_rest_1_rest/_scan_rest_1_rest/_hp_0.01/_lp_0.1/_fwhm_6/link_1
+131113-14:21:38,464 workflow INFO:
+	 Executing node sinker_10.a0.a0.a0.a0.a0 in dir: /home2/data/Projects/ABIDE_Initiative/CPAC/test_qp/ALFF_Working/resting_preproc_0051466_session_1/_scan_rest_1_rest/_scan_rest_1_rest/_hp_0.01/_lp_0.1/_fwhm_6/sinker_10
+131113-14:21:38,466 workflow INFO:
+	 Executing node link_9.a0.a0.a0.a0 in dir: /home2/data/Projects/ABIDE_Initiative/CPAC/test_qp/ALFF_Working/resting_preproc_0051466_session_1/_scan_rest_1_rest/_scan_rest_1_rest/_hp_0.01/_lp_0.1/link_9
+131113-14:21:38,468 workflow INFO:
+	 Executing node collect_transforms.a0.a0.a0.a0.a0 in dir: /home2/data/Projects/ABIDE_Initiative/CPAC/test_qp/ALFF_Working/resting_preproc_0051466_session_1/falff_Z_to_standard_0/_scan_rest_1_rest/_scan_rest_1_rest/_hp_0.01/_lp_0.1/_scan_scan_rest_1_rest/collect_transforms
+131113-14:21:38,469 workflow INFO:
+	 Collecting precomputed outputs
+args:  {'strategies': [['_compcor_ncomponents_5_selector_pc10.linear1.wm0.global1.motion1.quadratic1.gm0.compcor1.csf0', '_csf_threshold_0.96', '_gm_threshold_0.7', '_target_angle_deg_90', '_threshold_0.2', '_wm_threshold_0.96']], 'subject_id': '0051466_session_1', 'in_file': ['/home2/data/Projects/ABIDE_Initiative/CPAC/test_qp/ALFF_Output/pipeline_me/0051466_session_1/alff_Z_smooth/_scan_rest_1_rest/_scan_rest_1_rest/_hp_0.01/_lp_0.1/_fwhm_6/residual_filtered_3dT_maths_maths.nii.gz'], 'helper': {'_gm_threshold': 0, '_csf_threshold': 0, '_wm_threshold': 0, 'nuisance': 1, '_target_angle_deg': 0, '_threshold': 0}, 'pipeline_id': 'pipeline_me'}
+ZZZ -  ['/home2/data/Projects/ABIDE_Initiative/CPAC/test_qp/ALFF_Output/pipeline_me/0051466_session_1/alff_Z_smooth/_scan_rest_1_rest/_scan_rest_1_rest/_hp_0.01/_lp_0.1/_fwhm_6/residual_filtered_3dT_maths_maths.nii.gz']  - ZZZZ
+~~~~~~  _compcor_ncomponents_5_selector  ~~~  _compcor_ncomponents_5_selector_pc10.linear1.wm0.global1.motion1.quadratic1.gm0.compcor1.csf0
+~~~~~~  _csf_threshold  ~~~  _csf_threshold_0.96
+~~~~~~  _gm_threshold  ~~~  _gm_threshold_0.7
+~~~~~~  _target_angle_deg  ~~~  _target_angle_deg_90
+~~~~~~  _threshold  ~~~  _threshold_0.2
+~~~~~~  _wm_threshold  ~~~  _wm_threshold_0.96
+~~~~~~  pipeline  ~~~  pipeline_me
+.
+_compcor_ncomponents_5_selector  ---------->  pc10.linear1.wm0.global1.motion1.quadratic1.gm0.compcor1.csf0
+pipeline  ---------->  me
+scan_rest_1_rest  ~~~ /_scan_rest_1_rest/_scan_rest_1_rest/_hp_0.01/_lp_0.1/_fwhm_6/residual_filtered_3dT_maths_maths.nii.gz
+.
+.
+131113-14:21:38,487 workflow INFO:
+	 Executing node apply_ants_3d_warp.a0.a0.a0.a0.a0 in dir: /home2/data/Projects/ABIDE_Initiative/CPAC/test_qp/ALFF_Working/resting_preproc_0051466_session_1/alff_Z_to_standard_0/_scan_rest_1_rest/_scan_rest_1_rest/_hp_0.01/_lp_0.1/_scan_scan_rest_1_rest/apply_ants_3d_warp
+131113-14:21:38,488 workflow INFO:
+	 Collecting precomputed outputs
+131113-14:21:40,465 workflow INFO:
+	 [Job finished] jobname: link_1.a0.a0.a0.a0.a0 jobid: 54
+131113-14:21:40,470 workflow INFO:
+	 [Job finished] jobname: sinker_10.a0.a0.a0.a0.a0 jobid: 56
+131113-14:21:40,474 workflow INFO:
+	 [Job finished] jobname: link_9.a0.a0.a0.a0 jobid: 61
+131113-14:21:40,479 workflow INFO:
+	 [Job finished] jobname: collect_transforms.a0.a0.a0.a0.a0 jobid: 76
+131113-14:21:40,483 workflow INFO:
+	 [Job finished] jobname: apply_ants_3d_warp.a0.a0.a0.a0.a0 jobid: 85
+131113-14:21:40,489 workflow INFO:
+	 Submitting 4 jobs
+131113-14:21:40,489 workflow INFO:
+	 Executing: alff_Z_to_standard_smooth_0.a0.a0.a0.a0.a0.a0.a0 ID: 6
+131113-14:21:40,490 workflow INFO:
+	 Executing: sinker_2.a0.a0.a0.a0.a0 ID: 13
+131113-14:21:40,494 workflow INFO:
+	 Executing: link_10.a0.a0.a0.a0.a0 ID: 67
+131113-14:21:40,496 workflow INFO:
+	 Executing: apply_ants_3d_warp.a0.a0.a0.a0.a0 ID: 78
+args:  {'strategies': [['_compcor_ncomponents_5_selector_pc10.linear1.wm0.global1.motion1.quadratic1.gm0.compcor1.csf0', '_csf_threshold_0.96', '_gm_threshold_0.7', '_target_angle_deg_90', '_threshold_0.2', '_wm_threshold_0.96']], 'subject_id': '0051466_session_1', 'in_file': ['/home2/data/Projects/ABIDE_Initiative/CPAC/test_qp/ALFF_Output/pipeline_me/0051466_session_1/falff_Z_img/_scan_rest_1_rest/_scan_rest_1_rest/_hp_0.01/_lp_0.1/functional_brain_mask_3dc_maths.nii.gz'], 'helper': {'_gm_threshold': 0, '_csf_threshold': 0, '_wm_threshold': 0, 'nuisance': 1, '_target_angle_deg': 0, '_threshold': 0}, 'pipeline_id': 'pipeline_me'}
+ZZZ -  ['/home2/data/Projects/ABIDE_Initiative/CPAC/test_qp/ALFF_Output/pipeline_me/0051466_session_1/falff_Z_img/_scan_rest_1_rest/_scan_rest_1_rest/_hp_0.01/_lp_0.1/functional_brain_mask_3dc_maths.nii.gz']  - ZZZZ
+~~~~~~  _compcor_ncomponents_5_selector  ~~~  _compcor_ncomponents_5_selector_pc10.linear1.wm0.global1.motion1.quadratic1.gm0.compcor1.csf0
+~~~~~~  _csf_threshold  ~~~  _csf_threshold_0.96
+~~~~~~  _gm_threshold  ~~~  _gm_threshold_0.7
+~~~~~~  _target_angle_deg  ~~~  _target_angle_deg_90
+~~~~~~  _threshold  ~~~  _threshold_0.2
+~~~~~~  _wm_threshold  ~~~  _wm_threshold_0.96
+~~~~~~  pipeline  ~~~  pipeline_me
+.
+_compcor_ncomponents_5_selector  ---------->  pc10.linear1.wm0.global1.motion1.quadratic1.gm0.compcor1.csf0
+pipeline  ---------->  me
+scan_rest_1_rest  ~~~ /_scan_rest_1_rest/_scan_rest_1_rest/_hp_0.01/_lp_0.1/functional_brain_mask_3dc_maths.nii.gz
+.
+.
+131113-14:21:40,503 workflow INFO:
+	 Executing node sinker_2.a0.a0.a0.a0.a0 in dir: /home2/data/Projects/ABIDE_Initiative/CPAC/test_qp/ALFF_Working/resting_preproc_0051466_session_1/_scan_rest_1_rest/_scan_rest_1_rest/_hp_0.01/_lp_0.1/_scan_scan_rest_1_rest/sinker_2
+131113-14:21:40,504 workflow INFO:
+	 Executing node link_10.a0.a0.a0.a0.a0 in dir: /home2/data/Projects/ABIDE_Initiative/CPAC/test_qp/ALFF_Working/resting_preproc_0051466_session_1/_scan_rest_1_rest/_scan_rest_1_rest/_hp_0.01/_lp_0.1/_fwhm_6/link_10
+131113-14:21:40,504 workflow INFO:
+	 Executing node alff_Z_to_standard_smooth_0.a0.a0.a0.a0.a0.a0.a0 in dir: /home2/data/Projects/ABIDE_Initiative/CPAC/test_qp/ALFF_Working/resting_preproc_0051466_session_1/_scan_rest_1_rest/_scan_rest_1_rest/_hp_0.01/_lp_0.1/_scan_scan_rest_1_rest/_scan_rest_1_rest/_fwhm_6/alff_Z_to_standard_smooth_0
+131113-14:21:40,506 workflow INFO:
+	 Collecting precomputed outputs
+131113-14:21:40,512 workflow INFO:
+	 Executing node apply_ants_3d_warp.a0.a0.a0.a0.a0 in dir: /home2/data/Projects/ABIDE_Initiative/CPAC/test_qp/ALFF_Working/resting_preproc_0051466_session_1/falff_Z_to_standard_0/_scan_rest_1_rest/_scan_rest_1_rest/_hp_0.01/_lp_0.1/_scan_scan_rest_1_rest/apply_ants_3d_warp
+131113-14:21:40,514 workflow INFO:
+	 Collecting precomputed outputs
+131113-14:21:42,502 workflow INFO:
+	 [Job finished] jobname: alff_Z_to_standard_smooth_0.a0.a0.a0.a0.a0.a0.a0 jobid: 6
+131113-14:21:42,507 workflow INFO:
+	 [Job finished] jobname: sinker_2.a0.a0.a0.a0.a0 jobid: 13
+131113-14:21:42,511 workflow INFO:
+	 [Job finished] jobname: link_10.a0.a0.a0.a0.a0 jobid: 67
+131113-14:21:42,515 workflow INFO:
+	 [Job finished] jobname: apply_ants_3d_warp.a0.a0.a0.a0.a0 jobid: 78
+131113-14:21:42,521 workflow INFO:
+	 Submitting 5 jobs
+131113-14:21:42,522 workflow INFO:
+	 Executing: sinker_11.a0.a0.a0.a0.a0 ID: 8
+131113-14:21:42,524 workflow INFO:
+	 Executing: sinker_3.a0.a0.a0.a0.a0.a0.a0 ID: 34
+131113-14:21:42,528 workflow INFO:
+	 Executing: falff_Z_to_standard_smooth_0.a0.a0.a0.a0.a0.a0.a0 ID: 42
+131113-14:21:42,530 workflow INFO:
+	 Executing: write_log.a0.a0.a0.a0.a0.a0.a0 ID: 62
+131113-14:21:42,532 workflow INFO:
+	 Executing: link_2.a0.a0.a0.a0.a0 ID: 75
+131113-14:21:42,534 workflow INFO:
+	 Executing node sinker_11.a0.a0.a0.a0.a0 in dir: /home2/data/Projects/ABIDE_Initiative/CPAC/test_qp/ALFF_Working/resting_preproc_0051466_session_1/_scan_rest_1_rest/_scan_rest_1_rest/_hp_0.01/_lp_0.1/_scan_scan_rest_1_rest/sinker_11
+args:  {'strategies': [['_compcor_ncomponents_5_selector_pc10.linear1.wm0.global1.motion1.quadratic1.gm0.compcor1.csf0', '_csf_threshold_0.96', '_gm_threshold_0.7', '_target_angle_deg_90', '_threshold_0.2', '_wm_threshold_0.96']], 'subject_id': '0051466_session_1', 'in_file': ['/home2/data/Projects/ABIDE_Initiative/CPAC/test_qp/ALFF_Output/pipeline_me/0051466_session_1/falff_Z_smooth/_scan_rest_1_rest/_scan_rest_1_rest/_hp_0.01/_lp_0.1/_fwhm_6/functional_brain_mask_3dc_maths_maths.nii.gz'], 'helper': {'_gm_threshold': 0, '_csf_threshold': 0, '_wm_threshold': 0, 'nuisance': 1, '_target_angle_deg': 0, '_threshold': 0}, 'pipeline_id': 'pipeline_me'}
+ZZZ -  ['/home2/data/Projects/ABIDE_Initiative/CPAC/test_qp/ALFF_Output/pipeline_me/0051466_session_1/falff_Z_smooth/_scan_rest_1_rest/_scan_rest_1_rest/_hp_0.01/_lp_0.1/_fwhm_6/functional_brain_mask_3dc_maths_maths.nii.gz']  - ZZZZ
+~~~~~~  _compcor_ncomponents_5_selector  ~~~  _compcor_ncomponents_5_selector_pc10.linear1.wm0.global1.motion1.quadratic1.gm0.compcor1.csf0
+~~~~~~  _csf_threshold  ~~~  _csf_threshold_0.96
+~~~~~~  _gm_threshold  ~~~  _gm_threshold_0.7
+~~~~~~  _target_angle_deg  ~~~  _target_angle_deg_90
+~~~~~~  _threshold  ~~~  _threshold_0.2
+~~~~~~  _wm_threshold  ~~~  _wm_threshold_0.96
+~~~~~~  pipeline  ~~~  pipeline_me
+.
+_compcor_ncomponents_5_selector  ---------->  pc10.linear1.wm0.global1.motion1.quadratic1.gm0.compcor1.csf0
+pipeline  ---------->  me
+scan_rest_1_rest  ~~~ /_scan_rest_1_rest/_scan_rest_1_rest/_hp_0.01/_lp_0.1/_fwhm_6/functional_brain_mask_3dc_maths_maths.nii.gz
+.
+.
+131113-14:21:42,537 workflow INFO:
+	 Executing node sinker_3.a0.a0.a0.a0.a0.a0.a0 in dir: /home2/data/Projects/ABIDE_Initiative/CPAC/test_qp/ALFF_Working/resting_preproc_0051466_session_1/_scan_rest_1_rest/_scan_rest_1_rest/_hp_0.01/_lp_0.1/_scan_scan_rest_1_rest/_scan_rest_1_rest/_fwhm_6/sinker_3
+131113-14:21:42,540 workflow INFO:
+	 Executing node write_log.a0.a0.a0.a0.a0.a0.a0 in dir: /home2/data/Projects/ABIDE_Initiative/CPAC/test_qp/ALFF_Working/resting_preproc_0051466_session_1/log_alff_Z_to_standard_smooth_0/_scan_rest_1_rest/_scan_rest_1_rest/_hp_0.01/_lp_0.1/_scan_scan_rest_1_rest/_scan_rest_1_rest/_fwhm_6/write_log
+131113-14:21:42,544 workflow INFO:
+	 Executing node falff_Z_to_standard_smooth_0.a0.a0.a0.a0.a0.a0.a0 in dir: /home2/data/Projects/ABIDE_Initiative/CPAC/test_qp/ALFF_Working/resting_preproc_0051466_session_1/_scan_rest_1_rest/_scan_rest_1_rest/_hp_0.01/_lp_0.1/_scan_scan_rest_1_rest/_scan_rest_1_rest/_fwhm_6/falff_Z_to_standard_smooth_0
+131113-14:21:42,546 workflow INFO:
+	 Collecting precomputed outputs
+args:  {'index': 0, 'inputs': '/data/Projects/ABIDE_Initiative/CPAC/test_qp/ALFF_Working/resting_preproc_0051466_session_1/_scan_rest_1_rest/_scan_rest_1_rest/_hp_0.01/_lp_0.1/_scan_scan_rest_1_rest/_scan_rest_1_rest/_fwhm_6/alff_Z_to_standard_smooth_0/residual_filtered_3dT_maths_wimt_maths.nii.gz', 'log_dir': '/home2/data/Projects/ABIDE_Initiative/CPAC/test_qp/ALFF_Output/logs/0051466_session_1', 'scan_id': None, 'workflow': 'alff_Z_to_standard_smooth_0'}
+131113-14:21:42,548 interface INFO:
+	 filepath already exist, filepath- /home2/data/Projects/ABIDE_Initiative/CPAC/test_qp/ALFF_Output/logs/0051466_session_1/scan_rest_1_rest/alff_Z_to_standard_smooth_0, curr_dir - /data/Projects/ABIDE_Initiative/CPAC/test_qp/ALFF_Working/resting_preproc_0051466_session_1/log_alff_Z_to_standard_smooth_0/_scan_rest_1_rest/_scan_rest_1_rest/_hp_0.01/_lp_0.1/_scan_scan_rest_1_rest/_scan_rest_1_rest/_fwhm_6/write_log
+131113-14:21:42,549 interface INFO:
+	 CPAC custom log :
+131113-14:21:42,549 interface INFO:
+	  version - 0.3.2.1, timestamp -2013-11-13 14:21:42, subject_id -0051466_session_1, scan_id - scan_rest_1_rest, strategy -_scan_rest_1_rest_hp_0.01_lp_0.1_scan_scan_rest_1_rest_scan_rest_1_rest_fwhm_6, workflow - alff_Z_to_standard_smooth_0, status -COMPLETED
+131113-14:21:42,559 workflow INFO:
+	 Executing node link_2.a0.a0.a0.a0.a0 in dir: /home2/data/Projects/ABIDE_Initiative/CPAC/test_qp/ALFF_Working/resting_preproc_0051466_session_1/_scan_rest_1_rest/_scan_rest_1_rest/_hp_0.01/_lp_0.1/_scan_scan_rest_1_rest/link_2
+131113-14:21:44,538 workflow INFO:
+	 [Job finished] jobname: sinker_11.a0.a0.a0.a0.a0 jobid: 8
+131113-14:21:44,543 workflow INFO:
+	 [Job finished] jobname: sinker_3.a0.a0.a0.a0.a0.a0.a0 jobid: 34
+131113-14:21:44,547 workflow INFO:
+	 [Job finished] jobname: falff_Z_to_standard_smooth_0.a0.a0.a0.a0.a0.a0.a0 jobid: 42
+131113-14:21:44,552 workflow INFO:
+	 [Job finished] jobname: write_log.a0.a0.a0.a0.a0.a0.a0 jobid: 62
+131113-14:21:44,556 workflow INFO:
+	 [Job finished] jobname: link_2.a0.a0.a0.a0.a0 jobid: 75
+131113-14:21:44,561 workflow INFO:
+	 Submitting 4 jobs
+131113-14:21:44,561 workflow INFO:
+	 Executing: link_3.a0.a0.a0.a0.a0.a0.a0 ID: 4
+131113-14:21:44,563 workflow INFO:
+	 Executing: sinker_12.a0.a0.a0.a0.a0.a0.a0 ID: 10
+131113-14:21:44,567 workflow INFO:
+	 Executing: write_log.a0.a0.a0.a0.a0.a0.a0 ID: 26
+131113-14:21:44,570 workflow INFO:
+	 Executing: link_11.a0.a0.a0.a0.a0 ID: 46
+131113-14:21:44,574 workflow INFO:
+	 Executing node link_3.a0.a0.a0.a0.a0.a0.a0 in dir: /home2/data/Projects/ABIDE_Initiative/CPAC/test_qp/ALFF_Working/resting_preproc_0051466_session_1/_scan_rest_1_rest/_scan_rest_1_rest/_hp_0.01/_lp_0.1/_scan_scan_rest_1_rest/_scan_rest_1_rest/_fwhm_6/link_3
+131113-14:21:44,576 workflow INFO:
+	 Executing node sinker_12.a0.a0.a0.a0.a0.a0.a0 in dir: /home2/data/Projects/ABIDE_Initiative/CPAC/test_qp/ALFF_Working/resting_preproc_0051466_session_1/_scan_rest_1_rest/_scan_rest_1_rest/_hp_0.01/_lp_0.1/_scan_scan_rest_1_rest/_scan_rest_1_rest/_fwhm_6/sinker_12
+131113-14:21:44,577 workflow INFO:
+	 Executing node write_log.a0.a0.a0.a0.a0.a0.a0 in dir: /home2/data/Projects/ABIDE_Initiative/CPAC/test_qp/ALFF_Working/resting_preproc_0051466_session_1/log_falff_Z_to_standard_smooth_0/_scan_rest_1_rest/_scan_rest_1_rest/_hp_0.01/_lp_0.1/_scan_scan_rest_1_rest/_scan_rest_1_rest/_fwhm_6/write_log
+args:  {'strategies': [['_compcor_ncomponents_5_selector_pc10.linear1.wm0.global1.motion1.quadratic1.gm0.compcor1.csf0', '_csf_threshold_0.96', '_gm_threshold_0.7', '_target_angle_deg_90', '_threshold_0.2', '_wm_threshold_0.96']], 'subject_id': '0051466_session_1', 'in_file': ['/home2/data/Projects/ABIDE_Initiative/CPAC/test_qp/ALFF_Output/pipeline_me/0051466_session_1/alff_Z_to_standard/_scan_rest_1_rest/_scan_rest_1_rest/_hp_0.01/_lp_0.1/_scan_scan_rest_1_rest/residual_filtered_3dT_maths_wimt.nii.gz'], 'helper': {'_gm_threshold': 0, '_csf_threshold': 0, '_wm_threshold': 0, 'nuisance': 1, '_target_angle_deg': 0, '_threshold': 0}, 'pipeline_id': 'pipeline_me'}
+ZZZ -  ['/home2/data/Projects/ABIDE_Initiative/CPAC/test_qp/ALFF_Output/pipeline_me/0051466_session_1/alff_Z_to_standard/_scan_rest_1_rest/_scan_rest_1_rest/_hp_0.01/_lp_0.1/_scan_scan_rest_1_rest/residual_filtered_3dT_maths_wimt.nii.gz']  - ZZZZ
+~~~~~~  _compcor_ncomponents_5_selector  ~~~  _compcor_ncomponents_5_selector_pc10.linear1.wm0.global1.motion1.quadratic1.gm0.compcor1.csf0
+~~~~~~  _csf_threshold  ~~~  _csf_threshold_0.96
+~~~~~~  _gm_threshold  ~~~  _gm_threshold_0.7
+~~~~~~  _target_angle_deg  ~~~  _target_angle_deg_90
+~~~~~~  _threshold  ~~~  _threshold_0.2
+~~~~~~  _wm_threshold  ~~~  _wm_threshold_0.96
+~~~~~~  pipeline  ~~~  pipeline_me
+.
+_compcor_ncomponents_5_selector  ---------->  pc10.linear1.wm0.global1.motion1.quadratic1.gm0.compcor1.csf0
+pipeline  ---------->  me
+scan_rest_1_rest  ~~~ /_scan_rest_1_rest/_scan_rest_1_rest/_hp_0.01/_lp_0.1/_scan_scan_rest_1_rest/residual_filtered_3dT_maths_wimt.nii.gz
+.
+.
+131113-14:21:44,580 workflow INFO:
+	 Executing node link_11.a0.a0.a0.a0.a0 in dir: /home2/data/Projects/ABIDE_Initiative/CPAC/test_qp/ALFF_Working/resting_preproc_0051466_session_1/_scan_rest_1_rest/_scan_rest_1_rest/_hp_0.01/_lp_0.1/_scan_scan_rest_1_rest/link_11
+args:  {'index': 0, 'inputs': '/data/Projects/ABIDE_Initiative/CPAC/test_qp/ALFF_Working/resting_preproc_0051466_session_1/_scan_rest_1_rest/_scan_rest_1_rest/_hp_0.01/_lp_0.1/_scan_scan_rest_1_rest/_scan_rest_1_rest/_fwhm_6/falff_Z_to_standard_smooth_0/functional_brain_mask_3dc_maths_wimt_maths.nii.gz', 'log_dir': '/home2/data/Projects/ABIDE_Initiative/CPAC/test_qp/ALFF_Output/logs/0051466_session_1', 'scan_id': None, 'workflow': 'falff_Z_to_standard_smooth_0'}
+131113-14:21:44,586 interface INFO:
+	 filepath already exist, filepath- /home2/data/Projects/ABIDE_Initiative/CPAC/test_qp/ALFF_Output/logs/0051466_session_1/scan_rest_1_rest/falff_Z_to_standard_smooth_0, curr_dir - /data/Projects/ABIDE_Initiative/CPAC/test_qp/ALFF_Working/resting_preproc_0051466_session_1/log_falff_Z_to_standard_smooth_0/_scan_rest_1_rest/_scan_rest_1_rest/_hp_0.01/_lp_0.1/_scan_scan_rest_1_rest/_scan_rest_1_rest/_fwhm_6/write_log
+131113-14:21:44,587 interface INFO:
+	 CPAC custom log :
+131113-14:21:44,587 interface INFO:
+	  version - 0.3.2.1, timestamp -2013-11-13 14:21:44, subject_id -0051466_session_1, scan_id - scan_rest_1_rest, strategy -_scan_rest_1_rest_hp_0.01_lp_0.1_scan_scan_rest_1_rest_scan_rest_1_rest_fwhm_6, workflow - falff_Z_to_standard_smooth_0, status -COMPLETED
+131113-14:21:46,576 workflow INFO:
+	 [Job finished] jobname: link_3.a0.a0.a0.a0.a0.a0.a0 jobid: 4
+131113-14:21:46,581 workflow INFO:
+	 [Job finished] jobname: sinker_12.a0.a0.a0.a0.a0.a0.a0 jobid: 10
+131113-14:21:46,585 workflow INFO:
+	 [Job finished] jobname: write_log.a0.a0.a0.a0.a0.a0.a0 jobid: 26
+131113-14:21:46,589 workflow INFO:
+	 [Job finished] jobname: link_11.a0.a0.a0.a0.a0 jobid: 46
+131113-14:21:46,594 workflow INFO:
+	 Submitting 1 jobs
+131113-14:21:46,594 workflow INFO:
+	 Executing: link_12.a0.a0.a0.a0.a0.a0.a0 ID: 44
+args:  {'strategies': [['_compcor_ncomponents_5_selector_pc10.linear1.wm0.global1.motion1.quadratic1.gm0.compcor1.csf0', '_csf_threshold_0.96', '_gm_threshold_0.7', '_target_angle_deg_90', '_threshold_0.2', '_wm_threshold_0.96']], 'subject_id': '0051466_session_1', 'in_file': ['/home2/data/Projects/ABIDE_Initiative/CPAC/test_qp/ALFF_Output/pipeline_me/0051466_session_1/alff_Z_to_standard_smooth/_scan_rest_1_rest/_scan_rest_1_rest/_hp_0.01/_lp_0.1/_scan_scan_rest_1_rest/_scan_rest_1_rest/_fwhm_6/residual_filtered_3dT_maths_wimt_maths.nii.gz'], 'helper': {'_gm_threshold': 0, '_csf_threshold': 0, '_wm_threshold': 0, 'nuisance': 1, '_target_angle_deg': 0, '_threshold': 0}, 'pipeline_id': 'pipeline_me'}
+ZZZ -  ['/home2/data/Projects/ABIDE_Initiative/CPAC/test_qp/ALFF_Output/pipeline_me/0051466_session_1/alff_Z_to_standard_smooth/_scan_rest_1_rest/_scan_rest_1_rest/_hp_0.01/_lp_0.1/_scan_scan_rest_1_rest/_scan_rest_1_rest/_fwhm_6/residual_filtered_3dT_maths_wimt_maths.nii.gz']  - ZZZZ
+~~~~~~  _compcor_ncomponents_5_selector  ~~~  _compcor_ncomponents_5_selector_pc10.linear1.wm0.global1.motion1.quadratic1.gm0.compcor1.csf0
+~~~~~~  _csf_threshold  ~~~  _csf_threshold_0.96
+~~~~~~  _gm_threshold  ~~~  _gm_threshold_0.7
+~~~~~~  _target_angle_deg  ~~~  _target_angle_deg_90
+~~~~~~  _threshold  ~~~  _threshold_0.2
+~~~~~~  _wm_threshold  ~~~  _wm_threshold_0.96
+~~~~~~  pipeline  ~~~  pipeline_me
+.
+_compcor_ncomponents_5_selector  ---------->  pc10.linear1.wm0.global1.motion1.quadratic1.gm0.compcor1.csf0
+pipeline  ---------->  me
+scan_rest_1_rest  ~~~ /_scan_rest_1_rest/_scan_rest_1_rest/_hp_0.01/_lp_0.1/_scan_scan_rest_1_rest/_scan_rest_1_rest/_fwhm_6/residual_filtered_3dT_maths_wimt_maths.nii.gz
+.
+.
+131113-14:21:46,604 workflow INFO:
+	 Executing node link_12.a0.a0.a0.a0.a0.a0.a0 in dir: /home2/data/Projects/ABIDE_Initiative/CPAC/test_qp/ALFF_Working/resting_preproc_0051466_session_1/_scan_rest_1_rest/_scan_rest_1_rest/_hp_0.01/_lp_0.1/_scan_scan_rest_1_rest/_scan_rest_1_rest/_fwhm_6/link_12
+131113-14:21:48,598 workflow INFO:
+	 [Job finished] jobname: link_12.a0.a0.a0.a0.a0.a0.a0 jobid: 44
+131113-14:21:50,605 workflow INFO:
+	 ***********************************
+131113-14:21:50,605 workflow ERROR:
+	 could not run node: resting_preproc_0051466_session_1.link_16.a0
+131113-14:21:50,606 workflow INFO:
+	 crashfile: /home2/data/Projects/ABIDE_Initiative/CPAC/test_qp/crash/crash-20131113-142128-milham-link_16.a0.npz
+131113-14:21:50,606 workflow INFO:
+	 ***********************************
+args:  {'strategies': [['_compcor_ncomponents_5_selector_pc10.linear1.wm0.global1.motion1.quadratic1.gm0.compcor1.csf0', '_csf_threshold_0.96', '_gm_threshold_0.7', '_target_angle_deg_90', '_threshold_0.2', '_wm_threshold_0.96']], 'subject_id': '0051466_session_1', 'in_file': ['/home2/data/Projects/ABIDE_Initiative/CPAC/test_qp/ALFF_Output/pipeline_me/0051466_session_1/falff_Z_to_standard/_scan_rest_1_rest/_scan_rest_1_rest/_hp_0.01/_lp_0.1/_scan_scan_rest_1_rest/functional_brain_mask_3dc_maths_wimt.nii.gz'], 'helper': {'_gm_threshold': 0, '_csf_threshold': 0, '_wm_threshold': 0, 'nuisance': 1, '_target_angle_deg': 0, '_threshold': 0}, 'pipeline_id': 'pipeline_me'}
+ZZZ -  ['/home2/data/Projects/ABIDE_Initiative/CPAC/test_qp/ALFF_Output/pipeline_me/0051466_session_1/falff_Z_to_standard/_scan_rest_1_rest/_scan_rest_1_rest/_hp_0.01/_lp_0.1/_scan_scan_rest_1_rest/functional_brain_mask_3dc_maths_wimt.nii.gz']  - ZZZZ
+~~~~~~  _compcor_ncomponents_5_selector  ~~~  _compcor_ncomponents_5_selector_pc10.linear1.wm0.global1.motion1.quadratic1.gm0.compcor1.csf0
+~~~~~~  _csf_threshold  ~~~  _csf_threshold_0.96
+~~~~~~  _gm_threshold  ~~~  _gm_threshold_0.7
+~~~~~~  _target_angle_deg  ~~~  _target_angle_deg_90
+~~~~~~  _threshold  ~~~  _threshold_0.2
+~~~~~~  _wm_threshold  ~~~  _wm_threshold_0.96
+~~~~~~  pipeline  ~~~  pipeline_me
+.
+_compcor_ncomponents_5_selector  ---------->  pc10.linear1.wm0.global1.motion1.quadratic1.gm0.compcor1.csf0
+pipeline  ---------->  me
+scan_rest_1_rest  ~~~ /_scan_rest_1_rest/_scan_rest_1_rest/_hp_0.01/_lp_0.1/_scan_scan_rest_1_rest/functional_brain_mask_3dc_maths_wimt.nii.gz
+.
+.
+args:  {'strategies': [['_compcor_ncomponents_5_selector_pc10.linear1.wm0.global1.motion1.quadratic1.gm0.compcor1.csf0', '_csf_threshold_0.96', '_gm_threshold_0.7', '_target_angle_deg_90', '_threshold_0.2', '_wm_threshold_0.96']], 'subject_id': '0051466_session_1', 'in_file': ['/home2/data/Projects/ABIDE_Initiative/CPAC/test_qp/ALFF_Output/pipeline_me/0051466_session_1/falff_Z_to_standard_smooth/_scan_rest_1_rest/_scan_rest_1_rest/_hp_0.01/_lp_0.1/_scan_scan_rest_1_rest/_scan_rest_1_rest/_fwhm_6/functional_brain_mask_3dc_maths_wimt_maths.nii.gz'], 'helper': {'_gm_threshold': 0, '_csf_threshold': 0, '_wm_threshold': 0, 'nuisance': 1, '_target_angle_deg': 0, '_threshold': 0}, 'pipeline_id': 'pipeline_me'}
+ZZZ -  ['/home2/data/Projects/ABIDE_Initiative/CPAC/test_qp/ALFF_Output/pipeline_me/0051466_session_1/falff_Z_to_standard_smooth/_scan_rest_1_rest/_scan_rest_1_rest/_hp_0.01/_lp_0.1/_scan_scan_rest_1_rest/_scan_rest_1_rest/_fwhm_6/functional_brain_mask_3dc_maths_wimt_maths.nii.gz']  - ZZZZ
+~~~~~~  _compcor_ncomponents_5_selector  ~~~  _compcor_ncomponents_5_selector_pc10.linear1.wm0.global1.motion1.quadratic1.gm0.compcor1.csf0
+~~~~~~  _csf_threshold  ~~~  _csf_threshold_0.96
+~~~~~~  _gm_threshold  ~~~  _gm_threshold_0.7
+~~~~~~  _target_angle_deg  ~~~  _target_angle_deg_90
+~~~~~~  _threshold  ~~~  _threshold_0.2
+~~~~~~  _wm_threshold  ~~~  _wm_threshold_0.96
+~~~~~~  pipeline  ~~~  pipeline_me
+.
+_compcor_ncomponents_5_selector  ---------->  pc10.linear1.wm0.global1.motion1.quadratic1.gm0.compcor1.csf0
+pipeline  ---------->  me
+scan_rest_1_rest  ~~~ /_scan_rest_1_rest/_scan_rest_1_rest/_hp_0.01/_lp_0.1/_scan_scan_rest_1_rest/_scan_rest_1_rest/_fwhm_6/functional_brain_mask_3dc_maths_wimt_maths.nii.gz
+.
+.

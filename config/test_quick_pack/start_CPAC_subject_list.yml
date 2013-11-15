@@ -1,0 +1,12 @@
+-
+    subject_id: '0051466'
+    unique_id: 'session_1'
+    anat: '/data/Projects/ABIDE_Initiative/CPAC/RawData/Caltech/0051466/session_1/anat_1/mprage.nii.gz'
+    rest: 
+      rest_1_rest: '/data/Projects/ABIDE_Initiative/CPAC/RawData/Caltech/0051466/session_1/rest_1/rest.nii.gz'
+    scan_parameters:
+        tr: '2'
+        acquisition: 'alt+z'
+        reference: '17'
+        first_tr: '0'
+        last_tr: 'None'
