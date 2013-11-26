@@ -1,0 +1,301 @@
+
+=============================================================================================================================================================
+Memory      PID     User       Command
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+300    KB   31440   zarrar     /bin/bash ./memtopX ./x_test_memprof.py 
+300    KB   31440   zarrar     /bin/bash ./memtopX ./x_test_memprof.py 
+300    KB   31440   zarrar     /bin/bash ./memtopX ./x_test_memprof.py 
+300    KB   31440   zarrar     /bin/bash ./memtopX ./x_test_memprof.py 
+300    KB   31440   zarrar     /bin/bash ./memtopX ./x_test_memprof.py 
+300    KB   31440   zarrar     /bin/bash ./memtopX ./x_test_memprof.py 
+300    KB   31440   zarrar     /bin/bash ./memtopX ./x_test_memprof.py 
+300    KB   31440   zarrar     /bin/bash ./memtopX ./x_test_memprof.py 
+300    KB   31440   zarrar     /bin/bash ./memtopX ./x_test_memprof.py 
+300    KB   31440   zarrar     /bin/bash ./memtopX ./x_test_memprof.py 
+300    KB   31440   zarrar     /bin/bash ./memtopX ./x_test_memprof.py 
+300    KB   31440   zarrar     /bin/bash ./memtopX ./x_test_memprof.py 
+300    KB   31440   zarrar     /bin/bash ./memtopX ./x_test_memprof.py 
+300    KB   31440   zarrar     /bin/bash ./memtopX ./x_test_memprof.py 
+300    KB   31440   zarrar     /bin/bash ./memtopX ./x_test_memprof.py 
+300    KB   31440   zarrar     /bin/bash ./memtopX ./x_test_memprof.py 
+300    KB   31440   zarrar     /bin/bash ./memtopX ./x_test_memprof.py 
+300    KB   31440   zarrar     /bin/bash ./memtopX ./x_test_memprof.py 
+300    KB   31440   zarrar     /bin/bash ./memtopX ./x_test_memprof.py 
+300    KB   31440   zarrar     /bin/bash ./memtopX ./x_test_memprof.py 
+300    KB   31440   zarrar     /bin/bash ./memtopX ./x_test_memprof.py 
+300    KB   31440   zarrar     /bin/bash ./memtopX ./x_test_memprof.py 
+300    KB   31440   zarrar     /bin/bash ./memtopX ./x_test_memprof.py 
+300    KB   31440   zarrar     /bin/bash ./memtopX ./x_test_memprof.py 
+300    KB   31440   zarrar     /bin/bash ./memtopX ./x_test_memprof.py 
+300    KB   31440   zarrar     /bin/bash ./memtopX ./x_test_memprof.py 
+300    KB   31440   zarrar     /bin/bash ./memtopX ./x_test_memprof.py 
+300    KB   31440   zarrar     /bin/bash ./memtopX ./x_test_memprof.py 
+300    KB   31440   zarrar     /bin/bash ./memtopX ./x_test_memprof.py 
+300    KB   31440   zarrar     /bin/bash ./memtopX ./x_test_memprof.py 
+300    KB   31440   zarrar     /bin/bash ./memtopX ./x_test_memprof.py 
+300    KB   31440   zarrar     /bin/bash ./memtopX ./x_test_memprof.py 
+300    KB   31440   zarrar     /bin/bash ./memtopX ./x_test_memprof.py 
+300    KB   31440   zarrar     /bin/bash ./memtopX ./x_test_memprof.py 
+300    KB   31440   zarrar     /bin/bash ./memtopX ./x_test_memprof.py 
+300    KB   31440   zarrar     /bin/bash ./memtopX ./x_test_memprof.py 
+300    KB   31440   zarrar     /bin/bash ./memtopX ./x_test_memprof.py 
+300    KB   31440   zarrar     /bin/bash ./memtopX ./x_test_memprof.py 
+300    KB   31440   zarrar     /bin/bash ./memtopX ./x_test_memprof.py 
+300    KB   31440   zarrar     /bin/bash ./memtopX ./x_test_memprof.py 
+10.34  MB   31440   zarrar     python /home2/data/Projects/ABIDE_Initiative/CPAC/abide/config/test_quick_pack/x_test_memprof.py 
+19.82  MB   31440   zarrar     python /home2/data/Projects/ABIDE_Initiative/CPAC/abide/config/test_quick_pack/x_test_memprof.py 
+57.68  MB   31440   zarrar     python /home2/data/Projects/ABIDE_Initiative/CPAC/abide/config/test_quick_pack/x_test_memprof.py 
+181.00 MB   31440   zarrar     python /home2/data/Projects/ABIDE_Initiative/CPAC/abide/config/test_quick_pack/x_test_memprof.py 
+256.30 MB   31440   zarrar     python /home2/data/Projects/ABIDE_Initiative/CPAC/abide/config/test_quick_pack/x_test_memprof.py 
+399.95 MB   31440   zarrar     python /home2/data/Projects/ABIDE_Initiative/CPAC/abide/config/test_quick_pack/x_test_memprof.py 
+399.95 MB   31440   zarrar     python /home2/data/Projects/ABIDE_Initiative/CPAC/abide/config/test_quick_pack/x_test_memprof.py 
+555.38 MB   31440   zarrar     python /home2/data/Projects/ABIDE_Initiative/CPAC/abide/config/test_quick_pack/x_test_memprof.py 
+555.38 MB   31440   zarrar     python /home2/data/Projects/ABIDE_Initiative/CPAC/abide/config/test_quick_pack/x_test_memprof.py 
+710.81 MB   31440   zarrar     python /home2/data/Projects/ABIDE_Initiative/CPAC/abide/config/test_quick_pack/x_test_memprof.py 
+399.95 MB   31440   zarrar     python /home2/data/Projects/ABIDE_Initiative/CPAC/abide/config/test_quick_pack/x_test_memprof.py 
+1.03   GB   31440   zarrar     python /home2/data/Projects/ABIDE_Initiative/CPAC/abide/config/test_quick_pack/x_test_memprof.py 
+1.03   GB   31440   zarrar     python /home2/data/Projects/ABIDE_Initiative/CPAC/abide/config/test_quick_pack/x_test_memprof.py 
+1.03   GB   31440   zarrar     python /home2/data/Projects/ABIDE_Initiative/CPAC/abide/config/test_quick_pack/x_test_memprof.py 
+1.03   GB   31440   zarrar     python /home2/data/Projects/ABIDE_Initiative/CPAC/abide/config/test_quick_pack/x_test_memprof.py 
+1.03   GB   31440   zarrar     python /home2/data/Projects/ABIDE_Initiative/CPAC/abide/config/test_quick_pack/x_test_memprof.py 
+1.03   GB   31440   zarrar     python /home2/data/Projects/ABIDE_Initiative/CPAC/abide/config/test_quick_pack/x_test_memprof.py 
+1.03   GB   31440   zarrar     python /home2/data/Projects/ABIDE_Initiative/CPAC/abide/config/test_quick_pack/x_test_memprof.py 
+1.03   GB   31440   zarrar     python /home2/data/Projects/ABIDE_Initiative/CPAC/abide/config/test_quick_pack/x_test_memprof.py 
+1.03   GB   31440   zarrar     python /home2/data/Projects/ABIDE_Initiative/CPAC/abide/config/test_quick_pack/x_test_memprof.py 
+1.03   GB   31440   zarrar     python /home2/data/Projects/ABIDE_Initiative/CPAC/abide/config/test_quick_pack/x_test_memprof.py 
+1.03   GB   31440   zarrar     python /home2/data/Projects/ABIDE_Initiative/CPAC/abide/config/test_quick_pack/x_test_memprof.py 
+1.03   GB   31440   zarrar     python /home2/data/Projects/ABIDE_Initiative/CPAC/abide/config/test_quick_pack/x_test_memprof.py 
+1.03   GB   31440   zarrar     python /home2/data/Projects/ABIDE_Initiative/CPAC/abide/config/test_quick_pack/x_test_memprof.py 
+1.03   GB   31440   zarrar     python /home2/data/Projects/ABIDE_Initiative/CPAC/abide/config/test_quick_pack/x_test_memprof.py 
+1.03   GB   31440   zarrar     python /home2/data/Projects/ABIDE_Initiative/CPAC/abide/config/test_quick_pack/x_test_memprof.py 
+1.03   GB   31440   zarrar     python /home2/data/Projects/ABIDE_Initiative/CPAC/abide/config/test_quick_pack/x_test_memprof.py 
+1.03   GB   31440   zarrar     python /home2/data/Projects/ABIDE_Initiative/CPAC/abide/config/test_quick_pack/x_test_memprof.py 
+1.03   GB   31440   zarrar     python /home2/data/Projects/ABIDE_Initiative/CPAC/abide/config/test_quick_pack/x_test_memprof.py 
+1.03   GB   31440   zarrar     python /home2/data/Projects/ABIDE_Initiative/CPAC/abide/config/test_quick_pack/x_test_memprof.py 
+1.03   GB   31440   zarrar     python /home2/data/Projects/ABIDE_Initiative/CPAC/abide/config/test_quick_pack/x_test_memprof.py 
+1.03   GB   31440   zarrar     python /home2/data/Projects/ABIDE_Initiative/CPAC/abide/config/test_quick_pack/x_test_memprof.py 
+1.03   GB   31440   zarrar     python /home2/data/Projects/ABIDE_Initiative/CPAC/abide/config/test_quick_pack/x_test_memprof.py 
+1.03   GB   31440   zarrar     python /home2/data/Projects/ABIDE_Initiative/CPAC/abide/config/test_quick_pack/x_test_memprof.py 
+1.03   GB   31440   zarrar     python /home2/data/Projects/ABIDE_Initiative/CPAC/abide/config/test_quick_pack/x_test_memprof.py 
+1.03   GB   31440   zarrar     python /home2/data/Projects/ABIDE_Initiative/CPAC/abide/config/test_quick_pack/x_test_memprof.py 
+1.03   GB   31440   zarrar     python /home2/data/Projects/ABIDE_Initiative/CPAC/abide/config/test_quick_pack/x_test_memprof.py 
+1.03   GB   31440   zarrar     python /home2/data/Projects/ABIDE_Initiative/CPAC/abide/config/test_quick_pack/x_test_memprof.py 
+1.03   GB   31440   zarrar     python /home2/data/Projects/ABIDE_Initiative/CPAC/abide/config/test_quick_pack/x_test_memprof.py 
+1.03   GB   31440   zarrar     python /home2/data/Projects/ABIDE_Initiative/CPAC/abide/config/test_quick_pack/x_test_memprof.py 
+1.03   GB   31440   zarrar     python /home2/data/Projects/ABIDE_Initiative/CPAC/abide/config/test_quick_pack/x_test_memprof.py 
+1.03   GB   31440   zarrar     python /home2/data/Projects/ABIDE_Initiative/CPAC/abide/config/test_quick_pack/x_test_memprof.py 
+1.03   GB   31440   zarrar     python /home2/data/Projects/ABIDE_Initiative/CPAC/abide/config/test_quick_pack/x_test_memprof.py 
+1.03   GB   31440   zarrar     python /home2/data/Projects/ABIDE_Initiative/CPAC/abide/config/test_quick_pack/x_test_memprof.py 
+1.03   GB   31440   zarrar     python /home2/data/Projects/ABIDE_Initiative/CPAC/abide/config/test_quick_pack/x_test_memprof.py 
+1.03   GB   31440   zarrar     python /home2/data/Projects/ABIDE_Initiative/CPAC/abide/config/test_quick_pack/x_test_memprof.py 
+1.03   GB   31440   zarrar     python /home2/data/Projects/ABIDE_Initiative/CPAC/abide/config/test_quick_pack/x_test_memprof.py 
+1.03   GB   31440   zarrar     python /home2/data/Projects/ABIDE_Initiative/CPAC/abide/config/test_quick_pack/x_test_memprof.py 
+1.03   GB   31440   zarrar     python /home2/data/Projects/ABIDE_Initiative/CPAC/abide/config/test_quick_pack/x_test_memprof.py 
+1.03   GB   31440   zarrar     python /home2/data/Projects/ABIDE_Initiative/CPAC/abide/config/test_quick_pack/x_test_memprof.py 
+1.03   GB   31440   zarrar     python /home2/data/Projects/ABIDE_Initiative/CPAC/abide/config/test_quick_pack/x_test_memprof.py 
+1.03   GB   31440   zarrar     python /home2/data/Projects/ABIDE_Initiative/CPAC/abide/config/test_quick_pack/x_test_memprof.py 
+1.03   GB   31440   zarrar     python /home2/data/Projects/ABIDE_Initiative/CPAC/abide/config/test_quick_pack/x_test_memprof.py 
+1.03   GB   31440   zarrar     python /home2/data/Projects/ABIDE_Initiative/CPAC/abide/config/test_quick_pack/x_test_memprof.py 
+1.03   GB   31440   zarrar     python /home2/data/Projects/ABIDE_Initiative/CPAC/abide/config/test_quick_pack/x_test_memprof.py 
+1.03   GB   31440   zarrar     python /home2/data/Projects/ABIDE_Initiative/CPAC/abide/config/test_quick_pack/x_test_memprof.py 
+1.03   GB   31440   zarrar     python /home2/data/Projects/ABIDE_Initiative/CPAC/abide/config/test_quick_pack/x_test_memprof.py 
+1.03   GB   31440   zarrar     python /home2/data/Projects/ABIDE_Initiative/CPAC/abide/config/test_quick_pack/x_test_memprof.py 
+1.03   GB   31440   zarrar     python /home2/data/Projects/ABIDE_Initiative/CPAC/abide/config/test_quick_pack/x_test_memprof.py 
+1.03   GB   31440   zarrar     python /home2/data/Projects/ABIDE_Initiative/CPAC/abide/config/test_quick_pack/x_test_memprof.py 
+1.03   GB   31440   zarrar     python /home2/data/Projects/ABIDE_Initiative/CPAC/abide/config/test_quick_pack/x_test_memprof.py 
+1.03   GB   31440   zarrar     python /home2/data/Projects/ABIDE_Initiative/CPAC/abide/config/test_quick_pack/x_test_memprof.py 
+1.03   GB   31440   zarrar     python /home2/data/Projects/ABIDE_Initiative/CPAC/abide/config/test_quick_pack/x_test_memprof.py 
+1.03   GB   31440   zarrar     python /home2/data/Projects/ABIDE_Initiative/CPAC/abide/config/test_quick_pack/x_test_memprof.py 
+1.03   GB   31440   zarrar     python /home2/data/Projects/ABIDE_Initiative/CPAC/abide/config/test_quick_pack/x_test_memprof.py 
+1.03   GB   31440   zarrar     python /home2/data/Projects/ABIDE_Initiative/CPAC/abide/config/test_quick_pack/x_test_memprof.py 
+1.03   GB   31440   zarrar     python /home2/data/Projects/ABIDE_Initiative/CPAC/abide/config/test_quick_pack/x_test_memprof.py 
+1.03   GB   31440   zarrar     python /home2/data/Projects/ABIDE_Initiative/CPAC/abide/config/test_quick_pack/x_test_memprof.py 
+1.03   GB   31440   zarrar     python /home2/data/Projects/ABIDE_Initiative/CPAC/abide/config/test_quick_pack/x_test_memprof.py 
+1.03   GB   31440   zarrar     python /home2/data/Projects/ABIDE_Initiative/CPAC/abide/config/test_quick_pack/x_test_memprof.py 
+1.03   GB   31440   zarrar     python /home2/data/Projects/ABIDE_Initiative/CPAC/abide/config/test_quick_pack/x_test_memprof.py 
+1.03   GB   31440   zarrar     python /home2/data/Projects/ABIDE_Initiative/CPAC/abide/config/test_quick_pack/x_test_memprof.py 
+1.03   GB   31440   zarrar     python /home2/data/Projects/ABIDE_Initiative/CPAC/abide/config/test_quick_pack/x_test_memprof.py 
+1.03   GB   31440   zarrar     python /home2/data/Projects/ABIDE_Initiative/CPAC/abide/config/test_quick_pack/x_test_memprof.py 
+1.03   GB   31440   zarrar     python /home2/data/Projects/ABIDE_Initiative/CPAC/abide/config/test_quick_pack/x_test_memprof.py 
+1.03   GB   31440   zarrar     python /home2/data/Projects/ABIDE_Initiative/CPAC/abide/config/test_quick_pack/x_test_memprof.py 
+1.03   GB   31440   zarrar     python /home2/data/Projects/ABIDE_Initiative/CPAC/abide/config/test_quick_pack/x_test_memprof.py 
+1.03   GB   31440   zarrar     python /home2/data/Projects/ABIDE_Initiative/CPAC/abide/config/test_quick_pack/x_test_memprof.py 
+1.03   GB   31440   zarrar     python /home2/data/Projects/ABIDE_Initiative/CPAC/abide/config/test_quick_pack/x_test_memprof.py 
+1.03   GB   31440   zarrar     python /home2/data/Projects/ABIDE_Initiative/CPAC/abide/config/test_quick_pack/x_test_memprof.py 
+1.03   GB   31440   zarrar     python /home2/data/Projects/ABIDE_Initiative/CPAC/abide/config/test_quick_pack/x_test_memprof.py 
+1.03   GB   31440   zarrar     python /home2/data/Projects/ABIDE_Initiative/CPAC/abide/config/test_quick_pack/x_test_memprof.py 
+1.03   GB   31440   zarrar     python /home2/data/Projects/ABIDE_Initiative/CPAC/abide/config/test_quick_pack/x_test_memprof.py 
+1.03   GB   31440   zarrar     python /home2/data/Projects/ABIDE_Initiative/CPAC/abide/config/test_quick_pack/x_test_memprof.py 
+1.03   GB   31440   zarrar     python /home2/data/Projects/ABIDE_Initiative/CPAC/abide/config/test_quick_pack/x_test_memprof.py 
+1.03   GB   31440   zarrar     python /home2/data/Projects/ABIDE_Initiative/CPAC/abide/config/test_quick_pack/x_test_memprof.py 
+1.03   GB   31440   zarrar     python /home2/data/Projects/ABIDE_Initiative/CPAC/abide/config/test_quick_pack/x_test_memprof.py 
+1.03   GB   31440   zarrar     python /home2/data/Projects/ABIDE_Initiative/CPAC/abide/config/test_quick_pack/x_test_memprof.py 
+1.03   GB   31440   zarrar     python /home2/data/Projects/ABIDE_Initiative/CPAC/abide/config/test_quick_pack/x_test_memprof.py 
+1.03   GB   31440   zarrar     python /home2/data/Projects/ABIDE_Initiative/CPAC/abide/config/test_quick_pack/x_test_memprof.py 
+1.03   GB   31440   zarrar     python /home2/data/Projects/ABIDE_Initiative/CPAC/abide/config/test_quick_pack/x_test_memprof.py 
+1.03   GB   31440   zarrar     python /home2/data/Projects/ABIDE_Initiative/CPAC/abide/config/test_quick_pack/x_test_memprof.py 
+1.03   GB   31440   zarrar     python /home2/data/Projects/ABIDE_Initiative/CPAC/abide/config/test_quick_pack/x_test_memprof.py 
+1.03   GB   31440   zarrar     python /home2/data/Projects/ABIDE_Initiative/CPAC/abide/config/test_quick_pack/x_test_memprof.py 
+1.03   GB   31440   zarrar     python /home2/data/Projects/ABIDE_Initiative/CPAC/abide/config/test_quick_pack/x_test_memprof.py 
+1.03   GB   31440   zarrar     python /home2/data/Projects/ABIDE_Initiative/CPAC/abide/config/test_quick_pack/x_test_memprof.py 
+1.03   GB   31440   zarrar     python /home2/data/Projects/ABIDE_Initiative/CPAC/abide/config/test_quick_pack/x_test_memprof.py 
+1.03   GB   31440   zarrar     python /home2/data/Projects/ABIDE_Initiative/CPAC/abide/config/test_quick_pack/x_test_memprof.py 
+1.03   GB   31440   zarrar     python /home2/data/Projects/ABIDE_Initiative/CPAC/abide/config/test_quick_pack/x_test_memprof.py 
+1.03   GB   31440   zarrar     python /home2/data/Projects/ABIDE_Initiative/CPAC/abide/config/test_quick_pack/x_test_memprof.py 
+1.03   GB   31440   zarrar     python /home2/data/Projects/ABIDE_Initiative/CPAC/abide/config/test_quick_pack/x_test_memprof.py 
+1.03   GB   31440   zarrar     python /home2/data/Projects/ABIDE_Initiative/CPAC/abide/config/test_quick_pack/x_test_memprof.py 
+1.03   GB   31440   zarrar     python /home2/data/Projects/ABIDE_Initiative/CPAC/abide/config/test_quick_pack/x_test_memprof.py 
+1.03   GB   31440   zarrar     python /home2/data/Projects/ABIDE_Initiative/CPAC/abide/config/test_quick_pack/x_test_memprof.py 
+1.03   GB   31440   zarrar     python /home2/data/Projects/ABIDE_Initiative/CPAC/abide/config/test_quick_pack/x_test_memprof.py 
+1.03   GB   31440   zarrar     python /home2/data/Projects/ABIDE_Initiative/CPAC/abide/config/test_quick_pack/x_test_memprof.py 
+1.03   GB   31440   zarrar     python /home2/data/Projects/ABIDE_Initiative/CPAC/abide/config/test_quick_pack/x_test_memprof.py 
+1.03   GB   31440   zarrar     python /home2/data/Projects/ABIDE_Initiative/CPAC/abide/config/test_quick_pack/x_test_memprof.py 
+1.03   GB   31440   zarrar     python /home2/data/Projects/ABIDE_Initiative/CPAC/abide/config/test_quick_pack/x_test_memprof.py 
+1.03   GB   31440   zarrar     python /home2/data/Projects/ABIDE_Initiative/CPAC/abide/config/test_quick_pack/x_test_memprof.py 
+1.03   GB   31440   zarrar     python /home2/data/Projects/ABIDE_Initiative/CPAC/abide/config/test_quick_pack/x_test_memprof.py 
+1.03   GB   31440   zarrar     python /home2/data/Projects/ABIDE_Initiative/CPAC/abide/config/test_quick_pack/x_test_memprof.py 
+1.03   GB   31440   zarrar     python /home2/data/Projects/ABIDE_Initiative/CPAC/abide/config/test_quick_pack/x_test_memprof.py 
+1.03   GB   31440   zarrar     python /home2/data/Projects/ABIDE_Initiative/CPAC/abide/config/test_quick_pack/x_test_memprof.py 
+1.03   GB   31440   zarrar     python /home2/data/Projects/ABIDE_Initiative/CPAC/abide/config/test_quick_pack/x_test_memprof.py 
+1.03   GB   31440   zarrar     python /home2/data/Projects/ABIDE_Initiative/CPAC/abide/config/test_quick_pack/x_test_memprof.py 
+1.03   GB   31440   zarrar     python /home2/data/Projects/ABIDE_Initiative/CPAC/abide/config/test_quick_pack/x_test_memprof.py 
+1.03   GB   31440   zarrar     python /home2/data/Projects/ABIDE_Initiative/CPAC/abide/config/test_quick_pack/x_test_memprof.py 
+1.03   GB   31440   zarrar     python /home2/data/Projects/ABIDE_Initiative/CPAC/abide/config/test_quick_pack/x_test_memprof.py 
+1.03   GB   31440   zarrar     python /home2/data/Projects/ABIDE_Initiative/CPAC/abide/config/test_quick_pack/x_test_memprof.py 
+1.03   GB   31440   zarrar     python /home2/data/Projects/ABIDE_Initiative/CPAC/abide/config/test_quick_pack/x_test_memprof.py 
+1.03   GB   31440   zarrar     python /home2/data/Projects/ABIDE_Initiative/CPAC/abide/config/test_quick_pack/x_test_memprof.py 
+1.03   GB   31440   zarrar     python /home2/data/Projects/ABIDE_Initiative/CPAC/abide/config/test_quick_pack/x_test_memprof.py 
+1.03   GB   31440   zarrar     python /home2/data/Projects/ABIDE_Initiative/CPAC/abide/config/test_quick_pack/x_test_memprof.py 
+1.03   GB   31440   zarrar     python /home2/data/Projects/ABIDE_Initiative/CPAC/abide/config/test_quick_pack/x_test_memprof.py 
+1.03   GB   31440   zarrar     python /home2/data/Projects/ABIDE_Initiative/CPAC/abide/config/test_quick_pack/x_test_memprof.py 
+1.03   GB   31440   zarrar     python /home2/data/Projects/ABIDE_Initiative/CPAC/abide/config/test_quick_pack/x_test_memprof.py 
+1.03   GB   31440   zarrar     python /home2/data/Projects/ABIDE_Initiative/CPAC/abide/config/test_quick_pack/x_test_memprof.py 
+1.03   GB   31440   zarrar     python /home2/data/Projects/ABIDE_Initiative/CPAC/abide/config/test_quick_pack/x_test_memprof.py 
+1.03   GB   31440   zarrar     python /home2/data/Projects/ABIDE_Initiative/CPAC/abide/config/test_quick_pack/x_test_memprof.py 
+1.03   GB   31440   zarrar     python /home2/data/Projects/ABIDE_Initiative/CPAC/abide/config/test_quick_pack/x_test_memprof.py 
+1.03   GB   31440   zarrar     python /home2/data/Projects/ABIDE_Initiative/CPAC/abide/config/test_quick_pack/x_test_memprof.py 
+1.03   GB   31440   zarrar     python /home2/data/Projects/ABIDE_Initiative/CPAC/abide/config/test_quick_pack/x_test_memprof.py 
+1.03   GB   31440   zarrar     python /home2/data/Projects/ABIDE_Initiative/CPAC/abide/config/test_quick_pack/x_test_memprof.py 
+1.03   GB   31440   zarrar     python /home2/data/Projects/ABIDE_Initiative/CPAC/abide/config/test_quick_pack/x_test_memprof.py 
+1.03   GB   31440   zarrar     python /home2/data/Projects/ABIDE_Initiative/CPAC/abide/config/test_quick_pack/x_test_memprof.py 
+1.03   GB   31440   zarrar     python /home2/data/Projects/ABIDE_Initiative/CPAC/abide/config/test_quick_pack/x_test_memprof.py 
+1.03   GB   31440   zarrar     python /home2/data/Projects/ABIDE_Initiative/CPAC/abide/config/test_quick_pack/x_test_memprof.py 
+1.03   GB   31440   zarrar     python /home2/data/Projects/ABIDE_Initiative/CPAC/abide/config/test_quick_pack/x_test_memprof.py 
+1.03   GB   31440   zarrar     python /home2/data/Projects/ABIDE_Initiative/CPAC/abide/config/test_quick_pack/x_test_memprof.py 
+1.03   GB   31440   zarrar     python /home2/data/Projects/ABIDE_Initiative/CPAC/abide/config/test_quick_pack/x_test_memprof.py 
+1.03   GB   31440   zarrar     python /home2/data/Projects/ABIDE_Initiative/CPAC/abide/config/test_quick_pack/x_test_memprof.py 
+1.03   GB   31440   zarrar     python /home2/data/Projects/ABIDE_Initiative/CPAC/abide/config/test_quick_pack/x_test_memprof.py 
+1.03   GB   31440   zarrar     python /home2/data/Projects/ABIDE_Initiative/CPAC/abide/config/test_quick_pack/x_test_memprof.py 
+1.03   GB   31440   zarrar     python /home2/data/Projects/ABIDE_Initiative/CPAC/abide/config/test_quick_pack/x_test_memprof.py 
+1.03   GB   31440   zarrar     python /home2/data/Projects/ABIDE_Initiative/CPAC/abide/config/test_quick_pack/x_test_memprof.py 
+1.03   GB   31440   zarrar     python /home2/data/Projects/ABIDE_Initiative/CPAC/abide/config/test_quick_pack/x_test_memprof.py 
+1.03   GB   31440   zarrar     python /home2/data/Projects/ABIDE_Initiative/CPAC/abide/config/test_quick_pack/x_test_memprof.py 
+1.03   GB   31440   zarrar     python /home2/data/Projects/ABIDE_Initiative/CPAC/abide/config/test_quick_pack/x_test_memprof.py 
+1.03   GB   31440   zarrar     python /home2/data/Projects/ABIDE_Initiative/CPAC/abide/config/test_quick_pack/x_test_memprof.py 
+1.03   GB   31440   zarrar     python /home2/data/Projects/ABIDE_Initiative/CPAC/abide/config/test_quick_pack/x_test_memprof.py 
+1.03   GB   31440   zarrar     python /home2/data/Projects/ABIDE_Initiative/CPAC/abide/config/test_quick_pack/x_test_memprof.py 
+1.03   GB   31440   zarrar     python /home2/data/Projects/ABIDE_Initiative/CPAC/abide/config/test_quick_pack/x_test_memprof.py 
+1.03   GB   31440   zarrar     python /home2/data/Projects/ABIDE_Initiative/CPAC/abide/config/test_quick_pack/x_test_memprof.py 
+1.03   GB   31440   zarrar     python /home2/data/Projects/ABIDE_Initiative/CPAC/abide/config/test_quick_pack/x_test_memprof.py 
+1.03   GB   31440   zarrar     python /home2/data/Projects/ABIDE_Initiative/CPAC/abide/config/test_quick_pack/x_test_memprof.py 
+1.03   GB   31440   zarrar     python /home2/data/Projects/ABIDE_Initiative/CPAC/abide/config/test_quick_pack/x_test_memprof.py 
+1.03   GB   31440   zarrar     python /home2/data/Projects/ABIDE_Initiative/CPAC/abide/config/test_quick_pack/x_test_memprof.py 
+1.03   GB   31440   zarrar     python /home2/data/Projects/ABIDE_Initiative/CPAC/abide/config/test_quick_pack/x_test_memprof.py 
+1.03   GB   31440   zarrar     python /home2/data/Projects/ABIDE_Initiative/CPAC/abide/config/test_quick_pack/x_test_memprof.py 
+1.03   GB   31440   zarrar     python /home2/data/Projects/ABIDE_Initiative/CPAC/abide/config/test_quick_pack/x_test_memprof.py 
+1.03   GB   31440   zarrar     python /home2/data/Projects/ABIDE_Initiative/CPAC/abide/config/test_quick_pack/x_test_memprof.py 
+1.03   GB   31440   zarrar     python /home2/data/Projects/ABIDE_Initiative/CPAC/abide/config/test_quick_pack/x_test_memprof.py 
+1.03   GB   31440   zarrar     python /home2/data/Projects/ABIDE_Initiative/CPAC/abide/config/test_quick_pack/x_test_memprof.py 
+1.03   GB   31440   zarrar     python /home2/data/Projects/ABIDE_Initiative/CPAC/abide/config/test_quick_pack/x_test_memprof.py 
+1.03   GB   31440   zarrar     python /home2/data/Projects/ABIDE_Initiative/CPAC/abide/config/test_quick_pack/x_test_memprof.py 
+1.03   GB   31440   zarrar     python /home2/data/Projects/ABIDE_Initiative/CPAC/abide/config/test_quick_pack/x_test_memprof.py 
+1.03   GB   31440   zarrar     python /home2/data/Projects/ABIDE_Initiative/CPAC/abide/config/test_quick_pack/x_test_memprof.py 
+1.03   GB   31440   zarrar     python /home2/data/Projects/ABIDE_Initiative/CPAC/abide/config/test_quick_pack/x_test_memprof.py 
+1.03   GB   31440   zarrar     python /home2/data/Projects/ABIDE_Initiative/CPAC/abide/config/test_quick_pack/x_test_memprof.py 
+1.03   GB   31440   zarrar     python /home2/data/Projects/ABIDE_Initiative/CPAC/abide/config/test_quick_pack/x_test_memprof.py 
+1.03   GB   31440   zarrar     python /home2/data/Projects/ABIDE_Initiative/CPAC/abide/config/test_quick_pack/x_test_memprof.py 
+1.03   GB   31440   zarrar     python /home2/data/Projects/ABIDE_Initiative/CPAC/abide/config/test_quick_pack/x_test_memprof.py 
+1.03   GB   31440   zarrar     python /home2/data/Projects/ABIDE_Initiative/CPAC/abide/config/test_quick_pack/x_test_memprof.py 
+1.03   GB   31440   zarrar     python /home2/data/Projects/ABIDE_Initiative/CPAC/abide/config/test_quick_pack/x_test_memprof.py 
+1.03   GB   31440   zarrar     python /home2/data/Projects/ABIDE_Initiative/CPAC/abide/config/test_quick_pack/x_test_memprof.py 
+1.03   GB   31440   zarrar     python /home2/data/Projects/ABIDE_Initiative/CPAC/abide/config/test_quick_pack/x_test_memprof.py 
+1.03   GB   31440   zarrar     python /home2/data/Projects/ABIDE_Initiative/CPAC/abide/config/test_quick_pack/x_test_memprof.py 
+1.03   GB   31440   zarrar     python /home2/data/Projects/ABIDE_Initiative/CPAC/abide/config/test_quick_pack/x_test_memprof.py 
+1.03   GB   31440   zarrar     python /home2/data/Projects/ABIDE_Initiative/CPAC/abide/config/test_quick_pack/x_test_memprof.py 
+1.03   GB   31440   zarrar     python /home2/data/Projects/ABIDE_Initiative/CPAC/abide/config/test_quick_pack/x_test_memprof.py 
+1.03   GB   31440   zarrar     python /home2/data/Projects/ABIDE_Initiative/CPAC/abide/config/test_quick_pack/x_test_memprof.py 
+1.03   GB   31440   zarrar     python /home2/data/Projects/ABIDE_Initiative/CPAC/abide/config/test_quick_pack/x_test_memprof.py 
+1.03   GB   31440   zarrar     python /home2/data/Projects/ABIDE_Initiative/CPAC/abide/config/test_quick_pack/x_test_memprof.py 
+1.03   GB   31440   zarrar     python /home2/data/Projects/ABIDE_Initiative/CPAC/abide/config/test_quick_pack/x_test_memprof.py 
+1.03   GB   31440   zarrar     python /home2/data/Projects/ABIDE_Initiative/CPAC/abide/config/test_quick_pack/x_test_memprof.py 
+1.03   GB   31440   zarrar     python /home2/data/Projects/ABIDE_Initiative/CPAC/abide/config/test_quick_pack/x_test_memprof.py 
+1.03   GB   31440   zarrar     python /home2/data/Projects/ABIDE_Initiative/CPAC/abide/config/test_quick_pack/x_test_memprof.py 
+1.03   GB   31440   zarrar     python /home2/data/Projects/ABIDE_Initiative/CPAC/abide/config/test_quick_pack/x_test_memprof.py 
+1.03   GB   31440   zarrar     python /home2/data/Projects/ABIDE_Initiative/CPAC/abide/config/test_quick_pack/x_test_memprof.py 
+1.03   GB   31440   zarrar     python /home2/data/Projects/ABIDE_Initiative/CPAC/abide/config/test_quick_pack/x_test_memprof.py 
+1.03   GB   31440   zarrar     python /home2/data/Projects/ABIDE_Initiative/CPAC/abide/config/test_quick_pack/x_test_memprof.py 
+1.03   GB   31440   zarrar     python /home2/data/Projects/ABIDE_Initiative/CPAC/abide/config/test_quick_pack/x_test_memprof.py 
+1.03   GB   31440   zarrar     python /home2/data/Projects/ABIDE_Initiative/CPAC/abide/config/test_quick_pack/x_test_memprof.py 
+1.03   GB   31440   zarrar     python /home2/data/Projects/ABIDE_Initiative/CPAC/abide/config/test_quick_pack/x_test_memprof.py 
+1.03   GB   31440   zarrar     python /home2/data/Projects/ABIDE_Initiative/CPAC/abide/config/test_quick_pack/x_test_memprof.py 
+1.03   GB   31440   zarrar     python /home2/data/Projects/ABIDE_Initiative/CPAC/abide/config/test_quick_pack/x_test_memprof.py 
+1.03   GB   31440   zarrar     python /home2/data/Projects/ABIDE_Initiative/CPAC/abide/config/test_quick_pack/x_test_memprof.py 
+1.03   GB   31440   zarrar     python /home2/data/Projects/ABIDE_Initiative/CPAC/abide/config/test_quick_pack/x_test_memprof.py 
+1.03   GB   31440   zarrar     python /home2/data/Projects/ABIDE_Initiative/CPAC/abide/config/test_quick_pack/x_test_memprof.py 
+1.03   GB   31440   zarrar     python /home2/data/Projects/ABIDE_Initiative/CPAC/abide/config/test_quick_pack/x_test_memprof.py 
+1.03   GB   31440   zarrar     python /home2/data/Projects/ABIDE_Initiative/CPAC/abide/config/test_quick_pack/x_test_memprof.py 
+1.03   GB   31440   zarrar     python /home2/data/Projects/ABIDE_Initiative/CPAC/abide/config/test_quick_pack/x_test_memprof.py 
+1.03   GB   31440   zarrar     python /home2/data/Projects/ABIDE_Initiative/CPAC/abide/config/test_quick_pack/x_test_memprof.py 
+1.03   GB   31440   zarrar     python /home2/data/Projects/ABIDE_Initiative/CPAC/abide/config/test_quick_pack/x_test_memprof.py 
+1.03   GB   31440   zarrar     python /home2/data/Projects/ABIDE_Initiative/CPAC/abide/config/test_quick_pack/x_test_memprof.py 
+1.03   GB   31440   zarrar     python /home2/data/Projects/ABIDE_Initiative/CPAC/abide/config/test_quick_pack/x_test_memprof.py 
+1.03   GB   31440   zarrar     python /home2/data/Projects/ABIDE_Initiative/CPAC/abide/config/test_quick_pack/x_test_memprof.py 
+1.03   GB   31440   zarrar     python /home2/data/Projects/ABIDE_Initiative/CPAC/abide/config/test_quick_pack/x_test_memprof.py 
+1.03   GB   31440   zarrar     python /home2/data/Projects/ABIDE_Initiative/CPAC/abide/config/test_quick_pack/x_test_memprof.py 
+1.03   GB   31440   zarrar     python /home2/data/Projects/ABIDE_Initiative/CPAC/abide/config/test_quick_pack/x_test_memprof.py 
+1.03   GB   31440   zarrar     python /home2/data/Projects/ABIDE_Initiative/CPAC/abide/config/test_quick_pack/x_test_memprof.py 
+1.03   GB   31440   zarrar     python /home2/data/Projects/ABIDE_Initiative/CPAC/abide/config/test_quick_pack/x_test_memprof.py 
+1.03   GB   31440   zarrar     python /home2/data/Projects/ABIDE_Initiative/CPAC/abide/config/test_quick_pack/x_test_memprof.py 
+1.03   GB   31440   zarrar     python /home2/data/Projects/ABIDE_Initiative/CPAC/abide/config/test_quick_pack/x_test_memprof.py 
+1.03   GB   31440   zarrar     python /home2/data/Projects/ABIDE_Initiative/CPAC/abide/config/test_quick_pack/x_test_memprof.py 
+1.03   GB   31440   zarrar     python /home2/data/Projects/ABIDE_Initiative/CPAC/abide/config/test_quick_pack/x_test_memprof.py 
+1.03   GB   31440   zarrar     python /home2/data/Projects/ABIDE_Initiative/CPAC/abide/config/test_quick_pack/x_test_memprof.py 
+1.03   GB   31440   zarrar     python /home2/data/Projects/ABIDE_Initiative/CPAC/abide/config/test_quick_pack/x_test_memprof.py 
+1.03   GB   31440   zarrar     python /home2/data/Projects/ABIDE_Initiative/CPAC/abide/config/test_quick_pack/x_test_memprof.py 
+1.03   GB   31440   zarrar     python /home2/data/Projects/ABIDE_Initiative/CPAC/abide/config/test_quick_pack/x_test_memprof.py 
+1.03   GB   31440   zarrar     python /home2/data/Projects/ABIDE_Initiative/CPAC/abide/config/test_quick_pack/x_test_memprof.py 
+1.03   GB   31440   zarrar     python /home2/data/Projects/ABIDE_Initiative/CPAC/abide/config/test_quick_pack/x_test_memprof.py 
+1.03   GB   31440   zarrar     python /home2/data/Projects/ABIDE_Initiative/CPAC/abide/config/test_quick_pack/x_test_memprof.py 
+1.03   GB   31440   zarrar     python /home2/data/Projects/ABIDE_Initiative/CPAC/abide/config/test_quick_pack/x_test_memprof.py 
+1.03   GB   31440   zarrar     python /home2/data/Projects/ABIDE_Initiative/CPAC/abide/config/test_quick_pack/x_test_memprof.py 
+1.03   GB   31440   zarrar     python /home2/data/Projects/ABIDE_Initiative/CPAC/abide/config/test_quick_pack/x_test_memprof.py 
+1.03   GB   31440   zarrar     python /home2/data/Projects/ABIDE_Initiative/CPAC/abide/config/test_quick_pack/x_test_memprof.py 
+1.03   GB   31440   zarrar     python /home2/data/Projects/ABIDE_Initiative/CPAC/abide/config/test_quick_pack/x_test_memprof.py 
+1.03   GB   31440   zarrar     python /home2/data/Projects/ABIDE_Initiative/CPAC/abide/config/test_quick_pack/x_test_memprof.py 
+1.03   GB   31440   zarrar     python /home2/data/Projects/ABIDE_Initiative/CPAC/abide/config/test_quick_pack/x_test_memprof.py 
+1.03   GB   31440   zarrar     python /home2/data/Projects/ABIDE_Initiative/CPAC/abide/config/test_quick_pack/x_test_memprof.py 
+1.03   GB   31440   zarrar     python /home2/data/Projects/ABIDE_Initiative/CPAC/abide/config/test_quick_pack/x_test_memprof.py 
+1.03   GB   31440   zarrar     python /home2/data/Projects/ABIDE_Initiative/CPAC/abide/config/test_quick_pack/x_test_memprof.py 
+1.03   GB   31440   zarrar     python /home2/data/Projects/ABIDE_Initiative/CPAC/abide/config/test_quick_pack/x_test_memprof.py 
+1.03   GB   31440   zarrar     python /home2/data/Projects/ABIDE_Initiative/CPAC/abide/config/test_quick_pack/x_test_memprof.py 
+1.03   GB   31440   zarrar     python /home2/data/Projects/ABIDE_Initiative/CPAC/abide/config/test_quick_pack/x_test_memprof.py 
+710.27 MB   31440   zarrar     python /home2/data/Projects/ABIDE_Initiative/CPAC/abide/config/test_quick_pack/x_test_memprof.py 
+710.27 MB   31440   zarrar     python /home2/data/Projects/ABIDE_Initiative/CPAC/abide/config/test_quick_pack/x_test_memprof.py 
+710.27 MB   31440   zarrar     python /home2/data/Projects/ABIDE_Initiative/CPAC/abide/config/test_quick_pack/x_test_memprof.py 
+710.27 MB   31440   zarrar     python /home2/data/Projects/ABIDE_Initiative/CPAC/abide/config/test_quick_pack/x_test_memprof.py 
+710.27 MB   31440   zarrar     python /home2/data/Projects/ABIDE_Initiative/CPAC/abide/config/test_quick_pack/x_test_memprof.py 
+710.27 MB   31440   zarrar     python /home2/data/Projects/ABIDE_Initiative/CPAC/abide/config/test_quick_pack/x_test_memprof.py 
+710.27 MB   31440   zarrar     python /home2/data/Projects/ABIDE_Initiative/CPAC/abide/config/test_quick_pack/x_test_memprof.py 
+710.27 MB   31440   zarrar     python /home2/data/Projects/ABIDE_Initiative/CPAC/abide/config/test_quick_pack/x_test_memprof.py 
+710.27 MB   31440   zarrar     python /home2/data/Projects/ABIDE_Initiative/CPAC/abide/config/test_quick_pack/x_test_memprof.py 
+710.27 MB   31440   zarrar     python /home2/data/Projects/ABIDE_Initiative/CPAC/abide/config/test_quick_pack/x_test_memprof.py 
+710.27 MB   31440   zarrar     python /home2/data/Projects/ABIDE_Initiative/CPAC/abide/config/test_quick_pack/x_test_memprof.py 
+710.27 MB   31440   zarrar     python /home2/data/Projects/ABIDE_Initiative/CPAC/abide/config/test_quick_pack/x_test_memprof.py 
+710.27 MB   31440   zarrar     python /home2/data/Projects/ABIDE_Initiative/CPAC/abide/config/test_quick_pack/x_test_memprof.py 
+710.27 MB   31440   zarrar     python /home2/data/Projects/ABIDE_Initiative/CPAC/abide/config/test_quick_pack/x_test_memprof.py 
+710.27 MB   31440   zarrar     python /home2/data/Projects/ABIDE_Initiative/CPAC/abide/config/test_quick_pack/x_test_memprof.py 
+710.27 MB   31440   zarrar     python /home2/data/Projects/ABIDE_Initiative/CPAC/abide/config/test_quick_pack/x_test_memprof.py 
+710.27 MB   31440   zarrar     python /home2/data/Projects/ABIDE_Initiative/CPAC/abide/config/test_quick_pack/x_test_memprof.py 
+710.27 MB   31440   zarrar     python /home2/data/Projects/ABIDE_Initiative/CPAC/abide/config/test_quick_pack/x_test_memprof.py 
+710.27 MB   31440   zarrar     python /home2/data/Projects/ABIDE_Initiative/CPAC/abide/config/test_quick_pack/x_test_memprof.py 
+710.27 MB   31440   zarrar     python /home2/data/Projects/ABIDE_Initiative/CPAC/abide/config/test_quick_pack/x_test_memprof.py 

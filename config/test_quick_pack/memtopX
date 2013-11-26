@@ -1,0 +1,37 @@
+#!/bin/bash
+
+set -um
+
+outfile="mem.log"
+echo "" > $outfile
+
+pid="$$"
+echo $pid
+
+# detect operating system and prepare measurement
+case `uname` in
+    Darwin|*BSD) sizes() { /bin/ps -o rss= -g $1; } ;;
+    Linux) sizes() { /bin/ps -o rss= -$1; } ;;
+    *) echo "`uname`: unsupported operating system" >&2; exit 2 ;;
+esac
+
+printf "%$(tput cols)s\n" | tr ' ' '=' >> $outfile;
+printf "Memory%-6sPID%-5sUser%-7sCommand\n" >> $outfile;
+printf "%$(tput cols)s\n" | tr ' ' '-' >> $outfile;
+
+(
+peak=0
+while sizes=`sizes $pid`
+do
+    ./memtop -p $pid -s >> $outfile
+    sleep 0.5
+done
+echo "memusg: peak=$peak" >&2
+) &
+monpid=$!
+
+sleep 30
+
+# run the given command
+echo "execute"
+exec "$@"

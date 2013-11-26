@@ -175,7 +175,7 @@ runBBReg :  [0]
 
 
 # The resolution (in mm) to which functional images are transformed during registration
-standardResolution :  2mm
+standardResolution :  3mm
 
 
 # Standard FSL Skull Stripped Template. Used as a reference image for functional registration

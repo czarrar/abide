@@ -1,1 +1,1 @@
-/home2/data/Projects/ABIDE_Initiative/CPAC/abide/templates/masks/mask_abide_90percent_gm.nii.gz
+/home2/data/Projects/ABIDE_Initiative/CPAC/abide/templates/masks/mask_abide_90percent_gm_3mm.nii.gz

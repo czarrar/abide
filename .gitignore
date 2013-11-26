@@ -38,3 +38,5 @@ nosetests.xml
 # Custom
 log_done_*
 cluster_temp_files
+
+*.nii.gz

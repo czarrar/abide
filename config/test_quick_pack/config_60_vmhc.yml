@@ -477,7 +477,7 @@ memoryAllocatedForDegreeCentrality :  2.0
 # Full Width at Half Maximum of the Gaussian kernel used during spatial smoothing.
 # Can be a single value or multiple values separated by commas.
 # Note that spatial smoothing is run as the last step in the individual-level analysis pipeline, such that all derivatives are output both smoothed and unsmoothed.
-fwhm : [4.5]
+fwhm : [6]
 
 
 # Run Bootstrap Analysis of Stable Clusters

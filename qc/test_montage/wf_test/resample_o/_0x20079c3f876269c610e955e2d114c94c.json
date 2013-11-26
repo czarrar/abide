@@ -1,0 +1,10 @@
+{
+    "file_": [
+        "/home2/data/Projects/CPAC_Regression_Test/2013-10-04_v0-3-2/run/lib/python2.7/site-packages/CPAC/resources/templates/MNI152_Edge_AllTissues.nii.gz", 
+        "9efab8e4633cb7b1f10f1156ed751120"
+    ], 
+    "function_str": "S'def resample_1mm(file_):\\n\\n    \"\"\"\\n    Calls make_resample_1mm which resamples file to 1mm space\\n\\n    Parameters\\n    ----------\\n\\n    file_ : string\\n        path to the scan\\n\\n    Returns\\n    -------\\n\\n    new_fname : string\\n        path to 1mm resampled nifti file\\n\\n    \"\"\"\\n\\n    from CPAC.qc.utils import make_resample_1mm\\n\\n    new_fname = None\\n    if isinstance(file_, list):\\n        new_fname = []\\n\\n        for f in file_:\\n\\n            new_fname.append(make_resample_1mm(f))\\n\\n    else:\\n        new_fname = make_resample_1mm(file_)\\n\\n    return new_fname\\n'\n.", 
+    "needed_outputs": [
+        "new_fname"
+    ]
+}

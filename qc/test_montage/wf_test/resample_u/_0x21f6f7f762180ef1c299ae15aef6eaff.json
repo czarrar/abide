@@ -1,0 +1,10 @@
+{
+    "file_": [
+        "/home2/data/Projects/ABIDE_Initiative/CPAC/Output_2013-10-18/sym_links/pipeline_MerrittIsland/_compcor_ncomponents_5_linear1.global1.motion1.quadratic1.compcor1.CSF_0.96_GM_0.7_WM_0.96/0051565_session_1/scan_rest_1_rest/func/mean_functional_in_mni.nii.gz", 
+        "0c970c014ba7b7227c22bffff56df740"
+    ], 
+    "function_str": "S'def resample_1mm(file_):\\n\\n    \"\"\"\\n    Calls make_resample_1mm which resamples file to 1mm space\\n\\n    Parameters\\n    ----------\\n\\n    file_ : string\\n        path to the scan\\n\\n    Returns\\n    -------\\n\\n    new_fname : string\\n        path to 1mm resampled nifti file\\n\\n    \"\"\"\\n\\n    from CPAC.qc.utils import make_resample_1mm\\n\\n    new_fname = None\\n    if isinstance(file_, list):\\n        new_fname = []\\n\\n        for f in file_:\\n\\n            new_fname.append(make_resample_1mm(f))\\n\\n    else:\\n        new_fname = make_resample_1mm(file_)\\n\\n    return new_fname\\n'\n.", 
+    "needed_outputs": [
+        "new_fname"
+    ]
+}

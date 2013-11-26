@@ -1,0 +1,19 @@
+{
+    "cbar_name": "red", 
+    "function_str": "S'def montage_axial(overlay, underlay, png_name, cbar_name):\\n\\n    \"\"\"\\n    Draws Montage using overlay on Anatomical brain in Axial Direction\\n\\tcalls make_montage_axial\\n\\n    Parameters\\n    ----------\\n\\n    overlay : string\\n            Nifi file\\n\\n    underlay : string\\n            Nifti for Anatomical Brain\\n\\n    cbar_name : string\\n            name of the cbar \\n\\n    png_name : string\\n            Proposed name of the montage plot\\n\\n    Returns\\n    -------\\n\\n    png_name : Path to generated PNG\\n\\n    \"\"\"\\n    import os\\n    from CPAC.qc.utils import make_montage_axial\\n    pngs = None\\n    if isinstance(overlay, list):\\n        pngs = []\\n\\n        for ov in overlay:\\n            fname = os.path.basename(os.path.splitext(os.path.splitext(ov)[0])[0])\\n            pngs.append(make_montage_axial(ov, underlay, fname + \\'_\\' + png_name, cbar_name))\\n    else:\\n\\n        pngs = make_montage_axial(overlay, underlay, png_name, cbar_name)\\n\\n    png_name = pngs\\n\\n    return png_name\\n'\n.", 
+    "needed_outputs": [
+        "png_name"
+    ], 
+    "overlay": [
+        "/data/Projects/ABIDE_Initiative/CPAC/abide/qc/test_montage/wf_test/resample_o/MNI152_Edge_AllTissues_1mm.nii.gz", 
+        "892660bf608260467e26f7ba4c2c81cf"
+    ], 
+    "png_name": [
+        "test3_a.png", 
+        "ab756d22b0d3a7d4de958a2badd766bd"
+    ], 
+    "underlay": [
+        "/data/Projects/ABIDE_Initiative/CPAC/abide/qc/test_montage/wf_test/resample_u/mean_functional_in_mni_1mm.nii.gz", 
+        "a4273914cdbb6a591adf6691c75c439f"
+    ]
+}
