@@ -71,8 +71,8 @@ reg_suffixes = {
 }
 
 derivative_suffixes = {
-    "alff": "alff_Z_to_standard_smooth/_scan_%(scan)s/_csf_threshold_*/_gm_threshold_*/_wm_threshold_*/%(strategy)s/_hp_0.01/_lp_0.1/_fwhm_6/residual*.nii.gz", 
-    "falff": "falff_Z_to_standard_smooth/_scan_%(scan)s/_csf_threshold_*/_gm_threshold_*/_wm_threshold_*/%(strategy)s/_hp_0.01/_lp_0.1/_fwhm_6/residual*.nii.gz", 
+    "alff": "alff_Z_to_standard_smooth/_scan_%(scan)s/_csf_threshold_*/_gm_threshold_*/_wm_threshold_*/%(strategy)s/_hp_0.01/_lp_0.1/_fwhm_6/*.nii.gz", 
+    "falff": "falff_Z_to_standard_smooth/_scan_%(scan)s/_csf_threshold_*/_gm_threshold_*/_wm_threshold_*/%(strategy)s/_hp_0.01/_lp_0.1/_fwhm_6/*.nii.gz", 
     "dr": [
         "dr_tempreg_maps_z_stack_to_standard/_scan_%(scan)s/_csf_threshold_*/_gm_threshold_*/_wm_threshold_*/%(strategy)s/_spatial_map_PNAS_Smith09_rsn10/*.nii.gz", 
         "dr_tempreg_maps_z_stack_to_standard/_scan_%(scan)s/_csf_threshold_*/_gm_threshold_*/_wm_threshold_*/%(strategy)s/_bandpass_freqs_*/_spatial_map_PNAS_Smith09_rsn10/*.nii.gz"
@@ -121,9 +121,9 @@ def check_file_path(init_dir, path_suffixes, templ):
     if file_path == "":
         print "\nWARNING: file_path is empty", path_suffixes, "\n"
         file_path = op.join(init_dir, path_suffixes[0] % templ)
-        file_exists = False
+        file_exists = 0
     else:
-        file_exists = True
+        file_exists = 1
     
     return file_exists, file_path
 
