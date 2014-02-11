@@ -1,0 +1,66 @@
+- anat: /data/Projects/ABIDE_Initiative/CPAC/RawData/OHSU/0050155/session_1/anat_1/mprage.nii.gz
+  anatomical_brain: /home2/data/Projects/ABIDE_Initiative/CPAC/Output_2013-11-22/pipeline_RameyBorough/0050155_session_1/anatomical_brain/mprage_RPI_3dc.nii.gz
+  anatomical_reorient: /home2/data/Projects/ABIDE_Initiative/CPAC/Output_2013-11-22/pipeline_RameyBorough/0050155_session_1/anatomical_reorient/mprage_RPI.nii.gz
+  anatomical_to_mni_nonlinear_xfm: /home2/data/Projects/ABIDE_Initiative/CPAC/Output_2013-11-22/pipeline_RameyBorough/0050155_session_1/anatomical_to_mni_nonlinear_xfm/ants_Warp.nii.gz
+  ants_affine_xfm: /home2/data/Projects/ABIDE_Initiative/CPAC/Output_2013-11-22/pipeline_RameyBorough/0050155_session_1/ants_affine_xfm/ants_Affine.txt
+  functional_brain_mask:
+    filt_global: ''
+  functional_brain_mask_to_standard:
+    filt_global: ''
+  functional_freq_filtered:
+    filt_global: ''
+  functional_mni:
+    filt_global: ''
+  functional_nuisance_residuals:
+    filt_global: ''
+  functional_to_anat_linear_xfm:
+    filt_global: ''
+  mean_functional:
+    filt_global: ''
+  mni_normalized_anatomical: /home2/data/Projects/ABIDE_Initiative/CPAC/Output_2013-11-22/pipeline_RameyBorough/0050155_session_1/mni_normalized_anatomical/ants_deformed.nii.gz
+  preprocessed:
+    filt_global: ''
+  rest:
+    rest_2_rest: /data/Projects/ABIDE_Initiative/CPAC/RawData/OHSU/0050155/session_1/rest_2/rest.nii.gz
+    rest_3_rest: /data/Projects/ABIDE_Initiative/CPAC/RawData/OHSU/0050155/session_1/rest_3/rest.nii.gz
+  scan_parameters:
+    acquisition: alt+z2
+    first_tr: '0'
+    last_tr: None
+    reference: '18'
+    tr: '2.5'
+  subject_id: '0050155'
+  unique_id: session_1
+- anat: /data/Projects/ABIDE_Initiative/CPAC/RawData/OHSU/0050165/session_1/anat_1/mprage.nii.gz
+  anatomical_brain: /home2/data/Projects/ABIDE_Initiative/CPAC/Output_2013-11-22/pipeline_RameyBorough/0050165_session_1/anatomical_brain/mprage_RPI_3dc.nii.gz
+  anatomical_reorient: /home2/data/Projects/ABIDE_Initiative/CPAC/Output_2013-11-22/pipeline_RameyBorough/0050165_session_1/anatomical_reorient/mprage_RPI.nii.gz
+  anatomical_to_mni_nonlinear_xfm: /home2/data/Projects/ABIDE_Initiative/CPAC/Output_2013-11-22/pipeline_RameyBorough/0050165_session_1/anatomical_to_mni_nonlinear_xfm/ants_Warp.nii.gz
+  ants_affine_xfm: /home2/data/Projects/ABIDE_Initiative/CPAC/Output_2013-11-22/pipeline_RameyBorough/0050165_session_1/ants_affine_xfm/ants_Affine.txt
+  functional_brain_mask:
+    filt_global: ''
+  functional_brain_mask_to_standard:
+    filt_global: ''
+  functional_freq_filtered:
+    filt_global: ''
+  functional_mni:
+    filt_global: ''
+  functional_nuisance_residuals:
+    filt_global: ''
+  functional_to_anat_linear_xfm:
+    filt_global: ''
+  mean_functional:
+    filt_global: ''
+  mni_normalized_anatomical: /home2/data/Projects/ABIDE_Initiative/CPAC/Output_2013-11-22/pipeline_RameyBorough/0050165_session_1/mni_normalized_anatomical/ants_deformed.nii.gz
+  preprocessed:
+    filt_global: ''
+  rest:
+    rest_2_rest: /data/Projects/ABIDE_Initiative/CPAC/RawData/OHSU/0050165/session_1/rest_2/rest.nii.gz
+    rest_3_rest: /data/Projects/ABIDE_Initiative/CPAC/RawData/OHSU/0050165/session_1/rest_3/rest.nii.gz
+  scan_parameters:
+    acquisition: alt+z2
+    first_tr: '0'
+    last_tr: None
+    reference: '18'
+    tr: '2.5'
+  subject_id: '0050165'
+  unique_id: session_1
