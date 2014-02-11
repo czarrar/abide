@@ -1,0 +1,11 @@
+- anat: /data/Projects/ABIDE_Initiative/CPAC/RawData/CMU_a/0050642/session_1/anat_1/mprage.nii.gz
+  functional_brain_mask: {run1: /home2/data/Projects/ABIDE_Initiative/NIAK/processed/abide_release_gsc1_lp01/CMU_a/fmri_0050642_session_1_run1_mask.nii.gz}
+  functional_brain_mask_to_standard: {run1: /home2/data/Projects/ABIDE_Initiative/NIAK/processed/abide_release_gsc1_lp01/CMU_a/fmri_0050642_session_1_run1_mask.nii.gz}
+  functional_freq_filtered: {run1: /home2/data/Projects/ABIDE_Initiative/NIAK/processed/abide_release_gsc1_lp01/CMU_a/fmri_0050642_session_1_run1.nii.gz}
+  functional_mni: {run1: /home2/data/Projects/ABIDE_Initiative/NIAK/processed/abide_release_gsc1_lp01/CMU_a/fmri_0050642_session_1_run1.nii.gz}
+  functional_nuisance_residuals: {run1: /home2/data/Projects/ABIDE_Initiative/NIAK/processed/abide_release_gsc1_lp01/CMU_a/fmri_0050642_session_1_run1.nii.gz}
+  rest: {rest_1_rest: /data/Projects/ABIDE_Initiative/CPAC/RawData/CMU_a/0050642/session_1/rest_1/rest.nii.gz}
+  scan_parameters: {acquisition: alt+z2, first_tr: '0', last_tr: None, reference: '14',
+    tr: '2'}
+  subject_id: '0050642'
+  unique_id: session_1
