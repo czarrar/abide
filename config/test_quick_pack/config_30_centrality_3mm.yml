@@ -32,7 +32,7 @@ numCoresPerSubject :  4
 numSubjectsAtOnce :  4
 
 # Directory where CPAC should store temporary and intermediate files.
-workingDirectory :  /home2/data/Projects/ABIDE_Initiative/CPAC/test_qp/Centrality_Working_3mm
+workingDirectory :  /data/Projects/ABIDE_Initiative/CPAC/test_qp/Centrality_Working_3mm
 
 
 # Directory where CPAC should write crash logs.

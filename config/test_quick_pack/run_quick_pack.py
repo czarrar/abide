@@ -33,7 +33,7 @@ subject_list_file   = "files/quick_pack_rest_1_rest_%s.yml" % otype
 # Centrality
 import time
 start = time.clock()
-config_file         = "config_30_centrality_3mm.yml"
+config_file         = "config_30_centrality.yml"
 CPAC.pipeline.cpac_runner.run(config_file, subject_list_file, otype)
 print "timing:", (time.clock() - start)
 
