@@ -1,0 +1,14 @@
+- anat: /data/Projects/ABIDE_Initiative/CPAC/RawData/CMU_a/0050642/session_1/anat_1/mprage.nii.gz
+  anatomical_brain: /home2/data/Projects/ABIDE_Initiative/CCS/processed/CMU_50642/anat/mprage_sanlm.nii.gz
+  anatomical_to_mni_nonlinear_xfm: /home2/data/Projects/ABIDE_Initiative/CCS/processed/CMU_50642/anat/reg/highres2standard_warp.nii.gz
+  functional_brain_mask: {rest_1: /home2/data/Projects/ABIDE_Initiative/CCS/processed/CMU_50642/func/rest_1/rest_pp_mask.nii.gz}
+  functional_brain_mask_to_standard: {rest_1: /home2/data/Projects/ABIDE_Initiative/CCS/processed/CMU_50642/func/rest_1/rest.mask.mni152.nii.gz}
+  functional_freq_filtered: {rest_1: /home2/data/Projects/ABIDE_Initiative/CCS/processed/CMU_50642/func/rest_1/gs-removal/rest_pp_filt_sm0.nii.gz}
+  functional_mni: {rest_1: /home2/data/Projects/ABIDE_Initiative/CCS/processed/CMU_50642/func/rest_1/gs-removal/rest.filt.sm0.mni152.nii.gz}
+  functional_nuisance_residuals: {rest_1: /home2/data/Projects/ABIDE_Initiative/CCS/processed/CMU_50642/func/rest_1/rest_pp_nofilt_sm0.nii.gz}
+  functional_to_anat_linear_xfm: {rest_1: /home2/data/Projects/ABIDE_Initiative/CCS/processed/CMU_50642/func/rest_1/reg/example_func2highres.mat}
+  rest: {rest_1_rest: /data/Projects/ABIDE_Initiative/CPAC/RawData/CMU_a/0050642/session_1/rest_1/rest.nii.gz}
+  scan_parameters: {acquisition: alt+z2, first_tr: '0', last_tr: None, reference: '14',
+    tr: '2'}
+  subject_id: '0050642'
+  unique_id: session_1

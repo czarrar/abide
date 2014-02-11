@@ -1,0 +1,22 @@
+- anat: /data/Projects/ABIDE_Initiative/CPAC/RawData/CMU_a/0050642/session_1/anat_1/mprage.nii.gz
+  functional_brain_mask: {rest_1: /home2/data/Projects/ABIDE_Initiative/DPARSF/ReNormalize/AutoMasks/AutoMasks_NativeSpace/AutoMask_0050642.nii}
+  functional_brain_mask_to_standard: {rest_1: /home2/data/Projects/ABIDE_Initiative/DPARSF/ReNormalize/AutoMasks/AutoMasks_MNISpace/wAutoMask_0050642.nii}
+  functional_freq_filtered: {rest_1: /home2/data/Projects/ABIDE_Initiative/DPARSF/ReNormalize/FunImgARglobalCF/0050642/Filtered_4DVolume.nii}
+  functional_mni: {rest_1: /home2/data/Projects/ABIDE_Initiative/DPARSF/ReNormalize/FunImgARglobalCWF/0050642/Filtered_4DVolume.nii}
+  functional_nuisance_residuals: {rest_1: /home2/data/Projects/ABIDE_Initiative/DPARSF/ReNormalize/FunImgARglobalC/0050642/CovRegressed_4DVolume.nii}
+  rest: {rest_1_rest: /data/Projects/ABIDE_Initiative/CPAC/RawData/CMU_a/0050642/session_1/rest_1/rest.nii.gz}
+  scan_parameters: {acquisition: alt+z2, first_tr: '0', last_tr: None, reference: '14',
+    tr: '2'}
+  subject_id: '0050642'
+  unique_id: session_1
+- anat: /data/Projects/ABIDE_Initiative/CPAC/RawData/CMU_a/0050646/session_1/anat_1/mprage.nii.gz
+  functional_brain_mask: {rest_1: /home2/data/Projects/ABIDE_Initiative/DPARSF/ReNormalize/AutoMasks/AutoMasks_NativeSpace/AutoMask_0050646.nii}
+  functional_brain_mask_to_standard: {rest_1: /home2/data/Projects/ABIDE_Initiative/DPARSF/ReNormalize/AutoMasks/AutoMasks_MNISpace/wAutoMask_0050646.nii}
+  functional_freq_filtered: {rest_1: /home2/data/Projects/ABIDE_Initiative/DPARSF/ReNormalize/FunImgARglobalCF/0050646/Filtered_4DVolume.nii}
+  functional_mni: {rest_1: /home2/data/Projects/ABIDE_Initiative/DPARSF/ReNormalize/FunImgARglobalCWF/0050646/Filtered_4DVolume.nii}
+  functional_nuisance_residuals: {rest_1: /home2/data/Projects/ABIDE_Initiative/DPARSF/ReNormalize/FunImgARglobalC/0050646/CovRegressed_4DVolume.nii}
+  rest: {rest_1_rest: /data/Projects/ABIDE_Initiative/CPAC/RawData/CMU_a/0050646/session_1/rest_1/rest.nii.gz}
+  scan_parameters: {acquisition: alt+z2, first_tr: '0', last_tr: None, reference: '14',
+    tr: '2'}
+  subject_id: '0050646'
+  unique_id: session_1
