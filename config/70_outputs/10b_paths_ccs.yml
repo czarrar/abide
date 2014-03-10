@@ -1,0 +1,105 @@
+vars:
+    base: /home2/data/Projects/ABIDE_Initiative/CCS/processed
+    base2: /home2/data/Projects/ABIDE_Initiative/Derivatives/CCS
+    roi_names:
+        - aal_mask_pad
+        - CC200
+        - CC400
+        - ez_mask_pad
+        - ho_mask_pad
+        - rois_3mm
+        - tt_mask_pad
+
+#anat:
+#    head: "/data/Projects/ABIDE_Initiative/CPAC/RawData/*/${subject}/session_1/anat_1/mprage.nii.gz"
+#    brain: "${base}/${site}_${subject}/anat/mprage_sanlm.nii.gz"
+#    reorient: 
+#    brain_mni: "${base}/${site}_${subject}/anat/reg/fnirt_highres2standard.nii.gz"
+#    csf_mask: "${base}/${site}_${subject}/anat/segment/segment_csf.nii.gz"
+#    gm_mask: # optional
+#    wm_mask: "${base}/${site}_${subject}/anat/segment/segment_wm.nii.gz"
+#
+#reg:
+#    anat_to_mni_nonlinear_xfm: "${base}/${site}_${subject}/anat/reg/highres2standard_warp.nii.gz"
+#    anat_to_mni_linear_xfm: "${base}/${site}_${subject}/anat/reg/highres2standard.mat"
+#    func_to_anat_linear_xfm: "${base}/${site}_${subject}/func/rest_1/reg/example_func2highres.mat"
+
+func:
+#    functional_head: "/data/Projects/ABIDE_Initiative/CPAC/RawData/*/${subject}/session_1/rest_1/rest.nii.gz"
+#    mean_functional: "${base}/${site}_${subject}/func/rest_1/rest_pp.mean.nii.gz"
+#    mean_functional_to_standard: "${base}/${site}_${subject}/func/reg/example_func2standard.nii.gz"
+#    functional_brain_mask: "${base}/${site}_${subject}/func/rest_1/rest_pp.mask.nii.gz"
+    functional_brain_mask_to_standard: 
+        filt_global: "${base}/${csite}_${csubject}/func/rest_1/rest.mask.mni152.nii.gz"
+        filt_noglobal: "${base}/${csite}_${csubject}/func/rest_1/rest.mask.mni152.nii.gz"
+        nofilt_global: "${base}/${csite}_${csubject}/func/rest_1/rest.mask.mni152.nii.gz"
+        nofilt_noglobal: "${base}/${csite}_${csubject}/func/rest_1/rest.mask.mni152.nii.gz"
+#    motion_parameters: "${base}/${site}_${subject}/func/rest_1/QC/mc_metrics.mat"
+#    power_parameters: "${base}/${site}_${subject}/func/rest_1/QC/FD1.mat"
+#    motion: "${base}/${site}_${subject}/func/rest_1/rest_mc.1D"
+#    functional_preprocessed: 
+#        filt_global: "${base}/${site}_${subject}/func/rest_1/gs-removal/rest_pp_filt_sm0.nii.gz"
+#        filt_noglobal: "${base}/${site}_${subject}/func/rest_1/rest_pp_filt_sm0.nii.gz"
+#        nofilt_global: "${base}/${site}_${subject}/func/rest_1/gs-removal/rest_pp_nofilt_sm0.nii.gz"
+#        nofilt_noglobal: "${base}/${site}_${subject}/func/rest_1/rest_pp_nofilt_sm0.nii.gz"
+    functional_preprocessed_mni: 
+        filt_global: "${base}/${csite}_${csubject}/func/rest_1/gs-removal/rest.filt.sm0.mni152.nii.gz"
+        filt_noglobal: "${base}/${csite}_${csubject}/func/rest_1/rest.filt.sm0.mni152.nii.gz"
+        nofilt_global: "${base}/${csite}_${csubject}/func/rest_1/gs-removal/rest.nofilt.sm0.mni152.nii.gz"
+        nofilt_noglobal: "${base}/${csite}_${csubject}/func/rest_1/rest.nofilt.sm0.mni152.nii.gz"
+
+derivatives:
+    alff:
+        filt_global: "${base2}/Output/pipeline_filt_global/${subject}_session_1/alff_Z_to_standard_smooth/*/*/*hp*/*lp*/*/*/_fwhm_6/*.nii.gz"
+        filt_noglobal: "${base2}/Output/pipeline_filt_noglobal/${subject}_session_1/alff_Z_to_standard_smooth/*/*/*hp*/*lp*/*/*/_fwhm_6/*.nii.gz"
+        nofilt_global: "${base2}/Output/pipeline_nofilt_global/${subject}_session_1/alff_Z_to_standard_smooth/*/*/*hp*/*lp*/*/*/_fwhm_6/*.nii.gz"
+        nofilt_noglobal: "${base2}/Output/pipeline_nofilt_noglobal/${subject}_session_1/alff_Z_to_standard_smooth/*/*/*hp*/*lp*/*/*/_fwhm_6/*.nii.gz"
+  
+    falff: 
+        filt_global: "${base2}/Output/pipeline_filt_global/${subject}_session_1/falff_Z_to_standard_smooth/*/*/*hp*/*lp*/*/*/_fwhm_6/*.nii.gz"
+        filt_noglobal: "${base2}/Output/pipeline_filt_noglobal/${subject}_session_1/falff_Z_to_standard_smooth/*/*/*hp*/*lp*/*/*/_fwhm_6/*.nii.gz"
+        nofilt_global: "${base2}/Output/pipeline_nofilt_global/${subject}_session_1/falff_Z_to_standard_smooth/*/*/*hp*/*lp*/*/*/_fwhm_6/*.nii.gz"
+        nofilt_noglobal: "${base2}/Output/pipeline_nofilt_noglobal/${subject}_session_1/falff_Z_to_standard_smooth/*/*/*hp*/*lp*/*/*/_fwhm_6/*.nii.gz"
+  
+    dual_regression:
+        filt_global: "${base2}/Output/pipeline_filt_global/${subject}_session_1/dr_tempreg_maps_z_stack_smooth/*/*/_spatial_map_PNAS_Smith09_rsn10/*/*/*/_fwhm_6/*.nii.gz"
+        filt_noglobal: "${base2}/Output/pipeline_filt_noglobal/${subject}_session_1/dr_tempreg_maps_z_stack_smooth/*/*/_spatial_map_PNAS_Smith09_rsn10/*/*/*/_fwhm_6/*.nii.gz"
+        nofilt_global: "${base2}/Output/pipeline_nofilt_global/${subject}_session_1/dr_tempreg_maps_z_stack_smooth/*/*/_spatial_map_PNAS_Smith09_rsn10/*/*/*/_fwhm_6/*.nii.gz"
+        nofilt_noglobal: "${base2}/Output/pipeline_nofilt_noglobal/${subject}_session_1/dr_tempreg_maps_z_stack_smooth/*/*/_spatial_map_PNAS_Smith09_rsn10/*/*/*/_fwhm_6/*.nii.gz"
+    
+    reho:
+        filt_global: "${base2}/Output/pipeline_filt_global/${subject}_session_1/reho_Z_to_standard_smooth/*/*/*/*/_fwhm_6/*.nii.gz"
+        filt_noglobal: "${base2}/Output/pipeline_filt_noglobal/${subject}_session_1/reho_Z_to_standard_smooth/*/*/*/*/_fwhm_6/*.nii.gz"
+        nofilt_global: "${base2}/Output/pipeline_nofilt_global/${subject}_session_1/reho_Z_to_standard_smooth/*/*/*/*/_fwhm_6/*.nii.gz"
+        nofilt_noglobal: "${base2}/Output/pipeline_nofilt_noglobal/${subject}_session_1/reho_Z_to_standard_smooth/*/*/*/*/_fwhm_6/*.nii.gz"
+        
+    roi_timeseries:        
+        filt_global: "${base2}/Output/pipeline_filt_global/${subject}_session_1/roi_timeseries/_roi_${roi_name}/*/*.1D"
+        filt_noglobal: "${base2}/Output/pipeline_filt_noglobal/${subject}_session_1/roi_timeseries/_roi_${roi_name}/*/*.1D"
+        nofilt_global: "${base2}/Output/pipeline_nofilt_global/${subject}_session_1/roi_timeseries/_roi_${roi_name}/*/*.1D"
+        nofilt_noglobal: "${base2}/Output/pipeline_nofilt_noglobal/${subject}_session_1/roi_timeseries/_roi_${roi_name}/*/*.1D"        
+    
+    degree_binarize:
+        filt_global: "${base2}/Cent/pipeline_filt_global/${subject}_session_1/centrality_outputs_zscore/*_90percent_gm/*/*binarize*.nii.gz"
+        filt_noglobal: "${base2}/Cent/pipeline_filt_noglobal/${subject}_session_1/centrality_outputs_zscore/*_90percent_gm/*/*binarize*.nii.gz"
+        nofilt_global: "${base2}/Cent/pipeline_nofilt_global/${subject}_session_1/centrality_outputs_zscore/*_90percent_gm/*/*binarize*.nii.gz"
+        nofilt_noglobal: "${base2}/Cent/pipeline_nofilt_noglobal/${subject}_session_1/centrality_outputs_zscore/*_90percent_gm/*/*binarize*.nii.gz"
+    
+    degree_weighted:
+        filt_global: "${base2}/Cent/pipeline_filt_global/${subject}_session_1/centrality_outputs_zscore/*_90percent_gm/*/*weighted*.nii.gz"
+        filt_noglobal: "${base2}/Cent/pipeline_filt_noglobal/${subject}_session_1/centrality_outputs_zscore/*_90percent_gm/*/*weighted*.nii.gz"
+        nofilt_global: "${base2}/Cent/pipeline_nofilt_global/${subject}_session_1/centrality_outputs_zscore/*_90percent_gm/*/*weighted*.nii.gz"
+        nofilt_noglobal: "${base2}/Cent/pipeline_nofilt_noglobal/${subject}_session_1/centrality_outputs_zscore/*_90percent_gm/*/*weighted*.nii.gz"
+            
+    eigenvector_binarize:
+        filt_global: "${base2}/Eigen/pipeline_filt_global/${subject}_session_1/centrality_outputs_zscore/*_90percent_gm/*/*binarize*.nii.gz"
+        filt_noglobal: "${base2}/Eigen/pipeline_filt_noglobal/${subject}_session_1/centrality_outputs_zscore/*_90percent_gm/*/*binarize*.nii.gz"
+        nofilt_global: "${base2}/Eigen/pipeline_nofilt_global/${subject}_session_1/centrality_outputs_zscore/*_90percent_gm/*/*binarize*.nii.gz"
+        nofilt_noglobal: "${base2}/Eigen/pipeline_nofilt_noglobal/${subject}_session_1/centrality_outputs_zscore/*_90percent_gm/*/*binarize*.nii.gz"
+    
+    eigenvector_weighted:
+        filt_global: "${base2}/Eigen/pipeline_filt_global/${subject}_session_1/centrality_outputs_zscore/*_90percent_gm/*/*weighted*.nii.gz"
+        filt_noglobal: "${base2}/Eigen/pipeline_filt_noglobal/${subject}_session_1/centrality_outputs_zscore/*_90percent_gm/*/*weighted*.nii.gz"
+        nofilt_global: "${base2}/Eigen/pipeline_nofilt_global/${subject}_session_1/centrality_outputs_zscore/*_90percent_gm/*/*weighted*.nii.gz"
+        nofilt_noglobal: "${base2}/Eigen/pipeline_nofilt_noglobal/${subject}_session_1/centrality_outputs_zscore/*_90percent_gm/*/*weighted*.nii.gz"
+

@@ -1,0 +1,104 @@
+vars:
+    base: /home2/data/Projects/ABIDE_Initiative/CPAC/Output_2013-11-22
+    base2: /home2/data/Projects/ABIDE_Initiative/Derivatives/CPAC
+    roi_names:
+        - aal_mask_pad
+        - CC200
+        - CC400
+        - ez_mask_pad
+        - ho_mask_pad
+        - rois_3mm
+        - tt_mask_pad
+
+#anat:
+#    head: "/data/Projects/ABIDE_Initiative/CPAC/RawData/*/${subject}/session_1/anat_1/mprage.nii.gz"
+#    brain: "${base}/pipeline_RameyBorough/${subject}_session_1/anatomical_brain/mprage_RPI_3dc.nii.gz"
+#    reorient: "${base}/pipeline_RameyBorough/${subject}_session_1/anatomical_reorient/mprage_RPI.nii.gz"
+#    brain_mni: "${base}/pipeline_RameyBorough/${subject}_session_1/mni_normalized_anatomical/ants_deformed.nii.gz"
+#    csf_mask: "${base}/pipeline_RameyBorough/${subject}_session_1/anatomical_csf_mask/*/*.nii.gz"
+#    gm_mask: "${base}/pipeline_RameyBorough/${subject}_session_1/anatomical_gm_mask/*/*.nii.gz"
+#    wm_mask: "${base}/pipeline_RameyBorough/${subject}_session_1/anatomical_wm_mask/*/*.nii.gz"
+#
+#reg:
+#    anat_to_mni_nonlinear_xfm: "${base}/pipeline_RameyBorough/${subject}_session_1/anatomical_to_mni_nonlinear_xfm/*.nii.gz"
+#    anat_to_mni_linear_xfm: "${base}/pipeline_RameyBorough/${subject}_session_1/ants_affine_xfm/*.txt"
+#    func_to_anat_linear_xfm: "${base}/pipeline_RameyBorough/${subject}_session_1/functional_to_anat_linear_xfm/*1*/*.mat"
+
+func:
+#    functional_head: "/data/Projects/ABIDE_Initiative/CPAC/RawData/*/${subject}/session_1/rest_1/rest.nii.gz"
+#    mean_functional: "${base}/pipeline_RameyBorough/${subject}_session_1/mean_functional/*1*/*.nii.gz"
+#    mean_functional_to_standard: "${base}/pipeline_RameyBorough/${subject}_session_1/mean_functional_in_mni/*1*/*.nii.gz"
+#    functional_brain_mask: "${base}/pipeline_RameyBorough/${subject}_session_1/functional_brain_mask/*1*/*.nii.gz"
+    functional_brain_mask_to_standard: 
+        filt_global: "${base}/pipeline_RameyBorough/${subject}_session_1/functional_brain_mask_to_standard/*1*/*.nii.gz"
+        filt_noglobal: "${base}/pipeline_RameyBorough/${subject}_session_1/functional_brain_mask_to_standard/*1*/*.nii.gz"
+        nofilt_global: "${base}/pipeline_RameyBorough/${subject}_session_1/functional_brain_mask_to_standard/*1*/*.nii.gz"
+        nofilt_noglobal: "${base}/pipeline_RameyBorough/${subject}_session_1/functional_brain_mask_to_standard/*1*/*.nii.gz"
+#    motion_parameters: "${base}/pipeline_MerrittIsland/${subject}_session_1/motion_params/*1*/*.txt"
+#    power_parameters: "${base}/pipeline_MerrittIsland/${subject}_session_1/power_params/*1*/*/*.txt"
+#    motion: "${base}/pipeline_MerrittIsland/${subject}_session_1/movement_parameters/*1*/*.1D"
+#    functional_preprocessed: 
+#        filt_global: "${base}/pipeline_RameyBorough/${subject}_session_1/functional_freq_filtered/*1*/*/*/*/*global1*/*band*/*.nii.gz"
+#        filt_noglobal: "${base}/pipeline_RameyBorough/${subject}_session_1/functional_freq_filtered/*1*/*/*/*/*global1*/*band*/*.nii.gz"
+#        nofilt_global: "${base}/pipeline_MerrittIsland/${subject}_session_1/functional_nuisance_residuals/*1*/*/*/*/*global1*/*.nii.gz"
+#        nofilt_noglobal: "${base}/pipeline_MerrittIsland/${subject}_session_1/functional_nuisance_residuals/*1*/*/*/*/*global1*/*.nii.gz"
+    functional_preprocessed_mni: 
+        filt_global: "${base}/pipeline_RameyBorough/${subject}_session_1/functional_mni/*1*/*/*/*/*global1*/*band*/*.nii.gz"
+        filt_noglobal: "${base}/pipeline_RameyBorough/${subject}_session_1/functional_mni/*1*/*/*/*/*global0*/*band*/*.nii.gz"
+        nofilt_global: "${base}/pipeline_MerrittIsland/${subject}_session_1/functional_mni/*1*/*/*/*/*global1*/*.nii.gz"
+        nofilt_noglobal: "${base}/pipeline_MerrittIsland/${subject}_session_1/functional_mni/*1*/*/*/*/*global0*/*.nii.gz"
+
+derivatives:            
+    alff: 
+        filt_global: "${base}/pipeline_RameyBorough/${subject}_session_1/alff_Z_to_standard_smooth/*1*/*/*/*/*global1*/*/*/_fwhm_6/*.nii.gz"
+        filt_noglobal: "${base}/pipeline_RameyBorough/${subject}_session_1/alff_Z_to_standard_smooth/*1*/*/*/*/*global0*/*/*/_fwhm_6/*.nii.gz"
+        nofilt_global: "${base}/pipeline_MerrittIsland/${subject}_session_1/alff_Z_to_standard_smooth/*1*/*/*/*/*global1*/*/*/_fwhm_6/*.nii.gz"
+        nofilt_noglobal: "${base}/pipeline_MerrittIsland/${subject}_session_1/alff_Z_to_standard_smooth/*1*/*/*/*/*global0*/*/*/_fwhm_6/*.nii.gz"
+  
+    falff: 
+        filt_global: "${base}/pipeline_RameyBorough/${subject}_session_1/falff_Z_to_standard_smooth/*1*/*/*/*/*global1*/*/*/_fwhm_6/*.nii.gz"
+        filt_noglobal: "${base}/pipeline_RameyBorough/${subject}_session_1/falff_Z_to_standard_smooth/*1*/*/*/*/*global0*/*/*/_fwhm_6/*.nii.gz"
+        nofilt_global: "${base}/pipeline_MerrittIsland/${subject}_session_1/falff_Z_to_standard_smooth/*1*/*/*/*/*global1*/*/*/_fwhm_6/*.nii.gz"
+        nofilt_noglobal: "${base}/pipeline_MerrittIsland/${subject}_session_1/falff_Z_to_standard_smooth/*1*/*/*/*/*global0*/*/*/_fwhm_6/*.nii.gz"
+  
+    dual_regression:
+        filt_global: "${base}/pipeline_RameyBorough/${subject}_session_1/dr_tempreg_maps_z_stack_smooth/*1*/*/*/*/*global1*/*band*/*/_fwhm_6/*.nii.gz"
+        filt_noglobal: "${base}/pipeline_RameyBorough/${subject}_session_1/dr_tempreg_maps_z_stack_smooth/*1*/*/*/*/*global0*/*band*/*/_fwhm_6/*.nii.gz"
+        nofilt_global: "${base}/pipeline_MerrittIsland/${subject}_session_1/dr_tempreg_maps_z_stack_smooth/*1*/*/*/*/*global1*/*/_fwhm_6/*.nii.gz"
+        nofilt_noglobal: "${base}/pipeline_MerrittIsland/${subject}_session_1/dr_tempreg_maps_z_stack_smooth/*1*/*/*/*/*global0*/*/_fwhm_6/*.nii.gz"
+        
+    reho:
+        filt_global: "${base}/pipeline_RameyBorough/${subject}_session_1/reho_Z_to_standard_smooth/*1*/*/*/*/*global1*/*band*/_fwhm_6/*.nii.gz"
+        filt_noglobal: "${base}/pipeline_RameyBorough/${subject}_session_1/reho_Z_to_standard_smooth/*1*/*/*/*/*global0*/*band*/_fwhm_6/*.nii.gz"
+        nofilt_global: "${base}/pipeline_MerrittIsland/${subject}_session_1/reho_Z_to_standard_smooth/*1*/*/*/*/*global1*/_fwhm_6/*.nii.gz"
+        nofilt_noglobal: "${base}/pipeline_MerrittIsland/${subject}_session_1/reho_Z_to_standard_smooth/*1*/*/*/*/*global0*/_fwhm_6/*.nii.gz"
+        
+    roi_timeseries:
+        filt_global: "${base}/pipeline_RameyBorough/${subject}_session_1/roi_timeseries/*1*/*/*/*/*global1*/*band*/_roi_${roi_name}/*.1D"
+        filt_noglobal: "${base}/pipeline_RameyBorough/${subject}_session_1/roi_timeseries/*1*/*/*/*/*global0*/*band*/_roi_${roi_name}/*.1D"
+        nofilt_global: "${base}/pipeline_MerrittIsland/${subject}_session_1/roi_timeseries/*1*/*/*/*/*global1*/_roi_${roi_name}/*.1D"
+        nofilt_noglobal: "${base}/pipeline_MerrittIsland/${subject}_session_1/roi_timeseries/*1*/*/*/*/*global0*/_roi_${roi_name}/*.1D"
+    
+    degree_binarize:
+        filt_global: "${base2}/Cent/Out/pipeline_rest_1/${subject}_session_1/centrality_outputs_zscore/*_90percent_gm_3mm/_scan_filt_global/*binarize*.nii.gz"
+        filt_noglobal: "${base2}/Cent/Out/pipeline_rest_1/${subject}_session_1/centrality_outputs_zscore/*_90percent_gm_3mm/_scan_filt_noglobal/*binarize*.nii.gz"
+        nofilt_global: "${base2}/Cent/Out/pipeline_rest_1/${subject}_session_1/centrality_outputs_zscore/*_90percent_gm_3mm/_scan_nofilt_global/*binarize*.nii.gz"
+        nofilt_noglobal: "${base2}/Cent/Out/pipeline_rest_1/${subject}_session_1/centrality_outputs_zscore/*_90percent_gm_3mm/_scan_nofilt_noglobal/*binarize*.nii.gz"
+    
+    degree_weighted:
+        filt_global: "${base2}/Cent/Out/pipeline_rest_1/${subject}_session_1/centrality_outputs_zscore/*_90percent_gm_3mm/_scan_filt_global/*weighted*.nii.gz"
+        filt_noglobal: "${base2}/Cent/Out/pipeline_rest_1/${subject}_session_1/centrality_outputs_zscore/*_90percent_gm_3mm/_scan_filt_noglobal/*weighted*.nii.gz"
+        nofilt_global: "${base2}/Cent/Out/pipeline_rest_1/${subject}_session_1/centrality_outputs_zscore/*_90percent_gm_3mm/_scan_nofilt_global/*weighted*.nii.gz"
+        nofilt_noglobal: "${base2}/Cent/Out/pipeline_rest_1/${subject}_session_1/centrality_outputs_zscore/*_90percent_gm_3mm/_scan_nofilt_noglobal/*weighted*.nii.gz"
+    
+    eigenvector_binarize:
+        filt_global: "${base2}/Eigen/Out/pipeline_rest_1/${subject}_session_1/centrality_outputs_zscore/*_90percent_gm_3mm/_scan_filt_global/*binarize*.nii.gz"
+        filt_noglobal: "${base2}/Eigen/Out/pipeline_rest_1/${subject}_session_1/centrality_outputs_zscore/*_90percent_gm_3mm/_scan_filt_noglobal/*binarize*.nii.gz"
+        nofilt_global: "${base2}/Eigen/Out/pipeline_rest_1/${subject}_session_1/centrality_outputs_zscore/*_90percent_gm_3mm/_scan_nofilt_global/*binarize*.nii.gz"
+        nofilt_noglobal: "${base2}/Eigen/Out/pipeline_rest_1/${subject}_session_1/centrality_outputs_zscore/*_90percent_gm_3mm/_scan_nofilt_noglobal/*binarize*.nii.gz"
+    
+    eigenvector_weighted:
+        filt_global: "${base2}/Eigen/Out/pipeline_rest_1/${subject}_session_1/centrality_outputs_zscore/*_90percent_gm_3mm/_scan_filt_global/*weighted*.nii.gz"
+        filt_noglobal: "${base2}/Eigen/Out/pipeline_rest_1/${subject}_session_1/centrality_outputs_zscore/*_90percent_gm_3mm/_scan_filt_noglobal/*weighted*.nii.gz"
+        nofilt_global: "${base2}/Eigen/Out/pipeline_rest_1/${subject}_session_1/centrality_outputs_zscore/*_90percent_gm_3mm/_scan_nofilt_global/*weighted*.nii.gz"
+        nofilt_noglobal: "${base2}/Eigen/Out/pipeline_rest_1/${subject}_session_1/centrality_outputs_zscore/*_90percent_gm_3mm/_scan_nofilt_noglobal/*weighted*.nii.gz"

@@ -1,0 +1,1 @@
+/home2/data/Projects/ABIDE_Initiative/CPAC/abide/templates/masks/mask_dparsf_90percent_gm.nii.gz

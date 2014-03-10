@@ -15,7 +15,7 @@ resourceManager :  SGE
 
 # SGE Parallel Environment to use when running CPAC.
 # Only applies when you are running on a grid or compute cluster using SGE.
-parallelEnvironment :  mpi
+parallelEnvironment :  mpi_smp
 
 
 # SGE Queue to use when running CPAC.

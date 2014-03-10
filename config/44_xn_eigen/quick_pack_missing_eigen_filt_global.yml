@@ -1,0 +1,32 @@
+- anat: /data/Projects/ABIDE_Initiative/CPAC/RawData/Leuven_1/0050688/session_1/anat_1/mprage.nii.gz
+  anatomical_brain: /home2/data/Projects/ABIDE_Initiative/CCS/processed/Leuven_50688/anat/mprage_sanlm.nii.gz
+  anatomical_reorient: /home2/data/Projects/ABIDE_Initiative/CCS/processed/Leuven_50688/anat/reg/highres_rpi.nii.gz
+  anatomical_to_mni_nonlinear_xfm: /home2/data/Projects/ABIDE_Initiative/CCS/processed/Leuven_50688/anat/reg/highres2standard_warp.nii.gz
+  functional_brain_mask: {rest_1: /home2/data/Projects/ABIDE_Initiative/CCS/processed/Leuven_50688/func/rest_1/rest_pp_mask.nii.gz}
+  functional_brain_mask_to_standard: {rest_1: /home2/data/Projects/ABIDE_Initiative/CCS/processed/Leuven_50688/func/rest_1/rest.mask.mni152.nii.gz}
+  functional_freq_filtered: {rest_1: /home2/data/Projects/ABIDE_Initiative/CCS/processed/Leuven_50688/func/rest_1/gs-removal/rest_pp_filt_sm0.nii.gz}
+  functional_mni: {rest_1: /home2/data/Projects/ABIDE_Initiative/CCS/processed/Leuven_50688/func/rest_1/gs-removal/rest.filt.sm0.mni152.nii.gz}
+  functional_nuisance_residuals: {rest_1: /home2/data/Projects/ABIDE_Initiative/CCS/processed/Leuven_50688/func/rest_1/rest_pp_nofilt_sm0.nii.gz}
+  functional_to_anat_linear_xfm: {rest_1: /home2/data/Projects/ABIDE_Initiative/CCS/processed/Leuven_50688/func/rest_1/reg/example_func2highres.mat}
+  mean_functional: {rest_1: /home2/data/Projects/ABIDE_Initiative/CCS/processed/Leuven_50688/func/rest_1/rest_pp_mean.nii.gz}
+  rest: {rest_1_rest: /data/Projects/ABIDE_Initiative/CPAC/RawData/Leuven_1/0050688/session_1/rest_1/rest.nii.gz}
+  scan_parameters: {acquisition: seq+z, first_tr: '0', last_tr: None, reference: '16',
+    tr: '1.67872'}
+  subject_id: 0050688
+  unique_id: session_1
+- anat: /data/Projects/ABIDE_Initiative/CPAC/RawData/Leuven_1/0050690/session_1/anat_1/mprage.nii.gz
+  anatomical_brain: /home2/data/Projects/ABIDE_Initiative/CCS/processed/Leuven_50690/anat/mprage_sanlm.nii.gz
+  anatomical_reorient: /home2/data/Projects/ABIDE_Initiative/CCS/processed/Leuven_50690/anat/reg/highres_rpi.nii.gz
+  anatomical_to_mni_nonlinear_xfm: /home2/data/Projects/ABIDE_Initiative/CCS/processed/Leuven_50690/anat/reg/highres2standard_warp.nii.gz
+  functional_brain_mask: {rest_1: /home2/data/Projects/ABIDE_Initiative/CCS/processed/Leuven_50690/func/rest_1/rest_pp_mask.nii.gz}
+  functional_brain_mask_to_standard: {rest_1: /home2/data/Projects/ABIDE_Initiative/CCS/processed/Leuven_50690/func/rest_1/rest.mask.mni152.nii.gz}
+  functional_freq_filtered: {rest_1: /home2/data/Projects/ABIDE_Initiative/CCS/processed/Leuven_50690/func/rest_1/gs-removal/rest_pp_filt_sm0.nii.gz}
+  functional_mni: {rest_1: /home2/data/Projects/ABIDE_Initiative/CCS/processed/Leuven_50690/func/rest_1/gs-removal/rest.filt.sm0.mni152.nii.gz}
+  functional_nuisance_residuals: {rest_1: /home2/data/Projects/ABIDE_Initiative/CCS/processed/Leuven_50690/func/rest_1/rest_pp_nofilt_sm0.nii.gz}
+  functional_to_anat_linear_xfm: {rest_1: /home2/data/Projects/ABIDE_Initiative/CCS/processed/Leuven_50690/func/rest_1/reg/example_func2highres.mat}
+  mean_functional: {rest_1: /home2/data/Projects/ABIDE_Initiative/CCS/processed/Leuven_50690/func/rest_1/rest_pp_mean.nii.gz}
+  rest: {rest_1_rest: /data/Projects/ABIDE_Initiative/CPAC/RawData/Leuven_1/0050690/session_1/rest_1/rest.nii.gz}
+  scan_parameters: {acquisition: seq+z, first_tr: '0', last_tr: None, reference: '16',
+    tr: '1.67872'}
+  subject_id: 0050690
+  unique_id: session_1

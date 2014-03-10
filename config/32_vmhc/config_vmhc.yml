@@ -15,7 +15,7 @@ resourceManager :  SGE
 
 # SGE Parallel Environment to use when running CPAC.
 # Only applies when you are running on a grid or compute cluster using SGE.
-parallelEnvironment :  mpi
+parallelEnvironment :  mpi_smp
 
 
 # SGE Queue to use when running CPAC.
@@ -395,7 +395,7 @@ runVMHC :  [1]
 
 
 # Fast VMHC is an experimental option which reduces computation time.
-fastVMHC :  [0, 1] ? not sure which one to choose just yet
+fastVMHC :  [0] # slow approach
 
 
 # Included as part of the 'Image Resource Files' package available on the Install page of the User Guide.
@@ -415,17 +415,17 @@ twommBrainMaskDiluted :  $FSLDIR/data/standard/MNI152_T1_${standardResolution}_b
 
 # Included as part of the 'Image Resource Files' package available on the Install page of the User Guide.
 # It is not necessary to change this path unless you intend to use a non-standard symmetric template.
-templateToSymmetricWarpANTS :  $FSLDIR/data/standard/ANTS_MNI_to_sym_Warp.nii.gz
+templateToSymmetricWarpANTS :  $FSLDIR/data/standard/ANTS_MNI_to_sym_2mm_Warp.nii.gz
 
 
 # Included as part of the 'Image Resource Files' package available on the Install page of the User Guide.
 # It is not necessary to change this path unless you intend to use a non-standard symmetric template.
-templateToSymmetricAffineANTS :  $FSLDIR/data/standard/ANTS_MNI_to_sym_Affine.txt
+templateToSymmetricAffineANTS :  $FSLDIR/data/standard/ANTS_MNI_to_sym_2mm_Affine.txt
 
 
 # Included as part of the 'Image Resource Files' package available on the Install page of the User Guide.
 # It is not necessary to change this path unless you intend to use a non-standard symmetric template.
-templateToSymmetricWarpFSL :  $FSLDIR/data/standard/FSL_MNI_to_sym_Warp.nii.gz
+templateToSymmetricWarpFSL :  $FSLDIR/data/standard/FSL_MNI_to_sym_2mm_Warp.nii.gz
 
 
 # Included as part of the 'Image Resource Files' package available on the Install page of the User Guide.

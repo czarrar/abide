@@ -79,7 +79,8 @@ strategies      = { "noglobal": "_compcor_ncomponents_5_selector_pc10.linear1.wm
                     "global":  "_compcor_ncomponents_5_selector_pc10.linear1.wm0.global1.motion1.quadratic1.gm0.compcor1.csf0" }
 
 # CPAC subject list
-subject_file    = "start_CPAC_subject_list_12-24-13.yml"    # filtered already completed subjects
+#subject_file    = "start_CPAC_subject_list_12-24-13.yml"
+subject_file    = "start_CPAC_subject_list.yml"
 sub_dict        = yaml.load(open(subject_file, 'r'))
 scans           = sub_dict[0]['rest'].keys()
 

@@ -1,0 +1,19 @@
+- anat: /data/Projects/ABIDE_Initiative/CPAC/RawData/CMU_a/0050653/session_1/anat_1/mprage.nii.gz
+  anatomical_brain: /home2/data/Projects/ABIDE_Initiative/CPAC/Output_2013-11-22/pipeline_RameyBorough/0050653_session_1/anatomical_brain/mprage_RPI_3dc.nii.gz
+  anatomical_reorient: /home2/data/Projects/ABIDE_Initiative/CPAC/Output_2013-11-22/pipeline_RameyBorough/0050653_session_1/anatomical_reorient/mprage_RPI.nii.gz
+  anatomical_to_mni_nonlinear_xfm: /home2/data/Projects/ABIDE_Initiative/CPAC/Output_2013-11-22/pipeline_RameyBorough/0050653_session_1/anatomical_to_mni_nonlinear_xfm/ants_Warp.nii.gz
+  ants_affine_xfm: /home2/data/Projects/ABIDE_Initiative/CPAC/Output_2013-11-22/pipeline_RameyBorough/0050653_session_1/ants_affine_xfm/ants_Affine.txt
+  functional_brain_mask: {filt_global: /home2/data/Projects/ABIDE_Initiative/CPAC/Output_2013-11-22/pipeline_RameyBorough/0050653_session_1/functional_brain_mask/_scan_rest_1_rest/rest_3dc_tshift_RPI_3dv_automask.nii.gz}
+  functional_brain_mask_to_standard: {filt_global: /home2/data/Projects/ABIDE_Initiative/CPAC/Output_2013-11-22/pipeline_RameyBorough/0050653_session_1/functional_brain_mask_to_standard/_scan_rest_1_rest/rest_3dc_tshift_RPI_3dv_automask_wimt.nii.gz}
+  functional_freq_filtered: {filt_global: /home2/data/Projects/ABIDE_Initiative/CPAC/Output_2013-11-22/pipeline_RameyBorough/0050653_session_1/functional_freq_filtered/_scan_rest_1_rest/_csf_threshold_0.96/_gm_threshold_0.7/_wm_threshold_0.96/_compcor_ncomponents_5_selector_pc10.linear1.wm0.global1.motion1.quadratic1.gm0.compcor1.csf0/_bandpass_freqs_0.01.0.1/bandpassed_demeaned_filtered.nii.gz}
+  functional_mni: {filt_global: /home2/data/Projects/ABIDE_Initiative/CPAC/Output_2013-11-22/pipeline_RameyBorough/0050653_session_1/functional_mni/_scan_rest_1_rest/_csf_threshold_0.96/_gm_threshold_0.7/_wm_threshold_0.96/_compcor_ncomponents_5_selector_pc10.linear1.wm0.global1.motion1.quadratic1.gm0.compcor1.csf0/_bandpass_freqs_0.01.0.1/bandpassed_demeaned_filtered_wtsimt.nii.gz}
+  functional_nuisance_residuals: {filt_global: /home2/data/Projects/ABIDE_Initiative/CPAC/Output_2013-11-22/pipeline_RameyBorough/0050653_session_1/functional_nuisance_residuals/_scan_rest_1_rest/_csf_threshold_0.96/_gm_threshold_0.7/_wm_threshold_0.96/_compcor_ncomponents_5_selector_pc10.linear1.wm0.global1.motion1.quadratic1.gm0.compcor1.csf0/residual.nii.gz}
+  functional_to_anat_linear_xfm: {filt_global: /home2/data/Projects/ABIDE_Initiative/CPAC/Output_2013-11-22/pipeline_RameyBorough/0050653_session_1/functional_to_anat_linear_xfm/_scan_rest_1_rest/rest_3dc_tshift_RPI_3dv_3dc_3dT_flirt.mat}
+  mean_functional: {filt_global: /home2/data/Projects/ABIDE_Initiative/CPAC/Output_2013-11-22/pipeline_RameyBorough/0050653_session_1/mean_functional/_scan_rest_1_rest/rest_3dc_tshift_RPI_3dv_3dc_3dT.nii.gz}
+  mni_normalized_anatomical: /home2/data/Projects/ABIDE_Initiative/CPAC/Output_2013-11-22/pipeline_RameyBorough/0050653_session_1/mni_normalized_anatomical/ants_deformed.nii.gz
+  preprocessed: {filt_global: /home2/data/Projects/ABIDE_Initiative/CPAC/Output_2013-11-22/pipeline_RameyBorough/0050653_session_1/preprocessed/_scan_rest_1_rest/rest_3dc_tshift_RPI_3dv_3dc_maths.nii.gz}
+  rest: {rest_1_rest: /data/Projects/ABIDE_Initiative/CPAC/RawData/CMU_a/0050653/session_1/rest_1/rest.nii.gz}
+  scan_parameters: {acquisition: alt+z2, first_tr: '0', last_tr: None, reference: '14',
+    tr: '2'}
+  subject_id: '0050653'
+  unique_id: session_1

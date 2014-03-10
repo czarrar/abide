@@ -43,14 +43,14 @@ from copy import deepcopy
 
 anat_suffixes = {
     "anatomical_brain": "mprage_sanlm.nii.gz",          # REGISTRATION
-#    "anatomical_reorient": "reg/highres_rpi.nii.gz",    # VMHC?
+    "anatomical_reorient": "reg/highres_rpi.nii.gz",    # VMHC?
     "anatomical_to_mni_nonlinear_xfm": "reg/highres2standard_warp.nii.gz",  # REGISTRATION
 #    "mni_normalized_anatomical": "reg/fnirt_highres2standard.nii.gz",      # NOT NEEDED
 }
 
 func_suffixes = {
 #    "preprocessed": "rest_res.nii.gz",             # NOT NEEDED
-#    "mean_functional": "rest_pp_mean.nii.gz",      # VMHC?
+    "mean_functional": "rest_pp_mean.nii.gz",      # VMHC?
     "functional_brain_mask": "rest_pp_mask.nii.gz", # YES 
     "functional_nuisance_residuals": "rest_pp_nofilt_sm0.nii.gz",  # YES (although not really used)
     "functional_freq_filtered": ["%(strategy)srest_pp_%(pipeline)s_sm0.nii.gz", "%(strategy)s/rest_pp_%(pipeline)s_sm0.nii.gz"],    # YES
